@@ -1,0 +1,44 @@
+name: mirror-s3-wiki
+
+# S3 wiki/ (진실의 원천, 위키 빌더 루틴이 갱신) → 이 리포 wiki/ 단방향 미러.
+# 루틴(무인) 세션은 GitHub 쓰기가 프록시에서 차단되어(2026-08-04 실측 3회)
+# 리포 반영은 이 워크플로가 담당한다. 사람 수정은 S3 반영 절차 없이는 다음
+# 동기화 때 덮어써지므로, 내용 수정은 파이프라인(시드·규칙) 쪽에서 할 것.
+
+on:
+  schedule:
+    - cron: "30 22 * * 1,4"   # 화·금 07:30 KST — 위키 빌더(06:00 KST) 이후
+  workflow_dispatch: {}
+
+permissions:
+  id-token: write   # AWS OIDC (무키)
+  contents: write   # 자기 리포 커밋
+
+env:
+  S3_BUCKET: victoryfairy-crawl-local   # dev 전환 시 victoryfairy-crawl-dev 로 교체
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::555209622409:role/vf-wiki-mirror-gha
+          aws-region: ap-northeast-2
+
+      - name: Sync S3 wiki -> repo
+        run: aws s3 sync "s3://${S3_BUCKET}/wiki/" wiki/ --delete --exact-timestamps
+
+      - name: Commit & push if changed
+        run: |
+          git add -A wiki/
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git config user.name "vf-wiki-mirror"
+          git config user.email "actions@github.com"
+          git commit -m "sync: S3 wiki $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

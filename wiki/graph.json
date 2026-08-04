@@ -1,0 +1,205 @@
+{
+  "compiledAt": "2026-08-01T11:53:33.268962+00:00",
+  "nodes": [
+    {
+      "id": "player:52605",
+      "type": "player",
+      "name": "김도영",
+      "team": "HT"
+    },
+    {
+      "id": "player:53123",
+      "type": "player",
+      "name": "오스틴",
+      "team": "LG"
+    },
+    {
+      "id": "player:53764",
+      "type": "player",
+      "name": "문현빈",
+      "team": "HH"
+    },
+    {
+      "id": "player:54400",
+      "type": "player",
+      "name": "디아즈",
+      "team": "SS"
+    },
+    {
+      "id": "player:55252",
+      "type": "player",
+      "name": "박준순",
+      "team": "OB"
+    },
+    {
+      "id": "player:56459",
+      "type": "player",
+      "name": "페덱",
+      "team": "SS"
+    },
+    {
+      "id": "player:62404",
+      "type": "player",
+      "name": "구자욱",
+      "team": "SS"
+    },
+    {
+      "id": "player:62700",
+      "type": "player",
+      "name": "하주석",
+      "team": "HT"
+    },
+    {
+      "id": "player:62951",
+      "type": "player",
+      "name": null,
+      "team": null
+    },
+    {
+      "id": "player:68220",
+      "type": "player",
+      "name": "곽빈",
+      "team": "OB"
+    },
+    {
+      "id": "player:69238",
+      "type": "player",
+      "name": "김대한",
+      "team": "OB"
+    },
+    {
+      "id": "team:HH",
+      "type": "team",
+      "name": null,
+      "team": null
+    },
+    {
+      "id": "team:HT",
+      "type": "team",
+      "name": null,
+      "team": null
+    },
+    {
+      "id": "team:LG",
+      "type": "team",
+      "name": null,
+      "team": null
+    },
+    {
+      "id": "team:OB",
+      "type": "team",
+      "name": null,
+      "team": null
+    },
+    {
+      "id": "team:SS",
+      "type": "team",
+      "name": null,
+      "team": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "player:52605",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53123",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53764",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54400",
+      "target": "player:56459",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-07-19:10101564986"
+    },
+    {
+      "source": "player:54400",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55252",
+      "target": "player:69238",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-07-26:10133148153"
+    },
+    {
+      "source": "player:55252",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56459",
+      "target": "player:54400",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-07-19:10101564986"
+    },
+    {
+      "source": "player:56459",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56459",
+      "target": "player:68220",
+      "type": "커리어교차",
+      "ref": "community_post:FMKOREA:2026-07-27:10134884181"
+    },
+    {
+      "source": "player:62404",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62700",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62700",
+      "target": "player:62951",
+      "type": "커리어교차",
+      "ref": "community_post:FMKOREA:2026-07-28:10136501033"
+    },
+    {
+      "source": "player:68220",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68220",
+      "target": "player:56459",
+      "type": "커리어교차",
+      "ref": "community_post:FMKOREA:2026-07-27:10134884181"
+    },
+    {
+      "source": "player:69238",
+      "target": "player:55252",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-07-26:10133148153"
+    },
+    {
+      "source": "player:69238",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    }
+  ]
+}

@@ -357,3 +357,110 @@ OO 금지)을 물어 내용이 겹치지 않는다.
 시즌 데이터에 아예 없어(양 팀이 맞붙은 적 없음) 근거 없는 상대전적 문구를
 지어내는 대신, 양 팀 모두에 대해 실측된 연승/연패 상태(`stats.streaks`)만으로
 양념을 구성했다 — 없는 데이터를 억지로 채우지 않고 있는 데이터로 대체한 사례.
+
+## 11. MEME_OWNER (지식 · 밈 주인공) — 2026-08-07 실행 사례 (오늘 game_schedule 파티션 부재로 공통 문항만 생성)
+
+```json
+{
+  "quizId": "QZ-20260807-007",
+  "gameId": null,
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_OWNER",
+  "format": "MULTI4",
+  "question": "'킹베리노'라는 애칭의 주인공은?",
+  "options": [
+    { "id": "A", "text": "세베리노" }, { "id": "B", "text": "요니 치리노스" },
+    { "id": "C", "text": "라이언 카펜터" }, { "id": "D", "text": "루친스키" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56236.md#별명·밈",
+    "quote": "- **킹베리노 / 안타를쳐버리노**: 안타를 치는 장면에 팬들이 붙인 애칭으로, 두산 응원단 응원가 가사 \"안타를 세베리노\"에서 파생된 말장난이다[^ref8][^ref11] (커뮤니티 전언)"
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "status": "PENDING",
+  "createdAt": "2026-08-07T00:08:41Z",
+  "deadlineAt": "2026-08-07T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 이름("세베리노")과 별명("킹베리노")의 언어유희가 응원가 가사에서
+유래했다는 구체적 근거가 있어 오답과 헷갈릴 여지가 없고, 밈 고유성 규칙(§4-1)의
+"대◯◯/갓◯◯/◯느님/◯황" 범용 패턴에도 해당하지 않는다. 오답 3개는 전부 실존
+투수 이름으로 형식·길이가 균일하다.
+
+## 12. TRENDING_WHO (지식 · 커뮤니티 화제) — 2026-08-07 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260807-017",
+  "gameId": null,
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "TRENDING_WHO",
+  "format": "MULTI4",
+  "question": "이번 주 커뮤니티 최다 화제 선수는?",
+  "options": [
+    { "id": "A", "text": "김대한" }, { "id": "B", "text": "김도영" },
+    { "id": "C", "text": "구자욱" }, { "id": "D", "text": "오스틴" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/trending.md#화제 선수 top 15",
+    "quote": "| 1 | 김대한 | 두산 | 267 |"
+  },
+  "settlement": null,
+  "difficulty": "MEDIUM",
+  "pointReward": 50,
+  "status": "PENDING",
+  "createdAt": "2026-08-07T00:08:41Z",
+  "deadlineAt": "2026-08-07T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `wiki/stats/trending.md` 스냅샷이 처음으로 실전 소비된 사례. top 15 표의
+1위 행을 그대로 인용해 정답을 확정했고, 오답 3개(김도영·구자욱·오스틴)도 같은 표
+상위권 선수라 그럴듯하면서도 명확히 구분된다. 시의성 있는 "지금 화제" 소재라
+쇼츠 UX에 잘 맞는다.
+
+## 13. RELATION_LINK (지식 · 그래프 관계, 2회차) — 2026-08-07 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260807-011",
+  "gameId": null,
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "두산 곽빈이 삼성 페덱에게 받은 도움은?",
+  "options": [
+    { "id": "A", "text": "커브 구종 조언" }, { "id": "B", "text": "웨이트 프로그램" },
+    { "id": "C", "text": "영어 회화 과외" }, { "id": "D", "text": "배트 선물" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68220.md#커리어 이력",
+    "quote": "- NC 라일리와 삼성 페덱에게 커브 구종에 대한 도움을 받았다고 본인이 밝혔다.[^ref6] (커뮤니티 전언)"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdAt": "2026-08-07T00:08:41Z",
+  "deadlineAt": "2026-08-07T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `wiki/graph.json`의 `커리어교차` 엣지(68220↔56459)가 이번 실행에서도
+재확인됐고, evidence는 graph가 아니라 곽빈 문서(68220.md) 원문에서 그대로 인용했다.
+같은 실행에서 별도로 만든 "하주석↔이형범 7월 트레이드" RELATION_LINK 후보는 이미
+CAREER_PATH(같은 실행 QZ-20260807-001)가 같은 사건을 다루고 있어 의미 중복으로
+검증 패스에서 폐기했다 — RELATION_LINK와 CAREER_PATH가 같은 사건을 겹쳐 다루지
+않도록 주의가 필요하다는 반면교사이기도 하다.

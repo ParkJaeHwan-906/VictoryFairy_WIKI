@@ -1,11 +1,23 @@
 {
-  "compiledAt": "2026-08-06T14:56:25.531848+00:00",
+  "compiledAt": "2026-08-07T06:28:23.296508+00:00",
   "nodes": [
+    {
+      "id": "player:50030",
+      "type": "player",
+      "name": "소형준",
+      "team": "KT"
+    },
     {
       "id": "player:50036",
       "type": "player",
       "name": "이강준",
       "team": "WO"
+    },
+    {
+      "id": "player:50054",
+      "type": "player",
+      "name": "천성호",
+      "team": "LG"
     },
     {
       "id": "player:50066",
@@ -14,15 +26,75 @@
       "team": "KT"
     },
     {
+      "id": "player:50092",
+      "type": "player",
+      "name": "윤준혁",
+      "team": "NC"
+    },
+    {
+      "id": "player:50106",
+      "type": "player",
+      "name": "유영찬",
+      "team": "LG"
+    },
+    {
+      "id": "player:50108",
+      "type": "player",
+      "name": "함창건",
+      "team": "LG"
+    },
+    {
+      "id": "player:50126",
+      "type": "player",
+      "name": "이민호",
+      "team": "LG"
+    },
+    {
       "id": "player:50150",
       "type": "player",
       "name": "손호영",
       "team": "LT"
     },
     {
+      "id": "player:50157",
+      "type": "player",
+      "name": "김윤식",
+      "team": "LG"
+    },
+    {
+      "id": "player:50167",
+      "type": "player",
+      "name": "이주형",
+      "team": "WO"
+    },
+    {
+      "id": "player:50204",
+      "type": "player",
+      "name": "박지훈",
+      "team": "OB"
+    },
+    {
       "id": "player:50206",
       "type": "player",
       "name": "최종인",
+      "team": "OB"
+    },
+    {
+      "id": "player:50208",
+      "type": "player",
+      "name": "오명진",
+      "team": "OB"
+    },
+    {
+      "id": "player:50234",
+      "type": "player",
+      "name": "플렉센",
+      "team": "OB"
+    },
+    {
+      "id": "player:50244",
+      "type": "player",
+      "name": "장규빈",
       "team": "OB"
     },
     {
@@ -32,10 +104,58 @@
       "team": "WO"
     },
     {
+      "id": "player:50357",
+      "type": "player",
+      "name": "박주홍",
+      "team": "WO"
+    },
+    {
+      "id": "player:50360",
+      "type": "player",
+      "name": "김동혁",
+      "team": "WO"
+    },
+    {
+      "id": "player:50393",
+      "type": "player",
+      "name": "김동욱",
+      "team": "WO"
+    },
+    {
+      "id": "player:50430",
+      "type": "player",
+      "name": "홍원표",
+      "team": "SS"
+    },
+    {
       "id": "player:50449",
       "type": "player",
       "name": "허윤동",
       "team": "SS"
+    },
+    {
+      "id": "player:50458",
+      "type": "player",
+      "name": "김지찬",
+      "team": "SS"
+    },
+    {
+      "id": "player:50464",
+      "type": "player",
+      "name": "이승민",
+      "team": "SS"
+    },
+    {
+      "id": "player:50500",
+      "type": "player",
+      "name": "황성빈",
+      "team": "LT"
+    },
+    {
+      "id": "player:50556",
+      "type": "player",
+      "name": "최준용",
+      "team": "LT"
     },
     {
       "id": "player:50592",
@@ -56,10 +176,112 @@
       "team": "NC"
     },
     {
+      "id": "player:50641",
+      "type": "player",
+      "name": "장재혁",
+      "team": "HT"
+    },
+    {
+      "id": "player:50650",
+      "type": "player",
+      "name": "최용준",
+      "team": "SK"
+    },
+    {
+      "id": "player:50657",
+      "type": "player",
+      "name": "박민",
+      "team": "HT"
+    },
+    {
+      "id": "player:50662",
+      "type": "player",
+      "name": "정해영",
+      "team": "HT"
+    },
+    {
+      "id": "player:50704",
+      "type": "player",
+      "name": "임종찬",
+      "team": "HH"
+    },
+    {
+      "id": "player:50705",
+      "type": "player",
+      "name": "강재민",
+      "team": "HH"
+    },
+    {
+      "id": "player:50707",
+      "type": "player",
+      "name": "최인호",
+      "team": "HH"
+    },
+    {
+      "id": "player:50709",
+      "type": "player",
+      "name": "박정현",
+      "team": "HH"
+    },
+    {
+      "id": "player:50711",
+      "type": "player",
+      "name": "김승일",
+      "team": "HH"
+    },
+    {
+      "id": "player:50726",
+      "type": "player",
+      "name": "한승주",
+      "team": "KT"
+    },
+    {
       "id": "player:50812",
       "type": "player",
       "name": "박시후",
       "team": "SK"
+    },
+    {
+      "id": "player:50820",
+      "type": "player",
+      "name": "전의산",
+      "team": "SK"
+    },
+    {
+      "id": "player:50840",
+      "type": "player",
+      "name": "현원회",
+      "team": "SK"
+    },
+    {
+      "id": "player:50848",
+      "type": "player",
+      "name": "김성민",
+      "team": "SK"
+    },
+    {
+      "id": "player:50854",
+      "type": "player",
+      "name": "최지훈",
+      "team": "SK"
+    },
+    {
+      "id": "player:50859",
+      "type": "player",
+      "name": "오원석",
+      "team": "KT"
+    },
+    {
+      "id": "player:50868",
+      "type": "player",
+      "name": "류효승",
+      "team": "SK"
+    },
+    {
+      "id": "player:50902",
+      "type": "player",
+      "name": "김한별",
+      "team": "NC"
     },
     {
       "id": "player:50903",
@@ -68,10 +290,52 @@
       "team": "NC"
     },
     {
+      "id": "player:50992",
+      "type": "player",
+      "name": "김태경",
+      "team": "NC"
+    },
+    {
+      "id": "player:50995",
+      "type": "player",
+      "name": "정구범",
+      "team": "NC"
+    },
+    {
+      "id": "player:50996",
+      "type": "player",
+      "name": "박시원",
+      "team": "NC"
+    },
+    {
+      "id": "player:51003",
+      "type": "player",
+      "name": "권동진",
+      "team": "KT"
+    },
+    {
+      "id": "player:51013",
+      "type": "player",
+      "name": "유준규",
+      "team": "KT"
+    },
+    {
       "id": "player:51058",
       "type": "player",
       "name": "한차현",
       "team": "KT"
+    },
+    {
+      "id": "player:51060",
+      "type": "player",
+      "name": "지명성",
+      "team": "KT"
+    },
+    {
+      "id": "player:51100",
+      "type": "player",
+      "name": "이영빈",
+      "team": "LG"
     },
     {
       "id": "player:51104",
@@ -80,10 +344,46 @@
       "team": "LG"
     },
     {
+      "id": "player:51111",
+      "type": "player",
+      "name": "송승기",
+      "team": "LG"
+    },
+    {
+      "id": "player:51143",
+      "type": "player",
+      "name": "강효종",
+      "team": "HT"
+    },
+    {
       "id": "player:51154",
       "type": "player",
       "name": "김진수",
       "team": "LG"
+    },
+    {
+      "id": "player:51203",
+      "type": "player",
+      "name": "안재석",
+      "team": "OB"
+    },
+    {
+      "id": "player:51230",
+      "type": "player",
+      "name": "김동주",
+      "team": "OB"
+    },
+    {
+      "id": "player:51264",
+      "type": "player",
+      "name": "최승용",
+      "team": "OB"
+    },
+    {
+      "id": "player:51298",
+      "type": "player",
+      "name": "박성재",
+      "team": "OB"
     },
     {
       "id": "player:51301",
@@ -92,10 +392,82 @@
       "team": "WO"
     },
     {
+      "id": "player:51302",
+      "type": "player",
+      "name": "이주형",
+      "team": "WO"
+    },
+    {
+      "id": "player:51344",
+      "type": "player",
+      "name": "김휘집",
+      "team": "NC"
+    },
+    {
+      "id": "player:51407",
+      "type": "player",
+      "name": "이창용",
+      "team": "SS"
+    },
+    {
       "id": "player:51408",
       "type": "player",
       "name": "홍승원",
       "team": "SS"
+    },
+    {
+      "id": "player:51417",
+      "type": "player",
+      "name": "김현준",
+      "team": "SS"
+    },
+    {
+      "id": "player:51454",
+      "type": "player",
+      "name": "이승현",
+      "team": "SS"
+    },
+    {
+      "id": "player:51460",
+      "type": "player",
+      "name": "이재희",
+      "team": "SS"
+    },
+    {
+      "id": "player:51516",
+      "type": "player",
+      "name": "김진욱",
+      "team": "LT"
+    },
+    {
+      "id": "player:51526",
+      "type": "player",
+      "name": "우강훈",
+      "team": "LG"
+    },
+    {
+      "id": "player:51528",
+      "type": "player",
+      "name": "손성빈",
+      "team": "LT"
+    },
+    {
+      "id": "player:51551",
+      "type": "player",
+      "name": "나승엽",
+      "team": "LT"
+    },
+    {
+      "id": "player:51564",
+      "type": "player",
+      "name": "최우인",
+      "team": "OB"
+    },
+    {
+      "id": "player:51586",
+      "type": "player",
+      "name": "김창훈",
+      "team": "LT"
     },
     {
       "id": "player:51594",
@@ -104,10 +476,58 @@
       "team": "LT"
     },
     {
+      "id": "player:51604",
+      "type": "player",
+      "name": "김선우",
+      "team": "HT"
+    },
+    {
+      "id": "player:51605",
+      "type": "player",
+      "name": "이영재",
+      "team": "HT"
+    },
+    {
+      "id": "player:51640",
+      "type": "player",
+      "name": "권다결",
+      "team": "HT"
+    },
+    {
+      "id": "player:51648",
+      "type": "player",
+      "name": "이의리",
+      "team": "HT"
+    },
+    {
+      "id": "player:51702",
+      "type": "player",
+      "name": "이준기",
+      "team": "SK"
+    },
+    {
       "id": "player:51761",
       "type": "player",
       "name": "배동현",
       "team": "WO"
+    },
+    {
+      "id": "player:51762",
+      "type": "player",
+      "name": "장규현",
+      "team": "HH"
+    },
+    {
+      "id": "player:51764",
+      "type": "player",
+      "name": "정민규",
+      "team": "HH"
+    },
+    {
+      "id": "player:51809",
+      "type": "player",
+      "name": "조요한",
+      "team": "SK"
     },
     {
       "id": "player:51860",
@@ -116,10 +536,94 @@
       "team": "SK"
     },
     {
+      "id": "player:51865",
+      "type": "player",
+      "name": "조형우",
+      "team": "SK"
+    },
+    {
+      "id": "player:51867",
+      "type": "player",
+      "name": "김건우",
+      "team": "SK"
+    },
+    {
+      "id": "player:51868",
+      "type": "player",
+      "name": "고명준",
+      "team": "SK"
+    },
+    {
+      "id": "player:51895",
+      "type": "player",
+      "name": "장지훈",
+      "team": "SK"
+    },
+    {
+      "id": "player:51897",
+      "type": "player",
+      "name": "조병현",
+      "team": "SK"
+    },
+    {
+      "id": "player:51907",
+      "type": "player",
+      "name": "김주원",
+      "team": "NC"
+    },
+    {
       "id": "player:51948",
       "type": "player",
       "name": "이용준",
       "team": "NC"
+    },
+    {
+      "id": "player:51991",
+      "type": "player",
+      "name": "오장한",
+      "team": "NC"
+    },
+    {
+      "id": "player:51994",
+      "type": "player",
+      "name": "한재승",
+      "team": "HT"
+    },
+    {
+      "id": "player:52001",
+      "type": "player",
+      "name": "안현민",
+      "team": "KT"
+    },
+    {
+      "id": "player:52003",
+      "type": "player",
+      "name": "권성준",
+      "team": "KT"
+    },
+    {
+      "id": "player:52043",
+      "type": "player",
+      "name": "벤자민",
+      "team": "OB"
+    },
+    {
+      "id": "player:52060",
+      "type": "player",
+      "name": "박영현",
+      "team": "KT"
+    },
+    {
+      "id": "player:52063",
+      "type": "player",
+      "name": "이상우",
+      "team": "KT"
+    },
+    {
+      "id": "player:52103",
+      "type": "player",
+      "name": "최원영",
+      "team": "LG"
     },
     {
       "id": "player:52119",
@@ -128,10 +632,76 @@
       "team": "LG"
     },
     {
+      "id": "player:52121",
+      "type": "player",
+      "name": "문정빈",
+      "team": "LG"
+    },
+    {
+      "id": "player:52149",
+      "type": "player",
+      "name": "조원태",
+      "team": "LG"
+    },
+    {
+      "id": "player:52154",
+      "type": "player",
+      "name": "이주헌",
+      "team": "LG"
+    },
+    {
+      "id": "player:52202",
+      "type": "player",
+      "name": "윤태호",
+      "team": "OB"
+    },
+    {
+      "id": "player:52204",
+      "type": "player",
+      "name": "이병헌",
+      "team": "OB"
+    },
+    {
+      "id": "player:52206",
+      "type": "player",
+      "name": "최지강",
+      "team": "OB"
+    },
+    {
       "id": "player:52208",
       "type": "player",
       "name": "천현재",
       "team": "OB"
+    },
+    {
+      "id": "player:52267",
+      "type": "player",
+      "name": "김동준",
+      "team": "OB"
+    },
+    {
+      "id": "player:52305",
+      "type": "player",
+      "name": "박수종",
+      "team": "WO"
+    },
+    {
+      "id": "player:52348",
+      "type": "player",
+      "name": "박찬혁",
+      "team": "WO"
+    },
+    {
+      "id": "player:52395",
+      "type": "player",
+      "name": "윤석원",
+      "team": "WO"
+    },
+    {
+      "id": "player:52397",
+      "type": "player",
+      "name": "이명종",
+      "team": "WO"
     },
     {
       "id": "player:52400",
@@ -140,9 +710,69 @@
       "team": "SS"
     },
     {
+      "id": "player:52415",
+      "type": "player",
+      "name": "이재현",
+      "team": "SS"
+    },
+    {
+      "id": "player:52424",
+      "type": "player",
+      "name": "김재혁",
+      "team": "SS"
+    },
+    {
+      "id": "player:52430",
+      "type": "player",
+      "name": "김영웅",
+      "team": "SS"
+    },
+    {
+      "id": "player:52460",
+      "type": "player",
+      "name": "김서준",
+      "team": "SS"
+    },
+    {
+      "id": "player:52504",
+      "type": "player",
+      "name": "김동혁",
+      "team": "LT"
+    },
+    {
+      "id": "player:52514",
+      "type": "player",
+      "name": "김세민",
+      "team": "LT"
+    },
+    {
+      "id": "player:52516",
+      "type": "player",
+      "name": "조세진",
+      "team": "LT"
+    },
+    {
+      "id": "player:52530",
+      "type": "player",
+      "name": "이민석",
+      "team": "LT"
+    },
+    {
       "id": "player:52560",
       "type": "player",
       "name": "하혜성",
+      "team": "LT"
+    },
+    {
+      "id": "player:52568",
+      "type": "player",
+      "name": "한태양",
+      "team": "LT"
+    },
+    {
+      "id": "player:52591",
+      "type": "player",
+      "name": "윤동희",
       "team": "LT"
     },
     {
@@ -152,9 +782,75 @@
       "team": "HT"
     },
     {
+      "id": "player:52628",
+      "type": "player",
+      "name": "한승연",
+      "team": "HT"
+    },
+    {
+      "id": "player:52634",
+      "type": "player",
+      "name": "박상준",
+      "team": "HT"
+    },
+    {
+      "id": "player:52639",
+      "type": "player",
+      "name": "최지민",
+      "team": "HT"
+    },
+    {
+      "id": "player:52641",
+      "type": "player",
+      "name": "황동하",
+      "team": "HT"
+    },
+    {
+      "id": "player:52642",
+      "type": "player",
+      "name": "신명승",
+      "team": "HT"
+    },
+    {
+      "id": "player:52667",
+      "type": "player",
+      "name": "윤도현",
+      "team": "HT"
+    },
+    {
+      "id": "player:52701",
+      "type": "player",
+      "name": "문동주",
+      "team": "HH"
+    },
+    {
       "id": "player:52703",
       "type": "player",
       "name": "김겸재",
+      "team": "HH"
+    },
+    {
+      "id": "player:52731",
+      "type": "player",
+      "name": "박준영",
+      "team": "HH"
+    },
+    {
+      "id": "player:52764",
+      "type": "player",
+      "name": "허인서",
+      "team": "HH"
+    },
+    {
+      "id": "player:52765",
+      "type": "player",
+      "name": "유민",
+      "team": "HH"
+    },
+    {
+      "id": "player:52769",
+      "type": "player",
+      "name": "권광민",
       "team": "HH"
     },
     {
@@ -162,6 +858,60 @@
       "type": "player",
       "name": "석정우",
       "team": "SK"
+    },
+    {
+      "id": "player:52807",
+      "type": "player",
+      "name": "임근우",
+      "team": "SK"
+    },
+    {
+      "id": "player:52809",
+      "type": "player",
+      "name": "전영준",
+      "team": "SK"
+    },
+    {
+      "id": "player:52844",
+      "type": "player",
+      "name": "김도현",
+      "team": "SK"
+    },
+    {
+      "id": "player:52867",
+      "type": "player",
+      "name": "윤태현",
+      "team": "SK"
+    },
+    {
+      "id": "player:52868",
+      "type": "player",
+      "name": "이기순",
+      "team": "SK"
+    },
+    {
+      "id": "player:52901",
+      "type": "player",
+      "name": "이주형",
+      "team": "SK"
+    },
+    {
+      "id": "player:52902",
+      "type": "player",
+      "name": "임지민",
+      "team": "NC"
+    },
+    {
+      "id": "player:52907",
+      "type": "player",
+      "name": "이한",
+      "team": "NC"
+    },
+    {
+      "id": "player:52980",
+      "type": "player",
+      "name": "박성재",
+      "team": "NC"
     },
     {
       "id": "player:52992",
@@ -182,6 +932,18 @@
       "team": "HH"
     },
     {
+      "id": "player:53029",
+      "type": "player",
+      "name": "김정운",
+      "team": "KT"
+    },
+    {
+      "id": "player:53036",
+      "type": "player",
+      "name": "류현인",
+      "team": "KT"
+    },
+    {
       "id": "player:53103",
       "type": "player",
       "name": "강민균",
@@ -194,16 +956,82 @@
       "team": "LG"
     },
     {
+      "id": "player:53160",
+      "type": "player",
+      "name": "이준서",
+      "team": "LG"
+    },
+    {
       "id": "player:53164",
       "type": "player",
       "name": "김동규",
       "team": "WO"
     },
     {
+      "id": "player:53259",
+      "type": "player",
+      "name": "최준호",
+      "team": "OB"
+    },
+    {
+      "id": "player:53262",
+      "type": "player",
+      "name": "김유성",
+      "team": "OB"
+    },
+    {
+      "id": "player:53267",
+      "type": "player",
+      "name": "장우진",
+      "team": "OB"
+    },
+    {
+      "id": "player:53296",
+      "type": "player",
+      "name": "윤준호",
+      "team": "OB"
+    },
+    {
       "id": "player:53301",
       "type": "player",
       "name": "박윤성",
       "team": "WO"
+    },
+    {
+      "id": "player:53312",
+      "type": "player",
+      "name": "김건희",
+      "team": "WO"
+    },
+    {
+      "id": "player:53344",
+      "type": "player",
+      "name": "김동헌",
+      "team": "WO"
+    },
+    {
+      "id": "player:53375",
+      "type": "player",
+      "name": "후라도",
+      "team": "SS"
+    },
+    {
+      "id": "player:53400",
+      "type": "player",
+      "name": "김재상",
+      "team": "SS"
+    },
+    {
+      "id": "player:53404",
+      "type": "player",
+      "name": "류승민",
+      "team": "SS"
+    },
+    {
+      "id": "player:53409",
+      "type": "player",
+      "name": "박시원",
+      "team": "SS"
     },
     {
       "id": "player:53411",
@@ -218,10 +1046,64 @@
       "team": "SS"
     },
     {
+      "id": "player:53416",
+      "type": "player",
+      "name": "박장민",
+      "team": "SS"
+    },
+    {
+      "id": "player:53455",
+      "type": "player",
+      "name": "이호성",
+      "team": "SS"
+    },
+    {
+      "id": "player:53460",
+      "type": "player",
+      "name": "강준서",
+      "team": "SS"
+    },
+    {
+      "id": "player:53464",
+      "type": "player",
+      "name": "김시온",
+      "team": "SS"
+    },
+    {
+      "id": "player:53540",
+      "type": "player",
+      "name": "김기준",
+      "team": "LT"
+    },
+    {
+      "id": "player:53554",
+      "type": "player",
+      "name": "김민석",
+      "team": "OB"
+    },
+    {
       "id": "player:53562",
       "type": "player",
       "name": "이진하",
       "team": "LT"
+    },
+    {
+      "id": "player:53568",
+      "type": "player",
+      "name": "정대선",
+      "team": "LT"
+    },
+    {
+      "id": "player:53609",
+      "type": "player",
+      "name": "곽도규",
+      "team": "HT"
+    },
+    {
+      "id": "player:53613",
+      "type": "player",
+      "name": "윤영철",
+      "team": "HT"
     },
     {
       "id": "player:53619",
@@ -230,9 +1112,33 @@
       "team": "HT"
     },
     {
+      "id": "player:53659",
+      "type": "player",
+      "name": "정해원",
+      "team": "HT"
+    },
+    {
+      "id": "player:53703",
+      "type": "player",
+      "name": "한서구",
+      "team": "HH"
+    },
+    {
+      "id": "player:53705",
+      "type": "player",
+      "name": "최원준",
+      "team": "HH"
+    },
+    {
       "id": "player:53706",
       "type": "player",
       "name": "박재규",
+      "team": "HH"
+    },
+    {
+      "id": "player:53754",
+      "type": "player",
+      "name": "김서현",
       "team": "HH"
     },
     {
@@ -242,16 +1148,166 @@
       "team": "HH"
     },
     {
+      "id": "player:53827",
+      "type": "player",
+      "name": "에레디아",
+      "team": "SK"
+    },
+    {
+      "id": "player:53865",
+      "type": "player",
+      "name": "김정민",
+      "team": "SK"
+    },
+    {
+      "id": "player:53892",
+      "type": "player",
+      "name": "이로운",
+      "team": "SK"
+    },
+    {
+      "id": "player:53893",
+      "type": "player",
+      "name": "김민준",
+      "team": "SK"
+    },
+    {
+      "id": "player:53919",
+      "type": "player",
+      "name": "신영우",
+      "team": "NC"
+    },
+    {
+      "id": "player:53973",
+      "type": "player",
+      "name": "목지훈",
+      "team": "NC"
+    },
+    {
       "id": "player:53995",
       "type": "player",
       "name": "정주영",
       "team": "NC"
     },
     {
+      "id": "player:53996",
+      "type": "player",
+      "name": "이준호",
+      "team": "NC"
+    },
+    {
+      "id": "player:54011",
+      "type": "player",
+      "name": "이승현",
+      "team": "KT"
+    },
+    {
+      "id": "player:54063",
+      "type": "player",
+      "name": "원상현",
+      "team": "KT"
+    },
+    {
+      "id": "player:54094",
+      "type": "player",
+      "name": "김민성",
+      "team": "KT"
+    },
+    {
+      "id": "player:54097",
+      "type": "player",
+      "name": "김민석",
+      "team": "KT"
+    },
+    {
+      "id": "player:54156",
+      "type": "player",
+      "name": "손용준",
+      "team": "LG"
+    },
+    {
+      "id": "player:54164",
+      "type": "player",
+      "name": "김대원",
+      "team": "LG"
+    },
+    {
       "id": "player:54166",
       "type": "player",
       "name": "김현종",
       "team": "LG"
+    },
+    {
+      "id": "player:54214",
+      "type": "player",
+      "name": "전다민",
+      "team": "OB"
+    },
+    {
+      "id": "player:54219",
+      "type": "player",
+      "name": "류현준",
+      "team": "OB"
+    },
+    {
+      "id": "player:54236",
+      "type": "player",
+      "name": "임종성",
+      "team": "OB"
+    },
+    {
+      "id": "player:54263",
+      "type": "player",
+      "name": "김택연",
+      "team": "OB"
+    },
+    {
+      "id": "player:54303",
+      "type": "player",
+      "name": "박채울",
+      "team": "WO"
+    },
+    {
+      "id": "player:54305",
+      "type": "player",
+      "name": "이재상",
+      "team": "WO"
+    },
+    {
+      "id": "player:54306",
+      "type": "player",
+      "name": "심휘윤",
+      "team": "WO"
+    },
+    {
+      "id": "player:54307",
+      "type": "player",
+      "name": "원성준",
+      "team": "WO"
+    },
+    {
+      "id": "player:54319",
+      "type": "player",
+      "name": "김윤하",
+      "team": "WO"
+    },
+    {
+      "id": "player:54362",
+      "type": "player",
+      "name": "전준표",
+      "team": "WO"
+    },
+    {
+      "id": "player:54363",
+      "type": "player",
+      "name": "손현기",
+      "team": "WO"
+    },
+    {
+      "id": "player:54368",
+      "type": "player",
+      "name": "김연주",
+      "team": "WO"
     },
     {
       "id": "player:54394",
@@ -263,6 +1319,12 @@
       "id": "player:54400",
       "type": "player",
       "name": "디아즈",
+      "team": "SS"
+    },
+    {
+      "id": "player:54402",
+      "type": "player",
+      "name": "김동현",
       "team": "SS"
     },
     {
@@ -278,10 +1340,154 @@
       "team": "SS"
     },
     {
+      "id": "player:54503",
+      "type": "player",
+      "name": "박준우",
+      "team": "LT"
+    },
+    {
+      "id": "player:54509",
+      "type": "player",
+      "name": "안우진",
+      "team": "LT"
+    },
+    {
+      "id": "player:54511",
+      "type": "player",
+      "name": "김대현",
+      "team": "LT"
+    },
+    {
+      "id": "player:54529",
+      "type": "player",
+      "name": "레이예스",
+      "team": "LT"
+    },
+    {
+      "id": "player:54537",
+      "type": "player",
+      "name": "정현수",
+      "team": "LT"
+    },
+    {
+      "id": "player:54598",
+      "type": "player",
+      "name": "이호준",
+      "team": "LT"
+    },
+    {
+      "id": "player:54610",
+      "type": "player",
+      "name": "성영탁",
+      "team": "HT"
+    },
+    {
+      "id": "player:54640",
+      "type": "player",
+      "name": "네일",
+      "team": "HT"
+    },
+    {
       "id": "player:54702",
       "type": "player",
       "name": "원종혁",
       "team": "HH"
+    },
+    {
+      "id": "player:54705",
+      "type": "player",
+      "name": "김도빈",
+      "team": "HH"
+    },
+    {
+      "id": "player:54729",
+      "type": "player",
+      "name": "황준서",
+      "team": "HH"
+    },
+    {
+      "id": "player:54730",
+      "type": "player",
+      "name": "페라자",
+      "team": "HH"
+    },
+    {
+      "id": "player:54768",
+      "type": "player",
+      "name": "조동욱",
+      "team": "HH"
+    },
+    {
+      "id": "player:54795",
+      "type": "player",
+      "name": "황영묵",
+      "team": "HH"
+    },
+    {
+      "id": "player:54802",
+      "type": "player",
+      "name": "박기호",
+      "team": "SK"
+    },
+    {
+      "id": "player:54806",
+      "type": "player",
+      "name": "이승민",
+      "team": "SK"
+    },
+    {
+      "id": "player:54808",
+      "type": "player",
+      "name": "변건우",
+      "team": "SK"
+    },
+    {
+      "id": "player:54812",
+      "type": "player",
+      "name": "정준재",
+      "team": "SK"
+    },
+    {
+      "id": "player:54843",
+      "type": "player",
+      "name": "시라카와",
+      "team": "HT"
+    },
+    {
+      "id": "player:54903",
+      "type": "player",
+      "name": "최우석",
+      "team": "NC"
+    },
+    {
+      "id": "player:54904",
+      "type": "player",
+      "name": "손주환",
+      "team": "NC"
+    },
+    {
+      "id": "player:54906",
+      "type": "player",
+      "name": "원종해",
+      "team": "NC"
+    },
+    {
+      "id": "player:54910",
+      "type": "player",
+      "name": "김준원",
+      "team": "NC"
+    },
+    {
+      "id": "player:54944",
+      "type": "player",
+      "name": "데이비슨",
+      "team": "WO"
+    },
+    {
+      "id": "player:55002",
+      "type": "player",
+      "name": "박준혁",
+      "team": "KT"
     },
     {
       "id": "player:55005",
@@ -290,10 +1496,64 @@
       "team": "KT"
     },
     {
+      "id": "player:55040",
+      "type": "player",
+      "name": "김동현",
+      "team": "KT"
+    },
+    {
+      "id": "player:55046",
+      "type": "player",
+      "name": "박건우",
+      "team": "KT"
+    },
+    {
+      "id": "player:55121",
+      "type": "player",
+      "name": "박시원",
+      "team": "LG"
+    },
+    {
+      "id": "player:55130",
+      "type": "player",
+      "name": "톨허스트",
+      "team": "LG"
+    },
+    {
+      "id": "player:55146",
+      "type": "player",
+      "name": "치리노스",
+      "team": "LG"
+    },
+    {
       "id": "player:55163",
       "type": "player",
       "name": "추세현",
       "team": "LG"
+    },
+    {
+      "id": "player:55167",
+      "type": "player",
+      "name": "김영우",
+      "team": "LG"
+    },
+    {
+      "id": "player:55215",
+      "type": "player",
+      "name": "양재훈",
+      "team": "OB"
+    },
+    {
+      "id": "player:55221",
+      "type": "player",
+      "name": "김한중",
+      "team": "OB"
+    },
+    {
+      "id": "player:55239",
+      "type": "player",
+      "name": "잭로그",
+      "team": "OB"
     },
     {
       "id": "player:55252",
@@ -302,9 +1562,93 @@
       "team": "OB"
     },
     {
+      "id": "player:55258",
+      "type": "player",
+      "name": "황희천",
+      "team": "OB"
+    },
+    {
+      "id": "player:55267",
+      "type": "player",
+      "name": "홍민규",
+      "team": "HT"
+    },
+    {
+      "id": "player:55268",
+      "type": "player",
+      "name": "최민석",
+      "team": "OB"
+    },
+    {
+      "id": "player:55300",
+      "type": "player",
+      "name": "손힘찬",
+      "team": "WO"
+    },
+    {
+      "id": "player:55313",
+      "type": "player",
+      "name": "정현우",
+      "team": "WO"
+    },
+    {
+      "id": "player:55322",
+      "type": "player",
+      "name": "로젠버그",
+      "team": "WO"
+    },
+    {
       "id": "player:55339",
       "type": "player",
       "name": "염승원",
+      "team": "WO"
+    },
+    {
+      "id": "player:55348",
+      "type": "player",
+      "name": "웰스",
+      "team": "LG"
+    },
+    {
+      "id": "player:55359",
+      "type": "player",
+      "name": "김서준",
+      "team": "WO"
+    },
+    {
+      "id": "player:55370",
+      "type": "player",
+      "name": "양현종",
+      "team": "WO"
+    },
+    {
+      "id": "player:55371",
+      "type": "player",
+      "name": "권혁빈",
+      "team": "WO"
+    },
+    {
+      "id": "player:55377",
+      "type": "player",
+      "name": "정세영",
+      "team": "WO"
+    },
+    {
+      "id": "player:55392",
+      "type": "player",
+      "name": "어준서",
+      "team": "WO"
+    },
+    {
+      "id": "player:55393",
+      "type": "player",
+      "name": "여동욱",
+      "team": "WO"
+    },
+    {
+      "id": "player:55394",
+      "type": "player",
+      "name": "박정훈",
       "team": "WO"
     },
     {
@@ -320,9 +1664,111 @@
       "team": "SS"
     },
     {
+      "id": "player:55415",
+      "type": "player",
+      "name": "진희성",
+      "team": "SS"
+    },
+    {
+      "id": "player:55417",
+      "type": "player",
+      "name": "이진용",
+      "team": "SS"
+    },
+    {
+      "id": "player:55420",
+      "type": "player",
+      "name": "김백산",
+      "team": "SS"
+    },
+    {
+      "id": "player:55425",
+      "type": "player",
+      "name": "김상준",
+      "team": "SS"
+    },
+    {
+      "id": "player:55427",
+      "type": "player",
+      "name": "강민성",
+      "team": "SS"
+    },
+    {
+      "id": "player:55428",
+      "type": "player",
+      "name": "우승완",
+      "team": "SS"
+    },
+    {
+      "id": "player:55429",
+      "type": "player",
+      "name": "김유현",
+      "team": "SS"
+    },
+    {
+      "id": "player:55435",
+      "type": "player",
+      "name": "차승준",
+      "team": "SS"
+    },
+    {
+      "id": "player:55438",
+      "type": "player",
+      "name": "심재훈",
+      "team": "SS"
+    },
+    {
+      "id": "player:55440",
+      "type": "player",
+      "name": "함수호",
+      "team": "SS"
+    },
+    {
+      "id": "player:55455",
+      "type": "player",
+      "name": "배찬승",
+      "team": "SS"
+    },
+    {
+      "id": "player:55502",
+      "type": "player",
+      "name": "김동현",
+      "team": "LT"
+    },
+    {
+      "id": "player:55503",
+      "type": "player",
+      "name": "이영재",
+      "team": "LT"
+    },
+    {
+      "id": "player:55507",
+      "type": "player",
+      "name": "김태균",
+      "team": "LT"
+    },
+    {
+      "id": "player:55508",
+      "type": "player",
+      "name": "박지훈",
+      "team": "LT"
+    },
+    {
+      "id": "player:55509",
+      "type": "player",
+      "name": "박건우",
+      "team": "LT"
+    },
+    {
       "id": "player:55530",
       "type": "player",
       "name": "박찬형",
+      "team": "LT"
+    },
+    {
+      "id": "player:55534",
+      "type": "player",
+      "name": "조민영",
       "team": "LT"
     },
     {
@@ -332,9 +1778,51 @@
       "team": "LT"
     },
     {
+      "id": "player:55610",
+      "type": "player",
+      "name": "김태형",
+      "team": "HT"
+    },
+    {
+      "id": "player:55631",
+      "type": "player",
+      "name": "엄준현",
+      "team": "HT"
+    },
+    {
+      "id": "player:55633",
+      "type": "player",
+      "name": "올러",
+      "team": "HT"
+    },
+    {
+      "id": "player:55636",
+      "type": "player",
+      "name": "박재현",
+      "team": "HT"
+    },
+    {
       "id": "player:55706",
       "type": "player",
       "name": "이지성",
+      "team": "HH"
+    },
+    {
+      "id": "player:55743",
+      "type": "player",
+      "name": "정우주",
+      "team": "HH"
+    },
+    {
+      "id": "player:55764",
+      "type": "player",
+      "name": "권민규",
+      "team": "HH"
+    },
+    {
+      "id": "player:55767",
+      "type": "player",
+      "name": "한지윤",
       "team": "HH"
     },
     {
@@ -342,6 +1830,18 @@
       "type": "player",
       "name": "배승수",
       "team": "HH"
+    },
+    {
+      "id": "player:55855",
+      "type": "player",
+      "name": "화이트",
+      "team": "SK"
+    },
+    {
+      "id": "player:55860",
+      "type": "player",
+      "name": "신지환",
+      "team": "SK"
     },
     {
       "id": "player:55893",
@@ -356,9 +1856,165 @@
       "team": "SK"
     },
     {
+      "id": "player:55897",
+      "type": "player",
+      "name": "홍대인",
+      "team": "SK"
+    },
+    {
+      "id": "player:55903",
+      "type": "player",
+      "name": "라일리",
+      "team": "NC"
+    },
+    {
+      "id": "player:55912",
+      "type": "player",
+      "name": "로건",
+      "team": "KT"
+    },
+    {
+      "id": "player:55926",
+      "type": "player",
+      "name": "정현창",
+      "team": "HT"
+    },
+    {
+      "id": "player:55933",
+      "type": "player",
+      "name": "김동현",
+      "team": "NC"
+    },
+    {
+      "id": "player:55995",
+      "type": "player",
+      "name": "김태훈",
+      "team": "NC"
+    },
+    {
+      "id": "player:55996",
+      "type": "player",
+      "name": "홍재문",
+      "team": "NC"
+    },
+    {
+      "id": "player:56001",
+      "type": "player",
+      "name": "임상우",
+      "team": "KT"
+    },
+    {
+      "id": "player:56005",
+      "type": "player",
+      "name": "이재원",
+      "team": "KT"
+    },
+    {
+      "id": "player:56006",
+      "type": "player",
+      "name": "이강민",
+      "team": "KT"
+    },
+    {
+      "id": "player:56011",
+      "type": "player",
+      "name": "스기모토",
+      "team": "KT"
+    },
+    {
+      "id": "player:56032",
+      "type": "player",
+      "name": "사우어",
+      "team": "KT"
+    },
+    {
+      "id": "player:56034",
+      "type": "player",
+      "name": "힐리어드",
+      "team": "KT"
+    },
+    {
+      "id": "player:56036",
+      "type": "player",
+      "name": "보쉴리",
+      "team": "KT"
+    },
+    {
+      "id": "player:56066",
+      "type": "player",
+      "name": "박지훈",
+      "team": "KT"
+    },
+    {
+      "id": "player:56091",
+      "type": "player",
+      "name": "정현우",
+      "team": "KT"
+    },
+    {
+      "id": "player:56097",
+      "type": "player",
+      "name": "김건휘",
+      "team": "KT"
+    },
+    {
+      "id": "player:56143",
+      "type": "player",
+      "name": "김동현",
+      "team": "LG"
+    },
+    {
+      "id": "player:56146",
+      "type": "player",
+      "name": "리오스",
+      "team": "LG"
+    },
+    {
+      "id": "player:56159",
+      "type": "player",
+      "name": "박준성",
+      "team": "LG"
+    },
+    {
+      "id": "player:56165",
+      "type": "player",
+      "name": "양우진",
+      "team": "LG"
+    },
+    {
+      "id": "player:56212",
+      "type": "player",
+      "name": "타카다",
+      "team": "OB"
+    },
+    {
+      "id": "player:56215",
+      "type": "player",
+      "name": "최주형",
+      "team": "OB"
+    },
+    {
       "id": "player:56216",
       "type": "player",
       "name": "임현철",
+      "team": "OB"
+    },
+    {
+      "id": "player:56217",
+      "type": "player",
+      "name": "심건보",
+      "team": "OB"
+    },
+    {
+      "id": "player:56218",
+      "type": "player",
+      "name": "타무라",
+      "team": "OB"
+    },
+    {
+      "id": "player:56236",
+      "type": "player",
+      "name": "세베리노",
       "team": "OB"
     },
     {
@@ -366,6 +2022,66 @@
       "type": "player",
       "name": "신우열",
       "team": "OB"
+    },
+    {
+      "id": "player:56241",
+      "type": "player",
+      "name": "서준오",
+      "team": "OB"
+    },
+    {
+      "id": "player:56251",
+      "type": "player",
+      "name": "카메론",
+      "team": "OB"
+    },
+    {
+      "id": "player:56266",
+      "type": "player",
+      "name": "김주오",
+      "team": "OB"
+    },
+    {
+      "id": "player:56304",
+      "type": "player",
+      "name": "박한결",
+      "team": "WO"
+    },
+    {
+      "id": "player:56305",
+      "type": "player",
+      "name": "히우라",
+      "team": "WO"
+    },
+    {
+      "id": "player:56312",
+      "type": "player",
+      "name": "최현우",
+      "team": "WO"
+    },
+    {
+      "id": "player:56314",
+      "type": "player",
+      "name": "박준건",
+      "team": "WO"
+    },
+    {
+      "id": "player:56315",
+      "type": "player",
+      "name": "유정택",
+      "team": "WO"
+    },
+    {
+      "id": "player:56318",
+      "type": "player",
+      "name": "박준현",
+      "team": "WO"
+    },
+    {
+      "id": "player:56322",
+      "type": "player",
+      "name": "브룩스",
+      "team": "WO"
     },
     {
       "id": "player:56326",
@@ -380,6 +2096,54 @@
       "team": "WO"
     },
     {
+      "id": "player:56337",
+      "type": "player",
+      "name": "박지성",
+      "team": "WO"
+    },
+    {
+      "id": "player:56338",
+      "type": "player",
+      "name": "최재영",
+      "team": "WO"
+    },
+    {
+      "id": "player:56345",
+      "type": "player",
+      "name": "정다훈",
+      "team": "WO"
+    },
+    {
+      "id": "player:56348",
+      "type": "player",
+      "name": "유토",
+      "team": "WO"
+    },
+    {
+      "id": "player:56366",
+      "type": "player",
+      "name": "이태양",
+      "team": "WO"
+    },
+    {
+      "id": "player:56402",
+      "type": "player",
+      "name": "보스",
+      "team": "SS"
+    },
+    {
+      "id": "player:56409",
+      "type": "player",
+      "name": "매닝",
+      "team": "SS"
+    },
+    {
+      "id": "player:56415",
+      "type": "player",
+      "name": "미야지",
+      "team": "SS"
+    },
+    {
       "id": "player:56433",
       "type": "player",
       "name": "이서준",
@@ -392,9 +2156,33 @@
       "team": "SS"
     },
     {
+      "id": "player:56436",
+      "type": "player",
+      "name": "한수동",
+      "team": "SS"
+    },
+    {
       "id": "player:56441",
       "type": "player",
       "name": "이호범",
+      "team": "SS"
+    },
+    {
+      "id": "player:56442",
+      "type": "player",
+      "name": "안민성",
+      "team": "SS"
+    },
+    {
+      "id": "player:56443",
+      "type": "player",
+      "name": "이한민",
+      "team": "SS"
+    },
+    {
+      "id": "player:56444",
+      "type": "player",
+      "name": "조세익",
       "team": "SS"
     },
     {
@@ -404,10 +2192,100 @@
       "team": "SS"
     },
     {
+      "id": "player:56460",
+      "type": "player",
+      "name": "장찬희",
+      "team": "SS"
+    },
+    {
+      "id": "player:56464",
+      "type": "player",
+      "name": "오러클린",
+      "team": "SS"
+    },
+    {
       "id": "player:56467",
       "type": "player",
       "name": "김상호",
       "team": "SS"
+    },
+    {
+      "id": "player:56468",
+      "type": "player",
+      "name": "박용재",
+      "team": "SS"
+    },
+    {
+      "id": "player:56469",
+      "type": "player",
+      "name": "정재훈",
+      "team": "SS"
+    },
+    {
+      "id": "player:56503",
+      "type": "player",
+      "name": "이이무라",
+      "team": "LT"
+    },
+    {
+      "id": "player:56520",
+      "type": "player",
+      "name": "이건희",
+      "team": "LT"
+    },
+    {
+      "id": "player:56523",
+      "type": "player",
+      "name": "비슬리",
+      "team": "LT"
+    },
+    {
+      "id": "player:56531",
+      "type": "player",
+      "name": "로드리게스",
+      "team": "LT"
+    },
+    {
+      "id": "player:56536",
+      "type": "player",
+      "name": "박정민",
+      "team": "LT"
+    },
+    {
+      "id": "player:56537",
+      "type": "player",
+      "name": "김화중",
+      "team": "LT"
+    },
+    {
+      "id": "player:56539",
+      "type": "player",
+      "name": "남해담",
+      "team": "LT"
+    },
+    {
+      "id": "player:56540",
+      "type": "player",
+      "name": "김한결",
+      "team": "LT"
+    },
+    {
+      "id": "player:56541",
+      "type": "player",
+      "name": "김현수",
+      "team": "LT"
+    },
+    {
+      "id": "player:56548",
+      "type": "player",
+      "name": "쿄야마",
+      "team": "LT"
+    },
+    {
+      "id": "player:56554",
+      "type": "player",
+      "name": "이준서",
+      "team": "LT"
     },
     {
       "id": "player:56563",
@@ -416,15 +2294,117 @@
       "team": "LT"
     },
     {
+      "id": "player:56567",
+      "type": "player",
+      "name": "신동건",
+      "team": "LT"
+    },
+    {
+      "id": "player:56595",
+      "type": "player",
+      "name": "김한홀",
+      "team": "LT"
+    },
+    {
+      "id": "player:56613",
+      "type": "player",
+      "name": "아데를린",
+      "team": "HT"
+    },
+    {
+      "id": "player:56626",
+      "type": "player",
+      "name": "카스트로",
+      "team": "HT"
+    },
+    {
+      "id": "player:56627",
+      "type": "player",
+      "name": "정다훈",
+      "team": "HT"
+    },
+    {
+      "id": "player:56632",
+      "type": "player",
+      "name": "데일",
+      "team": "HT"
+    },
+    {
+      "id": "player:56633",
+      "type": "player",
+      "name": "지현",
+      "team": "HT"
+    },
+    {
+      "id": "player:56634",
+      "type": "player",
+      "name": "박종혁",
+      "team": "HT"
+    },
+    {
       "id": "player:56635",
       "type": "player",
       "name": "이도훈",
       "team": "HT"
     },
     {
+      "id": "player:56637",
+      "type": "player",
+      "name": "김민규",
+      "team": "HT"
+    },
+    {
+      "id": "player:56664",
+      "type": "player",
+      "name": "김현수",
+      "team": "HT"
+    },
+    {
+      "id": "player:56703",
+      "type": "player",
+      "name": "여현승",
+      "team": "HH"
+    },
+    {
       "id": "player:56708",
       "type": "player",
       "name": "이도훈",
+      "team": "HH"
+    },
+    {
+      "id": "player:56709",
+      "type": "player",
+      "name": "박준영",
+      "team": "HH"
+    },
+    {
+      "id": "player:56712",
+      "type": "player",
+      "name": "에르난데스",
+      "team": "HH"
+    },
+    {
+      "id": "player:56719",
+      "type": "player",
+      "name": "왕옌청",
+      "team": "HH"
+    },
+    {
+      "id": "player:56724",
+      "type": "player",
+      "name": "화이트",
+      "team": "HH"
+    },
+    {
+      "id": "player:56754",
+      "type": "player",
+      "name": "오재원",
+      "team": "HH"
+    },
+    {
+      "id": "player:56760",
+      "type": "player",
+      "name": "쿠싱",
       "team": "HH"
     },
     {
@@ -440,9 +2420,21 @@
       "team": "HH"
     },
     {
+      "id": "player:56799",
+      "type": "player",
+      "name": "짐머맨",
+      "team": "HH"
+    },
+    {
       "id": "player:56800",
       "type": "player",
       "name": "긴지로",
+      "team": "SK"
+    },
+    {
+      "id": "player:56801",
+      "type": "player",
+      "name": "아빌라",
       "team": "SK"
     },
     {
@@ -470,9 +2462,51 @@
       "team": "SK"
     },
     {
+      "id": "player:56813",
+      "type": "player",
+      "name": "마드리스",
+      "team": "SK"
+    },
+    {
       "id": "player:56815",
       "type": "player",
       "name": "김민범",
+      "team": "SK"
+    },
+    {
+      "id": "player:56823",
+      "type": "player",
+      "name": "타케다",
+      "team": "SK"
+    },
+    {
+      "id": "player:56840",
+      "type": "player",
+      "name": "김민준",
+      "team": "SK"
+    },
+    {
+      "id": "player:56841",
+      "type": "player",
+      "name": "베니지아노",
+      "team": "SK"
+    },
+    {
+      "id": "player:56846",
+      "type": "player",
+      "name": "김요셉",
+      "team": "SK"
+    },
+    {
+      "id": "player:56849",
+      "type": "player",
+      "name": "장재율",
+      "team": "SK"
+    },
+    {
+      "id": "player:56855",
+      "type": "player",
+      "name": "해치",
       "team": "SK"
     },
     {
@@ -482,10 +2516,172 @@
       "team": "NC"
     },
     {
+      "id": "player:56909",
+      "type": "player",
+      "name": "신재인",
+      "team": "NC"
+    },
+    {
+      "id": "player:56911",
+      "type": "player",
+      "name": "토다",
+      "team": "NC"
+    },
+    {
+      "id": "player:56928",
+      "type": "player",
+      "name": "버하겐",
+      "team": "NC"
+    },
+    {
+      "id": "player:56941",
+      "type": "player",
+      "name": "안지원",
+      "team": "NC"
+    },
+    {
+      "id": "player:56943",
+      "type": "player",
+      "name": "윤성환",
+      "team": "NC"
+    },
+    {
+      "id": "player:56949",
+      "type": "player",
+      "name": "고준휘",
+      "team": "NC"
+    },
+    {
+      "id": "player:56950",
+      "type": "player",
+      "name": "블레인",
+      "team": "NC"
+    },
+    {
+      "id": "player:56952",
+      "type": "player",
+      "name": "김건",
+      "team": "NC"
+    },
+    {
+      "id": "player:56966",
+      "type": "player",
+      "name": "테일러",
+      "team": "NC"
+    },
+    {
+      "id": "player:56967",
+      "type": "player",
+      "name": "최요한",
+      "team": "NC"
+    },
+    {
+      "id": "player:60146",
+      "type": "player",
+      "name": "이승현",
+      "team": "SS"
+    },
+    {
+      "id": "player:60263",
+      "type": "player",
+      "name": "이재학",
+      "team": "NC"
+    },
+    {
+      "id": "player:60337",
+      "type": "player",
+      "name": "김대유",
+      "team": "HT"
+    },
+    {
+      "id": "player:60558",
+      "type": "player",
+      "name": "오태곤",
+      "team": "SK"
+    },
+    {
+      "id": "player:60559",
+      "type": "player",
+      "name": "박시영",
+      "team": "LT"
+    },
+    {
+      "id": "player:60768",
+      "type": "player",
+      "name": "이태양",
+      "team": "HT"
+    },
+    {
+      "id": "player:60841",
+      "type": "player",
+      "name": "박종훈",
+      "team": "SK"
+    },
+    {
+      "id": "player:61101",
+      "type": "player",
+      "name": "임찬규",
+      "team": "LG"
+    },
+    {
+      "id": "player:61102",
+      "type": "player",
+      "name": "유강남",
+      "team": "LT"
+    },
+    {
+      "id": "player:61145",
+      "type": "player",
+      "name": "이우찬",
+      "team": "LG"
+    },
+    {
+      "id": "player:61268",
+      "type": "player",
+      "name": "양현",
+      "team": "SS"
+    },
+    {
       "id": "player:61353",
       "type": "player",
       "name": "고종욱",
       "team": "HT"
+    },
+    {
+      "id": "player:61404",
+      "type": "player",
+      "name": "김헌곤",
+      "team": "SS"
+    },
+    {
+      "id": "player:61643",
+      "type": "player",
+      "name": "홍건희",
+      "team": "HT"
+    },
+    {
+      "id": "player:61666",
+      "type": "player",
+      "name": "한승혁",
+      "team": "KT"
+    },
+    {
+      "id": "player:61895",
+      "type": "player",
+      "name": "서진용",
+      "team": "SK"
+    },
+    {
+      "id": "player:62234",
+      "type": "player",
+      "name": "류지혁",
+      "team": "SS"
+    },
+    {
+      "id": "player:62244",
+      "type": "player",
+      "name": "박세혁",
+      "team": "SS"
     },
     {
       "id": "player:62332",
@@ -494,10 +2690,40 @@
       "team": "WO"
     },
     {
+      "id": "player:62360",
+      "type": "player",
+      "name": "김태훈",
+      "team": "SS"
+    },
+    {
+      "id": "player:62363",
+      "type": "player",
+      "name": "한현희",
+      "team": "LT"
+    },
+    {
       "id": "player:62404",
       "type": "player",
       "name": "구자욱",
       "team": "SS"
+    },
+    {
+      "id": "player:62415",
+      "type": "player",
+      "name": "박해민",
+      "team": "LG"
+    },
+    {
+      "id": "player:62528",
+      "type": "player",
+      "name": "김원중",
+      "team": "LT"
+    },
+    {
+      "id": "player:62558",
+      "type": "player",
+      "name": "김준태",
+      "team": "LG"
     },
     {
       "id": "player:62700",
@@ -506,16 +2732,124 @@
       "team": "HT"
     },
     {
+      "id": "player:62754",
+      "type": "player",
+      "name": "임기영",
+      "team": "SS"
+    },
+    {
+      "id": "player:62802",
+      "type": "player",
+      "name": "박승욱",
+      "team": "LT"
+    },
+    {
       "id": "player:62864",
       "type": "player",
       "name": "김민식",
       "team": "SK"
     },
     {
+      "id": "player:62869",
+      "type": "player",
+      "name": "문승원",
+      "team": "SK"
+    },
+    {
+      "id": "player:62884",
+      "type": "player",
+      "name": "최항",
+      "team": "LT"
+    },
+    {
+      "id": "player:62895",
+      "type": "player",
+      "name": "한유섬",
+      "team": "SK"
+    },
+    {
+      "id": "player:62907",
+      "type": "player",
+      "name": "박민우",
+      "team": "NC"
+    },
+    {
+      "id": "player:62931",
+      "type": "player",
+      "name": "노진혁",
+      "team": "LT"
+    },
+    {
+      "id": "player:62934",
+      "type": "player",
+      "name": "김성욱",
+      "team": "SK"
+    },
+    {
+      "id": "player:62947",
+      "type": "player",
+      "name": "나성범",
+      "team": "HT"
+    },
+    {
       "id": "player:62951",
       "type": "player",
-      "name": null,
-      "team": null
+      "name": "이형범",
+      "team": "HH"
+    },
+    {
+      "id": "player:63123",
+      "type": "player",
+      "name": "강승호",
+      "team": "OB"
+    },
+    {
+      "id": "player:63145",
+      "type": "player",
+      "name": "배재준",
+      "team": "LG"
+    },
+    {
+      "id": "player:63202",
+      "type": "player",
+      "name": "장승현",
+      "team": "SS"
+    },
+    {
+      "id": "player:63248",
+      "type": "player",
+      "name": "함덕주",
+      "team": "LG"
+    },
+    {
+      "id": "player:63257",
+      "type": "player",
+      "name": "김인태",
+      "team": "OB"
+    },
+    {
+      "id": "player:63260",
+      "type": "player",
+      "name": "이우성",
+      "team": "NC"
+    },
+    {
+      "id": "player:63342",
+      "type": "player",
+      "name": "조상우",
+      "team": "HT"
+    },
+    {
+      "id": "player:63492",
+      "type": "player",
+      "name": "이재익",
+      "team": "SS"
+    },
+    {
+      "id": "player:63512",
+      "type": "player",
+      "name": "박진형",
+      "team": "WO"
     },
     {
       "id": "player:63543",
@@ -524,10 +2858,70 @@
       "team": "LT"
     },
     {
+      "id": "player:63722",
+      "type": "player",
+      "name": "한승택",
+      "team": "KT"
+    },
+    {
+      "id": "player:63765",
+      "type": "player",
+      "name": "김종수",
+      "team": "HH"
+    },
+    {
       "id": "player:63894",
       "type": "player",
       "name": "김사윤",
       "team": "HT"
+    },
+    {
+      "id": "player:63950",
+      "type": "player",
+      "name": "장현식",
+      "team": "LG"
+    },
+    {
+      "id": "player:63959",
+      "type": "player",
+      "name": "임정호",
+      "team": "NC"
+    },
+    {
+      "id": "player:63963",
+      "type": "player",
+      "name": "권희동",
+      "team": "NC"
+    },
+    {
+      "id": "player:64001",
+      "type": "player",
+      "name": "고영표",
+      "team": "KT"
+    },
+    {
+      "id": "player:64004",
+      "type": "player",
+      "name": "김민혁",
+      "team": "KT"
+    },
+    {
+      "id": "player:64006",
+      "type": "player",
+      "name": "심우준",
+      "team": "HH"
+    },
+    {
+      "id": "player:64007",
+      "type": "player",
+      "name": "문상철",
+      "team": "KT"
+    },
+    {
+      "id": "player:64021",
+      "type": "player",
+      "name": "박세웅",
+      "team": "LT"
     },
     {
       "id": "player:64022",
@@ -536,10 +2930,184 @@
       "team": "NC"
     },
     {
+      "id": "player:64101",
+      "type": "player",
+      "name": "한석현",
+      "team": "NC"
+    },
+    {
+      "id": "player:64115",
+      "type": "player",
+      "name": "장준원",
+      "team": "KT"
+    },
+    {
+      "id": "player:64153",
+      "type": "player",
+      "name": "양석환",
+      "team": "OB"
+    },
+    {
+      "id": "player:64166",
+      "type": "player",
+      "name": "배정대",
+      "team": "KT"
+    },
+    {
+      "id": "player:64340",
+      "type": "player",
+      "name": "임지열",
+      "team": "WO"
+    },
+    {
+      "id": "player:64346",
+      "type": "player",
+      "name": "임병욱",
+      "team": "WO"
+    },
+    {
+      "id": "player:64350",
+      "type": "player",
+      "name": "하영민",
+      "team": "WO"
+    },
+    {
+      "id": "player:64468",
+      "type": "player",
+      "name": "박계범",
+      "team": "SS"
+    },
+    {
+      "id": "player:64504",
+      "type": "player",
+      "name": "오윤석",
+      "team": "KT"
+    },
+    {
+      "id": "player:64560",
+      "type": "player",
+      "name": "이창진",
+      "team": "HT"
+    },
+    {
+      "id": "player:64580",
+      "type": "player",
+      "name": "김재열",
+      "team": "NC"
+    },
+    {
+      "id": "player:64646",
+      "type": "player",
+      "name": "박찬호",
+      "team": "OB"
+    },
+    {
+      "id": "player:64793",
+      "type": "player",
+      "name": "김민수",
+      "team": "LG"
+    },
+    {
+      "id": "player:64861",
+      "type": "player",
+      "name": "이건욱",
+      "team": "SK"
+    },
+    {
+      "id": "player:64984",
+      "type": "player",
+      "name": "김태진",
+      "team": "WO"
+    },
+    {
+      "id": "player:64995",
+      "type": "player",
+      "name": "배재환",
+      "team": "NC"
+    },
+    {
+      "id": "player:65040",
+      "type": "player",
+      "name": "김태훈",
+      "team": "SS"
+    },
+    {
+      "id": "player:65048",
+      "type": "player",
+      "name": "김민수",
+      "team": "KT"
+    },
+    {
+      "id": "player:65056",
+      "type": "player",
+      "name": "엄상백",
+      "team": "HH"
+    },
+    {
+      "id": "player:65060",
+      "type": "player",
+      "name": "주권",
+      "team": "KT"
+    },
+    {
+      "id": "player:65062",
+      "type": "player",
+      "name": "김재윤",
+      "team": "SS"
+    },
+    {
+      "id": "player:65109",
+      "type": "player",
+      "name": "백승현",
+      "team": "LG"
+    },
+    {
+      "id": "player:65117",
+      "type": "player",
+      "name": "이상규",
+      "team": "HH"
+    },
+    {
       "id": "player:65132",
       "type": "player",
       "name": "김재성",
       "team": "SS"
+    },
+    {
+      "id": "player:65207",
+      "type": "player",
+      "name": "신민재",
+      "team": "LG"
+    },
+    {
+      "id": "player:65269",
+      "type": "player",
+      "name": "김민혁",
+      "team": "OB"
+    },
+    {
+      "id": "player:65320",
+      "type": "player",
+      "name": "최원태",
+      "team": "SS"
+    },
+    {
+      "id": "player:65343",
+      "type": "player",
+      "name": "김택형",
+      "team": "SK"
+    },
+    {
+      "id": "player:65464",
+      "type": "player",
+      "name": "최정용",
+      "team": "HT"
+    },
+    {
+      "id": "player:65516",
+      "type": "player",
+      "name": "배제성",
+      "team": "KT"
     },
     {
       "id": "player:65522",
@@ -548,10 +3116,100 @@
       "team": "LT"
     },
     {
+      "id": "player:65586",
+      "type": "player",
+      "name": "전병우",
+      "team": "SS"
+    },
+    {
       "id": "player:65610",
       "type": "player",
       "name": "황대인",
       "team": "HT"
+    },
+    {
+      "id": "player:65616",
+      "type": "player",
+      "name": "이민우",
+      "team": "HH"
+    },
+    {
+      "id": "player:65639",
+      "type": "player",
+      "name": "박정수",
+      "team": "OB"
+    },
+    {
+      "id": "player:65653",
+      "type": "player",
+      "name": "김호령",
+      "team": "HT"
+    },
+    {
+      "id": "player:65665",
+      "type": "player",
+      "name": "이준영",
+      "team": "HT"
+    },
+    {
+      "id": "player:65703",
+      "type": "player",
+      "name": "이도윤",
+      "team": "HH"
+    },
+    {
+      "id": "player:65707",
+      "type": "player",
+      "name": "주현상",
+      "team": "HH"
+    },
+    {
+      "id": "player:65764",
+      "type": "player",
+      "name": "김민우",
+      "team": "HH"
+    },
+    {
+      "id": "player:65769",
+      "type": "player",
+      "name": "김범수",
+      "team": "HT"
+    },
+    {
+      "id": "player:65898",
+      "type": "player",
+      "name": "김웅빈",
+      "team": "WO"
+    },
+    {
+      "id": "player:65933",
+      "type": "player",
+      "name": "구창모",
+      "team": "NC"
+    },
+    {
+      "id": "player:65949",
+      "type": "player",
+      "name": "류진욱",
+      "team": "NC"
+    },
+    {
+      "id": "player:66018",
+      "type": "player",
+      "name": "김선기",
+      "team": "WO"
+    },
+    {
+      "id": "player:66047",
+      "type": "player",
+      "name": "박세진",
+      "team": "LT"
+    },
+    {
+      "id": "player:66108",
+      "type": "player",
+      "name": "홍창기",
+      "team": "LG"
     },
     {
       "id": "player:66112",
@@ -560,15 +3218,135 @@
       "team": "OB"
     },
     {
+      "id": "player:66145",
+      "type": "player",
+      "name": "김대현",
+      "team": "LG"
+    },
+    {
+      "id": "player:66209",
+      "type": "player",
+      "name": "조수행",
+      "team": "OB"
+    },
+    {
+      "id": "player:66233",
+      "type": "player",
+      "name": "홍성호",
+      "team": "OB"
+    },
+    {
+      "id": "player:66291",
+      "type": "player",
+      "name": "이영하",
+      "team": "OB"
+    },
+    {
+      "id": "player:66354",
+      "type": "player",
+      "name": "주효상",
+      "team": "HT"
+    },
+    {
+      "id": "player:66409",
+      "type": "player",
+      "name": "이성규",
+      "team": "SS"
+    },
+    {
+      "id": "player:66451",
+      "type": "player",
+      "name": "최충연",
+      "team": "LT"
+    },
+    {
+      "id": "player:66606",
+      "type": "player",
+      "name": "최원준",
+      "team": "KT"
+    },
+    {
       "id": "player:66609",
       "type": "player",
       "name": "전상현",
       "team": "HT"
     },
     {
+      "id": "player:66614",
+      "type": "player",
+      "name": "김규성",
+      "team": "HT"
+    },
+    {
+      "id": "player:66657",
+      "type": "player",
+      "name": "이진영",
+      "team": "HH"
+    },
+    {
+      "id": "player:66662",
+      "type": "player",
+      "name": "신범수",
+      "team": "SK"
+    },
+    {
+      "id": "player:66704",
+      "type": "player",
+      "name": "김태연",
+      "team": "HH"
+    },
+    {
       "id": "player:66706",
       "type": "player",
       "name": "장진혁",
+      "team": "KT"
+    },
+    {
+      "id": "player:66707",
+      "type": "player",
+      "name": "박상언",
+      "team": "HH"
+    },
+    {
+      "id": "player:66858",
+      "type": "player",
+      "name": "정동윤",
+      "team": "SK"
+    },
+    {
+      "id": "player:66864",
+      "type": "player",
+      "name": "안상현",
+      "team": "SK"
+    },
+    {
+      "id": "player:66920",
+      "type": "player",
+      "name": "최성영",
+      "team": "NC"
+    },
+    {
+      "id": "player:66965",
+      "type": "player",
+      "name": "도태훈",
+      "team": "NC"
+    },
+    {
+      "id": "player:67005",
+      "type": "player",
+      "name": "홍현빈",
+      "team": "SS"
+    },
+    {
+      "id": "player:67006",
+      "type": "player",
+      "name": "안치영",
+      "team": "KT"
+    },
+    {
+      "id": "player:67048",
+      "type": "player",
+      "name": "이정현",
       "team": "KT"
     },
     {
@@ -578,10 +3356,76 @@
       "team": "WO"
     },
     {
+      "id": "player:67123",
+      "type": "player",
+      "name": "전준호",
+      "team": "SK"
+    },
+    {
+      "id": "player:67143",
+      "type": "player",
+      "name": "손주영",
+      "team": "LG"
+    },
+    {
+      "id": "player:67207",
+      "type": "player",
+      "name": "이유찬",
+      "team": "OB"
+    },
+    {
+      "id": "player:67263",
+      "type": "player",
+      "name": "최원준",
+      "team": "OB"
+    },
+    {
+      "id": "player:67266",
+      "type": "player",
+      "name": "박치국",
+      "team": "OB"
+    },
+    {
+      "id": "player:67391",
+      "type": "player",
+      "name": "김재웅",
+      "team": "WO"
+    },
+    {
+      "id": "player:67419",
+      "type": "player",
+      "name": "문용익",
+      "team": "KT"
+    },
+    {
       "id": "player:67421",
       "type": "player",
       "name": "최지광",
       "team": "SS"
+    },
+    {
+      "id": "player:67449",
+      "type": "player",
+      "name": "김성윤",
+      "team": "SS"
+    },
+    {
+      "id": "player:67504",
+      "type": "player",
+      "name": "김정율",
+      "team": "LG"
+    },
+    {
+      "id": "player:67539",
+      "type": "player",
+      "name": "나균안",
+      "team": "LT"
+    },
+    {
+      "id": "player:67588",
+      "type": "player",
+      "name": "윤성빈",
+      "team": "LT"
     },
     {
       "id": "player:67603",
@@ -596,10 +3440,82 @@
       "team": "HT"
     },
     {
+      "id": "player:67610",
+      "type": "player",
+      "name": "김석환",
+      "team": "HT"
+    },
+    {
+      "id": "player:67640",
+      "type": "player",
+      "name": "유승철",
+      "team": "HT"
+    },
+    {
+      "id": "player:67644",
+      "type": "player",
+      "name": "이정훈",
+      "team": "KT"
+    },
+    {
+      "id": "player:67703",
+      "type": "player",
+      "name": "박상원",
+      "team": "HH"
+    },
+    {
+      "id": "player:67807",
+      "type": "player",
+      "name": "이정범",
+      "team": "SK"
+    },
+    {
+      "id": "player:67828",
+      "type": "player",
+      "name": "김성민",
+      "team": "WO"
+    },
+    {
+      "id": "player:67893",
+      "type": "player",
+      "name": "박성한",
+      "team": "SK"
+    },
+    {
+      "id": "player:67905",
+      "type": "player",
+      "name": "천재환",
+      "team": "NC"
+    },
+    {
+      "id": "player:67954",
+      "type": "player",
+      "name": "김진호",
+      "team": "NC"
+    },
+    {
       "id": "player:67956",
       "type": "player",
       "name": "김태현",
       "team": "NC"
+    },
+    {
+      "id": "player:68043",
+      "type": "player",
+      "name": "김민",
+      "team": "SK"
+    },
+    {
+      "id": "player:68050",
+      "type": "player",
+      "name": "강백호",
+      "team": "HH"
+    },
+    {
+      "id": "player:68089",
+      "type": "player",
+      "name": "조대현",
+      "team": "KT"
     },
     {
       "id": "player:68092",
@@ -608,9 +3524,45 @@
       "team": "SK"
     },
     {
+      "id": "player:68106",
+      "type": "player",
+      "name": "이재원",
+      "team": "LG"
+    },
+    {
+      "id": "player:68110",
+      "type": "player",
+      "name": "송찬의",
+      "team": "LG"
+    },
+    {
+      "id": "player:68119",
+      "type": "player",
+      "name": "문성주",
+      "team": "LG"
+    },
+    {
       "id": "player:68130",
       "type": "player",
       "name": "김영준",
+      "team": "LT"
+    },
+    {
+      "id": "player:68159",
+      "type": "player",
+      "name": "성동현",
+      "team": "LG"
+    },
+    {
+      "id": "player:68200",
+      "type": "player",
+      "name": "김민규",
+      "team": "OB"
+    },
+    {
+      "id": "player:68205",
+      "type": "player",
+      "name": "전민재",
       "team": "LT"
     },
     {
@@ -620,10 +3572,58 @@
       "team": "OB"
     },
     {
+      "id": "player:68242",
+      "type": "player",
+      "name": "정철원",
+      "team": "LT"
+    },
+    {
+      "id": "player:68249",
+      "type": "player",
+      "name": "박신지",
+      "team": "OB"
+    },
+    {
+      "id": "player:68260",
+      "type": "player",
+      "name": "현도훈",
+      "team": "LT"
+    },
+    {
+      "id": "player:68341",
+      "type": "player",
+      "name": "안우진",
+      "team": "WO"
+    },
+    {
+      "id": "player:68362",
+      "type": "player",
+      "name": "추재현",
+      "team": "WO"
+    },
+    {
       "id": "player:68403",
       "type": "player",
       "name": "김무신",
       "team": "SS"
+    },
+    {
+      "id": "player:68415",
+      "type": "player",
+      "name": "양창섭",
+      "team": "SS"
+    },
+    {
+      "id": "player:68419",
+      "type": "player",
+      "name": "최지명",
+      "team": "LG"
+    },
+    {
+      "id": "player:68454",
+      "type": "player",
+      "name": "김태우",
+      "team": "NC"
     },
     {
       "id": "player:68463",
@@ -632,16 +3632,94 @@
       "team": "SS"
     },
     {
+      "id": "player:68501",
+      "type": "player",
+      "name": "최하늘",
+      "team": "SS"
+    },
+    {
+      "id": "player:68504",
+      "type": "player",
+      "name": "이호연",
+      "team": "HT"
+    },
+    {
+      "id": "player:68507",
+      "type": "player",
+      "name": "장두성",
+      "team": "LT"
+    },
+    {
       "id": "player:68518",
       "type": "player",
       "name": "정보근",
       "team": "LT"
     },
     {
+      "id": "player:68525",
+      "type": "player",
+      "name": "한동희",
+      "team": "LT"
+    },
+    {
+      "id": "player:68619",
+      "type": "player",
+      "name": "윤중현",
+      "team": "HT"
+    },
+    {
+      "id": "player:68639",
+      "type": "player",
+      "name": "하준영",
+      "team": "NC"
+    },
+    {
+      "id": "player:68646",
+      "type": "player",
+      "name": "한준수",
+      "team": "HT"
+    },
+    {
+      "id": "player:68700",
+      "type": "player",
+      "name": "이원석",
+      "team": "HH"
+    },
+    {
+      "id": "player:68743",
+      "type": "player",
+      "name": "정은원",
+      "team": "HH"
+    },
+    {
+      "id": "player:68830",
+      "type": "player",
+      "name": "김정우",
+      "team": "OB"
+    },
+    {
+      "id": "player:68856",
+      "type": "player",
+      "name": "최민준",
+      "team": "SK"
+    },
+    {
+      "id": "player:68868",
+      "type": "player",
+      "name": "최준우",
+      "team": "SK"
+    },
+    {
       "id": "player:68869",
       "type": "player",
       "name": "전경원",
       "team": "LG"
+    },
+    {
+      "id": "player:68896",
+      "type": "player",
+      "name": "이채호",
+      "team": "KT"
     },
     {
       "id": "player:68900",
@@ -656,6 +3734,66 @@
       "team": "NC"
     },
     {
+      "id": "player:68904",
+      "type": "player",
+      "name": "오영수",
+      "team": "NC"
+    },
+    {
+      "id": "player:68912",
+      "type": "player",
+      "name": "김형준",
+      "team": "NC"
+    },
+    {
+      "id": "player:68928",
+      "type": "player",
+      "name": "김시훈",
+      "team": "HT"
+    },
+    {
+      "id": "player:69041",
+      "type": "player",
+      "name": "손동현",
+      "team": "KT"
+    },
+    {
+      "id": "player:69045",
+      "type": "player",
+      "name": "알칸타라",
+      "team": "WO"
+    },
+    {
+      "id": "player:69047",
+      "type": "player",
+      "name": "전용주",
+      "team": "KT"
+    },
+    {
+      "id": "player:69054",
+      "type": "player",
+      "name": "이상동",
+      "team": "KT"
+    },
+    {
+      "id": "player:69064",
+      "type": "player",
+      "name": "강민성",
+      "team": "KT"
+    },
+    {
+      "id": "player:69100",
+      "type": "player",
+      "name": "구본혁",
+      "team": "LG"
+    },
+    {
+      "id": "player:69102",
+      "type": "player",
+      "name": "문보경",
+      "team": "LG"
+    },
+    {
       "id": "player:69105",
       "type": "player",
       "name": "김성진",
@@ -668,10 +3806,58 @@
       "team": "LG"
     },
     {
+      "id": "player:69113",
+      "type": "player",
+      "name": "임준형",
+      "team": "KT"
+    },
+    {
+      "id": "player:69134",
+      "type": "player",
+      "name": "이정용",
+      "team": "LG"
+    },
+    {
+      "id": "player:69159",
+      "type": "player",
+      "name": "정우영",
+      "team": "LG"
+    },
+    {
+      "id": "player:69168",
+      "type": "player",
+      "name": "이상영",
+      "team": "LG"
+    },
+    {
+      "id": "player:69205",
+      "type": "player",
+      "name": "이교훈",
+      "team": "HH"
+    },
+    {
+      "id": "player:69213",
+      "type": "player",
+      "name": "윤산흠",
+      "team": "HH"
+    },
+    {
       "id": "player:69238",
       "type": "player",
       "name": "김대한",
       "team": "OB"
+    },
+    {
+      "id": "player:69328",
+      "type": "player",
+      "name": "박주성",
+      "team": "WO"
+    },
+    {
+      "id": "player:69332",
+      "type": "player",
+      "name": "주성원",
+      "team": "WO"
     },
     {
       "id": "player:69360",
@@ -680,9 +3866,63 @@
       "team": "WO"
     },
     {
+      "id": "player:69367",
+      "type": "player",
+      "name": "김인범",
+      "team": "WO"
+    },
+    {
+      "id": "player:69403",
+      "type": "player",
+      "name": "양우현",
+      "team": "SS"
+    },
+    {
+      "id": "player:69416",
+      "type": "player",
+      "name": "이해승",
+      "team": "SS"
+    },
+    {
+      "id": "player:69418",
+      "type": "player",
+      "name": "박승규",
+      "team": "SS"
+    },
+    {
+      "id": "player:69428",
+      "type": "player",
+      "name": "이병헌",
+      "team": "SS"
+    },
+    {
+      "id": "player:69442",
+      "type": "player",
+      "name": "김도환",
+      "team": "SS"
+    },
+    {
+      "id": "player:69446",
+      "type": "player",
+      "name": "원태인",
+      "team": "SS"
+    },
+    {
       "id": "player:69508",
       "type": "player",
       "name": "신윤후",
+      "team": "LT"
+    },
+    {
+      "id": "player:69516",
+      "type": "player",
+      "name": "김현수",
+      "team": "HT"
+    },
+    {
+      "id": "player:69517",
+      "type": "player",
+      "name": "고승민",
       "team": "LT"
     },
     {
@@ -692,15 +3932,87 @@
       "team": "LT"
     },
     {
+      "id": "player:69594",
+      "type": "player",
+      "name": "박진",
+      "team": "LT"
+    },
+    {
+      "id": "player:69620",
+      "type": "player",
+      "name": "김기훈",
+      "team": "HT"
+    },
+    {
+      "id": "player:69627",
+      "type": "player",
+      "name": "김민수",
+      "team": "HT"
+    },
+    {
+      "id": "player:69636",
+      "type": "player",
+      "name": "오선우",
+      "team": "HT"
+    },
+    {
+      "id": "player:69645",
+      "type": "player",
+      "name": "장유호",
+      "team": "HH"
+    },
+    {
+      "id": "player:69702",
+      "type": "player",
+      "name": "김건",
+      "team": "HH"
+    },
+    {
       "id": "player:69706",
       "type": "player",
       "name": "허관회",
       "team": "HH"
     },
     {
+      "id": "player:69727",
+      "type": "player",
+      "name": "변우혁",
+      "team": "HT"
+    },
+    {
+      "id": "player:69737",
+      "type": "player",
+      "name": "노시환",
+      "team": "HH"
+    },
+    {
+      "id": "player:69745",
+      "type": "player",
+      "name": "김도현",
+      "team": "HT"
+    },
+    {
+      "id": "player:69766",
+      "type": "player",
+      "name": "유로결",
+      "team": "HH"
+    },
+    {
+      "id": "player:69804",
+      "type": "player",
+      "name": "채현우",
+      "team": "SK"
+    },
+    {
       "id": "player:69825",
       "type": "player",
       "name": "김창평",
+      "team": "SK"
+    },
+    {
+      "id": "player:69839",
+      "type": "player",
+      "name": "백승건",
       "team": "SK"
     },
     {
@@ -710,10 +4022,112 @@
       "team": "NC"
     },
     {
+      "id": "player:69969",
+      "type": "player",
+      "name": "전사민",
+      "team": "NC"
+    },
+    {
+      "id": "player:69992",
+      "type": "player",
+      "name": "최정원",
+      "team": "NC"
+    },
+    {
       "id": "player:69995",
       "type": "player",
       "name": "서호철",
       "team": "NC"
+    },
+    {
+      "id": "player:72443",
+      "type": "player",
+      "name": "최형우",
+      "team": "SS"
+    },
+    {
+      "id": "player:73117",
+      "type": "player",
+      "name": "우규민",
+      "team": "KT"
+    },
+    {
+      "id": "player:73211",
+      "type": "player",
+      "name": "노경은",
+      "team": "SK"
+    },
+    {
+      "id": "player:74540",
+      "type": "player",
+      "name": "강민호",
+      "team": "SS"
+    },
+    {
+      "id": "player:75847",
+      "type": "player",
+      "name": "최정",
+      "team": "SK"
+    },
+    {
+      "id": "player:75867",
+      "type": "player",
+      "name": "김진성",
+      "team": "LG"
+    },
+    {
+      "id": "player:76118",
+      "type": "player",
+      "name": "원종현",
+      "team": "WO"
+    },
+    {
+      "id": "player:76225",
+      "type": "player",
+      "name": "김건국",
+      "team": "HT"
+    },
+    {
+      "id": "player:76232",
+      "type": "player",
+      "name": "양의지",
+      "team": "OB"
+    },
+    {
+      "id": "player:76267",
+      "type": "player",
+      "name": "최주환",
+      "team": "WO"
+    },
+    {
+      "id": "player:76290",
+      "type": "player",
+      "name": "김현수",
+      "team": "KT"
+    },
+    {
+      "id": "player:76715",
+      "type": "player",
+      "name": "류현진",
+      "team": "HH"
+    },
+    {
+      "id": "player:76802",
+      "type": "player",
+      "name": "김성현",
+      "team": "SK"
+    },
+    {
+      "id": "player:76812",
+      "type": "player",
+      "name": "이재원",
+      "team": "HH"
+    },
+    {
+      "id": "player:77211",
+      "type": "player",
+      "name": "이용찬",
+      "team": "OB"
     },
     {
       "id": "player:77263",
@@ -722,10 +4136,154 @@
       "team": "LG"
     },
     {
+      "id": "player:77318",
+      "type": "player",
+      "name": "장시환",
+      "team": "LG"
+    },
+    {
       "id": "player:77446",
       "type": "player",
       "name": "백정현",
       "team": "SS"
+    },
+    {
+      "id": "player:77532",
+      "type": "player",
+      "name": "손아섭",
+      "team": "OB"
+    },
+    {
+      "id": "player:77564",
+      "type": "player",
+      "name": "김민성",
+      "team": "LT"
+    },
+    {
+      "id": "player:77637",
+      "type": "player",
+      "name": "양현종",
+      "team": "HT"
+    },
+    {
+      "id": "player:77829",
+      "type": "player",
+      "name": "김광현",
+      "team": "SK"
+    },
+    {
+      "id": "player:78122",
+      "type": "player",
+      "name": "김태군",
+      "team": "HT"
+    },
+    {
+      "id": "player:78135",
+      "type": "player",
+      "name": "이형종",
+      "team": "WO"
+    },
+    {
+      "id": "player:78168",
+      "type": "player",
+      "name": "서건창",
+      "team": "WO"
+    },
+    {
+      "id": "player:78224",
+      "type": "player",
+      "name": "김재환",
+      "team": "SK"
+    },
+    {
+      "id": "player:78288",
+      "type": "player",
+      "name": "최재훈",
+      "team": "HH"
+    },
+    {
+      "id": "player:78513",
+      "type": "player",
+      "name": "전준우",
+      "team": "LT"
+    },
+    {
+      "id": "player:78548",
+      "type": "player",
+      "name": "장성우",
+      "team": "KT"
+    },
+    {
+      "id": "player:78603",
+      "type": "player",
+      "name": "김선빈",
+      "team": "HT"
+    },
+    {
+      "id": "player:78756",
+      "type": "player",
+      "name": "오선진",
+      "team": "WO"
+    },
+    {
+      "id": "player:79109",
+      "type": "player",
+      "name": "오지환",
+      "team": "LG"
+    },
+    {
+      "id": "player:79140",
+      "type": "player",
+      "name": "최동환",
+      "team": "KT"
+    },
+    {
+      "id": "player:79192",
+      "type": "player",
+      "name": "채은성",
+      "team": "HH"
+    },
+    {
+      "id": "player:79215",
+      "type": "player",
+      "name": "박건우",
+      "team": "NC"
+    },
+    {
+      "id": "player:79231",
+      "type": "player",
+      "name": "정수빈",
+      "team": "OB"
+    },
+    {
+      "id": "player:79240",
+      "type": "player",
+      "name": "허경민",
+      "team": "KT"
+    },
+    {
+      "id": "player:79365",
+      "type": "player",
+      "name": "박동원",
+      "team": "LG"
+    },
+    {
+      "id": "player:79402",
+      "type": "player",
+      "name": "김상수",
+      "team": "KT"
+    },
+    {
+      "id": "player:79456",
+      "type": "player",
+      "name": "이지영",
+      "team": "SK"
+    },
+    {
+      "id": "player:79608",
+      "type": "player",
+      "name": "안치홍",
+      "team": "WO"
     },
     {
       "id": "team:HH",
@@ -790,14 +4348,62 @@
   ],
   "edges": [
     {
+      "source": "player:50030",
+      "target": "player:68050",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-07-31:5860648"
+    },
+    {
+      "source": "player:50030",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:50036",
       "target": "team:WO",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:50054",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50054",
+      "target": "player:64006",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-08-01:18600846"
+    },
+    {
       "source": "player:50066",
       "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50092",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50106",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50108",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50126",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -808,7 +4414,43 @@
       "ref": null
     },
     {
+      "source": "player:50157",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50167",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50204",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:50206",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50208",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50234",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50244",
       "target": "team:OB",
       "type": "소속",
       "ref": null
@@ -820,8 +4462,56 @@
       "ref": null
     },
     {
+      "source": "player:50357",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50360",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50393",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50430",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:50449",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50458",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50464",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50500",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50556",
+      "target": "team:LT",
       "type": "소속",
       "ref": null
     },
@@ -844,8 +4534,122 @@
       "ref": null
     },
     {
+      "source": "player:50641",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50650",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50650",
+      "target": "player:51702",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-28:7006288"
+    },
+    {
+      "source": "player:50657",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50662",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50704",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50705",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50707",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50709",
+      "target": "player:52060",
+      "type": "라이벌",
+      "ref": "community_post:FMKOREA:2026-07-31:10156224781"
+    },
+    {
+      "source": "player:50709",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50711",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50726",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:50812",
       "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50820",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50840",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50848",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50854",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50859",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50868",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50902",
+      "target": "team:NC",
       "type": "소속",
       "ref": null
     },
@@ -856,8 +4660,50 @@
       "ref": null
     },
     {
+      "source": "player:50992",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50995",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50996",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51003",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51013",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:51058",
       "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51060",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51100",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -868,8 +4714,68 @@
       "ref": null
     },
     {
+      "source": "player:51111",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51143",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:51154",
       "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51203",
+      "target": "player:53554",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-08-02:11333352"
+    },
+    {
+      "source": "player:51203",
+      "target": "player:55252",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-08-02:11333352"
+    },
+    {
+      "source": "player:51203",
+      "target": "player:69238",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-08-02:11333352"
+    },
+    {
+      "source": "player:51203",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51203",
+      "target": "player:79231",
+      "type": "커리어교차",
+      "ref": "community_post:FMKOREA:2026-08-02:10163695880"
+    },
+    {
+      "source": "player:51230",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51264",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51298",
+      "target": "team:OB",
       "type": "소속",
       "ref": null
     },
@@ -880,8 +4786,80 @@
       "ref": null
     },
     {
+      "source": "player:51302",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51344",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51407",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:51408",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51417",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51454",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51460",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51516",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51526",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51528",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51551",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51564",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51586",
+      "target": "team:LT",
       "type": "소속",
       "ref": null
     },
@@ -892,8 +4870,62 @@
       "ref": null
     },
     {
+      "source": "player:51604",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51605",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51640",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51648",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51702",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51702",
+      "target": "player:50650",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-28:7006288"
+    },
+    {
       "source": "player:51761",
       "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51762",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51764",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51809",
+      "target": "team:SK",
       "type": "소속",
       "ref": null
     },
@@ -904,8 +4936,98 @@
       "ref": null
     },
     {
+      "source": "player:51865",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51867",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51868",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51895",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51897",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51907",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:51948",
       "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51991",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51994",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51994",
+      "target": "player:63260",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-08-02:9969887"
+    },
+    {
+      "source": "player:52001",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52003",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52043",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52060",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52063",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52103",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -916,8 +5038,74 @@
       "ref": null
     },
     {
+      "source": "player:52121",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52149",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52154",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52202",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52204",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52206",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:52208",
       "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52267",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52305",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52348",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52395",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52397",
+      "target": "team:WO",
       "type": "소속",
       "ref": null
     },
@@ -928,7 +5116,67 @@
       "ref": null
     },
     {
+      "source": "player:52415",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52424",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52430",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52460",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52504",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52514",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52516",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52530",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:52560",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52568",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52591",
       "target": "team:LT",
       "type": "소속",
       "ref": null
@@ -940,7 +5188,73 @@
       "ref": null
     },
     {
+      "source": "player:52628",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52634",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52639",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52641",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52642",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52667",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52701",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:52703",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52731",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52764",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52765",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52769",
       "target": "team:HH",
       "type": "소속",
       "ref": null
@@ -948,6 +5262,60 @@
     {
       "source": "player:52804",
       "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52807",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52809",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52844",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52867",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52868",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52901",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52902",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52907",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:52980",
+      "target": "team:NC",
       "type": "소속",
       "ref": null
     },
@@ -970,6 +5338,18 @@
       "ref": null
     },
     {
+      "source": "player:53029",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53036",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:53103",
       "target": "team:LG",
       "type": "소속",
@@ -982,14 +5362,80 @@
       "ref": null
     },
     {
+      "source": "player:53160",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:53164",
       "target": "team:WO",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:53259",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53262",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53267",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53296",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:53301",
       "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53312",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53344",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53375",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53400",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53404",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53409",
+      "target": "team:SS",
       "type": "소속",
       "ref": null
     },
@@ -1006,8 +5452,80 @@
       "ref": null
     },
     {
+      "source": "player:53416",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53455",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53460",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53464",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53540",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53554",
+      "target": "player:51203",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-08-02:11333352"
+    },
+    {
+      "source": "player:53554",
+      "target": "player:55252",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-08-02:11333352"
+    },
+    {
+      "source": "player:53554",
+      "target": "player:69238",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-08-02:11333352"
+    },
+    {
+      "source": "player:53554",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:53562",
       "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53568",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53609",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53613",
+      "target": "team:HT",
       "type": "소속",
       "ref": null
     },
@@ -1018,7 +5536,31 @@
       "ref": null
     },
     {
+      "source": "player:53659",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53703",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53705",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:53706",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53754",
       "target": "team:HH",
       "type": "소속",
       "ref": null
@@ -1030,14 +5572,164 @@
       "ref": null
     },
     {
+      "source": "player:53827",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53865",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53892",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53893",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53919",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53973",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:53995",
       "target": "team:NC",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:53996",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54011",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54063",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54094",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54097",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54156",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54164",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:54166",
       "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54214",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54219",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54236",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54263",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54303",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54305",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54306",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54307",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54319",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54362",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54363",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54368",
+      "target": "team:WO",
       "type": "소속",
       "ref": null
     },
@@ -1060,6 +5752,12 @@
       "ref": null
     },
     {
+      "source": "player:54402",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:54404",
       "target": "team:SS",
       "type": "소속",
@@ -1072,8 +5770,170 @@
       "ref": null
     },
     {
+      "source": "player:54503",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54509",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54511",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54529",
+      "target": "player:62404",
+      "type": "라이벌",
+      "ref": "community_post:DCINSIDE:2026-07-31:18219194"
+    },
+    {
+      "source": "player:54529",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54537",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54598",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54610",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54640",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:54702",
       "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54705",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54729",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54730",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54768",
+      "target": "player:56724",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-08-02:17513059"
+    },
+    {
+      "source": "player:54768",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54795",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54802",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54806",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54808",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54812",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54843",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54843",
+      "target": "player:62951",
+      "type": "커리어교차",
+      "ref": "community_post:FMKOREA:2026-07-29:10147262946"
+    },
+    {
+      "source": "player:54903",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54904",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54906",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54910",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:54944",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55002",
+      "target": "team:KT",
       "type": "소속",
       "ref": null
     },
@@ -1084,8 +5944,62 @@
       "ref": null
     },
     {
+      "source": "player:55040",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55046",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55121",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55130",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55146",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55163",
       "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55167",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55215",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55221",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55239",
+      "target": "team:OB",
       "type": "소속",
       "ref": null
     },
@@ -1102,7 +6016,91 @@
       "ref": null
     },
     {
+      "source": "player:55258",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55267",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55268",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55300",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55313",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55322",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55339",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55348",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55359",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55370",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55371",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55377",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55392",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55393",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55394",
       "target": "team:WO",
       "type": "소속",
       "ref": null
@@ -1120,7 +6118,109 @@
       "ref": null
     },
     {
+      "source": "player:55415",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55417",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55420",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55425",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55427",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55428",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55429",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55435",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55438",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55440",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55455",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55502",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55503",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55507",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55508",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55509",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55530",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55534",
       "target": "team:LT",
       "type": "소속",
       "ref": null
@@ -1132,7 +6232,49 @@
       "ref": null
     },
     {
+      "source": "player:55610",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55631",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55633",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55636",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55706",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55743",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55764",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55767",
       "target": "team:HH",
       "type": "소속",
       "ref": null
@@ -1140,6 +6282,18 @@
     {
       "source": "player:55798",
       "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55855",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55860",
+      "target": "team:SK",
       "type": "소속",
       "ref": null
     },
@@ -1156,7 +6310,163 @@
       "ref": null
     },
     {
+      "source": "player:55897",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55903",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55912",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55926",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55933",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55995",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55996",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56001",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56005",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56006",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56011",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56032",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56034",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56036",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56066",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56091",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56097",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56143",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56146",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56159",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56165",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56212",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56215",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56216",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56217",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56218",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56236",
       "target": "team:OB",
       "type": "소속",
       "ref": null
@@ -1164,6 +6474,66 @@
     {
       "source": "player:56238",
       "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56241",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56251",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56266",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56304",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56305",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56312",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56314",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56315",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56318",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56322",
+      "target": "team:WO",
       "type": "소속",
       "ref": null
     },
@@ -1180,6 +6550,54 @@
       "ref": null
     },
     {
+      "source": "player:56337",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56338",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56345",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56348",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56366",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56402",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56409",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56415",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56433",
       "target": "team:SS",
       "type": "소속",
@@ -1192,7 +6610,31 @@
       "ref": null
     },
     {
+      "source": "player:56436",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56441",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56442",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56443",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56444",
       "target": "team:SS",
       "type": "소속",
       "ref": null
@@ -1216,8 +6658,104 @@
       "ref": "community_post:FMKOREA:2026-07-27:10134884181"
     },
     {
+      "source": "player:56460",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56464",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56467",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56468",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56469",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56503",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56520",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56523",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56531",
+      "target": "player:68205",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-08-04:5827872"
+    },
+    {
+      "source": "player:56531",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56536",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56537",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56539",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56540",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56541",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56548",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56554",
+      "target": "team:LT",
       "type": "소속",
       "ref": null
     },
@@ -1228,13 +6766,121 @@
       "ref": null
     },
     {
+      "source": "player:56567",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56595",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56613",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56626",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56627",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56632",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56633",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56634",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56635",
       "target": "team:HT",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:56637",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56664",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56703",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56708",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56709",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56712",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56719",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56724",
+      "target": "player:54768",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-08-02:17513059"
+    },
+    {
+      "source": "player:56724",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56754",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56760",
       "target": "team:HH",
       "type": "소속",
       "ref": null
@@ -1252,7 +6898,25 @@
       "ref": null
     },
     {
+      "source": "player:56799",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56800",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56801",
+      "target": "player:56813",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-07-22:10117813191"
+    },
+    {
+      "source": "player:56801",
       "target": "team:SK",
       "type": "소속",
       "ref": null
@@ -1282,7 +6946,55 @@
       "ref": null
     },
     {
+      "source": "player:56813",
+      "target": "player:56801",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-07-22:10117813191"
+    },
+    {
+      "source": "player:56813",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56815",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56823",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56840",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56841",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56846",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56849",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56855",
       "target": "team:SK",
       "type": "소속",
       "ref": null
@@ -1294,8 +7006,176 @@
       "ref": null
     },
     {
+      "source": "player:56909",
+      "target": "player:66965",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-07-31:9966350"
+    },
+    {
+      "source": "player:56909",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56911",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56928",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56941",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56943",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56949",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56950",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56952",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56966",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56967",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60146",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60263",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60337",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60558",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60559",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60768",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:60841",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61101",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61102",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61145",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61268",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:61353",
       "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61404",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61643",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61666",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:61895",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62234",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62244",
+      "target": "team:SS",
       "type": "소속",
       "ref": null
     },
@@ -1306,8 +7186,38 @@
       "ref": null
     },
     {
+      "source": "player:62360",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62363",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:62404",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62415",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62528",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62558",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -1324,8 +7234,128 @@
       "ref": "community_post:FMKOREA:2026-07-28:10136501033"
     },
     {
+      "source": "player:62754",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62802",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:62864",
       "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62869",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62884",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62895",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62907",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62931",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62934",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62947",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:62951",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63123",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63145",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63202",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63248",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63257",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63260",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63260",
+      "target": "player:51994",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-08-02:9969887"
+    },
+    {
+      "source": "player:63342",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63492",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63512",
+      "target": "team:WO",
       "type": "소속",
       "ref": null
     },
@@ -1336,8 +7366,74 @@
       "ref": null
     },
     {
+      "source": "player:63722",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63765",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:63894",
       "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63950",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63959",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:63963",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64001",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64004",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64006",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64006",
+      "target": "player:50054",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-08-01:18600846"
+    },
+    {
+      "source": "player:64007",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64021",
+      "target": "team:LT",
       "type": "소속",
       "ref": null
     },
@@ -1348,8 +7444,188 @@
       "ref": null
     },
     {
+      "source": "player:64101",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64115",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64153",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64166",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64340",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64340",
+      "target": "player:78135",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-21:8762357"
+    },
+    {
+      "source": "player:64346",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64350",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64468",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64504",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64560",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64580",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64646",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64793",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64861",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64984",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64995",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65040",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65048",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65056",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65060",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65062",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65109",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65117",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:65132",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65207",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65269",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65320",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65343",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65464",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65516",
+      "target": "team:KT",
       "type": "소속",
       "ref": null
     },
@@ -1360,8 +7636,110 @@
       "ref": null
     },
     {
+      "source": "player:65586",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:65610",
       "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65616",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65639",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65653",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65665",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65703",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65707",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65707",
+      "target": "player:68507",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-31:5801226"
+    },
+    {
+      "source": "player:65764",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65769",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65769",
+      "target": "player:62700",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-30:2741495"
+    },
+    {
+      "source": "player:65898",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65933",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:65949",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66018",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66047",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66108",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -1372,13 +7750,151 @@
       "ref": null
     },
     {
+      "source": "player:66145",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66209",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66233",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66291",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66354",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66409",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66451",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66606",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:66609",
       "target": "team:HT",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:66614",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66657",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66662",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66704",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:66706",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66707",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66707",
+      "target": "player:68856",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-21:6981844"
+    },
+    {
+      "source": "player:66858",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66864",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66920",
+      "target": "player:50705",
+      "type": "사건연루",
+      "ref": "community_post:FMKOREA:2026-07-31:10155082342"
+    },
+    {
+      "source": "player:66920",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:66965",
+      "target": "player:56909",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-07-31:9966350"
+    },
+    {
+      "source": "player:66965",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67005",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67006",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67048",
       "target": "team:KT",
       "type": "소속",
       "ref": null
@@ -1390,8 +7906,80 @@
       "ref": null
     },
     {
+      "source": "player:67123",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67143",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67207",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67263",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67266",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67391",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67419",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:67421",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67449",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67504",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67504",
+      "target": "player:68419",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-28:18571941"
+    },
+    {
+      "source": "player:67539",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67588",
+      "target": "team:LT",
       "type": "소속",
       "ref": null
     },
@@ -1408,8 +7996,86 @@
       "ref": null
     },
     {
+      "source": "player:67610",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67640",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67644",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67703",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67807",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67828",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67893",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67905",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:67954",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:67956",
       "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68043",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68050",
+      "target": "player:50030",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-07-31:5860648"
+    },
+    {
+      "source": "player:68050",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68089",
+      "target": "team:KT",
       "type": "소속",
       "ref": null
     },
@@ -1420,7 +8086,49 @@
       "ref": null
     },
     {
+      "source": "player:68106",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68110",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68119",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:68130",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68159",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68200",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68205",
+      "target": "player:56531",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-08-04:5827872"
+    },
+    {
+      "source": "player:68205",
       "target": "team:LT",
       "type": "소속",
       "ref": null
@@ -1438,8 +8146,62 @@
       "ref": "community_post:FMKOREA:2026-07-27:10134884181"
     },
     {
+      "source": "player:68242",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68249",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68260",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68341",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68362",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:68403",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68415",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68419",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68419",
+      "target": "player:67504",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-28:18571941"
+    },
+    {
+      "source": "player:68454",
+      "target": "team:NC",
       "type": "소속",
       "ref": null
     },
@@ -1450,14 +8212,104 @@
       "ref": null
     },
     {
+      "source": "player:68501",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68504",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68507",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68507",
+      "target": "player:65707",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-31:5801226"
+    },
+    {
       "source": "player:68518",
       "target": "team:LT",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:68525",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68619",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68639",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68646",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68700",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68743",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68830",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68856",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68856",
+      "target": "player:66707",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-21:6981844"
+    },
+    {
+      "source": "player:68868",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:68869",
       "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68896",
+      "target": "team:KT",
       "type": "소속",
       "ref": null
     },
@@ -1474,6 +8326,66 @@
       "ref": null
     },
     {
+      "source": "player:68904",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68912",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68928",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69041",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69045",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69047",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69054",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69064",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69100",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69102",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:69105",
       "target": "team:LG",
       "type": "소속",
@@ -1482,6 +8394,42 @@
     {
       "source": "player:69108",
       "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69113",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69134",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69159",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69168",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69205",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69213",
+      "target": "team:HH",
       "type": "소속",
       "ref": null
     },
@@ -1498,13 +8446,79 @@
       "ref": null
     },
     {
+      "source": "player:69328",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69332",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:69360",
       "target": "team:WO",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:69367",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69403",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69416",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69418",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69428",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69442",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69446",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:69508",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69516",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69517",
       "target": "team:LT",
       "type": "소속",
       "ref": null
@@ -1516,13 +8530,85 @@
       "ref": null
     },
     {
+      "source": "player:69594",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69620",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69627",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69636",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69645",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69702",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:69706",
       "target": "team:HH",
       "type": "소속",
       "ref": null
     },
     {
+      "source": "player:69727",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69737",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69745",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69766",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69804",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:69825",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69839",
       "target": "team:SK",
       "type": "소속",
       "ref": null
@@ -1534,8 +8620,110 @@
       "ref": null
     },
     {
+      "source": "player:69969",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69992",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:69995",
       "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:72443",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:73117",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:73211",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:74540",
+      "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:75847",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:75867",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76118",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76225",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76232",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76267",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76290",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76715",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76802",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:76812",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:77211",
+      "target": "team:OB",
       "type": "소속",
       "ref": null
     },
@@ -1546,8 +8734,182 @@
       "ref": null
     },
     {
+      "source": "player:77318",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:77446",
       "target": "team:SS",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:77532",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:77564",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:77637",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:77829",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78122",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78135",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78135",
+      "target": "player:64340",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-21:8762357"
+    },
+    {
+      "source": "player:78168",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78224",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78288",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78513",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78548",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78603",
+      "target": "team:HT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:78756",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79109",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79140",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79192",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79215",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79231",
+      "target": "player:64646",
+      "type": "밈공유",
+      "ref": "community_post:FMKOREA:2026-08-07:10178705052"
+    },
+    {
+      "source": "player:79231",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79231",
+      "target": "player:51203",
+      "type": "커리어교차",
+      "ref": "community_post:FMKOREA:2026-08-02:10163695880"
+    },
+    {
+      "source": "player:79240",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79365",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79402",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79456",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:79456",
+      "target": "player:51100",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-31:8821794"
+    },
+    {
+      "source": "player:79456",
+      "target": "player:61353",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-07-31:8821488"
+    },
+    {
+      "source": "player:79608",
+      "target": "team:WO",
       "type": "소속",
       "ref": null
     }

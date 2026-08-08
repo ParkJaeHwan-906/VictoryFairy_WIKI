@@ -464,3 +464,177 @@ OO 금지)을 물어 내용이 겹치지 않는다.
 CAREER_PATH(같은 실행 QZ-20260807-001)가 같은 사건을 다루고 있어 의미 중복으로
 검증 패스에서 폐기했다 — RELATION_LINK와 CAREER_PATH가 같은 사건을 겹쳐 다루지
 않도록 주의가 필요하다는 반면교사이기도 하다.
+
+## 14. MEME_ORIGIN (지식 · 밈 유래) — 2026-08-08 실행 사례 (오늘 game_schedule 파티션 부재로 공통 문항만 생성)
+
+```json
+{
+  "quizId": "QZ-20260808-005",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "강백호·노시환의 세리머니 별명 '두루치기'가 화제가 된 계기는?",
+  "options": [
+    { "id": "A", "text": "LoL 프로게이머 제우스·구마유시가 시구 행사에서 따라 해서" },
+    { "id": "B", "text": "은퇴 선수가 방송에서 언급해서" },
+    { "id": "C", "text": "팬미팅에서 공식 발표해서" },
+    { "id": "D", "text": "광고 촬영 컨셉으로 만들어져서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68050.md#별명·밈",
+    "quote": "강백호와 노시환이 함께 선보이는 세리머니/포즈로, LoL 프로게이머 제우스·구마유시가 시구 행사에서 이를 따라 하기도 했다"
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: e스포츠 프로게이머의 시구 행사 오마주라는 구체적이고 의외성 있는 근거가
+있어 오답과 헷갈릴 여지가 없다. 오답 3개도 "그럴듯한 가짜 유래" 전략을 따른다.
+
+## 15. CAREER_PATH (지식 · 위키 커리어 이력) — 2026-08-08 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260808-001",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "CAREER_PATH",
+  "format": "MULTI4",
+  "question": "강백호가 자유계약(FA)으로 한화 이적 전 소속팀은?",
+  "options": [
+    { "id": "A", "text": "KT" }, { "id": "B", "text": "LG" },
+    { "id": "C", "text": "두산" }, { "id": "D", "text": "SSG" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68050.md#커리어 이력",
+    "quote": "KT 소속이었다가 자유계약(FA)으로 한화에 이적했으며"
+  },
+  "settlement": null,
+  "difficulty": "HARD",
+  "pointReward": 80,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 이 실행에서 자동 선택된 CAREER_PATH 엔티티 2명(소형준·이강준)은 위키
+커리어 이력에 이적 서사가 없어(소형준은 원 소속 유지, 이강준은 섹션 자체가 "확인된
+사항 없음") 생성 단계에서 폐기됐다 — 대신 같은 실행에서 RELATION_LINK용으로 이미
+읽어 둔 강백호(68050) 문서에 KT→한화 FA 이적 서사가 있어 그쪽으로 대체 생성했다.
+자동 엔티티 선택이 항상 좋은 소재를 보장하지 않으므로, 이미 바인딩된 다른 소스에서
+더 나은 소재를 찾는 판단이 필요할 때가 있다는 사례다.
+
+## 16. STANDINGS_CLIMB (지식 · 순위 변동) — 2026-08-08 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260808-014",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "STANDINGS",
+  "templateId": "STANDINGS_CLIMB",
+  "format": "MULTI4",
+  "question": "시즌 초(4/24) 대비 순위 변동이 가장 큰 팀은?",
+  "options": [
+    { "id": "A", "text": "SK" }, { "id": "B", "text": "KT" },
+    { "id": "C", "text": "LG" }, { "id": "D", "text": "NC" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#시즌 초 대비 순위 변동",
+    "quote": "- SK: 3위 → 9위 (6단계 하락)"
+  },
+  "settlement": null,
+  "difficulty": "HARD",
+  "pointReward": 80,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `select_combos`가 라운드로빈으로 뽑아준 엔티티(HH, +1단계)는 실제로는
+"가장 큰 변동"이 아니어서(진짜 최대치는 SK -6단계) 생성 단계에서 discard하고, 같은
+`stats.standings_trend` 소스 안에서 진짜 최상급(superlative) 팀을 찾아 대체했다.
+`enumerate_entities`가 "이 팀이 실제로 최상급 조건을 만족하는지"까지는 검증하지
+않으므로(단순 팀 목록 나열), MONTHLY_BEST·STANDINGS_CLIMB처럼 "가장 ~한 X" 형태의
+템플릿은 문구를 쓰기 전에 데이터로 직접 최상급 여부를 확인해야 한다.
+
+## 17. RELATION_LINK (지식 · 그래프 관계, 신규 페어) — 2026-08-08 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260808-017",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "KT 소형준과 한화 강백호를 안현민과 함께 묶어 부르는 표현은?",
+  "options": [
+    { "id": "A", "text": "신인왕 3신기" }, { "id": "B", "text": "홈런더비 3형제" },
+    { "id": "C", "text": "수비의 신 3인방" }, { "id": "D", "text": "MVP 트리오" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50030.md#별명·밈",
+    "quote": "**신인왕 3신기**: 강백호·안현민과 함께 묶여 불리는 표현이다"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `wiki/graph.json`의 `밈공유` 엣지(50030↔68050)를 처음 소비하며 초안에서
+엣지와 무관한 다른 밈("메가형준")을 잘못 인용했다가, 엣지의 실제 근거(`ref`)가
+가리키는 커뮤니티 게시글이 "신인왕 3신기" 문단과 일치한다는 걸 발견하고 정정했다 —
+graph 엣지를 소비할 때는 관계의 `ref`가 실제로 어느 문단을 가리키는지 대조해야
+엉뚱한 근거를 인용하지 않는다는 반면교사.
+
+## 18. RELATION_LINK (지식 · 그래프 관계, 신규 페어) — 2026-08-08 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260808-018",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "두산 안재석과 김민석을 함께 묶어 부르는 별명은?",
+  "options": [
+    { "id": "A", "text": "머갈툴순" }, { "id": "B", "text": "다이나믹 듀오" },
+    { "id": "C", "text": "트윈타워" }, { "id": "D", "text": "판타스틱4" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51203.md#별명·밈",
+    "quote": "두산의 유망주 김대한('머')·안재석('갈')·김민석('툴')·박준순('순')을 묶어 부르는 별칭으로"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 두산 유망주 4인방 별칭 중 두 명(안재석·김민석)만 골라 묶는 조합으로,
+같은 밈을 다루는 후속 실행에서 나머지 조합(김대한·박준순 등)으로 소재를 넓힐 여지가
+있다. 오답 3개는 사실이 아닌 그럴듯한 듀오 별명을 자유 작성했다.

@@ -638,3 +638,140 @@ graph 엣지를 소비할 때는 관계의 `ref`가 실제로 어느 문단을 �
 **좋은 이유**: 두산 유망주 4인방 별칭 중 두 명(안재석·김민석)만 골라 묶는 조합으로,
 같은 밈을 다루는 후속 실행에서 나머지 조합(김대한·박준순 등)으로 소재를 넓힐 여지가
 있다. 오답 3개는 사실이 아닌 그럴듯한 듀오 별명을 자유 작성했다.
+
+## 19. MEME_ORIGIN (지식 · 밈 유래) — 2026-08-09 실행 사례 (오늘 game_schedule 파티션 부재로 공통 문항만 생성)
+
+```json
+{
+  "quizId": "QZ-20260809-003",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "소형준의 별명 '대형준'의 유래는?",
+  "options": [
+    { "id": "A", "text": "이름의 '소형'을 활용한 크기 언어유희" },
+    { "id": "B", "text": "통산 최다 이닝 투구 기록 때문에" },
+    { "id": "C", "text": "2m 장신이라서 붙은 별명" },
+    { "id": "D", "text": "데뷔 첫해 다승왕을 해서 붙은 별명" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50030.md#별명·밈",
+    "quote": "이름의 '소형'을 활용한 언어유희 별명들로, 호투를 이어갈 때 커뮤니티에서 붙여진다"
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: "소형"이라는 이름 자체의 크기 의미를 "중형→대형→메가형"으로 점층시키는
+말장난이라 다른 선수 이름에 그대로 옮겨 붙일 수 없다 — 밈 고유성 규칙(§4-1)의
+"대◯◯" 범용 존칭 패턴(예: casebook/bad.md '대자욱')과는 달리, "대형준"의 "대"는
+존칭이 아니라 "소형→대형" 크기 계열의 일부이므로 고유성 검사를 통과한다. 오답
+3개도 그럴듯한 가짜 유래 전략을 따른다.
+
+## 20. STANDINGS_CLIMB (지식 · 순위 변동) — 2026-08-09 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260809-013",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "STANDINGS",
+  "templateId": "STANDINGS_CLIMB",
+  "format": "MULTI4",
+  "question": "시즌 초(4/24) 대비 순위가 가장 많이 떨어진 팀은?",
+  "options": [
+    { "id": "A", "text": "SK" }, { "id": "B", "text": "WO" },
+    { "id": "C", "text": "NC" }, { "id": "D", "text": "LG" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#시즌 초 대비 순위 변동",
+    "quote": "- SK: 3위 → 9위 (6단계 하락)"
+  },
+  "settlement": null,
+  "difficulty": "HARD",
+  "pointReward": 80,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 같은 소스(`stats.standings_trend`)로 "가장 많이 오른 팀"(2026-08-07
+실행)을 이미 다뤘던 것과 반대 방향("가장 많이 떨어진 팀")으로 질문해 사실 중복
+없이 같은 데이터를 재활용했다. 6단계 하락이라는 극적인 수치라 재미 점수가 높다.
+
+## 21. RELATION_LINK (지식 · 그래프 관계) — 2026-08-09 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260809-009",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "KT 소형준과 한화 강백호를 안현민과 함께 묶어 부르는 표현은?",
+  "options": [
+    { "id": "A", "text": "신인왕 3신기" }, { "id": "B", "text": "홈런더비 3형제" },
+    { "id": "C", "text": "수비의 신 3인방" }, { "id": "D", "text": "MVP 트리오" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50030.md#별명·밈",
+    "quote": "강백호·안현민과 함께 묶여 불리는 표현이다"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `wiki/graph.json`의 `밈공유` 엣지(50030↔68050)를 소비했고, 팀을 넘나드는
+(KT·한화) 연결이라 EXPERT 난이도에 걸맞다. evidence가 위키 원문과 정확히 일치한다.
+
+## 22. RELATION_LINK (지식 · 그래프 관계, 커리어교차) — 2026-08-09 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260809-010",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "LG 천성호와 한화 심우준의 공통점은?",
+  "options": [
+    { "id": "A", "text": "상무 피닉스 야구단에서 함께 내야수로 복무" },
+    { "id": "B", "text": "같은 고등학교 동창" },
+    { "id": "C", "text": "신인 드래프트 동기" },
+    { "id": "D", "text": "결혼식 들러리를 서준 사이" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/64006.md#커리어 이력",
+    "quote": "상무 피닉스 야구단에서 내야수로 복무하며 박민·나승엽·천성호·권동진·구본혁 등과 함께 언급된 바 있다"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `커리어교차` 엣지(50054↔64006)를 소비한 사례로, 상무 군 복무 시절
+같은 부대에 있었다는 "아는 사람만 아는" 연결이라 EXPERT 재미가 있다. 오답 3개는
+사실이 아닌 그럴듯한 공통점(distractor 전략)이다.

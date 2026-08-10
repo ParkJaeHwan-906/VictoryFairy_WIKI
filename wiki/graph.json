@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-07T08:35:14.417479+00:00",
+  "compiledAt": "2026-08-10T21:29:01.277502+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -941,6 +941,12 @@
       "id": "player:53036",
       "type": "player",
       "name": "류현인",
+      "team": "KT"
+    },
+    {
+      "id": "player:53058",
+      "type": "player",
+      "name": "정준영",
       "team": "KT"
     },
     {
@@ -5345,6 +5351,12 @@
     },
     {
       "source": "player:53036",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53058",
       "target": "team:KT",
       "type": "소속",
       "ref": null

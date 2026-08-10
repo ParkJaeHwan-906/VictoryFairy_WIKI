@@ -775,3 +775,79 @@ graph 엣지를 소비할 때는 관계의 `ref`가 실제로 어느 문단을 �
 **좋은 이유**: `커리어교차` 엣지(50054↔64006)를 소비한 사례로, 상무 군 복무 시절
 같은 부대에 있었다는 "아는 사람만 아는" 연결이라 EXPERT 재미가 있다. 오답 3개는
 사실이 아닌 그럴듯한 공통점(distractor 전략)이다.
+
+## 23. LAST_MATCHUP (지식 · 최근 맞대결) — 2026-08-10 실행 사례 (오늘 game_schedule 파티션 부재로 공통 문항만 생성)
+
+```json
+{
+  "quizId": "QZ-20260810-004",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "LAST_MATCHUP",
+  "format": "MULTI4",
+  "question": "한화-KT 최근 맞대결(8/2) 스코어는?",
+  "options": [
+    { "id": "A", "text": "1:12" }, { "id": "B", "text": "12:1" },
+    { "id": "C", "text": "4:3" }, { "id": "D", "text": "7:5" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#상대전적",
+    "quote": "- **HH vs KT**: HH 3승 KT 8승 · 0무 (최근 2026-08-02 1:12, 홈팀 승)"
+  },
+  "settlement": null,
+  "difficulty": "MEDIUM",
+  "pointReward": 50,
+  "status": "PENDING",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 1:12라는 일방적인 스코어라 기억에 남는 사실이고, subjectScope=MATCHUP
+규칙대로 정답 보기에 팀명 대신 스코어만 써서 정답 유출을 피했다. evidence가
+`season.md` 원문과 정확히 일치한다. 같은 실행에서 HH-HT(7/23, 9:3)도 같은 패턴으로
+생성했다 — 서로 다른 맞대결이라 중복이 아니다.
+
+## 실행 메모: 재료 고갈로 인한 대량 폐기 (2026-08-10)
+
+2026-08-10 실행은 최근 7일치 `quiz-candidates`(2026-08-07·2026-08-09)와 대조한 결과
+아래 조합이 전부 "같은 사실을 다른 문구로" 재탕이라 **생성 단계에서부터 작성을
+보류**했다(검증 패스까지 안 가고 걸러냄 — 재작성 시도조차 안 함):
+
+- `WINNING_PITCHER`(20260804WOLT02026·20260804LGSK02026) — 2026-08-07에 이미
+  "8/4 키움-롯데"·"8/4 LG-SSG" 승리투수 문제로 나간 바로 그 경기(같은 gameId).
+  `recent7d` 파티션에 2026-08-04 이후 새 경기 결과가 아예 없다(6일째 game_result
+  갱신 없음 — 소스 신선도 문제로 보임).
+- `RELATION_LINK`(50030|68050, 50054|64006) — 2026-08-09에 이미 정확히 같은 페어로
+  나간 문제(`QZ-20260809-009`·`QZ-20260809-010`)와 100% 동일한 evidence.
+- `MEME_ORIGIN`·`MEME_OWNER`(50030) — 소형준 위키 문서의 별명·밈 소재(대형준
+  워드플레이·투심러·신인왕 3신기)가 최근 3일 사이 이미 전부 소진됐다.
+- `ALL_TIME_LEADER`(history-top-hitter)·`SEASON_STAT_LEADER`(AVG·ERA) —
+  all-time-records.yaml·kbo-official.md 스냅샷이 2026-08-09 실행 이후 갱신되지 않아
+  같은 인물이 같은 근거로 다시 나옴.
+- `STANDINGS_CLIMB`(양방향) — 2026-08-07(상승폭)·2026-08-09(하락폭)에 이미 다뤄
+  방향을 바꿔도 재탕.
+- `TRENDING_WHO` — `wiki/stats/trending.md`가 2026-08-06 위키 빌더 실행분 그대로라
+  2026-08-07에 이미 같은 1위(김대한)로 나갔다.
+- `TEAM_RECORD_HISTORY`(2025) — 2026-08-09에 이미 나감(연도만 다른 2026은 생성).
+- `H2H_SEASON_RECORD`(HH|KT) — 2026-08-07에 이미 나감. `H2H_SEASON_RECORD`(HH|HT)는
+  시즌 전적이 6승 6무로 정확히 동률이라 템플릿의 우위/열세 이분법 자체가 성립하지
+  않아 별도로 보류(재탕이 아니라 데이터가 템플릿 틀에 안 맞는 경우).
+- `CAREER_PATH`(50030) — 위키 커리어 이력 섹션에 아시안게임 차출·이달의 투수 등은
+  있지만 "거쳐간 팀"에 해당하는 이적 이력이 없어 템플릿 의도에 안 맞음.
+- `CAREER_PATH`·`MEME_ORIGIN`·`MEME_OWNER`(50036) — 위키 문서의 해당 섹션이
+  플레이스홀더 텍스트("확인된 사항 없음"/HTML 주석)뿐이라 실제 근거가 없음.
+  `enumerate_entities`(wiki 섹션 필터)가 이 플레이스홀더를 "내용 있음"으로
+  오판해 후보로 잡히는데, 실제로는 근거가 없어 걸러야 한다 — 워크플로 버그로
+  보이므로 사람 검토를 제안한다.
+- `RECORD_OX`(history-player-hitter·history-player-pitcher) — 같은 카테고리를
+  `MILESTONE_FIRST`가 이미 다뤄 같은 rank:1 사실의 다른 문구 재탕이라 자체 판단으로
+  제외.
+
+결과적으로 오늘은 원래 계획한 36개 조합 중 14개만 실제로 작성했고, 그중 물량
+슬롯(공통 HARD 4개) 초과로 2개(`MONTHLY_BEST`·`TEAM_RECORD_HISTORY`)가 재미 점수
+동점 상황에서 추가로 빠져 최종 12개만 채택됐다. **EXPERT 난이도가 오늘 0개다** —
+위키 밈·그래프 소재가 최근 3일간 소진되어 재료가 바닥났다는 신호로, 위키 빌더가
+새 소재를 보충하기 전까지 반복될 가능성이 있다.

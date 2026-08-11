@@ -851,3 +851,102 @@ graph 엣지를 소비할 때는 관계의 `ref`가 실제로 어느 문단을 �
 동점 상황에서 추가로 빠져 최종 12개만 채택됐다. **EXPERT 난이도가 오늘 0개다** —
 위키 밈·그래프 소재가 최근 3일간 소진되어 재료가 바닥났다는 신호로, 위키 빌더가
 새 소재를 보충하기 전까지 반복될 가능성이 있다.
+
+## 24. MEME_ORIGIN (지식 · 밈 유래, 이름 합성어) — 2026-08-11 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260811-028",
+  "gameId": "20260811LGWO02026",
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "LG 오스틴의 별명 '오카도'는 어떻게 만들어졌나?",
+  "options": [
+    { "id": "A", "text": "오스틴+아보카도를 합친 말장난" },
+    { "id": "B", "text": "오스틴의 고향 지명에서 유래" },
+    { "id": "C", "text": "오스틴의 타격 자세가 아보카도 같아서" },
+    { "id": "D", "text": "동료 선수가 붙여준 스페인어 애칭" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/53123.md#별명·밈",
+    "quote": "오스틴+아보카도를 합친 팬 별명."
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "subject": { "scope": "PLAYER", "playerIds": [53123], "teamCodes": [], "gameId": null },
+  "status": "PENDING",
+  "createdAt": "2026-08-11T00:16:40Z",
+  "deadlineAt": "2026-08-11T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 이름 합성 밈(오스틴+아보카도)은 §4-1 고유성 검사를 자동으로 통과한다
+— "대◯◯"류 범용 패턴과 달리 다른 선수 이름을 대입하면 아예 성립하지 않는 말장난이기
+때문이다. evidence.quote도 위키 원문 한 글자와 다르지 않다(문장 끝 마침표 뒤
+`[^ref3]` 각주 앞까지만 인용해 대조 실패를 피했다).
+
+## 25. RELATION_LINK (지식 · 그래프 관계, 이름-소재 결합) — 2026-08-11 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260811-056",
+  "gameId": "20260811LTSK02026",
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "다음 중 SSG 아빌라와 마드리스의 공통점은?",
+  "options": [
+    { "id": "A", "text": "이름이 유럽 축구 클럽을 연상시킨다는 밈으로 엮인다" },
+    { "id": "B", "text": "둘 다 포수다" },
+    { "id": "C", "text": "고교 시절부터 절친한 사이다" },
+    { "id": "D", "text": "둘 다 국가대표 출신이다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56801.md#별명·밈",
+    "quote": "같은 팀 외국인 타자 마드리스와 함께, 이름이 유럽 축구 클럽(레알 마드리드, 아스톤 빌라)을 연상시킨다는 이유로 팬들이 축구 클럽 이름을 엮어 부르는 밈이 생겼다(커뮤니티 전언)"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "subject": { "scope": "PLAYER", "playerIds": [56801, 56813], "teamCodes": [], "gameId": null },
+  "status": "PENDING",
+  "createdAt": "2026-08-11T00:16:40Z",
+  "deadlineAt": "2026-08-11T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 두 외국인 선수의 실명이 우연히 유럽 축구 클럽명(레알 마드리드·아스톤
+빌라)과 겹치는, 재현 불가능한 우연성 소재라 고유성이 극단적으로 강하다. graph.json의
+`커리어교차`가 아니라 개별 위키 문서 별명·밈 섹션에서 같은 사실을 상호 참조로 확인해
+바인딩했다.
+
+## 26. 2026-08-11 실행 메모 — 공통 문항 재료 소진이 구조적 문제로 굳어지는 중
+
+2026-08-09·2026-08-10 사례에서 이미 지적된 공통 문항 재료 소진(`ALL_TIME_LEADER`·
+`MILESTONE_FIRST`·`SEASON_STAT_LEADER`·`STANDINGS_CLIMB`·`MONTHLY_BEST`·
+`TRENDING_WHO`)이 오늘도 그대로 반복됐다 — 최근 7일 이내 동일 사실 중복으로
+10개 후보를 폐기했다(전량 공통 묶음, 상세는 이번 실행 요약 표 참고). 원인은 두
+가지로 좁혀진다:
+
+- `all-time-records.yaml`이 v0 초안 3개 카테고리(`history-player-hitter`·
+  `history-player-pitcher`·`history-top-hitter`)뿐이라 `ALL_TIME_LEADER`·
+  `MILESTONE_FIRST`가 매번 같은 rank 1~2 사실을 재탕할 수밖에 없다 — 카테고리를
+  늘리거나(사람 검수 후) rank 3 이하까지 순환 출제하는 로직이 필요하다.
+- `standingsTrend`(시즌 초 대비)·월별 성적(5월·7월처럼 이미 완결된 달)은 날짜가
+  지나도 값 자체가 바뀌지 않는 정적 데이터라, 재집계를 다시 돌려도 어제 물었던
+  질문과 100% 같은 사실이 나온다 — 이런 "완결된 과거" 지표는애초에 최근 N일
+  회피 창의 대상이 아니라 "이번 시즌 1회만 출제"로 다루는 편이 맞을 수 있다.
+
+오늘은 대체 조합(`RECORD_OX` rank 3 항목, `STANDINGS_NOW` 3위, `MEME_OWNER`
+신규 인물 2명)으로 일부 메웠지만 공통 묶음은 결국 20슬롯 중 11개만 채웠다.
+`kbo-official.md`(타/투 시즌 리더) 스냅샷도 2026-08-10 그대로라 `SEASON_STAT_LEADER`
+전량 폐기했다 — py-collector 수집 주기와 이 routine 실행 주기가 어긋나 있는지
+확인이 필요해 보인다.

@@ -950,3 +950,100 @@ graph 엣지를 소비할 때는 관계의 `ref`가 실제로 어느 문단을 �
 `kbo-official.md`(타/투 시즌 리더) 스냅샷도 2026-08-10 그대로라 `SEASON_STAT_LEADER`
 전량 폐기했다 — py-collector 수집 주기와 이 routine 실행 주기가 어긋나 있는지
 확인이 필요해 보인다.
+
+## 27. MEME_ORIGIN (지식 · 밈 유래, 활약상 기반 별명) — 2026-08-12 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260812-001",
+  "gameId": "20260812HHOB02026",
+  "teamCodes": ["HH", "OB"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "두산 박지훈의 별명 '토템'은 어떤 이유로 붙었나?",
+  "options": [
+    { "id": "A", "text": "타격 툴이 부족해도 결정적 순간 대타로 승부를 뒤집어서" },
+    { "id": "B", "text": "부적처럼 항상 같은 장비를 착용해서" },
+    { "id": "C", "text": "큰 키가 토템폴을 연상시켜서" },
+    { "id": "D", "text": "구단 마스코트 인형과 닮아서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50204.md#별명·밈",
+    "quote": "뚜렷한 타격 툴은 없다는 평가를 받으면서도 결정적 순간 대타로 나와 승부를 뒤집는 일이 반복되며 '토템' 취급을 받는다"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [50204], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "status": "PENDING",
+  "createdAt": "2026-08-12T00:13:15Z",
+  "deadlineAt": "2026-08-12T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: "대◯◯"/"갓◯◯" 같은 범용 호칭이 아니라 이 선수의 구체적 활약
+패턴(뚜렷한 툴 없이 결정적 대타 성공)에서 유래한, 다른 선수에게 그대로 옮겨
+붙이면 어색한 고유 별명이다(§4-1 판별 질문 통과). 오답 3개도 전부 "그럴듯한
+가짜 유래" 전략을 지켰고, 정답만 위키 원문을 그대로 인용했다.
+
+## 28. RELATION_LINK (지식 · 그래프 관계, 커리어 이력 교차) — 2026-08-12 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260812-029",
+  "gameId": "20260812LGWO02026",
+  "teamCodes": ["LG", "WO"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "키움 임지열과 이형종의 공통점은?",
+  "options": [
+    { "id": "A", "text": "7월 21일 1군 등록·말소가 서로 엇갈렸다" },
+    { "id": "B", "text": "둘 다 왼손 투수 출신이다" },
+    { "id": "C", "text": "고교 시절 같은 학교 동기다" },
+    { "id": "D", "text": "국가대표 은퇴식을 함께 치렀다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/64340.md#커리어 이력",
+    "quote": "2026-07-21 1군 엔트리에서 말소됐다(같은 시점 이형종·배동현이 1군에 등록)"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [64340, 78135], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdAt": "2026-08-12T00:13:15Z",
+  "deadlineAt": "2026-08-12T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: graph.json 엣지가 아니라 두 선수의 `커리어 이력` 원문을 상호
+대조해(한쪽 문서에 상대 이름이 같은 날짜로 언급됨) 찾아낸 조합이다. 등록/말소가
+"엇갈렸다"는 사실 자체가 흥미로운 우연성이라 EXPERT 난이도에 걸맞다.
+
+## 29. 2026-08-12 실행 메모 — 경기 문항 "직전 맞대결 = 어제 경기" 충돌 패턴
+
+오늘 5경기 중 3경기(HH-OB, KT-NC, LG-WO, LT-SK — 사실상 대부분)에서
+`LAST_MATCHUP`(직전 맞대결)의 대상이 하필 바로 어제(8/11) 열린 그 두 팀의
+경기와 동일했다. 이미 같은 실행에서 `YESTERDAY_SCORE`/`YESTERDAY_WINNER`로
+그 경기를 다뤘으므로, `LAST_MATCHUP`을 추가로 만들면 templateId만 다를 뿐
+같은 사실(같은 gameId·같은 스코어)의 재질문이 된다 — 오늘은 전량 스킵 처리했다.
+프로 야구는 로테이션상 이틀 연속 같은 매치업이 잦으므로 이 충돌은 구조적으로
+반복될 가능성이 크다. 개선 아이디어: `LAST_MATCHUP` 바인딩 시 "가장 최근
+맞대결"이 아니라 "가장 최근 **2번째** 맞대결"을 쓰거나, 같은 실행 내에서
+YESTERDAY_* 계열이 이미 그 gameId를 썼으면 LAST_MATCHUP을 자동으로 건너뛰는
+규칙을 카탈로그/바인딩 단계에 추가하는 것을 검토할 만하다.
+
+또한 `PRED_UNDERDOG`(상대전적 열세팀 예측)가 두 경기(HH-OB 6승6패1무, LT-SK
+6승6패1무)에서 정확히 동률이라 "열세 팀" 자체가 존재하지 않아 스킵됐다 —
+`H2H_SEASON_RECORD`(우위/열세 이분법)도 같은 이유로 동반 스킵. 동률 상대전적은
+이번이 세 번째 반복 관측(§23 HH|HT 사례와 동일 패턴)이라, 템플릿 전제("우위팀이
+반드시 존재한다")를 손볼 필요가 있어 보인다 — 예: 동률일 때는 이 두 템플릿을
+자동 제외하는 가드를 `runner/binding.py`의 entity 필터에 추가.

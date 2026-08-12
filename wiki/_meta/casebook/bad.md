@@ -103,3 +103,26 @@
 verification-pass §3-1)에서 폐기해야 한다. 위키 `별명·밈` 섹션 수록은 커뮤니티
 전언의 기록일 뿐 출제 적격의 보증이 아니다 — 출제 적격은 사람 승인 밈
 시드(memes.yaml)가 보증한다.
+
+## 4. evidence.source 경로 프리픽스 누락 (2026-08-12, 실행 중 자체 발견·수정)
+
+```json
+{
+  "evidence": {
+    "source": "game_result/2026-08-11/game_result_20260811KTNC02026.json",
+    "quote": "2026-08-11 창원에서 열린 KT 대 NC 경기는 7:3, KT의 승리로 끝났다."
+  }
+}
+```
+
+**나쁜 이유**: quote 자체는 원문 그대로였지만(환각 아님), `source` 경로가
+generation-rules.md §2 규칙("envelope 인용: `question-source/{docType}/{date}/
+{doc_id}.json`")의 `question-source/` 프리픽스를 빠뜨렸다. `.work/`에 로컬
+동기화된 실제 디스크 경로(`game_result/2026-08-11/...`)를 그대로 옮겨 적은
+탓으로 보인다 — 로컬 캐시 경로와 evidence.source 계약 경로가 다르다는 점을
+못 지켰다. `runner/finalize.py`의 `check_evidence`(경로 접두사로 대조 대상
+파일을 결정)가 이 프리픽스를 기준으로 파일을 찾으므로, 빠지면 존재하는 파일도
+못 찾아 대조 실패 → 정당한 후보가 폐기될 뻔했다(이번엔 실행 중 발견해 3건
+직접 수정 후 재검증 통과). 다음 실행 문구 생성 시 `evidence.source`는 항상
+`question-source/`·`wiki/` 로 시작하는 **계약 경로**를 쓰고, `.work/` 로컬
+캐시의 실제 디스크 경로를 그대로 베끼지 않도록 주의할 것.

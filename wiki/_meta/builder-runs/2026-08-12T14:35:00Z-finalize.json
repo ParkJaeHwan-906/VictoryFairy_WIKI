@@ -1,0 +1,16 @@
+{
+  "runAt": "2026-08-12T14:35:00Z",
+  "role": "finalize",
+  "shard": null,
+  "shardRule": null,
+  "postsProcessed": 1478,
+  "playersUpdated": 0,
+  "skipped": [],
+  "pendingPlayers": [],
+  "rendered": [
+    "wiki/stats/trending.md",
+    "wiki/stats/all-time-records.md",
+    "wiki/graph.json"
+  ],
+  "notes": "샤드 0~3(2026-08-12T14:20:00Z)이 모두 푸시된 뒤 새로 클론해 실행. 클론 시점 선수 문서 716개(신규 56103 카라스코 포함), graph.json 노드 725→726·엣지 762→763. all-time-records.md는 시드 YAML 무변경으로 내용 동일(커밋에서 자연히 제외). 로컬 검증 실행."
+}

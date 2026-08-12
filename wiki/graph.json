@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-10T21:29:01.277502+00:00",
+  "compiledAt": "2026-08-12T09:07:44.284530+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -1962,6 +1962,12 @@
       "type": "player",
       "name": "김건휘",
       "team": "KT"
+    },
+    {
+      "id": "player:56103",
+      "type": "player",
+      "name": "카라스코",
+      "team": "LG"
     },
     {
       "id": "player:56143",
@@ -6420,6 +6426,12 @@
     {
       "source": "player:56097",
       "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56103",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },

@@ -1047,3 +1047,71 @@ YESTERDAY_* 계열이 이미 그 gameId를 썼으면 LAST_MATCHUP을 자동으�
 이번이 세 번째 반복 관측(§23 HH|HT 사례와 동일 패턴)이라, 템플릿 전제("우위팀이
 반드시 존재한다")를 손볼 필요가 있어 보인다 — 예: 동률일 때는 이 두 템플릿을
 자동 제외하는 가드를 `runner/binding.py`의 entity 필터에 추가.
+
+## 30. RELATION_LINK (지식 · 그래프 관계, 커리어 이력 교차) — 2026-08-13 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260813-050",
+  "gameId": "20260813HHOB02026",
+  "teamCodes": ["HH", "OB"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "두산 안재석과 정수빈이 얽힌 8월 초 LG전 장면은?",
+  "options": [
+    { "id": "A", "text": "안재석 타구가 처리되는 사이 정수빈이 홈으로 파고들어 추가 득점을 만들었다" },
+    { "id": "B", "text": "안재석의 병살타를 정수빈이 호수비로 커버했다" },
+    { "id": "C", "text": "정수빈의 도루 실패를 안재석이 만회 홈런으로 갚았다" },
+    { "id": "D", "text": "두 선수가 함께 부상으로 동시 교체됐다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51203.md#커리어 이력",
+    "quote": "안재석의 타구가 처리되는 사이 이어진 런다운 상황에서 정수빈이 홈으로 파고들어 추가 득점을 만들어냈다"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [51203, 79231], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "status": "PENDING",
+  "createdAt": "2026-08-13T00:10:18Z",
+  "deadlineAt": "2026-08-13T14:59:00Z",
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 두 선수 문서에 각각 등장하는 같은 날짜·같은 상대(LG전)의 런다운
+장면을 상호 대조해 찾아낸 조합이다(그래프 엣지의 `type: 커리어교차`가 가리키는
+바로 그 사건). "머갈툴순" 4인방 밈처럼 이미 여러 날 반복 소비된 뻔한 조합
+대신, 아직 안 쓴 세부 장면을 골라 신선도를 지켰다.
+
+## 31. 2026-08-13 실행 메모 — RELATION_LINK 소재 5경기 중 1경기만 생존 + 디렉터리 불일치 발견
+
+`LAST_MATCHUP`/`H2H_SEASON_RECORD` 충돌 패턴(§29)이 오늘도 그대로 반복됐다 —
+오늘 5경기(HH-OB·KT-NC·LG-WO·LT-SK·SS-HT) **전부** 상대전적 `last` 날짜가
+어제(8/12)라 두 템플릿을 전량 스킵했다. §29의 개선안(LAST_MATCHUP_PRIOR
+템플릿 제안, 08-12 template-proposals 참고)이 아직 반영 전이라 계속
+반복되는 중 — 우선순위를 높여도 좋을 사안으로 보인다.
+
+`RELATION_LINK`(EXPERT)는 오늘 **5경기 중 HH-OB 1경기만** 신선한 소재가
+있었다. 나머지 4경기(KT-NC·LG-WO·LT-SK·SS-HT)는 graph.json 엣지를 팀
+소속으로 필터링한 결과 (a) 최근 7일 내 이미 썼거나 (b) 그 경기에 없는
+팀 선수와 엮여 있거나(예: KT 유일 엣지가 HH 선수와의 라이벌 관계라 KT-NC엔
+못 씀) (c) `사건연루`(금지)뿐이었다. `scoring.yaml` 운영 메모의 "OB 12 · SK 7 ·
+HH 7 … KT 1"이라는 편차가 오늘 실측으로 그대로 재현됐다 — OB가 낀 경기만
+안정적으로 채워지고 나머지는 그래프가 더 쌓이기 전까지 구조적으로 EXPERT
+슬롯이 비게 된다.
+
+**운영 버그 발견**: `runner/binding.py`·`runner/finalize.py`는 위키 경로를
+`work / "wiki/players/..."`, `work / "wiki/graph.json"` 등으로 하드코딩하는데,
+`ROUTINE.md` 1단계는 위키 리포를 `.work/wiki-repo/`에 클론하고
+`.work/wiki-repo/wiki/`를 읽으라고 명시한다 — 두 경로가 어긋나
+`finalize.check_evidence`가 위키 evidence를 전부 "파일 없음"으로 오판했다.
+이번 실행은 `.work/wiki -> wiki-repo/wiki` 심볼릭 링크로 우회했다(파일
+내용은 그대로, 참조 경로만 보정). 다음 실행부터도 같은 문제가 재현되므로,
+`runner/binding.py`의 `DEFAULT_REPO_ROOT`처럼 `work` 하위 위키 경로도 인자로
+받거나 `ROUTINE.md` 관례(`wiki-repo/wiki/`)에 맞춰 모듈을 고치는 편이
+근본적이다 — 사람 검수 필요(카탈로그 변경이 아니라 러너 코드 변경이라 이
+routine의 자동 수정 범위 밖).

@@ -1115,3 +1115,179 @@ HH 7 … KT 1"이라는 편차가 오늘 실측으로 그대로 재현됐다 —
 받거나 `ROUTINE.md` 관례(`wiki-repo/wiki/`)에 맞춰 모듈을 고치는 편이
 근본적이다 — 사람 검수 필요(카탈로그 변경이 아니라 러너 코드 변경이라 이
 routine의 자동 수정 범위 밖).
+
+## 32. RELATION_LINK (지식 · 그래프 관계) — 2026-08-14 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260814-XXX",
+  "gameId": "20260814HHSS02026",
+  "teamCodes": ["HH", "SS"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "삼성 디아즈와 페덱의 공통점을 부르는 밈은?",
+  "options": [
+    { "id": "A", "text": "12년 만의 외국인 듀오" },
+    { "id": "B", "text": "국민 오빠 듀오" },
+    { "id": "C", "text": "다이나믹 듀오" },
+    { "id": "D", "text": "라이언킹 콤비" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54400.md#별명·밈",
+    "quote": "**12년 만의 외국인 듀오**: 투수 페덱과 함께 2014년 밴덴헐크+나바로 조합(백인 투수+흑인 야수)에 빗대지는 밈."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [54400, 56459], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: §5(2026-08-01)와 같은 디아즈-페덱 쌍이지만 오늘은 별개 세션(경기 문항
+생성 에이전트)이 위키 문서를 처음부터 다시 읽어 독립적으로 재발견한 사례 — 관계가
+`wiki/graph.json`뿐 아니라 각 선수 문서의 `별명·밈` 섹션에도 안정적으로 남아 있어
+재현성이 높다는 뜻이다. evidence가 그래프가 아니라 위키 원문 그대로다.
+
+## 33. CAREER_PATH (지식 · 커리어 비하인드) — 2026-08-14 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260814-XXX",
+  "gameId": "20260814HHSS02026",
+  "teamCodes": ["HH", "SS"],
+  "kind": "KNOWLEDGE",
+  "type": "CAREER",
+  "templateId": "CAREER_PATH",
+  "format": "MULTI4",
+  "question": "페덱이 여러 구단 경쟁 끝에 삼성 입단을 택한 이유는?",
+  "options": [
+    { "id": "A", "text": "가장 먼저 연락한 구단이 삼성이라서" },
+    { "id": "B", "text": "삼성의 연봉 제안이 가장 높아서" },
+    { "id": "C", "text": "구단 트레이닝 시설이 마음에 들어서" },
+    { "id": "D", "text": "가족이 한국에 거주해서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56459.md#커리어 이력",
+    "quote": "일본 2팀·KBO 4팀 등 총 6개 팀 경쟁 끝에 \"제일 먼저 연락한 곳이 삼성\"이라는 이유로 삼성을 택했다는 비하인드가 전해진다."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [56459], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD", "pointReward": 80, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: "거쳐간 팀 순서"가 아니라 "왜 그 팀을 골랐는가"라는 구체적 비하인드
+숫자("총 6개 팀 경쟁")와 직접 인용("제일 먼저 연락한 곳이 삼성")을 그대로 살려
+오답(연봉·시설·가족)도 그럴듯한 대안 서사로 성립한다 — CAREER_PATH가 단순 "어느 팀
+출신" 사실 확인을 넘어 이야기성을 가질 수 있음을 보여준 사례(§34의 실패 사례와 대비됨).
+
+## 34. RELATION_LINK (지식 · 자조적 밈) — 2026-08-14 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260814-XXX",
+  "gameId": "20260814OBHT02026",
+  "teamCodes": ["OB", "HT"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "두산 박찬호와 정수빈을 함께 부르는 자조적 표현은?",
+  "options": [
+    { "id": "A", "text": "천민 (둘 다 신인 드래프트 5라운드 지명 출신)" },
+    { "id": "B", "text": "쌍포듀오" },
+    { "id": "C", "text": "동갑내기 절친" },
+    { "id": "D", "text": "판타스틱4" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/64646.md#별명·밈",
+    "quote": "정수빈과 함께 신인 드래프트 5라운드 지명 출신임을 가리키는 자조적 표현"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [64646, 79231], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 두 선수 모두 OB 소속(같은 경기 묶음 자격 충족)이고, 관계의 근거가
+"신인 드래프트 라운드"라는 검증 가능한 사실에 뿌리를 둬 창작 여지가 없다. 오답
+3개는 흔한 듀오 별명 패턴(쌍포·절친·4인조)이라 그럴듯하되 사실이 아니다.
+
+## 35. MEME_ORIGIN (지식 · 밈 유래, 팬 제정 시상식) — 2026-08-14 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260814-XXX",
+  "gameId": "20260814SKLG02026",
+  "teamCodes": ["SK", "LG"],
+  "kind": "KNOWLEDGE", "type": "MEME", "templateId": "MEME_ORIGIN", "format": "MULTI4",
+  "question": "LG 이영빈의 별명 '영빈옵'은 어디서 왔나?",
+  "options": [
+    { "id": "A", "text": "고교 선수 대상 '이영빈 타격상'이 그의 이름을 따 제정돼서" },
+    { "id": "B", "text": "응원가 후렴구에서 파생된 말장난이라서" },
+    { "id": "C", "text": "데뷔 첫 타석 만루홈런에서 유래해서" },
+    { "id": "D", "text": "팬 투표로 뽑힌 별명 짓기 대회 우승작이라서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51100.md#별명·밈",
+    "quote": "팬들 사이에서 이렇게 불리며, 고교 선수 대상 \"이영빈 타격상\"이 그의 이름을 따 제정되어 있다"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [51100], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: §4-1 고유성 검사를 명확히 통과한다 — "타격상이 이름을 따 제정됨"은
+이 선수만의 고유한 사실이라 다른 선수에게 옮겨 붙일 수 없다(범용 호칭 패턴이 아님).
+
+## 36. RELATION_LINK (지식 · 공통 문항, 삼각 트레이드) — 2026-08-14 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260814-XXX",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE", "type": "CAREER", "templateId": "RELATION_LINK", "format": "MULTI4",
+  "question": "KIA 고종욱과 SSG 이지영의 공통점은?",
+  "options": [
+    { "id": "A", "text": "2018년 김동엽과 함께 삼각 트레이드에 얽혔다" },
+    { "id": "B", "text": "고교 시절 같은 팀 배터리였다" },
+    { "id": "C", "text": "신인 시절 같은 방을 썼다" },
+    { "id": "D", "text": "같은 지도자에게 사사받았다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/61353.md#커리어 이력",
+    "quote": "2018년 김동엽·이지영과 함께 삼각 트레이드에 포함된 이력이 있다는 정리가 있다."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [61353, 79456], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 오늘 두 선수 모두 다른 팀의 경기 묶음에 속해(HT는 OB전, SK는 LG전)
+어느 경기 묶음에도 "양 팀 소속만" 규칙을 못 지켜 공통 문항으로 돌린 사례 — 관계
+자체는 양쪽 위키 문서의 커리어 이력 섹션에 서로를 이름으로 지목하며 교차 인용돼
+근거가 이중으로 튼튼하다(§11 "관계형 근거는 위키 원문에서" 원칙과 부합).
+
+## 37. 2026-08-14 실행 메모 — RECORD_OX 레전드 선수의 playerId 공백
+
+`RECORD_OX`(`stats.all_time_records`)가 다루는 인물은 대부분 은퇴한 레전드
+(백인천·서건창·김상훈 등)라 현재 시즌 위키 로스터(`wiki/players/*.md`)에 문서가
+없고, 따라서 `kboPlayerId`를 알 수 없다. `subject.scope`는 카탈로그 선언대로
+`PLAYER`를 써야 하는데(§11, 문항별 임의 변경 불가) `subject.playerIds`를 채울
+근거 자료가 없어 빈 배열로 남기면 `validate_candidates.py` check 9의 카디널리티
+검사("PLAYER→playerIds 1개 이상")에 걸려 하드 폐기된다. 오늘 실행에서 이렇게 2건
+(QZ 가제 071·072)이 게이트 통과 직전에 걸러져 업로드에서 빠졌다 — quizId 번호가
+연속되지 않는 이유다. 근본 해결은 사람 검수 필요: (a) `all-time-records.yaml`에
+레전드용 임의 식별자를 추가하거나, (b) `RECORD_OX`의 `subjectScope`를 조건부로
+`LEAGUE`로 재선언하거나(위키에 없는 과거 인물 한정) 둘 중 하나를 카탈로그·게이트
+양쪽에서 결정해야 한다 — 이 routine은 카탈로그를 스스로 고치지 않으므로 이번엔
+해당 후보 2건을 드롭하는 것으로 fail-closed 처리했다.

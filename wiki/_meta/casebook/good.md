@@ -1291,3 +1291,151 @@ routine의 자동 수정 범위 밖).
 `LEAGUE`로 재선언하거나(위키에 없는 과거 인물 한정) 둘 중 하나를 카탈로그·게이트
 양쪽에서 결정해야 한다 — 이 routine은 카탈로그를 스스로 고치지 않으므로 이번엔
 해당 후보 2건을 드롭하는 것으로 fail-closed 처리했다.
+
+## 38. MEME_ORIGIN (지식 · 밈 유래, 경기 묶음) — 2026-08-15 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260815-039",
+  "gameId": "20260815HHSS02026",
+  "teamCodes": ["HH", "SS"],
+  "kind": "KNOWLEDGE", "type": "MEME", "templateId": "MEME_ORIGIN", "format": "MULTI4",
+  "question": "채은성의 별명 '채버지'는 무엇의 합성어인가?",
+  "options": [
+    { "id": "A", "text": "채은성 + 아버지" },
+    { "id": "B", "text": "채은성 + 대장" },
+    { "id": "C", "text": "채은성 + 형님" },
+    { "id": "D", "text": "채은성 + 선생님" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/79192.md#별명·밈",
+    "quote": "**채버지**: '채은성'과 '아버지'를 합친 애칭으로, 팬들이 그를 든든하게 여기는 마음을 담아 부르는 표현이다(커뮤니티 전언)."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [79192], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 이름 자체를 변형한 구체적 합성어("채은성"+"아버지")라 "대◯◯"·"◯느님"
+같은 범용 호칭 패턴(§4-1)이 아니고, 오답 3개도 같은 "애칭+가족/존칭 단어" 형식으로
+길이·형식이 균일해 정답만 티나지 않는다.
+
+## 39. CAREER_PATH (지식 · 트레이드/FA 서사) — 2026-08-15 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260815-010",
+  "gameId": "20260815HHSS02026",
+  "teamCodes": ["HH", "SS"],
+  "kind": "KNOWLEDGE", "type": "CAREER", "templateId": "CAREER_PATH", "format": "MULTI4",
+  "question": "강백호가 FA로 한화 이적 전 몸담았던 팀은?",
+  "options": [
+    { "id": "A", "text": "KT" }, { "id": "B", "text": "LG" },
+    { "id": "C", "text": "두산" }, { "id": "D", "text": "SSG" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68050.md#커리어 이력",
+    "quote": "KT 소속이었다가 자유계약(FA)으로 한화에 이적했으며, 계약 규모가 100억 원대라는 언급이 반복적으로 나온다."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [68050], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD", "pointReward": 80, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: bad.md §6("데뷔팀=현재팀" 동어반복)과 정확히 대비되는 사례 — 실제
+FA 이적이라는 뚜렷한 서사가 있고 100억대 계약이라는 화제성까지 딸려 있다. CAREER_PATH
+후보를 고를 때 evidence 문장에 "트레이드"·"FA"·"이적" 등 실제 팀 이동 표현이
+있는지 먼저 거르라는 §6의 제안이 여기서도 유효하게 작동했다.
+
+## 40. LAST_MATCHUP (지식 · 상대전적, MATCHUP scope) — 2026-08-15 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260815-027",
+  "gameId": "20260815WOKT02026",
+  "teamCodes": ["WO", "KT"],
+  "kind": "KNOWLEDGE", "type": "HISTORY", "templateId": "LAST_MATCHUP", "format": "MULTI4",
+  "question": "키움-KT 직전 맞대결(8/14) 결과는?",
+  "options": [
+    { "id": "A", "text": "3:8, 홈팀 승" }, { "id": "B", "text": "8:3, 원정팀 승" },
+    { "id": "C", "text": "5:4, 홈팀 승" }, { "id": "D", "text": "3:8, 원정팀 승" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#상대전적",
+    "quote": "- **KT vs WO**: KT 9승 WO 2승 · 1무 (최근 2026-08-14 3:8, 홈팀 승)"
+  },
+  "settlement": null,
+  "subject": { "scope": "MATCHUP", "playerIds": [], "teamCodes": ["KT", "WO"], "gameId": null },
+  "difficulty": "MEDIUM", "pointReward": 50, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 오늘 매치업의 실제 어제 대결이라 시의성이 최고로 높고, §11의
+MATCHUP scope 규칙대로 정답 보기에 팀명 대신 "홈팀/원정팀 승" 표현만 써서 정답
+유출도 없다(같은 실행에서 YESTERDAY_SCORE는 이 규칙을 놓쳐 폐기 사례가 나왔다 —
+아래 §12 참고).
+
+## 41. RELATION_LINK (지식 · EXPERT, 트레이드 서사) — 2026-08-15 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260815-074",
+  "gameId": "20260815OBHT02026",
+  "teamCodes": ["OB", "HT"],
+  "kind": "KNOWLEDGE", "type": "MEME", "templateId": "RELATION_LINK", "format": "MULTI4",
+  "question": "KIA 한재승과 NC 이우성의 공통점은?",
+  "options": [
+    { "id": "A", "text": "3:3 트레이드로 각자 지금 팀에 합류했다" },
+    { "id": "B", "text": "둘 다 국가대표 주전 유격수 출신이다" },
+    { "id": "C", "text": "고향이 같은 동향 선수다" },
+    { "id": "D", "text": "프로 데뷔팀이 같았던 입단 동기다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51994.md#커리어 이력",
+    "quote": "3:3 트레이드로 KIA에 합류했으며, 김시훈·정현창과 함께 KIA로 오고 이우성·최원준·홍종표가 NC로 이동한 트레이드였다는 게시글이 있다"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [51994, 63260], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: '머갈툴순' 4인방 밈공유 엣지가 이번 주 이미 여러 번 반복 소비돼
+피로도가 높았는데(§8 참고), 완전히 다른 스토리라인(3:3 트레이드)의 커리어교차
+엣지를 찾아내 신선도를 확보했다. graph.json 엣지가 아니라 원 소속 위키 문서의
+커리어 이력 원문에서 그대로 근거를 뽑아 대조에도 안전하다.
+
+## 42. MEME_OWNER (지식 · 공통 문항, LEAGUE scope) — 2026-08-15 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260815-043",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE", "type": "MEME", "templateId": "MEME_OWNER", "format": "MULTI4",
+  "question": "배우 맷 데이먼과 이름이 헷갈려 화제가 된 선수는?",
+  "options": [
+    { "id": "A", "text": "데이비슨" }, { "id": "B", "text": "이형종" },
+    { "id": "C", "text": "임지열" }, { "id": "D", "text": "김동헌" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54944.md#별명·밈",
+    "quote": "**맷 데이먼 혼동 밈**: 이름이 비슷한 할리우드 배우 맷 데이먼이 영화 홍보차 방한 중 고척돔에서 데이비슨의 유니폼을 입고 직관한 사실이 알려지며, \"데이비슨의 지인·친척·사촌\"이라는 소문과 함께 두 사람의 이름을 헷갈리는 밈이 커뮤니티에서 크게 확산됐다(커뮤니티 전언)"
+  },
+  "settlement": null,
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 실제 방한 에피소드에서 비롯된 구체적 일화라 고유성이 명백하고,
+경기 묶음이 아닌 공통 묶음(LEAGUE scope)에서도 특정 선수·팀에 매몰되지 않는
+재미를 살렸다 — MEME_OWNER를 오늘 8개 구단에 고루 분산시킨 것도 공통 묶음의
+"특정 팀 편중 없이" 원칙(ROUTINE.md 3단계)에 부합한다.

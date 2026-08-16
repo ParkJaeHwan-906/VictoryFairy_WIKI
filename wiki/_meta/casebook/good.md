@@ -1439,3 +1439,66 @@ MATCHUP scope 규칙대로 정답 보기에 팀명 대신 "홈팀/원정팀 승"
 경기 묶음이 아닌 공통 묶음(LEAGUE scope)에서도 특정 선수·팀에 매몰되지 않는
 재미를 살렸다 — MEME_OWNER를 오늘 8개 구단에 고루 분산시킨 것도 공통 묶음의
 "특정 팀 편중 없이" 원칙(ROUTINE.md 3단계)에 부합한다.
+
+## 43. MEME_ORIGIN (지식 · 경기 문항, PLAYER scope) — 2026-08-16 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260816-008",
+  "gameId": "20260816NCLT02026",
+  "teamCodes": ["NC", "LT"],
+  "kind": "KNOWLEDGE", "type": "MEME", "templateId": "MEME_ORIGIN", "format": "MULTI4",
+  "question": "나승엽의 별명 '나푼이'의 유래는?",
+  "options": [
+    { "id": "A", "text": "이름 '나승엽'에 어수룩한 느낌의 접미사를 결합, 잦은 수비 실수와 함께 쓰임" },
+    { "id": "B", "text": "나이가 가장 어린 선수라서" },
+    { "id": "C", "text": "나눔 활동에 앞장서서" },
+    { "id": "D", "text": "나선형 타구를 자주 쳐서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51551.md#별명·밈",
+    "quote": "- **나푼이**: 이름 \"나승엽\"에 어수룩한 느낌을 주는 접미사를 결합한 별명으로, 잦은 수비 실수와 함께 쓰인다(커뮤니티 전언)[^ref5]."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [51551], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 이름 자체를 재료로 한 언어유희형 별명이라 §4-1의 "범용 호칭 패턴"
+(대◯◯·갓◯◯류)에 해당하지 않고 나승엽 개인에게 고유하다. NC-롯데 경기 묶음(오늘
+매치업)에서 롯데 소속 선수만 다뤄 "경기 문항에 다른 팀 선수를 섞지 않는다"
+원칙도 지켰다. 오답 보기 3개는 전부 그럴듯한 가짜 유래(생성 규칙 §1 distractor
+전략)로, 정답만 유난히 길지 않게 길이를 맞췄다.
+
+## 44. RELATION_LINK (지식 · 공통 문항, EXPERT) — 2026-08-16 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260816-022",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE", "type": "MEME", "templateId": "RELATION_LINK", "format": "MULTI4",
+  "question": "KT 소형준과 함께 '신인왕 3신기'로 묶여 불리는 한화 선수는?",
+  "options": [
+    { "id": "A", "text": "강백호" }, { "id": "B", "text": "채은성" },
+    { "id": "C", "text": "노시환" }, { "id": "D", "text": "문동주" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50030.md#별명·밈",
+    "quote": "- **신인왕 3신기**: 강백호·안현민과 함께 묶여 불리는 표현이다(커뮤니티 전언)[^ref4]."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [50030, 68050], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 오늘 KT·한화는 서로 다른 경기(각각 WO-KT·HH-SS 묶음)에 속해 있어
+공통 묶음(LEAGUE 귀속)에 배치한 것이 정확하다 — RELATION_LINK는 재료 상한이 낮은
+유일한 EXPERT 템플릿(scoring.yaml 주석)이라 이렇게 오늘 경기와 무관한 교차팀
+쌍을 공통 묶음에서 소비하는 편이 매일 1개뿐인 슬롯을 안정적으로 채우는 길이다.
+소형준·강백호 양쪽 위키 문서에 독립적으로 같은 사실("신인왕 3신기")이 적혀 있어
+대조도 이중으로 확인됐다.

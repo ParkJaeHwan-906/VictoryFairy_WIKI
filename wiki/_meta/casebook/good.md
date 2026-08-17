@@ -1502,3 +1502,40 @@ MATCHUP scope 규칙대로 정답 보기에 팀명 대신 "홈팀/원정팀 승"
 쌍을 공통 묶음에서 소비하는 편이 매일 1개뿐인 슬롯을 안정적으로 채우는 길이다.
 소형준·강백호 양쪽 위키 문서에 독립적으로 같은 사실("신인왕 3신기")이 적혀 있어
 대조도 이중으로 확인됐다.
+
+## 45. MEME_ORIGIN (지식 · 공통 문항, 경기 없는 날) — 2026-08-17 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260817-007",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "박영현의 별명 '세이브 집착 드립'이 붙은 이유는?",
+  "options": [
+    { "id": "A", "text": "점수차가 커도 세이브 상황에 집착하듯 언급해서" },
+    { "id": "B", "text": "실제 세이브를 못 올려 놀림받아서" },
+    { "id": "C", "text": "등번호가 세이브 수와 같아서" },
+    { "id": "D", "text": "은퇴 후 세이브 해설위원이 되고 싶다고 해서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/52060.md#별명·밈",
+    "quote": "- **세이브 집착 드립**: 팀이 큰 점수 차로 앞서갈 때마다 \"이게 세이브인가요?\" 식으로 세이브 상황에 집착하는 듯한 패러디 인용구가 커뮤니티에서 반복적으로 쓰인다 (커뮤니티 전언).[^ref3][^ref4][^ref5]"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [52060], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 2026-08-17(월)은 KBO 전 경기 없는 날이라 경기 문항이 0개였다
+(`ROUTINE.md` "경기가 없는 날" 절 — 공통 묶음에 평소 경기 묶음 전용 PLAYER/TEAM
+템플릿을 투입해 채운다). 이 후보는 그 폴백으로 고른 위키 별명 소재 중 하나이며,
+오답 3개(B/C/D)가 전부 "그럴듯하지만 근거 없는" 창작 유래로, 정답과 형식·길이가
+비슷해 답이 티나지 않는다. 또한 최근 7일 `quiz-candidates` 대조에서 이 선수가
+처음 등장하는 것도 확인했다(아래 bad.md #15 — 오늘처럼 정적 소재로만 채워야
+하는 날은 이 대조가 특히 중요하다).

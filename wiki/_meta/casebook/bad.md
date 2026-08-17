@@ -295,4 +295,39 @@ LAST_MATCHUP·H2H_SEASON_RECORD·HOME_AWAY_SPLIT·RECENT_VS_EARLY 네 템플릿 
 "같은 templateId + 같은 대상 엔티티(playerId/팀코드)" 페어로 인덱싱해 두고, 문구
 생성(⑤) 전에 미리 걸러내면 이번처럼 절반 가까이 만들어놓고 검증에서 버리는
 낭비를 줄일 수 있다 — 현재는 검증(⑥) 시점에야 걸러져 candidateMultiplier
+
+## 15. 경기 없는 날, 팀 축 템플릿 재료가 하루 만에 바닥남 (2026-08-17 실행, 월요일 전 경기 없음)
+
+2026-08-17(월)은 `question-source/game_schedule/2026-08-17/` 파티션 자체가 없어
+경기 문항이 0개였다 — `ROUTINE.md` "경기가 없는 날" 절대로 공통 묶음에
+PLAYER/TEAM scope 템플릿(CAREER_PATH·MEME_ORIGIN·RECORD_OX·STREAK_CURRENT·
+HOME_AWAY_SPLIT·RECENT_VS_EARLY)을 투입해 채우려 했으나, 최근 7일
+`quiz-candidates` 대조에서 **팀 축 템플릿이 대부분 이미 포화** 상태임을 확인했다:
+
+- `STANDINGS_NOW`: 최근 7일간 10개 순위 중 9개(1·2·3·4·5·7·8·9·10위)가 이미
+  질문으로 나갔다 — 오늘 낼 수 있는 신규 순위는 6위 하나뿐이었다.
+- `HOME_AWAY_SPLIT`: 8/11·8/14 두 번의 실행에서 10개 구단 전부가 이미 다뤄졌다
+  (홈/원정 격차는 하루 이틀로는 거의 안 바뀌는 정적 지표라 재출제 시 사실상
+  동일 사실 반복이다) — 오늘은 이 템플릿을 통째로 건너뛰었다.
+- `RECENT_VS_EARLY`: 8/11·8/13·8/14 세 번에 걸쳐 10개 구단이 "3월/4월 대비
+  7월/8월" 조합으로 이미 반복 질문됐다 — 오늘도 건너뛰었다.
+- `TEAM_RECORD_HISTORY`: 2020~2024 다섯 시즌이 8/14·8/15에 전부 소진돼, 남은
+  건 2025시즌 하나뿐이었다.
+- `TRENDING_WHO`: 위키 빌더가 8/12~14 스냅샷을 아직 갱신 전이라 8/16에 쓴 것과
+  완전히 같은 표(1위 디아즈)라 오늘은 건너뛰었다.
+- `SEASON_STAT_LEADER`: `kbo-official.md` 스냅샷(기준일 8/16)이 최근 이틀과
+  동일해 타율·ERA 1위가 그대로일 가능성이 높아 오늘은 건너뛰었다.
+
+**결과**: 위 6개 템플릿 중 완전 소진(HOME_AWAY_SPLIT·RECENT_VS_EARLY·
+TRENDING_WHO·SEASON_STAT_LEADER)은 아예 후보를 만들지 않았고, 부분 소진
+(STANDINGS_NOW·TEAM_RECORD_HISTORY·STANDINGS_CLIMB)은 남은 미사용 조합
+1~2개만 썼다. 공통 EASY/MEDIUM/HARD 슬롯은 CAREER_PATH·MEME_ORIGIN·
+MEME_OWNER·RECORD_OX·ALL_TIME_LEADER·MILESTONE_FIRST처럼 재료 풀이 큰
+템플릿(위키 선수 716명·all-time-records 다항목)으로 메웠다.
+
+**제안**: `STANDINGS_NOW`(팀 10개)·`TEAM_RECORD_HISTORY`(연도 7개)처럼 엔티티
+전체 집합이 작고 값이 며칠 단위로 거의 안 바뀌는 템플릿은, 경기 없는 날
+폴백에서 최우선순위로 두지 말고 후순위로 미루는 편이 낫다 — 엔티티 풀이 작을수록
+1주일 안에 포화되는 속도가 빠르다. 반대로 위키 선수 풀(716명)처럼 엔티티가
+많은 템플릿을 경기 없는 날 폴백의 주력으로 쓰면 이런 고갈을 늦출 수 있다.
 버퍼가 정적 소재 재탕분 흡수에 크게 소모된다.

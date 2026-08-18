@@ -1539,3 +1539,129 @@ MATCHUP scope 규칙대로 정답 보기에 팀명 대신 "홈팀/원정팀 승"
 비슷해 답이 티나지 않는다. 또한 최근 7일 `quiz-candidates` 대조에서 이 선수가
 처음 등장하는 것도 확인했다(아래 bad.md #15 — 오늘처럼 정적 소재로만 채워야
 하는 날은 이 대조가 특히 중요하다).
+
+## 46. MEME_ORIGIN (지식 · 경기 문항, PLAYER scope) — 2026-08-18 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260818-033",
+  "gameId": "20260818HTHH02026",
+  "teamCodes": ["HH", "HT"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "김태군의 별명 '군기반장'은 왜 붙었나?",
+  "options": [
+    { "id": "A", "text": "복귀 후 후배들을 엄하게 다잡는 리더십 때문에" },
+    { "id": "B", "text": "부상 없이 최다 출전을 이어가서" },
+    { "id": "C", "text": "심판에게 항의를 자주 해서" },
+    { "id": "D", "text": "신인 시절 팀 규율을 어겨서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/78122.md#별명·밈",
+    "quote": "부상에서 복귀한 뒤 한준수·네일 등 후배들을 엄하게 다잡는 리더십을 보여 붙은 별명. 관련 기사 제목이 \"기아의 군기반장 형님이 돌아왔다\"였다."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [78122], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 기사 제목까지 인용된 구체적 유래라 오답과 헷갈릴 여지가 없다. 이
+실행(2026-08-18, 5경기 전부 열린 날)은 5개 경기 묶음을 병렬 서브에이전트로
+분담 생성했는데, 이 후보는 HT-HH 경기 묶음 담당 에이전트가 만든 것 — 선수(김태군,
+HT 소속)가 그 경기 양 팀(HT·HH) 안에 있어 게임 묶음 순도 규칙을 지켰다.
+
+## 47. RELATION_LINK (지식 · 공통 문항 아님, 경기 묶음 EXPERT) — 2026-08-18 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260818-072",
+  "gameId": "20260818OBNC02026",
+  "teamCodes": ["NC", "OB"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "두산 안재석과 정수빈의 공통 장면은?",
+  "options": [
+    { "id": "A", "text": "LG전 런다운으로 만든 추가 득점" },
+    { "id": "B", "text": "같은 해 신인왕 동반 수상" },
+    { "id": "C", "text": "국가대표 동반 발탁" },
+    { "id": "D", "text": "함께 개인 통산 첫 만루홈런" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/79231.md#커리어 이력",
+    "quote": "2026년 8월 초 LG전에서 안재석의 타구가 처리되는 사이 런다운 상황에서 과감하게 홈으로 파고들어 추가 득점을 만들어냈다(커뮤니티 전언)."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [51203, 79231], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 같은 팀(두산) 두 선수가 함께 등장하는 구체적 수비 장면이라 EXPERT
+난이도에 걸맞은 "직관러만 아는" 재미가 있다. OB-NC 경기 묶음 담당 에이전트가
+생성했고 두 선수 모두 OB 소속이라 순도 규칙(양 팀 소속만)을 만족한다.
+
+## 48. PRED_UNDERDOG (예측 · 경기 문항, 상대전적 열세) — 2026-08-18 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260818-062",
+  "gameId": "20260818SKSS02026",
+  "teamCodes": ["SK", "SS"],
+  "kind": "PREDICTION",
+  "type": "WIN_LOSE",
+  "templateId": "PRED_UNDERDOG",
+  "format": "BINARY",
+  "question": "상대전적 4승7패 열세 SSG, 오늘 이변 만들까?",
+  "options": [{ "id": "A", "text": "SSG 승" }, { "id": "B", "text": "SSG 패" }],
+  "answer": null,
+  "evidence": null,
+  "settlement": { "gameId": "20260818SKSS02026", "metric": "WIN_TEAM" },
+  "subject": { "scope": "GAME", "playerIds": [], "teamCodes": ["SK", "SS"], "gameId": "20260818SKSS02026" },
+  "difficulty": "MEDIUM", "pointReward": 50, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 시즌 상대전적(SK 4승 SS 7승)을 문구 양념으로 자연스럽게 녹였고,
+`evidence`는 예측 퀴즈 규칙대로 `null`, `settlement.metric`은 카탈로그 값
+(`WIN_TEAM`)을 그대로 썼다. SS가 3연승 중이라는 흐름까지 겹쳐 "이변" 프레이밍이
+설득력 있다.
+
+## 49. MEME_ORIGIN (지식 · 경기 문항, PLAYER scope) — 2026-08-18 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260818-029",
+  "gameId": "20260818OBNC02026",
+  "teamCodes": ["NC", "OB"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "NC 이우성 별명 '바빕신'의 유래는?",
+  "options": [
+    { "id": "A", "text": "타구가 수비 사이로 잘 빠져서" },
+    { "id": "B", "text": "빕스 광고에 출연해서" },
+    { "id": "C", "text": "타격폼이 독특해서" },
+    { "id": "D", "text": "생일이 팀 창단일과 겹쳐서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/63260.md#별명·밈",
+    "quote": "타구가 수비수 사이로 잘 빠지며 안타·추가 득점으로 이어지는 장면이 화제가 되면서 커뮤니티에서 붙은 별명(커뮤니티 전언)"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [63260], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "status": "PENDING", "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: "바빕신"이라는 발음 유사 밈("빕스"를 연상시키는 이름 소리)에 낚이기
+쉬운 오답(B)을 넣어 즉답이 아니라 살짝 생각하게 만들면서도, 정답은 위키 원문을
+그대로 인용해 대조에 바로 통과한다.

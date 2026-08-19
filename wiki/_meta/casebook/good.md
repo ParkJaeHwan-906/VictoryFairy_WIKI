@@ -1665,3 +1665,115 @@ HT 소속)가 그 경기 양 팀(HT·HH) 안에 있어 게임 묶음 순도 규�
 **좋은 이유**: "바빕신"이라는 발음 유사 밈("빕스"를 연상시키는 이름 소리)에 낚이기
 쉬운 오답(B)을 넣어 즉답이 아니라 살짝 생각하게 만들면서도, 정답은 위키 원문을
 그대로 인용해 대조에 바로 통과한다.
+
+## 50. MEME_ORIGIN (지식 · 경기 문항, PLAYER scope) — 2026-08-19 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260819-022",
+  "gameId": "20260819OBNC02026",
+  "teamCodes": ["OB", "NC"],
+  "templateId": "MEME_ORIGIN",
+  "question": "두산 박지훈의 별명 '토템(행운의 부적)'은 왜 붙었나?",
+  "options": [
+    { "id": "A", "text": "뚜렷한 타격 툴은 없지만 결정적 순간 대타로 나와 승부를 뒤집는 일이 반복돼서" },
+    { "id": "B", "text": "수비 훈련 때마다 부적을 몸에 지니고 다녀서" },
+    { "id": "C", "text": "데뷔 첫 타석에서 만루홈런을 쳐서" },
+    { "id": "D", "text": "감독이 미신처럼 아끼는 선수라서" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/50204.md#별명·밈",
+    "quote": "뚜렷한 타격 툴은 없다는 평가를 받으면서도 결정적 순간 대타로 나와 승부를 뒤집는 일이 반복되며 '토템' 취급을 받는다(커뮤니티 전언)." },
+  "subject": { "scope": "PLAYER", "playerIds": [50204], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30
+}
+```
+
+**좋은 이유**: '토템'이라는 별명이 왜 붙었는지 원문 그대로 자연스럽게 풀어 쓰면서도,
+오답 B·C·D는 전형적인 야구 미신/징크스 소재를 그럴듯하게 섞어 정답을 바로
+알아채기 어렵게 했다. 이 선수 고유의 서사(대타 성공률)라 §4-1 범용 패턴
+테스트(다른 잘하는 선수에게 옮겨도 자연스러운가?)를 통과한다.
+
+## 51. MEME_OWNER (지식 · 공통 문항, LEAGUE scope) — 2026-08-19 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260819-034",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "MEME_OWNER",
+  "question": "가수 이름에 빗댄 별명 '카더가든'의 주인공은?",
+  "options": [
+    { "id": "A", "text": "카라스코" },
+    { "id": "B", "text": "요니 치리노스" },
+    { "id": "C", "text": "김윤식" },
+    { "id": "D", "text": "임찬규" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/56103.md#별명·밈",
+    "quote": "**카더가든**: 이름을 비슷한 어감의 가수 이름에 빗댄 말장난(커뮤니티 전언)." },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30
+}
+```
+
+**좋은 이유**: MEME_ORIGIN(유래를 묻는 문제)과 짝을 이루는 MEME_OWNER(주인공을
+묻는 문제)의 좋은 예 — 오답 3명이 전부 실존 외국인/국내 선수라 "이름이 낯설어서
+소거법으로 찍는" 상황을 막았다(전원 그럴듯한 후보). 정답 유출 우려도 없다(scope=LEAGUE,
+전 축이 빈다).
+
+## 52. RELATION_LINK (지식 · 경기 문항, PLAYER scope, EXPERT) — 2026-08-19 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260819-072",
+  "gameId": "20260819SKSS02026",
+  "teamCodes": ["SK", "SS"],
+  "templateId": "RELATION_LINK",
+  "question": "SSG 최용준과 이준기의 공통점은?",
+  "options": [
+    { "id": "A", "text": "'추신수 육성 프로젝트'로 함께 일본에 파견됐다" },
+    { "id": "B", "text": "고교 시절 배터리로 호흡을 맞췄다" },
+    { "id": "C", "text": "2024 신인 드래프트 동기다" },
+    { "id": "D", "text": "같은 날 나란히 1군 데뷔전을 치렀다" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/50650.md#커리어 이력",
+    "quote": "'추신수 육성 프로젝트'의 일환으로 이준기 등 유망주 4인과 함께 일본에 파견되었다(커뮤니티 전언)." },
+  "subject": { "scope": "PLAYER", "playerIds": [50650, 51702], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120
+}
+```
+
+**좋은 이유**: 실제 `graph.json`에 `커리어교차` 엣지로 등재된 쌍(50650|51702)을
+그대로 썼고, evidence quote가 그 관계를 명시적으로 서술한다("~와 함께 일본에
+파견"). 오답도 야구 서사에서 흔한 "배터리·드래프트 동기·동시 데뷔" 패턴이라
+그럴듯하다. 아래 53번 항목(bad.md)과 대조해서 볼 것 — 겉보기 형태는 비슷해도
+graph.json 엣지 존재 여부가 이 템플릿의 진짜 게이트다.
+
+## 53. TRENDING_WHO (지식 · 공통 문항, LEAGUE scope) — 2026-08-19 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260819-079",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "TRENDING_WHO",
+  "question": "최근 한 달 커뮤니티 최다 화제 선수는? (이번 실행 기준 스냅샷)",
+  "options": [
+    { "id": "A", "text": "김도영" },
+    { "id": "B", "text": "김대한" },
+    { "id": "C", "text": "페덱" },
+    { "id": "D", "text": "디아즈" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/stats/trending.md#화제 선수 Top 10",
+    "quote": "| 1 | 김도영 | 52605 | 914 | 홈런 페이스/시즌 성적(타격·수비 논쟁) |" },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "MEDIUM", "pointReward": 50
+}
+```
+
+**좋은 이유**: 오답 2~4위 선수들도 실제 언급 수 상위권이라 근소한 차이로 헷갈릴
+여지가 있고, "이번 실행 기준 스냅샷"이라는 시의성 문구로 trending.md가 매 실행
+전체 재수집된다는 사실(누적 아님)을 문제 문면에서도 정직하게 반영했다.

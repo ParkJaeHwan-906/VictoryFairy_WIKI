@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-17T22:21:50.113099+00:00",
+  "compiledAt": "2026-08-20T22:04:48.010590+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -3386,6 +3386,12 @@
       "team": "OB"
     },
     {
+      "id": "player:67246",
+      "type": "player",
+      "name": "김명신",
+      "team": "OB"
+    },
+    {
       "id": "player:67263",
       "type": "player",
       "name": "최원준",
@@ -4043,6 +4049,12 @@
       "id": "player:69992",
       "type": "player",
       "name": "최정원",
+      "team": "NC"
+    },
+    {
+      "id": "player:69994",
+      "type": "player",
+      "name": "박지한",
       "team": "NC"
     },
     {
@@ -7948,6 +7960,12 @@
       "ref": null
     },
     {
+      "source": "player:67246",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:67263",
       "target": "team:OB",
       "type": "소속",
@@ -8651,6 +8669,12 @@
     },
     {
       "source": "player:69992",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:69994",
       "target": "team:NC",
       "type": "소속",
       "ref": null

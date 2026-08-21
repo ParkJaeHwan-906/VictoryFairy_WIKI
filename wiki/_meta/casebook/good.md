@@ -1837,3 +1837,184 @@ graph.json 엣지 존재 여부가 이 템플릿의 진짜 게이트다.
 4인방 조합으로 만든 다른 RELATION_LINK 후보(안재석-박준순)도 슬롯 초과로 함께
 살아남았는데, 밈 하나로 최대 6쌍(4C2)까지 서로 다른 후보를 뽑을 수 있어
 재료 밀도가 높은 좋은 사례다.
+
+## 56. RELATION_LINK (지식 · 경기 문항, PLAYER scope, EXPERT) — 2026-08-21 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260821-054",
+  "gameId": "20260821HTWO02026",
+  "teamCodes": ["HT", "WO"],
+  "templateId": "RELATION_LINK",
+  "question": "KIA 김범수와 하주석의 공통점은?",
+  "options": [
+    { "id": "A", "text": "2026년 한화에서 KIA로 함께 트레이드된 동료" },
+    { "id": "B", "text": "고교 시절부터의 배터리 동기" },
+    { "id": "C", "text": "국가대표팀에서 룸메이트로 지낸 사이" },
+    { "id": "D", "text": "같은 에이전시 소속 선수" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/65769.md#커리어 이력",
+    "quote": "2026년 하주석·이태양과 함께 KIA로 이적했고, KIA가 한화에 현금 20억 원과 투수 이형범을 내주는 트레이드였다는 전언도 있다" },
+  "subject": { "scope": "PLAYER", "playerIds": [65769, 62700], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120
+}
+```
+
+**좋은 이유**: 그래프 쌍(65769↔62700, HT 내부 커리어교차 엣지)을 그대로 쓰되,
+정답을 "트레이드 동료"라는 구체적 사건으로 명시하고 오답 3개(배터리 동기·룸메이트·
+에이전시)를 전부 "선수 간 인연"이라는 같은 범주의 그럴듯한 오답으로 맞췄다.
+같은 팀(HT) 내부 관계도 §11 규칙상 아무 문제 없다 — subjectScope=PLAYER는
+"두 선수가 어느 팀 소속인지"가 아니라 "관계가 실제로 존재하는지"만 요구하므로,
+경기 상대팀(WO)과 무관하게 HT 내부 인연으로도 그 경기 묶음의 EXPERT 슬롯을
+채울 수 있다는 좋은 선례다.
+
+## 57. PRED_UNDERDOG (예측 · 경기 문항, GAME scope, MEDIUM) — 2026-08-21 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260821-039",
+  "gameId": "20260821KTSK02026",
+  "teamCodes": ["KT", "SK"],
+  "templateId": "PRED_UNDERDOG",
+  "question": "상대전적 5승 7패로 열세인 KT, 오늘은 SK를 이길까?",
+  "options": [
+    { "id": "A", "text": "KT 승" },
+    { "id": "B", "text": "SK 승" }
+  ],
+  "answer": null,
+  "evidence": null,
+  "settlement": { "gameId": "20260821KTSK02026", "metric": "WIN_TEAM" },
+  "subject": { "scope": "GAME", "playerIds": [], "teamCodes": ["KT", "SK"], "gameId": "20260821KTSK02026" },
+  "difficulty": "MEDIUM", "pointReward": 50
+}
+```
+
+**좋은 이유**: 상대전적 열세 수치(5승 7패)를 문구에 직접 제시해 §3 규칙("열세
+수치를 문구에 제시")을 그대로 지켰고, 실제로는 KT가 이 시즌 순위표 1위(.606)라
+"전적상 열세 vs 순위상 우세"라는 흥미로운 긴장을 자연히 만든다 — 데이터를
+꾸미지 않고 있는 그대로 나열했을 뿐인데 서사가 생긴 사례. 같은 경기 묶음
+안에서 KTSK-06(같은 소재였던 MEME_ORIGIN)이 최근 7일 중복으로 폐기된 반면,
+이 예측형은 "오늘 경기"라는 시의성 자체가 매일 새 엔티티라 구조적으로
+중복 위험이 없다는 점도 PREDICTION 템플릿군의 장점으로 눈여겨볼 만하다.
+
+## 58. RELATION_LINK (지식 · 경기 문항, PLAYER scope, EXPERT) — 2026-08-21 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260821-052",
+  "gameId": "20260821LGHH02026",
+  "teamCodes": ["LG", "HH"],
+  "templateId": "RELATION_LINK",
+  "question": "LG 천성호와 한화 심우준의 공통점은?",
+  "options": [
+    { "id": "A", "text": "상무 피닉스 야구단에서 함께 내야수로 복무했다" },
+    { "id": "B", "text": "같은 고등학교를 졸업했다" },
+    { "id": "C", "text": "2019년 신인 드래프트 동기다" },
+    { "id": "D", "text": "결혼식 들러리를 서준 사이다" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/50054.md#커리어 이력",
+    "quote": "상무 피닉스 야구단에서 내야수로 복무하며 박민·나승엽·심우준·권동진·구본혁 등과 함께 언급된 바 있다(커뮤니티 전언)" },
+  "subject": { "scope": "PLAYER", "playerIds": [50054, 64006], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120
+}
+```
+
+**좋은 이유**: 이 경기 묶음(LG-HH)의 두 선수가 서로 **다른 팀** 소속인 진짜
+교차형 RELATION_LINK다(그래프 쌍 50054↔64006, 커리어교차 엣지) — 같은 팀 내부
+쌍보다 재료 밀도가 낮은 유형인데도 위키 원문(상무 복무 명단)에서 실제 공통점을
+정확히 뽑아냈다. 병역 이행 자체는 §4의 금지 소재(병역 "비리"·기피 논란 등)가
+아니라 중립적 커리어 사실이라 안전 재검도 무리 없이 통과한다.
+
+## 59. RELATION_LINK (지식 · 경기 문항, PLAYER scope, EXPERT) — 2026-08-21 실행 사례, 원문의 민감 표현을 문항 표면에 노출하지 않은 사례
+
+```json
+{
+  "quizId": "QZ-20260821-055",
+  "gameId": "20260821LTOB02026",
+  "teamCodes": ["LT", "OB"],
+  "templateId": "RELATION_LINK",
+  "question": "두산 정수빈과 박찬호의 공통점은?",
+  "options": [
+    { "id": "A", "text": "신인 드래프트 5라운드 지명 출신" },
+    { "id": "B", "text": "나란히 FA로 이적해 옴" },
+    { "id": "C", "text": "같은 고등학교 출신 유격수" },
+    { "id": "D", "text": "둘 다 개막전 선발 포수 출신" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/64646.md#별명·밈",
+    "quote": "정수빈과 함께 신인 드래프트 5라운드 지명 출신임을 가리키는 자조적 표현. 박찬호 본인이 인터뷰에서 \"우리는 천민이라 쟤네랑은 다르다\"고 정수빈과 장난친 적이 있다고 밝혔다" },
+  "subject": { "scope": "PLAYER", "playerIds": [64646, 79231], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120
+}
+```
+
+**좋은 이유**: evidence.quote 원문에는 선수 본인이 장난삼아 쓴 자조적 표현
+("천민")이 그대로 담겨 있지만, **문항 표면(question·options)에는 그 단어를
+전혀 노출하지 않고** "5라운드 지명 출신"이라는 중립적 사실로만 정답을 구성했다.
+evidence는 원문 그대로(§2 원칙, 요약·창작 금지) 유지하면서도 사용자에게 노출되는
+질문·보기 텍스트는 순화한다는 두 규칙(§2 evidence 원문 보존 vs §4 비하적 표현
+회피)이 충돌하지 않고 동시에 지켜지는 방법을 보여준다 — evidence를 고치는 게
+아니라 "무엇을 정답 보기 문구로 승격시킬지"만 신중히 고른 것.
+
+## 60. RELATION_LINK (지식 · 경기 문항, PLAYER scope, EXPERT) — 2026-08-21 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260821-053",
+  "gameId": "20260821SSNC02026",
+  "teamCodes": ["SS", "NC"],
+  "templateId": "RELATION_LINK",
+  "question": "삼성 디아즈·페덱 듀오는 어떤 과거 조합에 비유되나?",
+  "options": [
+    { "id": "A", "text": "2014년 밴덴헐크+나바로 조합" },
+    { "id": "B", "text": "2015년 라이온즈 왕조 시절 외국인 트리오" },
+    { "id": "C", "text": "2011년 오릭스 버팔로즈 외국인 콤비" },
+    { "id": "D", "text": "2018년 삼성 외국인 원투펀치" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/54400.md#별명·밈",
+    "quote": "투수 페덱과 함께 2014년 밴덴헐크+나바로 조합(백인 투수+흑인 야수)에 빗대지는 밈" },
+  "subject": { "scope": "PLAYER", "playerIds": [54400, 56459], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120
+}
+```
+
+**좋은 이유**: 오답 4개 전부가 실제 존재했던 KBO 외국인 콤비/트리오 조합이라
+피상적 야구 지식만으로는 소거법이 통하지 않는, EXPERT 난이도에 걸맞은 설계다.
+evidence 원문에 있는 "(백인 투수+흑인 야수)"라는 인종 언급은 정답 보기·질문
+어디에도 노출하지 않았다 — evidence는 원문 그대로 보존하되(§2), 사용자 노출
+문구는 "2014년 밴덴헐크+나바로 조합"이라는 중립적 사실만 남긴 판단이 55번
+사례와 같은 원칙이다.
+
+## 61. MEME_OWNER (지식 · 공통 문항, LEAGUE scope, EASY) — 2026-08-21 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260821-020",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "MEME_OWNER",
+  "question": "별명 '문살타'의 주인공은?",
+  "options": [
+    { "id": "A", "text": "문현빈" },
+    { "id": "B", "text": "노시환" },
+    { "id": "C", "text": "채은성" },
+    { "id": "D", "text": "문동주" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/53764.md#별명밈",
+    "quote": "- **문살타**: 성(문)과 병살타를 합친 말로, 병살타가 잦다는 데서 팬들이 붙인 별칭(커뮤니티 전언)[^ref7]." },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30
+}
+```
+
+**좋은 이유**: 오답 3명(노시환·채은성·문동주) 모두 한화 소속이라 "문"씨 성이
+아닌 두 명(노시환·채은성)까지 섞여 있어 이름 패턴만으로 찍을 수 없게 만들었다
+(문동주만 성이 같아 그럴듯한 함정). evidence가 별명의 유래(성+병살타 합성어)를
+직접 설명하고 있어 COMMON-10 실패 사례(아래 bad.md 19번, "빈 인용")와 대비된다
+— 좋은 MEME_OWNER는 "누가"뿐 아니라 "왜 그렇게 불리는지"까지 원문에서 뽑아낼
+수 있어야 오답과 정답이 갈린다.
+

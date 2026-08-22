@@ -2018,3 +2018,95 @@ evidence 원문에 있는 "(백인 투수+흑인 야수)"라는 인종 언급은
 — 좋은 MEME_OWNER는 "누가"뿐 아니라 "왜 그렇게 불리는지"까지 원문에서 뽑아낼
 수 있어야 오답과 정답이 갈린다.
 
+## 62. CAREER_PATH (지식 · 경기 문항, PLAYER scope, HARD) — 2026-08-22 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260822-001",
+  "gameId": "20260822HTWO02026",
+  "teamCodes": ["HT", "WO"],
+  "templateId": "CAREER_PATH",
+  "question": "하주석이 이번 시즌 트레이드로 새로 합류한 팀은?",
+  "options": [
+    { "id": "A", "text": "KIA 타이거즈" }, { "id": "B", "text": "롯데 자이언츠" },
+    { "id": "C", "text": "키움 히어로즈" }, { "id": "D", "text": "NC 다이노스" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/62700.md#커리어 이력",
+    "quote": "2026년 7월 말 한화 이글스에서 KIA 타이거즈로 트레이드 이적(상대는 투수 이형범)." },
+  "subject": { "scope": "PLAYER", "playerIds": [62700], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD", "pointReward": 80
+}
+```
+
+**좋은 이유**: bad.md 20번("FA 이적" 단정 사고)이 지적한 함정을 정확히 피했다
+— 질문의 "트레이드로 새로 합류한 팀"이라는 인과 서술이 evidence.quote 안에
+"트레이드 이적"으로 **그대로 명시**돼 있어, 질문이 원문에 없는 사유를 지어내지
+않았다. 오답 3개(롯데·키움·NC)도 모두 실존 구단이라 "말도 안 되는 보기"로
+답이 티나지 않는다. subject.playerIds=[62700](전제: 하주석)만 담고 정답인
+KIA(teamCodes)는 비워 정답 유출 규칙(§11)도 지켰다.
+
+## 63. MEME_ORIGIN (지식 · 경기 문항, PLAYER scope, EASY) — 2026-08-22 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260822-022",
+  "gameId": "20260822SSNC02026",
+  "teamCodes": ["SS", "NC"],
+  "templateId": "MEME_ORIGIN",
+  "question": "삼성 페덱의 별명 '멧돼지 사냥꾼'의 유래는?",
+  "options": [
+    { "id": "A", "text": "취미가 라이플로 멧돼지 사냥이라는 사실이 알려지면서" },
+    { "id": "B", "text": "고향이 멧돼지가 많은 산간 지역이라서" },
+    { "id": "C", "text": "타구 속도가 멧돼지처럼 빠르다는 비유" },
+    { "id": "D", "text": "구단 마스코트가 멧돼지라서" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/56459.md#별명·밈",
+    "quote": "취미가 라이플로 멧돼지 사냥이라는 사실이 알려지며, 동료 실책에도 \"(쏴도) 괜찮다\"는 식의 밈으로 소비된다." },
+  "subject": { "scope": "PLAYER", "playerIds": [56459], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30
+}
+```
+
+**좋은 이유**: §4-1 고유성 검사를 명확히 통과한다 — "멧돼지 사냥꾼"은 이
+선수 개인의 실제 취미(라이플 사냥)에서 나온 서사형 별명이라 "다른 잘하는
+선수에게 옮겨 붙여도 자연스러운가?" 질문에 답이 "아니다"로 분명하다(같은
+선수의 다른 후보 별명 "크리스 파닭"은 이름 발음을 비튼 말장난이라 재미는
+있어도 유래 설명이 짧아 오답 설계가 어려웠고, 이쪽을 택함). 오답 3개는 취미·
+출신지·타구 비유·마스코트로 각기 다른 각도의 그럴듯한 창작이라 정답을
+곧바로 좁히기 어렵게 설계됐다.
+
+## 64. RELATION_LINK (지식 · 경기 문항, PLAYER scope, EXPERT) — 2026-08-22 실행 사례, 최근 소진된 그래프 엣지 풀에서 새 조합을 찾은 사례
+
+```json
+{
+  "quizId": "QZ-20260822-035",
+  "gameId": "20260822LTOB02026",
+  "teamCodes": ["LT", "OB"],
+  "templateId": "RELATION_LINK",
+  "question": "두산 박준순과 김대한의 공통점은?",
+  "options": [
+    { "id": "A", "text": "둘 다 '머갈툴순'으로 불리는 두산 영건 4인방에 속한다" },
+    { "id": "B", "text": "둘 다 두산 프랜차이즈 원년 멤버다" },
+    { "id": "C", "text": "둘 다 원래 투수였다가 타자로 전향했다" },
+    { "id": "D", "text": "둘 다 해외 리그 진출 경력이 있다" }
+  ],
+  "answer": "A",
+  "evidence": { "source": "wiki/players/55252.md#별명·밈",
+    "quote": "두산 영건 야수 4인방(김대한·안재석·김민석·박준순)을 묶어 부르는 팬 밈. '순'이 박준순이다." },
+  "subject": { "scope": "PLAYER", "playerIds": [55252, 69238], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120
+}
+```
+
+**좋은 이유**: 이번 실행에서 최근 7일 `quiz-candidates`를 대조해보니
+`graph.json`의 허용 엣지(밈공유·커리어교차·라이벌, 총 40건) 중 오늘 경기
+5묶음이 걸 수 있는 조합 대부분이 이미 최근(특히 전날 08-21) 실행에서 소진돼
+있었다 — 김범수↔하주석(KIA), 천성호↔심우준(LG-한화), 디아즈↔페덱(삼성) 세
+조합 모두 §2 중복으로 이번 실행에서 폐기됐다(사유는 아래 실행 요약 참고).
+이 조합(박준순↔김대한, 두산 "머갈툴순" 4인방)만 최근 이력에 없어 살아남았다
+— `scoring.yaml`이 이미 경고한 대로 EXPERT 슬롯(RELATION_LINK)의 재료 풀이
+얇다는 것을 이번 실행에서도 재확인했다: 5경기 중 3경기(HT-WO, LG-HH,
+SS-NC)는 대체 조합을 찾지 못해 이번 실행에 EXPERT 문항 없이 넘어갔다.
+

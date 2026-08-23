@@ -2110,3 +2110,889 @@ KIA(teamCodes)는 비워 정답 유출 규칙(§11)도 지켰다.
 얇다는 것을 이번 실행에서도 재확인했다: 5경기 중 3경기(HT-WO, LG-HH,
 SS-NC)는 대체 조합을 찾지 못해 이번 실행에 EXPERT 문항 없이 넘어갔다.
 
+
+
+## 65. MEME_ORIGIN (HTWO 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-034",
+  "gameId": "20260823HTWO02026",
+  "teamCodes": [
+    "HT",
+    "WO"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "키움 데이비슨의 '맷 데이먼 혼동 밈'은 어디서 비롯됐나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "배우 맷 데이먼이 방한 중 고척돔에서 데이비슨 유니폼을 입고 직관"
+    },
+    {
+      "id": "B",
+      "text": "데이비슨이 인터뷰에서 맷 데이먼을 닮고 싶다고 말함"
+    },
+    {
+      "id": "C",
+      "text": "구단이 팬 이벤트로 맷 데이먼 가면을 배포함"
+    },
+    {
+      "id": "D",
+      "text": "데이비슨의 SNS 프로필 사진이 맷 데이먼으로 바뀜"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54944.md#별명-밈",
+    "quote": "이름이 비슷한 할리우드 배우 맷 데이먼이 영화 홍보차 방한 중 고척돔에서 데이비슨의 유니폼을 입고 직관한 사실이 알려지며, \"데이비슨의 지인·친척·사촌\"이라는 소문과 함께 두 사람의 이름을 헷갈리는 밈이 커뮤니티에서 크게 확산됐다(커뮤니티 전언)"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      54944
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 5점 — 배우 실제 방한 직관 사건이라는 구체적이고 웃긴 일화, 오답도 비슷한 형식이라 자연스러움
+
+## 66. MEME_ORIGIN (HTWO 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-041",
+  "gameId": "20260823HTWO02026",
+  "teamCodes": [
+    "HT",
+    "WO"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "박정우의 별명 '쿠로미 주루사'는 어떤 장면에서 나왔나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "쿠로미 캐릭터데이 유니폼을 입고 주루사를 당한 장면"
+    },
+    {
+      "id": "B",
+      "text": "쿠로미 인형을 라커룸에 두고 다닌 모습"
+    },
+    {
+      "id": "C",
+      "text": "쿠로미 응원봉을 흔드는 팬 반응"
+    },
+    {
+      "id": "D",
+      "text": "쿠로미 캐릭터와 표정이 닮았다는 반응"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/67609.md#별명-밈",
+    "quote": "작년 쿠로미 캐릭터데이 유니폼을 입고 나온 경기에서 있었던 주루사 장면이 밈으로 종종 소환된다(커뮤니티 전언)"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      67609
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 5점 — 캐릭터데이 유니폼+주루사라는 구체적 장면 결합, 다른 선수로 옮기면 성립 안 하는 고유 소재
+
+## 67. MEME_ORIGIN (HTWO 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-036",
+  "gameId": "20260823HTWO02026",
+  "teamCodes": [
+    "HT",
+    "WO"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "박재현의 별명 '중재현'은 어떤 뜻에서 나왔나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "중견수(中堅手)와 이름을 합친 표현"
+    },
+    {
+      "id": "B",
+      "text": "중요한 순간마다 활약해서 붙은 표현"
+    },
+    {
+      "id": "C",
+      "text": "중고참급 연차를 뜻하는 표현"
+    },
+    {
+      "id": "D",
+      "text": "중심타선에서 활약한다는 표현"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/55636.md#별명-밈",
+    "quote": "중견수(中堅手)와 이름을 합친 표현으로, KIA 라인업에서 중견수로 선발 출전할 때 커뮤니티에서 반복적으로 쓰이는 별명이다(커뮤니티 전언)."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      55636
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 5점 — 포지션(중견수)+이름 말장난이 짧고 명확, 즉답 가능한 쇼츠형 문제
+
+## 68. MEME_ORIGIN (KTSK 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-037",
+  "gameId": "20260823KTSK02026",
+  "teamCodes": [
+    "KT",
+    "SK"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "힐리어드의 별명 '텍사스 남자'는 어떤 발언에서 비롯됐나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "\"난 여름에 강한 텍사스 남자\"라는 발언"
+    },
+    {
+      "id": "B",
+      "text": "텍사스 레인저스 시절 별명을 그대로 가져와서"
+    },
+    {
+      "id": "C",
+      "text": "텍사스 출신 코치에게 지도받았다는 사실"
+    },
+    {
+      "id": "D",
+      "text": "고향이 텍사스라 밝힌 인터뷰"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56034.md#별명-밈",
+    "quote": "\"난 여름에 강한 텍사스 남자\"라고 말한 것이 더위를 힘들어하는 다른 선수들을 겨냥한 도발로 받아들여지며 붙은 표현."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      56034
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 본인 어록("난 여름에 강한 텍사스 남자")이 그대로 유래라 고유성·재미 모두 확실
+
+## 69. MEME_ORIGIN (KTSK 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-033",
+  "gameId": "20260823KTSK02026",
+  "teamCodes": [
+    "KT",
+    "SK"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "이로운의 별명 '이로운의 만루홈런'은 어떤 일화에서 비롯됐나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "상대에게 결정적 홈런을 허용했던 일화"
+    },
+    {
+      "id": "B",
+      "text": "만루 상황에서 끝내기 홈런을 친 일화"
+    },
+    {
+      "id": "C",
+      "text": "데뷔전에서 만루홈런을 목격한 일화"
+    },
+    {
+      "id": "D",
+      "text": "동료의 만루홈런을 예언한 일화"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/53892.md#별명-밈",
+    "quote": "그가 등판했을 때 상대에게 결정적 홈런을 허용했던 일화에서 비롯된 것으로 보이는 댓글 문구로, 이후 다른 선수의 홈런 장면에도 반복적으로 인용되는 놀림성 정형구가 되었다"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      53892
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 특정 실점 일화에서 파생된 놀림성 정형구로, 이름 자체의 반어적 재미가 강함
+
+## 70. CAREER_PATH (KTSK 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-020",
+  "gameId": "20260823KTSK02026",
+  "teamCodes": [
+    "KT",
+    "SK"
+  ],
+  "templateId": "CAREER_PATH",
+  "question": "김성현이 트레이드로 SK 합류 전 소속됐던 팀은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "넥센 히어로즈"
+    },
+    {
+      "id": "B",
+      "text": "한화 이글스"
+    },
+    {
+      "id": "C",
+      "text": "KIA 타이거즈"
+    },
+    {
+      "id": "D",
+      "text": "두산 베어스"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/76802.md#커리어-이력",
+    "quote": "2011시즌 트레이드로 넥센 히어로즈에서 SK(現 SSG)로 이적했다(송신영과 함께 박병호·심수창·현금 15억과 교환)"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      76802
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "HARD",
+  "pointReward": 80
+}
+```
+
+**좋은 이유**: 박병호가 얽힌 2011년 트레이드라 배경 스토리가 풍부해 흥미도가 높음
+
+## 71. MEME_ORIGIN (LGHH 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-044",
+  "gameId": "20260823LGHH02026",
+  "teamCodes": [
+    "LG",
+    "HH"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "한화 채은성의 별명 '채버지'는 무엇을 합친 말인가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "채은성 + 아버지"
+    },
+    {
+      "id": "B",
+      "text": "채은성 + 부자(富者)"
+    },
+    {
+      "id": "C",
+      "text": "채은성 + 대부(代父)"
+    },
+    {
+      "id": "D",
+      "text": "채은성 + 은퇴 후 지도자"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/79192.md#별명·밈",
+    "quote": "- **채버지**: '채은성'과 '아버지'를 합친 애칭으로, 팬들이 그를 든든하게 여기는 마음을 담아 부르는 표현이다(커뮤니티 전언).[^ref6][^ref4]"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      79192
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 5점 — '채은성+아버지'라는 명확한 어원이 원문에 그대로 있고, 오답도 '부자/대부/은퇴 후 지도자' 등 비슷한 격식의 가짜 유래라 소거법이 안 통함.
+
+## 72. MEME_ORIGIN (LGHH 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-031",
+  "gameId": "20260823LGHH02026",
+  "teamCodes": [
+    "LG",
+    "HH"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "한화 허인서의 별명 '랄인서'는 어떻게 붙었나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "MLB 매리너스 포수 칼 랄리와 비교되며 이름을 합쳐서"
+    },
+    {
+      "id": "B",
+      "text": "고교 시절 애칭이 '랄프'였던 데서"
+    },
+    {
+      "id": "C",
+      "text": "타격 자세가 독특해 붙은 별명이 줄어들어서"
+    },
+    {
+      "id": "D",
+      "text": "데뷔 시즌 등번호에서 착안해서"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/52764.md#별명·밈",
+    "quote": "- **미국의 허인서 / 랄인서**: MLB 시애틀 매리너스의 포수 칼 랄리(Cal Raleigh)와 자주 비교되며 붙은 별명. 두 이름을 합친 \"랄인서\"라는 표현도 쓰인다(커뮤니티 전언)[^ref4][^ref5][^ref6]."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      52764
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 5점 — MLB 포수 칼 랄리와의 실제 비교에서 나온 이름 합성이라는, 본인에게만 고유한 서사(§4-1 고유성 기준 명확히 통과).
+
+## 73. CAREER_PATH (LGHH 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-008",
+  "gameId": "20260823LGHH02026",
+  "teamCodes": [
+    "LG",
+    "HH"
+  ],
+  "templateId": "CAREER_PATH",
+  "question": "한화 이형범이 하주석과 맞트레이드되기 전 소속팀은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "KIA 타이거즈"
+    },
+    {
+      "id": "B",
+      "text": "삼성 라이온즈"
+    },
+    {
+      "id": "C",
+      "text": "NC 다이노스"
+    },
+    {
+      "id": "D",
+      "text": "키움 히어로즈"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/62951.md#커리어-이력",
+    "quote": "- 2026-07-27, 하주석과의 트레이드로 기아 타이거즈에서 한화 이글스로 이적(커뮤니티 전언)[^ref2]."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      62951
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "HARD",
+  "pointReward": 80
+}
+```
+
+**좋은 이유**: 5점 — 트레이드 날짜·상대 선수(하주석)·구단명까지 evidence에 전부 명시돼 있어 근거가 탄탄하고, 오답 4개(삼성·NC·키움)도 모두 실존 구단이라 답이 티나지 않음.
+
+## 74. MEME_ORIGIN (LTOB 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-040",
+  "gameId": "20260823LTOB02026",
+  "teamCodes": [
+    "LT",
+    "OB"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "김원중의 별명 '탭댄스 포크볼'이 붙은 이유는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "포크볼을 던지기 전 특유의 투구 동작을 '탭댄스'로 표현해서"
+    },
+    {
+      "id": "B",
+      "text": "포크볼 그립을 잡을 때 특유의 스텝을 밟아서"
+    },
+    {
+      "id": "C",
+      "text": "세이브 후 마운드에서 춤추는 세리머니를 해서"
+    },
+    {
+      "id": "D",
+      "text": "포크볼 낙차에 타자들이 휘청이는 모습 때문에"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/62528.md#별명-밈",
+    "quote": "포크볼을 던지기 전 보이는 특유의 투구 동작을 커뮤니티에서 '탭댄스'로 표현한다"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      62528
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 투구 동작에서 비롯된 고유 표현, 다른 선수에게 옮겨 붙이기 부자연스러움
+
+## 75. MEME_ORIGIN (LTOB 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-042",
+  "gameId": "20260823LTOB02026",
+  "teamCodes": [
+    "LT",
+    "OB"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "김대한의 밈 '리센느 저점매수'가 붙은 배경은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "등장곡으로 써온 그룹 리센느의 화제성이 오르는 시점에 본인도 홈런을 몰아쳐서"
+    },
+    {
+      "id": "B",
+      "text": "리센느의 신곡 발매를 기념해 응원가를 바꿔서"
+    },
+    {
+      "id": "C",
+      "text": "리센느 팬미팅에 다녀온 뒤 타격감이 좋아져서"
+    },
+    {
+      "id": "D",
+      "text": "리센느 멤버와 사석에서 친분을 맺은 사실이 알려져서"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/69238.md#별명-밈",
+    "quote": "최근 리센느의 화제성이 오르는 시점과 맞물려 본인도 홈런을 몰아치기 시작하면서"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      69238
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 등장곡+우연한 타이밍이 겹친 구체적 일화, 고유성 높음
+
+## 76. MEME_ORIGIN (LTOB 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-035",
+  "gameId": "20260823LTOB02026",
+  "teamCodes": [
+    "LT",
+    "OB"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "박준순의 밈 '4빵이나 5빵이나'는 어떤 상황에서 나온 말인가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "역전 홈런 후 인터뷰에서 초구를 노려친 이유를 설명하며 한 말이다"
+    },
+    {
+      "id": "B",
+      "text": "4번과 5번 타순 중 어디가 편한지 묻는 질문에 답한 말이다"
+    },
+    {
+      "id": "C",
+      "text": "4연승과 5연승 중 무엇이 더 짜릿한지 묻는 질문에 답한 말이다"
+    },
+    {
+      "id": "D",
+      "text": "병살타 후 아쉬움을 표현하며 한 말이다"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/55252.md#별명-밈",
+    "quote": "역전 홈런 후 인터뷰 \"뭐.. 4빵이나 5빵이나 비슷하니 그냥 초구에 돌렸다\"가 대담한 멘탈의 상징으로 회자된다"
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      55252
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 본인 어록에서 비롯된 밈, 고유성 확실
+
+## 77. MEME_ORIGIN (SSNC 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-039",
+  "gameId": "20260823SSNC02026",
+  "teamCodes": [
+    "SS",
+    "NC"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "구자욱의 상징 문구 '푸른 파도'는 어디서 비롯됐나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "본인이 남긴 어록에서 비롯됐다"
+    },
+    {
+      "id": "B",
+      "text": "구단 응원가 가사에서 따왔다"
+    },
+    {
+      "id": "C",
+      "text": "홈구장 이름에서 유래했다"
+    },
+    {
+      "id": "D",
+      "text": "팬클럽 명칭에서 따왔다"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/62404.md#별명-밈",
+    "quote": "**\"푸른 파도\" 어록**: \"나의 야구가 끝나는 날까지 야구장에 푸른 파도가 멈추지 않도록\"이라는 본인 어록이 팬들 사이에서 상징 문구로 쓰인다."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      62404
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 본인이 직접 남긴 어록이 팬 상징 문구로 굳어진 서사형 소재라 §4-1 고유성 판정이 명확하고, 감성적 임팩트도 있음(fun 5).
+
+## 78. CAREER_PATH (SSNC 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-018",
+  "gameId": "20260823SSNC02026",
+  "teamCodes": [
+    "SS",
+    "NC"
+  ],
+  "templateId": "CAREER_PATH",
+  "question": "최형우가 삼성 합류 전 소속됐던 팀은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "KIA 타이거즈"
+    },
+    {
+      "id": "B",
+      "text": "롯데 자이언츠"
+    },
+    {
+      "id": "C",
+      "text": "두산 베어스"
+    },
+    {
+      "id": "D",
+      "text": "SSG 랜더스"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/72443.md#커리어-이력",
+    "quote": "과거 소속이었던 기아를 상대하는 경기에서 팬들 사이에 \"나를 버린 팀에 복수한다\"는 반응이 나오는 등, 기아 소속이었다가 삼성으로 이적한 이력이 언급된다(커뮤니티 전언)."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      72443
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "HARD",
+  "pointReward": 80
+}
+```
+
+**좋은 이유**: evidence에 '나를 버린 팀에 복수한다'는 팬 반응까지 함께 인용돼 서사가 풍부하고, 오답 3개도 모두 실존 구단이라 소거법이 안 통함(fun 5).
+
+## 79. MEME_ORIGIN (SSNC 경기 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-045",
+  "gameId": "20260823SSNC02026",
+  "teamCodes": [
+    "SS",
+    "NC"
+  ],
+  "templateId": "MEME_ORIGIN",
+  "question": "박건우 별명 '고라니'는 어디서 비롯됐나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "두산 시절부터의 호타준족 스타일과 빠른 주력을 빗댄 것"
+    },
+    {
+      "id": "B",
+      "text": "고향이 강원도 산간 지역이라서"
+    },
+    {
+      "id": "C",
+      "text": "타격 자세가 고라니를 닮았다는 우스갯소리"
+    },
+    {
+      "id": "D",
+      "text": "구단 마스코트와 관련된 별명"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/79215.md#별명-밈",
+    "quote": "**고라니**: 두산 시절부터 호타준족 스타일과 빠른 주력을 빗대 붙여진 별명이다(커뮤니티 전언)."
+  },
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      79215
+    ],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 호타준족 스타일이라는 유래가 원문에 명시돼 있어 '왜 그렇게 불리는지'까지 답할 수 있는 좋은 MEME_ORIGIN 소재(fun 5).
+
+## 80. MEME_OWNER (공통 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-047",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "MEME_OWNER",
+  "question": "오재일이 '메시'라 부른 데서 유래한 별명 '라이온즈 메시'의 주인공은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "김지찬"
+    },
+    {
+      "id": "B",
+      "text": "김성윤"
+    },
+    {
+      "id": "C",
+      "text": "구자욱"
+    },
+    {
+      "id": "D",
+      "text": "김영웅"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50458.md#별명-밈",
+    "quote": "- **라이온즈 메시**: 오재일이 방송에서 \"김지찬 축구 잘한다, 메시다\"라고 언급한 데서 비롯된 별명. 작은 체구와 빠른 방향 전환 능력이 이유로 꼽힌다(커뮤니티 전언).[^ref1]"
+  },
+  "subject": {
+    "scope": "LEAGUE",
+    "playerIds": [],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 고유한 유래(구체적 사건·발언)가 있는 밈이라 소거법 없이 즉답 가능
+
+## 81. MEME_OWNER (공통 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-053",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "MEME_OWNER",
+  "question": "등번호를 '저점매수'에 빗댄 별명 '혁삐코인'의 주인공인 키움 선수는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "권혁빈"
+    },
+    {
+      "id": "B",
+      "text": "김건희"
+    },
+    {
+      "id": "C",
+      "text": "임지열"
+    },
+    {
+      "id": "D",
+      "text": "데이비슨"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/55371.md#별명-밈",
+    "quote": "- **혁삐코인**: 앞으로 더 성장할 것이라는 기대를 담아 지금 유니폼(등번호 00번)을 미리 사두는 것을 \"저점매수\"에 빗댄 팬들의 표현[^ref3]."
+  },
+  "subject": {
+    "scope": "LEAGUE",
+    "playerIds": [],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 고유한 유래(구체적 사건·발언)가 있는 밈이라 소거법 없이 즉답 가능
+
+## 82. MEME_OWNER (공통 묶음) — 2026-08-23 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260823-052",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "MEME_OWNER",
+  "question": "배우 맷 데이먼이 고척돔서 직관해 화제가 된 키움 선수는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "데이비슨"
+    },
+    {
+      "id": "B",
+      "text": "로젠버그"
+    },
+    {
+      "id": "C",
+      "text": "알칸타라"
+    },
+    {
+      "id": "D",
+      "text": "서건창"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54944.md#별명-밈",
+    "quote": "- **맷 데이먼 혼동 밈**: 이름이 비슷한 할리우드 배우 맷 데이먼이 영화 홍보차 방한 중 고척돔에서 데이비슨의 유니폼을 입고 직관한 사실이 알려지며, \"데이비슨의 지인·친척·사촌\"이라는 소문과 함께 두 사람의 이름을 헷갈리는 밈이 커뮤니티에서 크게 확산됐다(커뮤니티 전언)[^ref7]."
+  },
+  "subject": {
+    "scope": "LEAGUE",
+    "playerIds": [],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 고유한 유래(구체적 사건·발언)가 있는 밈이라 소거법 없이 즉답 가능

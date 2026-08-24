@@ -2996,3 +2996,88 @@ SS-NC)는 대체 조합을 찾지 못해 이번 실행에 EXPERT 문항 없이 �
 ```
 
 **좋은 이유**: 고유한 유래(구체적 사건·발언)가 있는 밈이라 소거법 없이 즉답 가능
+
+## 83. MEME_ORIGIN (공통 묶음, 경기 없는 날) — 2026-08-24 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260824-008",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "MEME_ORIGIN",
+  "question": "키움 임지열 별명 '토템'의 유래는?",
+  "options": [
+    { "id": "A", "text": "그가 엔트리에서 빠지면 팀이 지고, 출전하면 이긴다는 징크스" },
+    { "id": "B", "text": "타격 자세가 토템 조각상과 닮았다는 외모 평" },
+    { "id": "C", "text": "홈런을 치면 배트를 세워 세리머니하는 습관" },
+    { "id": "D", "text": "수비 위치를 지키고 서 있는 모습이 인상적이라는 평" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/64340.md#별명-밈",
+    "quote": "그가 1군 엔트리에서 빠지면 팀이 지고, 출전하면 이긴다는 징크스에서 비롯된 별명이다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [64340], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 성적이 아니라 팀 승패와 엮인 미신형 징크스라는 점이 특이해 소거법 없이도
+흥미를 끈다 — 8/17(월요일) 경기 없는 날 이후 두 번째로 경기 없는 날(8/24, 월)에
+PLAYER scope 템플릿(위키 선수 718명 풀)을 공통 묶음 주력으로 쓴 사례.
+
+## 84. RELATION_LINK (공통 묶음, EXPERT) — 2026-08-24 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260824-019",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "RELATION_LINK",
+  "question": "레이예스와 구자욱을 라이벌로 묶는 화제는?",
+  "options": [
+    { "id": "A", "text": "타격왕(타율) 경쟁" }, { "id": "B", "text": "홈런 경쟁" },
+    { "id": "C", "text": "도루 경쟁" }, { "id": "D", "text": "다승 경쟁" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54529.md#최근 여론",
+    "quote": "구자욱 본인이 \"레이예스가 타격왕 할듯\"이라 언급했다는 게시글도 있었다"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [54529, 62404], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120
+}
+```
+
+**좋은 이유**: graph.json의 `라이벌` 엣지(레이예스→구자욱)를 단순 나열이 아니라, 두
+선수 문서 각각에 흩어진 "타율 0.350 vs 0.351 근접"·"구자욱이 직접 언급"이라는
+구체적 근거로 뒷받침해 EXPERT 난이도에 맞는 신선한 조합을 만들었다.
+
+## 85. RELATION_LINK (공통 묶음, EXPERT) — 2026-08-24 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260824-020",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "RELATION_LINK",
+  "question": "두산 곽빈이 커브 그립을 배웠다고 밝힌 삼성 선수는?",
+  "options": [
+    { "id": "A", "text": "페덱" }, { "id": "B", "text": "구자욱" },
+    { "id": "C", "text": "레이예스" }, { "id": "D", "text": "강민호" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68220.md#커리어 이력",
+    "quote": "NC 라일리와 삼성 페덱에게 커브 구종에 대한 도움을 받았다고 본인이 밝혔다"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [68220, 56459], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120
+}
+```
+
+**좋은 이유**: `커리어교차` 엣지가 단순 소속팀 교차가 아니라 "구종을 사사했다"는
+구체적 일화로 뒷받침되는 드문 사례 — 상대 팀 선수 간 기술 교류라는 점이 신선하다.

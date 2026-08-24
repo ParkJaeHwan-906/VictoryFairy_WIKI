@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-20T22:04:48.010590+00:00",
+  "compiledAt": "2026-08-24T21:53:58.970639+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -3245,7 +3245,7 @@
       "id": "player:66233",
       "type": "player",
       "name": "홍성호",
-      "team": "OB"
+      "team": "LG"
     },
     {
       "id": "player:66291",
@@ -3485,7 +3485,7 @@
       "id": "player:67807",
       "type": "player",
       "name": "이정범",
-      "team": "SK"
+      "team": "KT"
     },
     {
       "id": "player:67828",
@@ -7799,7 +7799,7 @@
     },
     {
       "source": "player:66233",
-      "target": "team:OB",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -8063,7 +8063,7 @@
     },
     {
       "source": "player:67807",
-      "target": "team:SK",
+      "target": "team:KT",
       "type": "소속",
       "ref": null
     },

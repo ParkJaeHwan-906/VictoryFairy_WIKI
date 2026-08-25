@@ -3081,3 +3081,150 @@ PLAYER scope 템플릿(위키 선수 718명 풀)을 공통 묶음 주력으로 �
 
 **좋은 이유**: `커리어교차` 엣지가 단순 소속팀 교차가 아니라 "구종을 사사했다"는
 구체적 일화로 뒷받침되는 드문 사례 — 상대 팀 선수 간 기술 교류라는 점이 신선하다.
+
+## 86. CAREER_PATH (HHSK 경기 묶음) — 2026-08-25 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260825-008",
+  "gameId": "20260825HHSK02026",
+  "teamCodes": ["HH", "SK"],
+  "templateId": "CAREER_PATH",
+  "question": "한화 강백호가 FA로 이적하기 전 원 소속팀은?",
+  "options": [
+    { "id": "A", "text": "KT" }, { "id": "B", "text": "LG" },
+    { "id": "C", "text": "키움" }, { "id": "D", "text": "NC" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68050.md#커리어 이력",
+    "quote": "강백호는 한화 이적 전 KT 소속이었으며, 부상 복귀전을 KT전에 맞춰 치른 것을 두고 커뮤니티에서 \"친정\"이라는 표현이 반복적으로 쓰였다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [68050], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD",
+  "pointReward": 80
+}
+```
+
+**좋은 이유**: 오늘 한화-SSG 경기 묶음의 정답 선수(강백호)가 상대팀이 아니라 "친정팀
+KT"라는 제3의 팀으로 걸려 있어 소거법이 안 통하고, 위키 문서 안에 "친정" 표현이
+그대로 인용돼 있어 근거도 선명하다.
+
+## 87. MEME_ORIGIN (LTHT 경기 묶음) — 2026-08-25 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260825-023",
+  "gameId": "20260825LTHT02026",
+  "teamCodes": ["LT", "HT"],
+  "templateId": "MEME_ORIGIN",
+  "question": "롯데 황성빈의 별명 '도게자 사죄 사건'은 왜 붙었나?",
+  "options": [
+    { "id": "A", "text": "수비 실책성 장면 후 투수에게 고개 숙여 사과하는 듯한 모습을 보여서" },
+    { "id": "B", "text": "심판 판정에 항의하다 퇴장당해서" },
+    { "id": "C", "text": "팬 사인회에 지각해서" },
+    { "id": "D", "text": "인터뷰에서 팀 동료에게 공개 사과해서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50500.md#별명·밈",
+    "quote": "수비 실책성 장면 이후 투수 이이무라에게 고개를 숙여 사과하는 듯한 모습(이른바 \"도게자\")을 보여 화제가 됐다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [50500], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 밈의 유래가 구체적인 한 장면(실책 후 투수에게 고개 숙이는 동작)으로
+또렷하게 묘사돼 있어, 오답 3개("퇴장","지각","공개 사과")가 그럴듯하면서도 실제
+장면과는 분명히 다르다 — "이 별명을 다른 선수에게 옮겨도 자연스러운가?" 판별에도
+안전하다(특정 실책 장면에 고유).
+
+## 88. MEME_ORIGIN (OBKT 경기 묶음) — 2026-08-25 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260825-024",
+  "gameId": "20260825OBKT02026",
+  "teamCodes": ["OB", "KT"],
+  "templateId": "MEME_ORIGIN",
+  "question": "두산 안재석이 속한 유망주 별칭 '머갈툴순'에서 안재석은 왜 '갈'인가?",
+  "options": [
+    { "id": "A", "text": "이름이 같은 방송인 유재석의 별명 '갈비'에서 따온 설명이 함께 돈다" },
+    { "id": "B", "text": "등번호가 8번(가+ㄹ 발음)이라서" },
+    { "id": "C", "text": "포지션이 유격수(갈치처럼 날렵)라서" },
+    { "id": "D", "text": "고향이 갈산동이라서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51203.md#별명·밈",
+    "quote": "두산의 유망주 김대한('머')·안재석('갈')·김민석('툴')·박준순('순')을 묶어 부르는 별칭으로, 안재석의 '갈'은 이름이 같은 방송인 유재석의 별명 '갈비'에서 따온 것이다(커뮤니티 전언)."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [51203], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 4인조 그룹 밈("머갈툴순")의 한 글자("갈")가 왜 이 선수에게 붙었는지를
+묻는 구조라, 단순 별명 유래보다 한 단계 더 들어간 재미가 있다 — 동시에 위키 문서가
+"유재석 유래설 자체가 사실이 아니라는 반박"까지 함께 적어둔 덕에, 문구는 "설명이
+함께 돈다"는 신중한 표현으로 단정을 피했다.
+
+## 89. RELATION_LINK (공통 묶음, EXPERT) — 2026-08-25 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260825-062",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "RELATION_LINK",
+  "question": "KT 소형준과 한화 강백호의 공통점은?",
+  "options": [
+    { "id": "A", "text": "'신인왕 3신기'로 안현민과 함께 묶여 불린다" },
+    { "id": "B", "text": "같은 고등학교 동문이다" },
+    { "id": "C", "text": "국가대표 배터리로 호흡을 맞췄다" },
+    { "id": "D", "text": "SNS에서 서로를 저격한 적이 있다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50030.md#별명·밈",
+    "quote": "강백호·안현민과 함께 묶여 불리는 표현이다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [50030, 68050], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120
+}
+```
+
+**좋은 이유**: 오늘 경기 묶음(HH-SK, OB-KT)만으로는 성립하지 않는 팀 조합(KT+HH)의
+`밈공유` 엣지를 공통 묶음으로 살렸다 — 두 선수 문서 양쪽에 서로를 언급하는 문장이
+대칭으로 존재해 근거가 이중으로 확인된다.
+
+## 90. TRENDING_WHO (공통 묶음) — 2026-08-25 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260825-078",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "TRENDING_WHO",
+  "question": "최근 커뮤니티 최다 화제 선수는? (이번 실행 기준 스냅샷)",
+  "options": [
+    { "id": "A", "text": "김도영" }, { "id": "B", "text": "페덱" },
+    { "id": "C", "text": "하주석" }, { "id": "D", "text": "김대한" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/trending.md#화제 선수 Top 10",
+    "quote": "| 1 | 김도영 | 52605 | 1495 | 홈런 레이스·리그 최상위권 활약, 팬 밈(TV 유니폼, 친칠라 사진) |"
+  },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "MEDIUM",
+  "pointReward": 50
+}
+```
+
+**좋은 이유**: 오답 3개(페덱·하주석·김대한)가 모두 trending.md 표의 실제 2~4위권
+선수라 소거법이 아니라 진짜 순위 지식을 요구한다.

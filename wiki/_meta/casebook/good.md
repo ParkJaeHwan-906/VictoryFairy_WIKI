@@ -3228,3 +3228,64 @@ KT"라는 제3의 팀으로 걸려 있어 소거법이 안 통하고, 위키 문
 
 **좋은 이유**: 오답 3개(페덱·하주석·김대한)가 모두 trending.md 표의 실제 2~4위권
 선수라 소거법이 아니라 진짜 순위 지식을 요구한다.
+
+## 91. RELATION_LINK (공통 묶음, EXPERT) — 2026-08-26 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260826-XXX",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "RELATION_LINK",
+  "question": "한화 박정현과 KT 박영현의 공통점은?",
+  "options": [
+    { "id": "A", "text": "친형제 사이다" },
+    { "id": "B", "text": "같은 고등학교 동문이다" },
+    { "id": "C", "text": "국가대표 배터리로 호흡을 맞췄다" },
+    { "id": "D", "text": "프로 데뷔 동기다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50709.md#프로필 요약",
+    "quote": "박정현은 한화 이글스 소속 내야수로, KT 위즈 투수 박영현과 형제 사이다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [50709, 52060], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120
+}
+```
+
+**좋은 이유**: 서로 다른 팀(한화·KT) 소속 선수를 묶어 어느 한쪽 팬에게도 치우치지
+않으면서, `라이벌` 엣지 중 흔치 않은 "친형제" 관계라 소거법이 통하지 않는다 —
+박영현 문서의 "형제 대결(박정현)" 밈과도 서로 참조가 맞아떨어져 근거가 이중으로
+확인된다.
+
+## 92. MEME_ORIGIN (경기 묶음, EASY) — 2026-08-26 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260826-XXX",
+  "gameId": "20260826HHSK02026",
+  "teamCodes": ["HH", "SK"],
+  "templateId": "MEME_ORIGIN",
+  "question": "SSG 박시후의 '세계 최초 8회 시구'라는 반어적 표현은 어떤 장면에서 나왔나?",
+  "options": [
+    { "id": "A", "text": "한 경기에서 단 1구만 던지고 내려간 등판" },
+    { "id": "B", "text": "시구자로 초청받아 8회에 시구를 한 일화" },
+    { "id": "C", "text": "8이닝을 무실점으로 막은 완투에 가까운 호투" },
+    { "id": "D", "text": "불펜에서 8번째로 등판 순서가 밀린 상황" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50812.md#별명·밈",
+    "quote": "\"세계 최초 8회 시구\"라는 반어적 표현이 붙을 만큼, 한 경기에서 단 1구만 던지고 내려간 등판이 화제가 된 적이 있다."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [50812], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: "세계 최초 8회 시구"라는 반어적 표현 자체가 고유해서(범용 호칭
+패턴이 아님) 다른 선수에게 옮겨 붙이면 전혀 성립하지 않는다 — §4-1 고유성
+기준을 깔끔하게 통과한 사례.

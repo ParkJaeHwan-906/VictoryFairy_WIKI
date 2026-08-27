@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-24T21:53:58.970639+00:00",
+  "compiledAt": "2026-08-27T21:40:54.161203+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -330,6 +330,12 @@
       "type": "player",
       "name": "지명성",
       "team": "KT"
+    },
+    {
+      "id": "player:51097",
+      "type": "player",
+      "name": "김영현",
+      "team": "OB"
     },
     {
       "id": "player:51100",
@@ -941,6 +947,12 @@
       "id": "player:53036",
       "type": "player",
       "name": "류현인",
+      "team": "KT"
+    },
+    {
+      "id": "player:53057",
+      "type": "player",
+      "name": "손민석",
       "team": "KT"
     },
     {
@@ -1592,6 +1604,12 @@
       "team": "WO"
     },
     {
+      "id": "player:55301",
+      "type": "player",
+      "name": "이준우",
+      "team": "WO"
+    },
+    {
       "id": "player:55313",
       "type": "player",
       "name": "정현우",
@@ -1778,6 +1796,12 @@
       "team": "LT"
     },
     {
+      "id": "player:55563",
+      "type": "player",
+      "name": "박재엽",
+      "team": "LT"
+    },
+    {
       "id": "player:55568",
       "type": "player",
       "name": "박세현",
@@ -1910,6 +1934,12 @@
       "team": "KT"
     },
     {
+      "id": "player:56002",
+      "type": "player",
+      "name": "대니엘",
+      "team": "KT"
+    },
+    {
       "id": "player:56005",
       "type": "player",
       "name": "이재원",
@@ -1991,6 +2021,12 @@
       "id": "player:56165",
       "type": "player",
       "name": "양우진",
+      "team": "LG"
+    },
+    {
+      "id": "player:56168",
+      "type": "player",
+      "name": "케네디",
       "team": "LG"
     },
     {
@@ -2543,6 +2579,12 @@
       "id": "player:56928",
       "type": "player",
       "name": "버하겐",
+      "team": "NC"
+    },
+    {
+      "id": "player:56932",
+      "type": "player",
+      "name": "이희성",
       "team": "NC"
     },
     {
@@ -3236,6 +3278,12 @@
       "team": "LG"
     },
     {
+      "id": "player:66162",
+      "type": "player",
+      "name": "김주성",
+      "team": "LG"
+    },
+    {
       "id": "player:66209",
       "type": "player",
       "name": "조수행",
@@ -3245,7 +3293,7 @@
       "id": "player:66233",
       "type": "player",
       "name": "홍성호",
-      "team": "LG"
+      "team": "OB"
     },
     {
       "id": "player:66291",
@@ -4726,6 +4774,12 @@
       "ref": null
     },
     {
+      "source": "player:51097",
+      "target": "team:OB",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:51100",
       "target": "team:LG",
       "type": "소속",
@@ -5369,6 +5423,12 @@
     },
     {
       "source": "player:53036",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53057",
       "target": "team:KT",
       "type": "소속",
       "ref": null
@@ -6070,6 +6130,12 @@
       "ref": null
     },
     {
+      "source": "player:55301",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55313",
       "target": "team:WO",
       "type": "소속",
@@ -6256,6 +6322,12 @@
       "ref": null
     },
     {
+      "source": "player:55563",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55568",
       "target": "team:LT",
       "type": "소속",
@@ -6388,6 +6460,12 @@
       "ref": null
     },
     {
+      "source": "player:56002",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56005",
       "target": "team:KT",
       "type": "소속",
@@ -6467,6 +6545,12 @@
     },
     {
       "source": "player:56165",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56168",
       "target": "team:LG",
       "type": "소속",
       "ref": null
@@ -7061,6 +7145,12 @@
     },
     {
       "source": "player:56928",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56932",
       "target": "team:NC",
       "type": "소속",
       "ref": null
@@ -7792,6 +7882,12 @@
       "ref": null
     },
     {
+      "source": "player:66162",
+      "target": "team:LG",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:66209",
       "target": "team:OB",
       "type": "소속",
@@ -7799,7 +7895,7 @@
     },
     {
       "source": "player:66233",
-      "target": "team:LG",
+      "target": "team:OB",
       "type": "소속",
       "ref": null
     },

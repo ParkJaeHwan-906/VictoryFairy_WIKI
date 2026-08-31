@@ -3497,3 +3497,100 @@ LG 홍창기 대신 오지환의 특정 밈 문구)로 즉시 교체했다. **�
 투수 이름에 옮기면 성립하지 않는다. 오답도 "빠른 발·정확한 번트·강한
 어깨"처럼 다른 야구 스타일 묘사로 형식·길이를 맞춰 정답만 유난히
 구체적으로 보이는 티가 나지 않는다.
+
+## 100. 경기 없는 날(월요일) — 공통 묶음 단독 실행 사례 — 2026-08-31 실행
+
+2026-08-31(월)은 `question-source/game_schedule/` 오늘 파티션이 아예
+없었다 — KBO 월요일 휴식일과 일치하는 정상적인 무경기일로 판단했다(직전
+파티션이 2026-08-30까지만 존재, 다른 소스는 모두 정상 동기화됨). `ROUTINE.md`
+§3 "경기가 없는 날" 절차대로 경기 묶음을 아예 만들지 않고, 공통 묶음에
+평소 경기 묶음 전용이던 PLAYER scope(CAREER_PATH·MEME_ORIGIN·RECORD_OX)와
+TEAM scope(STREAK_CURRENT) 템플릿을 투입해 22문항(EASY 8·MEDIUM 6·HARD 6·
+EXPERT 2) 슬롯을 정확히 채웠다.
+
+**주의해서 피한 것**: HOME_AWAY_SPLIT·RECENT_VS_EARLY는 스킵했다 — 직전날
+(2026-08-30, 실제 경기 5개가 있던 날)에 이 두 템플릿이 이미 10개 구단
+전원을 커버했고, 누적 홈/원정 승률이나 월별 승률 비교는 하루 경기 1개
+추가로는 결론(어느 쪽이 강한지, 최근이 초반보다 나은지)이 거의 바뀌지
+않아 "다른 문구의 같은 사실" 중복으로 폐기될 위험이 컸다. MONTHLY_BEST도
+스킵했다 — 남은 미사용 달(3월·6월)이 모두 팀 간 승률 동률(1위 2팀)이라
+MULTI4 "1위 팀은?" 질문 자체가 성립하지 않았다. **제안**: 이런 소진 판단을
+`runner.binding`에 결정적 헬퍼로 옮기면(최근 7일 subject 축 대조 + 월별
+동률 사전 검사) 생성 단계에서 매번 수작업으로 재확인할 필요가 없다.
+
+```json
+{
+  "quizId": "QZ-20260831-020",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "STREAK_CURRENT",
+  "question": "한화는 현재 6연패 중이다",
+  "options": [{ "id": "A", "text": "O" }, { "id": "B", "text": "X" }],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#연승·연패",
+    "quote": "- HH: 6연패"
+  },
+  "subject": { "scope": "TEAM", "playerIds": [], "teamCodes": ["HH"], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: STREAK_CURRENT는 전날(2026-08-30) 이미 10개 구단을 돌았지만,
+연승·연패 "길이"는 경기 결과가 나올 때마다 실제로 바뀌는 수치라 홈/원정
+누적 승률과 달리 매일 새 사실이 된다 — 한화의 6연패는 그 자체로 시즌
+최장급 부진 스트릭이라 재미 채점도 5점을 줬다. 같은 TEAM scope 템플릿이라도
+"누적값이 하루 만에 거의 안 변하는 것(홈/원정 승률)"과 "매일 갱신되는
+것(연속 기록)"을 구분해 후자만 재사용한 것이 핵심이다.
+
+## 101. RELATION_LINK — 밈공유형 4인 그룹 안에서 짝 교체 (경기 없는 날, EXPERT) — 2026-08-31 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260831-015",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "RELATION_LINK",
+  "question": "두산 김민석과 김대한의 공통점은?",
+  "options": [
+    { "id": "A", "text": "둘 다 '머갈툴순'으로 묶이는 두산 영건 4인방 멤버다" },
+    { "id": "B", "text": "둘 다 이번 시즌 국가대표로 선발됐다" },
+    { "id": "C", "text": "둘 다 원래 포지션이 포수다" },
+    { "id": "D", "text": "둘 다 올 시즌 FA 자격을 얻었다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/53554.md#별명·밈",
+    "quote": "두산 동기 유망주 김대한('머')·안재석('갈')·김민석('툴')·박준순('순')을 묶어 부르는 별명이다."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [53554, 69238], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120
+}
+```
+
+**좋은 이유**: '머갈툴순' 4인방(김대한·안재석·김민석·박준순)은 `graph.json`에
+밈공유 엣지 6쌍(4명 중 2명 조합)을 만드는데, 이전 실행들이 이미
+안재석-김민석·안재석-박준순 쌍을 소진했다. 같은 그룹이라도 아직 안 쓴
+쌍(김민석-김대한)으로 옮기면 "밈 자체는 재사용"하면서도 "정답 조합은
+신규"인 문제를 만들 수 있다 — `runner.binding.enumerate_entities`의
+`graph` family가 이미 쌍 단위로 엔티티를 분리해 주므로, 최근 7일 대조도
+그 쌍 단위(`subject.playerIds` 정렬 튜플)로 하면 자동으로 걸러진다.
+
+## 102. RECORD_OX — 은퇴 레전드 기록은 `subject`를 비우는 것이 정답 (경기 없는 날, MEDIUM) — 2026-08-31 실행
+
+`all-time-records.yaml`의 인물(백인천·장효조·장명부 등)은 대부분 은퇴한
+과거 레전드라 위키·`player_profile`에 대응하는 현대 `kboPlayerId`가 없다.
+카탈로그는 RECORD_OX의 `subjectScope`를 PLAYER로 선언해 두었지만, 억지로
+아무 ID나 채우면 `validate_candidates.py` check 9(정답 유출)나 다른 검사를
+오염시킬 위험이 있다. `generation-rules.md` §11의 "확신이 없으면 필드를
+빼는 것이 아니라 다시 채운다"는 원칙은 채울 자료 자체가 존재할 때의
+얘기이므로, 이번처럼 **애초에 대응 ID가 없는 경우**는 `subject` 필드를
+통째로 `null`로 두는 쪽이 맞다 — `validate_candidates.py`가 이를 하드
+실패가 아니라 경고("subject 부재")로만 처리하도록 v1/v2 공존 설계가 이미
+돼 있었다(check 9는 `subject`가 dict일 때만 검사, `None`이면 스킵). 처음에
+`playerIds: []`로 빈 배열을 넣었다가 "`scope=PLAYER`면 playerIds가 1개
+이상이어야 함" 하드 실패를 겪은 뒤 고쳤다. **제안**: 카탈로그에 템플릿별로
+"엔티티에 kboPlayerId가 없을 수 있다"는 플래그를 추가하면, 생성 단계에서
+이 시행착오 없이 바로 `subject: null`로 시작할 수 있다.

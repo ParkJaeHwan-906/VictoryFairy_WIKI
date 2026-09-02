@@ -3661,3 +3661,136 @@ MULTI4 "1위 팀은?" 질문 자체가 성립하지 않았다. **제안**: 이�
 `커리어교차` 엣지 중에서도 "트레이드"류(구단 이적의 구체적 조건이 위키에
 남아 있는 경우)가 "같은 팀에서 함께 뛴 적 있다"류보다 일관되게 더 재미
 점수가 높았다 — RELATION_LINK 소재를 고를 때 우선순위로 삼을 것.
+
+## 105. MEME_ORIGIN — 실명 비교 대상이 있는 별명 (경기 묶음, EASY) — 2026-09-02 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260902-XXX",
+  "gameId": "20260902HHKT02026",
+  "teamCodes": ["HH", "KT"],
+  "templateId": "MEME_ORIGIN",
+  "question": "한화 허인서의 별명 '미국의 허인서'의 유래는?",
+  "options": [
+    { "id": "A", "text": "MLB 매리너스 포수 칼 랄리와 자주 비교돼서" },
+    { "id": "B", "text": "미국 유학 경험이 있어서" },
+    { "id": "C", "text": "메이저리그 스카우트 관심을 받아서" },
+    { "id": "D", "text": "등장곡이 미국 팝송이라서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/52764.md#별명·밈",
+    "quote": "미국 시애틀 매리너스의 포수 칼 랄리(Cal Raleigh)와 자주 비교되며 붙은 별명"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [52764], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 오답 3개(유학 경험·스카우트 관심·등장곡)가 전부 "미국"이라는
+키워드로 그럴듯하게 낚이면서도 evidence와 무관해 변별력이 있었다. 정답이
+**실존 MLB 선수 이름**이라는 구체적 고유명사라 추측이 아니라 아는 사람만
+맞히는 구조가 됐다. **교훈**: MLB 현역 선수와의 외모/스타일 비교형 별명은
+비교 대상 이름 자체가 좋은 오답 낚싯바늘(다른 나라 리그·다른 포지션 선수를
+넣으면 그럴듯함)이 된다.
+
+## 106. RELATION_LINK — 선수 본인 발언이 곧 증거 (공통 묶음, EXPERT) — 2026-09-02 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260902-XXX",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "RELATION_LINK",
+  "question": "삼성 구자욱이 \"타격왕 할듯\"이라 직접 언급했던 롯데 타자는?",
+  "options": [
+    { "id": "A", "text": "레이예스" },
+    { "id": "B", "text": "손호영" },
+    { "id": "C", "text": "윤동희" },
+    { "id": "D", "text": "한동희" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54529.md#최근 여론",
+    "quote": "구자욱 본인이 \"레이예스가 타격왕 할듯\"이라 언급했다는 게시글도 있었다(커뮤니티 전언)."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [54529, 62404], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120
+}
+```
+
+**좋은 이유**: graph.json의 `라이벌` 엣지 자체는 근거 문장이 없지만(ref만
+있음), 두 선수의 **위키 문서 본문에 상대 선수를 직접 언급한 실제 인용구**가
+따로 있어 그걸 근거로 삼았다 — "라이벌"이라는 딱지보다 "구자욱이 직접
+레이예스를 콕 집어 칭찬했다"는 1차 인용이 훨씬 재미있고 검증하기도 쉬웠다.
+**교훈**: graph.json 엣지의 `ref`만 보고 막히면, 두 당사자의 위키 문서를
+각각 열어 상대 이름이 본문에 직접 등장하는 문장을 찾는 편이 낫다 — 엣지
+타입 라벨보다 인용구 자체가 더 좋은 소재일 때가 많다.
+
+## 107. MEME_ORIGIN — 실제 목격담(파파라치성 사실)이 유래인 밈 (경기 묶음, EASY) — 2026-09-02 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260902-XXX",
+  "gameId": "20260902SKWO02026",
+  "teamCodes": ["SK", "WO"],
+  "templateId": "MEME_ORIGIN",
+  "question": "키움 데이비슨을 둘러싼 '맷 데이먼 혼동 밈'은 어떤 사건에서 비롯됐나?",
+  "options": [
+    { "id": "A", "text": "배우 맷 데이먼이 방한 중 데이비슨 유니폼을 입고 고척돔에서 직관해서" },
+    { "id": "B", "text": "데이비슨이 영화 출연 제안을 받아서" },
+    { "id": "C", "text": "두 사람이 실제 친척이라서" },
+    { "id": "D", "text": "데이비슨이 인터뷰에서 맷 데이먼 성대모사를 해서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54944.md#별명·밈",
+    "quote": "이름이 비슷한 할리우드 배우 맷 데이먼이 영화 홍보차 방한 중 고척돔에서 데이비슨의 유니폼을 입고 직관한 사실이 알려지며"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [54944], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 할리우드 배우가 실제로 고척돔에 나타나 데이비슨 유니폼을
+입었다는, KBO 팬이 아니어도 흥미로운 "실제 사건" 기반 밈이라 화제성이
+높고 오답도 자연스럽게 갈린다. **교훈**: 유명인 크로스오버 목격담(연예인·
+운동선수의 직관·언급)이 섞인 밈은 야구 지식이 얕은 사용자에게도 접근성이
+좋아 EASY 슬롯에 특히 잘 맞는다.
+
+## 108. STANDINGS_NOW — 순위표 인접 팀을 오답으로 (공통 묶음, EASY) — 2026-09-02 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260902-XXX",
+  "gameId": null,
+  "teamCodes": [],
+  "templateId": "STANDINGS_NOW",
+  "question": "현재(9/2 기준) 리그 순위 1위 팀은?",
+  "options": [
+    { "id": "A", "text": "삼성" },
+    { "id": "B", "text": "KT" },
+    { "id": "C", "text": "LG" },
+    { "id": "D", "text": "KIA" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#팀 순위",
+    "quote": "| 1 | SS | 69 | 44 | 3 | 0.611 |"
+  },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30
+}
+```
+
+**좋은 이유**: 오답 3팀(KT·LG·KIA)이 전부 상위권 인접 순위라 아무 팀이나
+찍어도 그럴듯해 보이는 함정이 되면서도, `season.md` 순위표 원문을 그대로
+대조하면 명확히 갈린다. 1·2위(삼성·KT) 승차가 0.5경기로 근소해 "오늘 순위가
+바뀌었을 수도 있다"는 시의성 긴장감도 있다. **교훈**: STANDINGS_NOW는
+순위표에서 **격차가 좁은 구간**(1-2위 접전, 순위 경계선)을 물을 때 재미가
+더 커진다 — 승차가 큰 중위권 순위는 상대적으로 밋밋하다(실측: 5위 OB
+문항은 fun=3으로 폐기됨).

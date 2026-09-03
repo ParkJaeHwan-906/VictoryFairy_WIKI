@@ -3794,3 +3794,95 @@ MULTI4 "1위 팀은?" 질문 자체가 성립하지 않았다. **제안**: 이�
 순위표에서 **격차가 좁은 구간**(1-2위 접전, 순위 경계선)을 물을 때 재미가
 더 커진다 — 승차가 큰 중위권 순위는 상대적으로 밋밋하다(실측: 5위 OB
 문항은 fun=3으로 폐기됨).
+
+## 30. RELATION_LINK (지식 · 그래프 관계, 형제 관계) — 2026-09-03 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260903-041",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "한화 박정현과 KT 박영현의 공통점은?",
+  "options": [
+    { "id": "A", "text": "친형제 사이" },
+    { "id": "B", "text": "고교 동기" },
+    { "id": "C", "text": "프로 입단 동기" },
+    { "id": "D", "text": "같은 소속사 광고 모델" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50709.md#프로필 요약",
+    "quote": "박정현은 한화 이글스 소속 내야수로, KT 위즈 투수 박영현과 형제 사이다"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [50709, 52060], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `graph.json`의 `라이벌` 엣지(50709↔52060)가 실제로는 "형제
+사이"라는, 팀을 넘나드는 가장 강력한 종류의 개인적 관계였다. 마침 두 팀(한화·
+KT)이 이 실행일 실제로 맞대결하는 날이라 경기 문항 쪽(CAREER_PATH의 심우준
+KT→한화 FA 이적)과도 자연스럽게 어우러졌다 — RELATION_LINK 자체는 규칙상
+공통 묶음(`gameId: null`)에 두지만, 소재가 그날 매치업과 맞아떨어지면 체감
+재미가 배가된다는 사례. evidence는 `프로필 요약` 섹션 원문(형제 사이를
+명시)을 그대로 인용해 대조도 깔끔했다.
+
+## 31. CAREER_PATH (지식 · 위키 커리어 이력, 라이벌 팀 간 FA 이적) — 2026-09-03 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260903-010",
+  "gameId": "20260903HHKT02026",
+  "teamCodes": ["HH", "KT"],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "CAREER_PATH",
+  "format": "MULTI4",
+  "question": "한화 심우준이 FA로 이적하기 전 원 소속팀은?",
+  "options": [
+    { "id": "A", "text": "KT" }, { "id": "B", "text": "LG" },
+    { "id": "C", "text": "두산" }, { "id": "D", "text": "SSG" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/64006.md#커리어 이력",
+    "quote": "KT wiz 소속이었으나 FA 시장에서 구단이 비용 부담을 이유로 잔류시키지 않았다는 평가가 있다"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [64006], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD",
+  "pointReward": 80,
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 오늘 경기 묶음이 마침 한화-KT전이라, "이 선수가 전 소속팀을
+상대로 오늘 뛴다"는 서사가 자연히 딸려온다(§4-1 판례의 "서사 없는 동어반복"
+반면교사와 정반대 — 여기는 FA·비용 문제로 원 소속팀이 놓아준 구체적 사유가
+evidence에 명시돼 있다). 같은 실행에서 같은 두 팀을 잇는 RELATION_LINK(#30,
+박정현·박영현 형제)와 함께 두면, 경기 묶음과 공통 묶음이 서로 다른 각도로
+같은 매치업의 이야기를 두텁게 만드는 조합이 된다는 것을 확인했다.
+
+## 32. H2H_SEASON_RECORD — 정답 유출 게이트에 처음 걸렸다가 자체 수정한 사례 (2026-09-03 실행)
+
+문구 생성 단계에서 처음엔 good.md #1의 오래된 패턴을 그대로 따라
+`options: [{"한화 우위"},{"KT 우위"}]`로 4개 경기 묶음 전부를 작성했는데,
+`validate_candidates.py` check 9(정답 유출)가 4건 모두를 걸렀다 — subject
+v2 계약(스펙 4.3, `generation-rules.md` §11)이 도입된 뒤로는 MATCHUP scope
+문항의 정답 보기에 `subject.teamCodes`에 속한 팀 이름을 쓰면 안 되는데, #1은
+subject 필드가 없던(v1) 시절 시드라 이 게이트를 안 거쳤을 뿐이었다. 4건 모두
+`options: [{"우위"},{"열세"}]`로 고쳐 재검증을 통과시켰다.
+
+**교훈**: good.md의 오래된 시드 사례(특히 subject 필드가 없는 것들)를 few-shot
+으로 그대로 베끼면 v2 계약을 놓칠 수 있다 — H2H_SEASON_RECORD·LAST_MATCHUP처럼
+`generation-rules.md` §11이 명시적으로 옵션 문구 규칙을 정한 템플릿은 최신
+문서 규칙이 casebook 예시보다 우선한다는 것을 다시 확인했다. 정답 유출 게이트가
+결정적 스크립트로 남아 있어(사람 판단 없이) 이런 회귀를 실제로 잡아냈다는 점도
+방어선이 제대로 작동한 사례다.

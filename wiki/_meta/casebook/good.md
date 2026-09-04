@@ -3886,3 +3886,114 @@ subject 필드가 없던(v1) 시절 시드라 이 게이트를 안 거쳤을 뿐
 문서 규칙이 casebook 예시보다 우선한다는 것을 다시 확인했다. 정답 유출 게이트가
 결정적 스크립트로 남아 있어(사람 판단 없이) 이런 회귀를 실제로 잡아냈다는 점도
 방어선이 제대로 작동한 사례다.
+
+## 109. MEME_ORIGIN (경기 묶음, 한화-롯데) — 2026-09-04 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260904-032",
+  "gameId": "20260904HHLT02026",
+  "teamCodes": ["HH", "LT"],
+  "kind": "KNOWLEDGE",
+  "type": "QUIZ",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "황성빈의 별명 '도게자 사죄 사건'의 유래는?",
+  "options": [
+    { "id": "A", "text": "실책성 장면 후 투수에게 고개 숙여 사과하는 모습이 화제가 됐다" },
+    { "id": "B", "text": "타격 자세가 특이해서 붙었다" },
+    { "id": "C", "text": "데뷔 첫 해 성적이 부진해서 붙었다" },
+    { "id": "D", "text": "은퇴한 선배 선수와 이름이 비슷해서 붙었다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50500.md#별명·밈",
+    "quote": "- **도게자 사죄 사건**: 수비 실책성 장면 이후 투수 이이무라에게 고개를 숙여 사과하는 듯한 모습(이른바 \"도게자\")을 보여 화제가 됐다(커뮤니티 전언)[^ref2]"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [50500], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: "도게자"(무릎 꿇고 사과하는 일본식 몸짓)라는 구체적 장면 묘사가
+있어 §4-1 고유성 판별("다른 선수에게 옮겨 붙여도 자연스러운가")을 명확히
+통과한다 — 실책 후 투수에게 사과하는 특정 사건 하나에서 나온 표현이라 범용
+호칭 패턴(대◯◯·갓◯◯류)과 다르다. 오답도 흔한 밈 유래 유형(타격폼·부진·개명
+유사)으로 형식과 길이를 맞춰 정답만 튀지 않는다.
+
+## 110. RELATION_LINK (경기 묶음, 한화-롯데 — 트레이드로 갈라진 두 선수) — 2026-09-04 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260904-071",
+  "gameId": "20260904HHLT02026",
+  "teamCodes": ["HH", "LT"],
+  "kind": "KNOWLEDGE",
+  "type": "QUIZ",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "주현상와(과) 장두성의 공통점으로 알려진 사실은?",
+  "options": [
+    { "id": "A", "text": "장두성과 트레이드됐다" },
+    { "id": "B", "text": "둘 다 올 시즌 신인왕 후보로 거론된다" },
+    { "id": "C", "text": "둘 다 같은 고등학교 출신이다" },
+    { "id": "D", "text": "둘 다 올해 사이클링 히트를 기록했다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/65707.md",
+    "quote": "- 장두성과 트레이드됐다.[^ref2][^ref10]"
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [65707, 68507], "teamCodes": [], "gameId": null },
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: `graph.json`의 `커리어교차` 엣지 두 선수(주현상=한화, 장두성=롯데)가
+공교롭게도 이 실행일 실제 맞대결(한화-롯데) 양 팀 소속이라 경기 묶음 귀속과
+자연스럽게 맞아떨어졌다 — "트레이드로 갈라져 오늘은 서로 다른 유니폼을 입고
+만난다"는 서사가 문항 자체에 값을 더한다. evidence는 양쪽 위키 문서에 각각
+"OO와 트레이드됐다"로 대칭 기록돼 있어 대조가 간단했다.
+
+## 111. TRENDING_WHO (공통 묶음, 경기가 있는 날에도 리그 전체 화제성 문항) — 2026-09-04 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260904-088",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "QUIZ",
+  "templateId": "TRENDING_WHO",
+  "format": "MULTI4",
+  "question": "이번 주(9/4 기준) 커뮤니티 최다 화제 선수는?",
+  "options": [
+    { "id": "A", "text": "김도영" },
+    { "id": "B", "text": "페덱" },
+    { "id": "C", "text": "곽빈" },
+    { "id": "D", "text": "구자욱" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/trending.md#화제 선수 Top 10",
+    "quote": "| 1 | 김도영 | 52605 | 2017 | 홈런 페이스·안우진과 비교·팬 여론 |"
+  },
+  "settlement": null,
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "MEDIUM",
+  "pointReward": 50,
+  "createdBy": "AI_ENGINE"
+}
+```
+
+**좋은 이유**: 오답 4명 모두 트렌딩 Top 10 표 안의 실제 상위권 선수들이라
+"그럴듯하지만 틀린" 기준을 만족한다(2~4위를 그대로 씀). 위키 빌더가 갱신한
+`trending.md`가 있어야만 성립하는 템플릿인데, 이번 실행에서 위키 클론이
+정상적으로 붙어 있어 needs 충족을 확인한 사례이기도 하다 — 클론이 실패하는
+날엔 이 템플릿 자체가 후보에서 자동 제외된다(`ROUTINE.md` 1단계).

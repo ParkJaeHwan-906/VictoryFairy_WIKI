@@ -3997,3 +3997,124 @@ subject 필드가 없던(v1) 시절 시드라 이 게이트를 안 거쳤을 뿐
 `trending.md`가 있어야만 성립하는 템플릿인데, 이번 실행에서 위키 클론이
 정상적으로 붙어 있어 needs 충족을 확인한 사례이기도 하다 — 클론이 실패하는
 날엔 이 템플릿 자체가 후보에서 자동 제외된다(`ROUTINE.md` 1단계).
+
+## 112. YESTERDAY_WINNER (경기 묶음) — 2026-09-05 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260905-078",
+  "gameId": "20260905HHLT02026",
+  "teamCodes": ["HH", "LT"],
+  "kind": "KNOWLEDGE",
+  "type": "QUIZ",
+  "templateId": "YESTERDAY_WINNER",
+  "format": "BINARY",
+  "question": "어제(9/4) 한화-롯데전 승자는?",
+  "options": [
+    { "id": "A", "text": "한화" },
+    { "id": "B", "text": "롯데" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/game_result/2026-09-04/game_result_20260904HHLT02026.json",
+    "quote": "2026-09-04 사직에서 열린 한화 대 롯데 경기는 14:4, 한화의 승리로 끝났다. 승리투수 박준영. 패전투수 김진욱."
+  },
+  "settlement": null,
+  "subject": { "scope": "GAME", "playerIds": [], "teamCodes": [], "gameId": "20260904HHLT02026" },
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "createdBy": "quiz-routine"
+}
+```
+
+**좋은 이유**: 14:4라는 큰 점수차 자체가 화제성이 있고("한화가 원정에서
+14득점"), 어제 벌어진 같은 두 팀(한화·롯데)의 경기라 오늘 경기 묶음의
+"최근 맞대결" 축과 자연스럽게 이어진다. 원정팀(한화)이 이겼는데 경기가
+홈팀(롯데) 구장 이름(사직)으로 기록돼 있어, evidence 원문에서 승자를
+헷갈리지 않도록 "한화의 승리로 끝났다"라는 명시적 문구를 그대로 quote에
+포함시킨 것이 핵심이었다.
+
+## 113. MEME_OWNER (경기 묶음, LEAGUE subject) — 2026-09-05 실행 사례
+
+```json
+{
+  "quizId": "QZ-20260905-014",
+  "gameId": "20260905HHLT02026",
+  "teamCodes": ["HH", "LT"],
+  "kind": "KNOWLEDGE",
+  "type": "QUIZ",
+  "templateId": "MEME_OWNER",
+  "format": "MULTI4",
+  "question": "본인의 등장곡을 직접 피아노로 연주하는 영상으로 화제가 된 선수는?",
+  "options": [
+    { "id": "A", "text": "황성빈" },
+    { "id": "B", "text": "손호영" },
+    { "id": "C", "text": "유강남" },
+    { "id": "D", "text": "박세혁" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50500.md#별명·밈",
+    "quote": "피아노 치는 황성빈**: 본인의 등장곡을 직접 피아노로 연주하는 영상이 화제가 됐다(커뮤니티 전언)"
+  },
+  "settlement": null,
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "createdBy": "quiz-routine"
+}
+```
+
+**좋은 이유**: 황성빈은 이미 최근 며칠 사이 "도게자 사죄 사건" 밈으로
+두 번 출제됐지만(§ 위 사례들 참고), 같은 선수라도 **다른 별명·다른
+사실**이면 의미 중복이 아니다 — 이번엔 "피아노 치는 황성빈"이라는 아직
+안 쓴 별명을 골라 편중을 피했다. 같은 선수가 여러 날 반복 등장하는 것
+자체는 문제가 아니고, "같은 사실을 다시 묻는가"만이 폐기 기준이라는
+점을 보여주는 사례.
+
+## 114. STREAK_CURRENT × 3 (공통 축이 아니라 경기 묶음에서 극단적 연승/연패 강조) — 2026-09-05 실행 사례
+
+이번 실행에서 NC(6연승) · 키움(7연패) · LG(5연승) 세 팀이 동시에 두 자릿수에
+가까운 연승/연패를 기록 중이었다. 세 문항 모두 `STREAK_CURRENT` 템플릿의
+같은 evidence 위치(`wiki/stats/season.md#연승·연패`)를 썼지만 팀이 달라
+`subject.teamCodes`가 겹치지 않으므로 중복이 아니다.
+
+```json
+{
+  "quizId": "QZ-20260905-061",
+  "gameId": "20260905NCWO02026",
+  "teamCodes": ["NC", "WO"],
+  "templateId": "STREAK_CURRENT",
+  "format": "OX",
+  "question": "키움은 현재 7연패 중이다",
+  "answer": "A",
+  "evidence": { "source": "wiki/stats/season.md#연승·연패", "quote": "- WO: 7연패" }
+}
+```
+
+**좋은 이유**: 연패·연승 폭이 클수록(3연승 이하보다 6~7 이상) 사용자가
+"와, 그렇게 됐어?" 하고 반응할 재미 요소가 커진다 — 재미 채점 5점을 준
+근거다. 단순 사실 확인(OX)이라 난이도는 EASY로 유지하되, 수치의 극단성이
+체감 재미를 끌어올린 사례.
+
+## 115. RECENT_VS_EARLY — 극적인 반전(0.000 → 1.000) 사례 (2026-09-05 실행)
+
+```json
+{
+  "quizId": "QZ-20260905-047",
+  "gameId": "20260905SSLG02026",
+  "teamCodes": ["SS", "LG"],
+  "templateId": "RECENT_VS_EARLY",
+  "format": "OX",
+  "question": "LG의 최근(2026-09) 성적이 시즌 초반(2026-03)보다 좋아졌다",
+  "answer": "A",
+  "evidence": { "source": "wiki/stats/season.md#월별 성적", "quote": "- 2026-09: 4승 0패 0무 (승률 1.000)" }
+}
+```
+
+**좋은 이유**: LG는 2026-03에 0승 3패(승률 0.000)로 시즌을 시작했다가
+2026-09엔 4전 전승(1.000)으로 완전히 뒤집혔다 — 두 승률의 격차가
+템플릿 후보들 중 가장 커서 "확실하게 좋아졌다"고 자신 있게 물을 수 있는
+사례였다. 반대로 같은 실행에서 키움처럼 3월·9월이 똑같이 0.000으로
+**동률**인 팀은 O/X 정답이 모호해져(개선도 악화도 아님) 후보에서 아예
+제외했다 — 격차가 없는 비교는 애초에 만들지 않는 편이 안전하다는 교훈.

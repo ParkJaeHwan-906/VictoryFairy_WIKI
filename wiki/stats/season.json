@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T23:54:13.148188+00:00",
-  "asOf": "2026-09-05",
+  "generatedAt": "2026-09-05T23:53:04.001943+00:00",
+  "asOf": "2026-09-06",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -52,16 +52,16 @@
     },
     "HH|LT": {
       "wins": {
-        "HH": 8,
+        "HH": 9,
         "LT": 3
       },
       "draws": 0,
       "last": {
-        "date": "2026-09-04",
-        "gameId": "20260904HHLT02026",
+        "date": "2026-09-05",
+        "gameId": "20260905HHLT02026",
         "score": {
-          "away": 14,
-          "home": 4
+          "away": 11,
+          "home": 6
         },
         "winner": "away"
       }
@@ -148,16 +148,16 @@
     },
     "HT|KT": {
       "wins": {
-        "HT": 4,
+        "HT": 5,
         "KT": 6
       },
       "draws": 0,
       "last": {
-        "date": "2026-09-04",
-        "gameId": "20260904KTHT02026",
+        "date": "2026-09-05",
+        "gameId": "20260905KTHT02026",
         "score": {
           "away": 3,
-          "home": 4
+          "home": 6
         },
         "winner": "home"
       }
@@ -453,17 +453,17 @@
     "LG|SS": {
       "wins": {
         "LG": 6,
-        "SS": 6
+        "SS": 7
       },
       "draws": 0,
       "last": {
-        "date": "2026-09-04",
-        "gameId": "20260904SSLG02026",
+        "date": "2026-09-05",
+        "gameId": "20260905SSLG02026",
         "score": {
-          "away": 3,
-          "home": 4
+          "away": 4,
+          "home": 3
         },
-        "winner": "home"
+        "winner": "away"
       }
     },
     "LG|WO": {
@@ -612,15 +612,15 @@
     },
     "NC|WO": {
       "wins": {
-        "NC": 7,
+        "NC": 8,
         "WO": 6
       },
       "draws": 0,
       "last": {
-        "date": "2026-09-04",
-        "gameId": "20260904NCWO02026",
+        "date": "2026-09-05",
+        "gameId": "20260905NCWO02026",
         "score": {
-          "away": 6,
+          "away": 2,
           "home": 1
         },
         "winner": "away"
@@ -629,15 +629,15 @@
     "OB|SK": {
       "wins": {
         "OB": 7,
-        "SK": 6
+        "SK": 7
       },
       "draws": 0,
       "last": {
-        "date": "2026-09-04",
-        "gameId": "20260904OBSK02026",
+        "date": "2026-09-05",
+        "gameId": "20260905OBSK02026",
         "score": {
-          "away": 0,
-          "home": 4
+          "away": 2,
+          "home": 3
         },
         "winner": "home"
       }
@@ -725,126 +725,126 @@
   },
   "standings": [
     {
-      "team": "KT",
-      "wins": 69,
-      "losses": 44,
+      "team": "SS",
+      "wins": 71,
+      "losses": 46,
       "draws": 3,
-      "winPct": 0.611,
+      "winPct": 0.607,
       "rank": 1
     },
     {
-      "team": "SS",
-      "wins": 70,
-      "losses": 46,
+      "team": "KT",
+      "wins": 69,
+      "losses": 45,
       "draws": 3,
-      "winPct": 0.603,
+      "winPct": 0.605,
       "rank": 2
     },
     {
       "team": "LG",
       "wins": 68,
-      "losses": 51,
+      "losses": 52,
       "draws": 1,
-      "winPct": 0.571,
+      "winPct": 0.567,
       "rank": 3
     },
     {
       "team": "HT",
-      "wins": 64,
+      "wins": 65,
       "losses": 52,
       "draws": 2,
-      "winPct": 0.552,
+      "winPct": 0.556,
       "rank": 4
     },
     {
       "team": "OB",
       "wins": 60,
-      "losses": 56,
+      "losses": 57,
       "draws": 4,
-      "winPct": 0.517,
+      "winPct": 0.513,
       "rank": 5
     },
     {
       "team": "NC",
-      "wins": 54,
+      "wins": 55,
       "losses": 58,
       "draws": 2,
-      "winPct": 0.482,
+      "winPct": 0.487,
       "rank": 6
     },
     {
-      "team": "LT",
-      "wins": 51,
-      "losses": 64,
-      "draws": 2,
-      "winPct": 0.443,
+      "team": "SK",
+      "wins": 52,
+      "losses": 65,
+      "draws": 5,
+      "winPct": 0.444,
       "rank": 7
     },
     {
-      "team": "SK",
+      "team": "HH",
       "wins": 51,
       "losses": 65,
-      "draws": 5,
+      "draws": 3,
       "winPct": 0.44,
       "rank": 8
     },
     {
-      "team": "HH",
-      "wins": 50,
+      "team": "LT",
+      "wins": 51,
       "losses": 65,
-      "draws": 3,
-      "winPct": 0.435,
+      "draws": 2,
+      "winPct": 0.44,
       "rank": 9
     },
     {
       "team": "WO",
       "wins": 42,
-      "losses": 78,
+      "losses": 79,
       "draws": 3,
-      "winPct": 0.35,
+      "winPct": 0.347,
       "rank": 10
     }
   ],
   "streaks": {
     "HH": {
       "kind": "W",
-      "length": 1
+      "length": 2
     },
     "HT": {
       "kind": "W",
-      "length": 1
+      "length": 2
     },
     "KT": {
       "kind": "L",
-      "length": 1
+      "length": 2
     },
     "LG": {
-      "kind": "W",
-      "length": 5
+      "kind": "L",
+      "length": 1
     },
     "LT": {
       "kind": "L",
-      "length": 1
+      "length": 2
     },
     "NC": {
       "kind": "W",
-      "length": 6
+      "length": 7
     },
     "OB": {
       "kind": "L",
-      "length": 4
+      "length": 5
     },
     "SK": {
       "kind": "W",
-      "length": 3
+      "length": 4
     },
     "SS": {
-      "kind": "L",
-      "length": 2
+      "kind": "W",
+      "length": 1
     },
     "WO": {
       "kind": "L",
-      "length": 7
+      "length": 8
     }
   },
   "homeAway": {
@@ -855,14 +855,14 @@
         "draws": 2
       },
       "away": {
-        "wins": 27,
+        "wins": 28,
         "losses": 32,
         "draws": 1
       }
     },
     "HT": {
       "home": {
-        "wins": 34,
+        "wins": 35,
         "losses": 22,
         "draws": 2
       },
@@ -880,14 +880,14 @@
       },
       "away": {
         "wins": 33,
-        "losses": 23,
+        "losses": 24,
         "draws": 2
       }
     },
     "LG": {
       "home": {
         "wins": 38,
-        "losses": 24,
+        "losses": 25,
         "draws": 0
       },
       "away": {
@@ -899,7 +899,7 @@
     "LT": {
       "home": {
         "wins": 23,
-        "losses": 33,
+        "losses": 34,
         "draws": 0
       },
       "away": {
@@ -915,7 +915,7 @@
         "draws": 0
       },
       "away": {
-        "wins": 25,
+        "wins": 26,
         "losses": 27,
         "draws": 2
       }
@@ -928,13 +928,13 @@
       },
       "away": {
         "wins": 28,
-        "losses": 32,
+        "losses": 33,
         "draws": 2
       }
     },
     "SK": {
       "home": {
-        "wins": 25,
+        "wins": 26,
         "losses": 30,
         "draws": 4
       },
@@ -951,7 +951,7 @@
         "draws": 1
       },
       "away": {
-        "wins": 35,
+        "wins": 36,
         "losses": 24,
         "draws": 2
       }
@@ -959,7 +959,7 @@
     "WO": {
       "home": {
         "wins": 25,
-        "losses": 39,
+        "losses": 40,
         "draws": 2
       },
       "away": {
@@ -1008,10 +1008,10 @@
         "winPct": 0.167
       },
       "2026-09": {
-        "wins": 1,
+        "wins": 2,
         "losses": 3,
         "draws": 0,
-        "winPct": 0.25
+        "winPct": 0.4
       }
     },
     "HT": {
@@ -1052,10 +1052,10 @@
         "winPct": 0.733
       },
       "2026-09": {
-        "wins": 1,
+        "wins": 2,
         "losses": 2,
         "draws": 0,
-        "winPct": 0.333
+        "winPct": 0.5
       }
     },
     "KT": {
@@ -1097,9 +1097,9 @@
       },
       "2026-09": {
         "wins": 3,
-        "losses": 1,
+        "losses": 2,
         "draws": 0,
-        "winPct": 0.75
+        "winPct": 0.6
       }
     },
     "LG": {
@@ -1141,9 +1141,9 @@
       },
       "2026-09": {
         "wins": 4,
-        "losses": 0,
+        "losses": 1,
         "draws": 0,
-        "winPct": 1.0
+        "winPct": 0.8
       }
     },
     "LT": {
@@ -1185,9 +1185,9 @@
       },
       "2026-09": {
         "wins": 1,
-        "losses": 3,
+        "losses": 4,
         "draws": 0,
-        "winPct": 0.25
+        "winPct": 0.2
       }
     },
     "NC": {
@@ -1228,7 +1228,7 @@
         "winPct": 0.5
       },
       "2026-09": {
-        "wins": 3,
+        "wins": 4,
         "losses": 0,
         "draws": 0,
         "winPct": 1.0
@@ -1273,7 +1273,7 @@
       },
       "2026-09": {
         "wins": 0,
-        "losses": 4,
+        "losses": 5,
         "draws": 0,
         "winPct": 0.0
       }
@@ -1316,7 +1316,7 @@
         "winPct": 0.647
       },
       "2026-09": {
-        "wins": 3,
+        "wins": 4,
         "losses": 0,
         "draws": 0,
         "winPct": 1.0
@@ -1360,10 +1360,10 @@
         "winPct": 0.562
       },
       "2026-09": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2,
         "draws": 0,
-        "winPct": 0.5
+        "winPct": 0.6
       }
     },
     "WO": {
@@ -1405,7 +1405,7 @@
       },
       "2026-09": {
         "wins": 0,
-        "losses": 3,
+        "losses": 4,
         "draws": 0,
         "winPct": 0.0
       }
@@ -1426,80 +1426,80 @@
       "LT": 10
     },
     "now": {
-      "KT": 1,
-      "SS": 2,
+      "SS": 1,
+      "KT": 2,
       "LG": 3,
       "HT": 4,
       "OB": 5,
       "NC": 6,
-      "LT": 7,
-      "SK": 8,
-      "HH": 9,
+      "SK": 7,
+      "HH": 8,
+      "LT": 9,
       "WO": 10
     },
     "delta": {
-      "KT": 0,
+      "KT": -1,
       "LG": -1,
-      "SK": -5,
-      "SS": 2,
+      "SK": -4,
+      "SS": 3,
       "HT": 1,
       "NC": 0,
-      "HH": -2,
+      "HH": -1,
       "OB": 3,
       "WO": -1,
-      "LT": 3
+      "LT": 1
     }
   },
   "recentScoring": {
     "HH": {
       "games": 5,
-      "runsFor": 39,
-      "runsAgainst": 42
+      "runsFor": 43,
+      "runsAgainst": 38
     },
     "HT": {
-      "games": 3,
-      "runsFor": 8,
-      "runsAgainst": 13
+      "games": 4,
+      "runsFor": 14,
+      "runsAgainst": 16
     },
     "KT": {
-      "games": 4,
-      "runsFor": 31,
-      "runsAgainst": 22
+      "games": 5,
+      "runsFor": 34,
+      "runsAgainst": 28
     },
     "LG": {
-      "games": 4,
-      "runsFor": 13,
-      "runsAgainst": 5
+      "games": 5,
+      "runsFor": 16,
+      "runsAgainst": 9
     },
     "LT": {
-      "games": 4,
-      "runsFor": 12,
-      "runsAgainst": 27
+      "games": 5,
+      "runsFor": 18,
+      "runsAgainst": 38
     },
     "NC": {
       "games": 4,
-      "runsFor": 26,
-      "runsAgainst": 12
+      "runsFor": 18,
+      "runsAgainst": 6
     },
     "OB": {
       "games": 5,
-      "runsFor": 17,
-      "runsAgainst": 14
+      "runsFor": 4,
+      "runsAgainst": 16
     },
     "SK": {
-      "games": 3,
-      "runsFor": 17,
-      "runsAgainst": 6
+      "games": 4,
+      "runsFor": 20,
+      "runsAgainst": 8
     },
     "SS": {
-      "games": 4,
-      "runsFor": 16,
-      "runsAgainst": 12
+      "games": 5,
+      "runsFor": 20,
+      "runsAgainst": 15
     },
     "WO": {
       "games": 4,
       "runsFor": 8,
-      "runsAgainst": 34
+      "runsAgainst": 21
     }
   },
   "yoy": null

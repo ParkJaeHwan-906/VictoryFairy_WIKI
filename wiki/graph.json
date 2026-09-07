@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-03T22:20:52.667802+00:00",
+  "compiledAt": "2026-09-07T22:11:23.555960+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -276,6 +276,12 @@
       "type": "player",
       "name": "류효승",
       "team": "SK"
+    },
+    {
+      "id": "player:50901",
+      "type": "player",
+      "name": "안인산",
+      "team": "KT"
     },
     {
       "id": "player:50902",
@@ -594,6 +600,12 @@
       "type": "player",
       "name": "한재승",
       "team": "HT"
+    },
+    {
+      "id": "player:51996",
+      "type": "player",
+      "name": "오태양",
+      "team": "NC"
     },
     {
       "id": "player:52001",
@@ -1013,6 +1025,12 @@
       "id": "player:53301",
       "type": "player",
       "name": "박윤성",
+      "team": "WO"
+    },
+    {
+      "id": "player:53305",
+      "type": "player",
+      "name": "박성빈",
       "team": "WO"
     },
     {
@@ -1658,6 +1676,12 @@
       "team": "WO"
     },
     {
+      "id": "player:55382",
+      "type": "player",
+      "name": "임진묵",
+      "team": "WO"
+    },
+    {
       "id": "player:55392",
       "type": "player",
       "name": "어준서",
@@ -1679,6 +1703,12 @@
       "id": "player:55396",
       "type": "player",
       "name": "윤현",
+      "team": "WO"
+    },
+    {
+      "id": "player:55397",
+      "type": "player",
+      "name": "전태현",
       "team": "WO"
     },
     {
@@ -2273,6 +2303,12 @@
       "id": "player:56503",
       "type": "player",
       "name": "이이무라",
+      "team": "LT"
+    },
+    {
+      "id": "player:56509",
+      "type": "player",
+      "name": "김현도",
       "team": "LT"
     },
     {
@@ -4732,6 +4768,12 @@
       "ref": null
     },
     {
+      "source": "player:50901",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:50902",
       "target": "team:NC",
       "type": "소속",
@@ -5084,6 +5126,12 @@
       "target": "player:63260",
       "type": "커리어교차",
       "ref": "community_post:DCINSIDE:2026-08-02:9969887"
+    },
+    {
+      "source": "player:51996",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
     },
     {
       "source": "player:52001",
@@ -5507,6 +5555,12 @@
     },
     {
       "source": "player:53301",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53305",
       "target": "team:WO",
       "type": "소속",
       "ref": null
@@ -6214,6 +6268,12 @@
       "ref": null
     },
     {
+      "source": "player:55382",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:55392",
       "target": "team:WO",
       "type": "소속",
@@ -6233,6 +6293,12 @@
     },
     {
       "source": "player:55396",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55397",
       "target": "team:WO",
       "type": "소속",
       "ref": null
@@ -6845,6 +6911,12 @@
     },
     {
       "source": "player:56503",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56509",
       "target": "team:LT",
       "type": "소속",
       "ref": null

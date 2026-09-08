@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-06T23:54:07.935085+00:00",
-  "asOf": "2026-09-07",
+  "generatedAt": "2026-09-07T23:54:28.691114+00:00",
+  "asOf": "2026-09-08",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -1452,54 +1452,54 @@
   },
   "recentScoring": {
     "HH": {
-      "games": 6,
-      "runsFor": 51,
-      "runsAgainst": 40
+      "games": 5,
+      "runsFor": 50,
+      "runsAgainst": 34
     },
     "HT": {
-      "games": 5,
-      "runsFor": 22,
-      "runsAgainst": 19
+      "games": 4,
+      "runsFor": 20,
+      "runsAgainst": 12
     },
     "KT": {
-      "games": 6,
-      "runsFor": 37,
-      "runsAgainst": 36
+      "games": 5,
+      "runsFor": 31,
+      "runsAgainst": 35
     },
     "LG": {
-      "games": 6,
-      "runsFor": 20,
-      "runsAgainst": 19
+      "games": 5,
+      "runsFor": 17,
+      "runsAgainst": 18
     },
     "LT": {
-      "games": 6,
+      "games": 5,
       "runsFor": 20,
-      "runsAgainst": 46
+      "runsAgainst": 43
     },
     "NC": {
-      "games": 5,
-      "runsFor": 20,
-      "runsAgainst": 10
+      "games": 4,
+      "runsFor": 13,
+      "runsAgainst": 8
     },
     "OB": {
-      "games": 6,
-      "runsFor": 20,
-      "runsAgainst": 25
+      "games": 5,
+      "runsFor": 19,
+      "runsAgainst": 22
     },
     "SK": {
-      "games": 5,
-      "runsFor": 29,
+      "games": 4,
+      "runsFor": 25,
       "runsAgainst": 24
     },
     "SS": {
-      "games": 6,
-      "runsFor": 30,
+      "games": 5,
+      "runsFor": 27,
       "runsAgainst": 19
     },
     "WO": {
-      "games": 5,
+      "games": 4,
       "runsFor": 12,
-      "runsAgainst": 23
+      "runsAgainst": 19
     }
   },
   "yoy": null

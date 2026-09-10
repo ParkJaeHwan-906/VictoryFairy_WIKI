@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-07T22:11:23.555960+00:00",
+  "compiledAt": "2026-09-10T22:15:59.693748+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -2534,6 +2534,12 @@
       "team": "SK"
     },
     {
+      "id": "player:56808",
+      "type": "player",
+      "name": "신상연",
+      "team": "SK"
+    },
+    {
       "id": "player:56809",
       "type": "player",
       "name": "김태현",
@@ -3084,6 +3090,12 @@
       "type": "player",
       "name": "김재열",
       "team": "NC"
+    },
+    {
+      "id": "player:64596",
+      "type": "player",
+      "name": "김유영",
+      "team": "LG"
     },
     {
       "id": "player:64646",
@@ -7162,6 +7174,12 @@
       "ref": null
     },
     {
+      "source": "player:56808",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56809",
       "target": "team:SK",
       "type": "소속",
@@ -7752,6 +7770,12 @@
     {
       "source": "player:64580",
       "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:64596",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },

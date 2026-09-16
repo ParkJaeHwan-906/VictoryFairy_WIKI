@@ -4787,3 +4787,192 @@ evidence 대조가 끝난다.
 무관하게 전체 715명 위키 풀을 균등하게 훑을 수 있는 유일한 슬롯이다 — 경기 없는
 구단(OB/WO) 소속 선수의 별명도 이 슬롯에서만 자연스럽게 채택된다는 점을 매 실행
 활용할 것.
+
+
+## 142. RELATION_LINK (지식 · 그래프 관계) — 2026-09-16 실행, game-KTHH
+
+```json
+{
+  "quizId": "QZ-20260916-063",
+  "gameId": "20260916KTHH02026",
+  "teamCodes": [
+    "KT",
+    "HH"
+  ],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "KT 박영현과 한화 박정현의 공통점은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "친형제 사이다"
+    },
+    {
+      "id": "B",
+      "text": "같은 고등학교 동기다"
+    },
+    {
+      "id": "C",
+      "text": "같은 해 신인왕 후보였다"
+    },
+    {
+      "id": "D",
+      "text": "같은 에이전트 소속이다"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/52060.md#별명·밈",
+    "quote": "- **형제 대결(박정현)**: 한화 이글스 소속인 친형 박정현과 타석에서 맞붙는 상황이 화제가 되며, \"형이 또 칠거야\" 같은 패러디 인용구가 커뮤니티에서 쓰인다 (커뮤니티 전언).[^ref6][^ref7][^ref8]"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "bqReward": 4,
+  "status": "PENDING",
+  "createdAt": "2026-09-16T00:17:59Z",
+  "deadlineAt": "2026-09-16T14:59:00Z",
+  "createdBy": "AI_ENGINE",
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      52060,
+      50709
+    ],
+    "teamCodes": [],
+    "gameId": null
+  }
+}
+```
+
+**좋은 이유**: graph.json의 `라이벌` 엣지(52060↔50709)가 가리키는 관계를, 두 선수
+문서 어느 쪽에도 실제로 서술된 "친형제" 사실로 확인한 뒤 그 문장을 그대로 인용했다
+(그래프는 "관계가 존재한다"는 확인용, evidence는 항상 위키 원문). KT-한화 대결
+당일 두 팀 선수를 형제 대결 서사로 묶어 경기 묶음 EXPERT 슬롯의 재료 희소성(하루
+평균 0~1개)을 자연스럽게 채운 사례이기도 하다.
+
+## 143. MEME_ORIGIN (지식 · 밈 유래) — 2026-09-16 실행, game-KTHH
+
+```json
+{
+  "quizId": "QZ-20260916-026",
+  "gameId": "20260916KTHH02026",
+  "teamCodes": [
+    "KT",
+    "HH"
+  ],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "KT 배정대의 별명 '한화의 배정대 러브콜'은 무엇에서 비롯됐나?",
+  "options": [
+    {
+      "id": "A",
+      "text": "한화 갤러리 이용자들이 배정대를 트레이드로 데려오자는 농담을 반복해서 밈이 형성됨"
+    },
+    {
+      "id": "B",
+      "text": "배정대가 한화 선수와 절친이라 밝혀서"
+    },
+    {
+      "id": "C",
+      "text": "배정대가 데뷔 전 한화 유니폼을 입은 사진이 퍼져서"
+    },
+    {
+      "id": "D",
+      "text": "한화 구단이 실제로 트레이드를 공식 제안해서"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/64166.md#별명·밈",
+    "quote": "- **한화의 배정대 러브콜(트레이드 밈)**: 한화이글스 갤러리 이용자들이 KT 소속 배정대를 트레이드로 데려오자는 농담을 반복적으로 올렸고, KT 갤러리 이용자들도 이를 맞받아치며 밈이 형성됐다. 이후 LG 등 다른 팀 팬 커뮤니티에서도 비슷한 농담이 이어졌다.[^ref3][^ref4][^ref5][^ref6][^ref9][^ref10][^ref11][^ref12][^ref13][^ref14][^ref15][^ref16][^ref17][^ref18][^ref19][^ref20][^ref21] (커뮤니티 전언)"
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "bqReward": 1,
+  "status": "PENDING",
+  "createdAt": "2026-09-16T00:17:59Z",
+  "deadlineAt": "2026-09-16T14:59:00Z",
+  "createdBy": "AI_ENGINE",
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      64166
+    ],
+    "teamCodes": [],
+    "gameId": null
+  }
+}
+```
+
+**좋은 이유**: 오늘 경기 묶음(KT vs 한화) 양 팀을 모두 가로지르는 밈("한화 갤러리가
+KT 배정대를 데려오자고 농담")이라 귀속 축(오늘 KT-한화 팬)과 주제 축(배정대,
+KT 소속)이 자연스럽게 맞아떨어진다. 오답 3개가 전부 "그럴듯한 가짜 유래"라
+distractor 전략을 그대로 따랐고, 별명 문구 자체가 특정 사건(반복된 트레이드
+드립)에서 나와 §4-1 고유성 검사(범용 호칭 패턴 아님)를 통과한다.
+
+## 144. RELATION_LINK (지식 · 커리어 교차) — 2026-09-16 실행, 공통 묶음
+
+```json
+{
+  "quizId": "QZ-20260916-065",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "CAREER",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "KIA 하주석과 한화 이형범의 공통점은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2026년 7월 말 맞트레이드로 서로 팀을 바꿨다"
+    },
+    {
+      "id": "B",
+      "text": "둘 다 국가대표 주전 유격수 출신이다"
+    },
+    {
+      "id": "C",
+      "text": "같은 소속사 선수다"
+    },
+    {
+      "id": "D",
+      "text": "같은 시즌 신인왕 후보였다"
+    }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/62700.md#커리어 이력",
+    "quote": "- 2026년 7월 말 한화 이글스에서 KIA 타이거즈로 트레이드 이적(상대는 투수 이형범). 해설위원 장성호가 \"기아 이득\"으로 평가한 트레이드로 화제가 됐다.[^ref2] (커뮤니티 전언)"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "bqReward": 4,
+  "status": "PENDING",
+  "createdAt": "2026-09-16T00:17:59Z",
+  "deadlineAt": "2026-09-16T14:59:00Z",
+  "createdBy": "AI_ENGINE",
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [
+      62700,
+      62951
+    ],
+    "teamCodes": [],
+    "gameId": null
+  }
+}
+```
+
+**좋은 이유**: `커리어교차` 엣지의 실체가 "맞트레이드"(2026년 7월 말, 하주석↔이형범)
+라는 명확한 사실이라 evidence 대조가 한 번에 통과했다. subjectScope=PLAYER라
+top-level teamCodes는 비우고(공통 묶음 원칙) playerIds 2명만 채워, 두 선수의
+현재 소속(KIA·한화)이 각각 오늘 경기가 없는 팀이어도 공통 묶음에서 자연스럽게
+소화된 사례다 — "리그 전체" 소재가 꼭 순위·통산기록일 필요는 없다는 참고.

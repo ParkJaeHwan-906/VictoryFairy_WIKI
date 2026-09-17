@@ -4976,3 +4976,139 @@ distractor 전략을 그대로 따랐고, 별명 문구 자체가 특정 사건(
 top-level teamCodes는 비우고(공통 묶음 원칙) playerIds 2명만 채워, 두 선수의
 현재 소속(KIA·한화)이 각각 오늘 경기가 없는 팀이어도 공통 묶음에서 자연스럽게
 소화된 사례다 — "리그 전체" 소재가 꼭 순위·통산기록일 필요는 없다는 참고.
+
+## 145. H2H_SEASON_RECORD (지식 · 상대전적) — 2026-09-17 실행, game-SKNC
+
+```json
+{
+  "gameId": "20260917SKNC02026",
+  "teamCodes": ["SK", "NC"],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "H2H_SEASON_RECORD",
+  "format": "BINARY",
+  "question": "올 시즌 SK는 NC와의 상대전적에서 우위다?",
+  "options": [
+    { "id": "A", "text": "우위다" },
+    { "id": "B", "text": "열세다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#상대전적",
+    "quote": "**NC vs SK**: NC 3승 SK 6승 · 2무 (최근 2026-07-26 5:5, 무승부)"
+  },
+  "settlement": null,
+  "difficulty": "MEDIUM",
+  "pointReward": 50,
+  "bqReward": 2,
+  "status": "PENDING",
+  "createdAt": "2026-09-17T00:19:32Z",
+  "deadlineAt": "2026-09-17T14:59:00Z",
+  "createdBy": "AI_ENGINE",
+  "subject": {
+    "scope": "MATCHUP",
+    "playerIds": [],
+    "teamCodes": ["SK", "NC"],
+    "gameId": null
+  },
+  "quizId": "QZ-20260917-003"
+}
+```
+
+**좋은 이유**: "우위다/열세다" 두 단어 보기라 즉답이 빠르고, 3승·2무의 근소한 우위라는
+의외성 있는 조합(6승은 승수만 보면 커 보이지만 무승부가 2번 끼어 있어 체감 우위가
+크지 않다는 점)이 재미를 살렸다. subjectScope=MATCHUP 규칙대로 정답 보기에 팀명을
+전혀 쓰지 않아(§11) 유출 게이트도 형식적으로 걸릴 일이 없다.
+
+## 146. RELATION_LINK (지식 · 밈·관계) — 2026-09-17 실행, game-WOHT
+
+```json
+{
+  "gameId": "20260917WOHT02026",
+  "teamCodes": ["WO", "HT"],
+  "kind": "KNOWLEDGE",
+  "type": "CAREER",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "KIA 하주석과 김범수의 공통점은?",
+  "options": [
+    { "id": "A", "text": "2026년 한화에서 KIA로 함께 트레이드된 동료다" },
+    { "id": "B", "text": "둘 다 국가대표 주전 유격수 출신이다" },
+    { "id": "C", "text": "같은 고등학교 동기다" },
+    { "id": "D", "text": "같은 에이전트 소속이다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/65769.md#커리어 이력",
+    "quote": "2026년 하주석·이태양과 함께 KIA로 이적했고, KIA가 한화에 현금 20억 원과 투수 이형범을 내주는 트레이드였다는 전언도 있다"
+  },
+  "settlement": null,
+  "difficulty": "EXPERT",
+  "pointReward": 120,
+  "bqReward": 4,
+  "status": "PENDING",
+  "createdAt": "2026-09-17T00:19:32Z",
+  "deadlineAt": "2026-09-17T14:59:00Z",
+  "createdBy": "AI_ENGINE",
+  "subject": {
+    "scope": "PLAYER",
+    "playerIds": [62700, 65769],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "quizId": "QZ-20260917-030"
+}
+```
+
+**좋은 이유**: `커리어교차` 엣지가 "같은 트레이드로 함께 이적"이라는 구체적 사실이라
+evidence 대조가 한 번에 통과했다. 오답 3개(대표팀 유격수·동문·에이전트)가 전부
+"관계 유형"으로서 그럴듯해 정답의 특수성이 도드라진다 — RELATION_LINK가 EXPERT로
+분류된 이유(밈공유·커리어교차 엣지가 47건뿐이라 재료가 얇음)를 잘 보여주는 동시에,
+오늘처럼 "같은 트레이드 동료"류 사실이 나오면 재료 희소성과 무관하게 재미가 확보됨을
+보여주는 사례.
+
+## 147. MEME_OWNER (지식 · 밈·관계) — 2026-09-17 실행, common
+
+```json
+{
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_OWNER",
+  "format": "MULTI4",
+  "question": "'12년 만의 외국인 듀오'로 페덱과 짝지어지는 삼성 선수는?",
+  "options": [
+    { "id": "A", "text": "디아즈" },
+    { "id": "B", "text": "구자욱" },
+    { "id": "C", "text": "김지찬" },
+    { "id": "D", "text": "이재현" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54400.md#별명·밈",
+    "quote": "투수 페덱과 함께 2014년 밴덴헐크+나바로 조합(백인 투수+흑인 야수)에 빗대지는 밈."
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "bqReward": 1,
+  "status": "PENDING",
+  "createdAt": "2026-09-17T00:19:32Z",
+  "deadlineAt": "2026-09-17T14:59:00Z",
+  "createdBy": "AI_ENGINE",
+  "subject": {
+    "scope": "LEAGUE",
+    "playerIds": [],
+    "teamCodes": [],
+    "gameId": null
+  },
+  "quizId": "QZ-20260917-012"
+}
+```
+
+**좋은 이유**: 오답 4명이 전부 같은 팀(삼성) 외국인·주전 선수라 "그럴듯한 오답" 조건을
+만족하면서도, 밈 자체가 "2014년 밴덴헐크+나바로 조합"이라는 과거 사례를 구체적으로
+언급해 유래가 한 문장으로 완결된다(casebook bad.md #67 "유래 설명이 빈약한 애칭
+통보"와 대비되는 반례). 공통 묶음에서도 특정 팀에 치우치지 않도록 오늘 경기가 없는
+삼성 소재를 고른 점도 팀 분산 원칙(ROUTINE ③단계)에 맞다.

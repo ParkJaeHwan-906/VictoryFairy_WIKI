@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-14T22:11:48.467770+00:00",
+  "compiledAt": "2026-09-17T22:27:17.243423+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -224,6 +224,12 @@
       "team": "HH"
     },
     {
+      "id": "player:50710",
+      "type": "player",
+      "name": "김범준",
+      "team": "HH"
+    },
+    {
       "id": "player:50711",
       "type": "player",
       "name": "김승일",
@@ -294,6 +300,12 @@
       "type": "player",
       "name": "한재환",
       "team": "NC"
+    },
+    {
+      "id": "player:50904",
+      "type": "player",
+      "name": "이종준",
+      "team": "LG"
     },
     {
       "id": "player:50992",
@@ -3614,6 +3626,12 @@
       "team": "NC"
     },
     {
+      "id": "player:68036",
+      "type": "player",
+      "name": "최이준",
+      "team": "LT"
+    },
+    {
       "id": "player:68043",
       "type": "player",
       "name": "김민",
@@ -3773,6 +3791,12 @@
       "id": "player:68525",
       "type": "player",
       "name": "한동희",
+      "team": "LT"
+    },
+    {
+      "id": "player:68529",
+      "type": "player",
+      "name": "이승헌",
       "team": "LT"
     },
     {
@@ -4726,6 +4750,12 @@
       "ref": null
     },
     {
+      "source": "player:50710",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:50711",
       "target": "team:HH",
       "type": "소속",
@@ -4794,6 +4824,12 @@
     {
       "source": "player:50903",
       "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:50904",
+      "target": "team:LG",
       "type": "소속",
       "ref": null
     },
@@ -8344,6 +8380,12 @@
       "ref": null
     },
     {
+      "source": "player:68036",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:68043",
       "target": "team:SK",
       "type": "소속",
@@ -8531,6 +8573,12 @@
     },
     {
       "source": "player:68525",
+      "target": "team:LT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:68529",
       "target": "team:LT",
       "type": "소속",
       "ref": null

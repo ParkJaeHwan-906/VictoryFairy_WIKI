@@ -1523,3 +1523,68 @@ bad.md #69와 동일하게 재미 3점(4점 미만)으로 다시 폐기됐다. *
 문구를 아무리 다듬어도 해소되지 않으므로, 이 선수는 다른 위키 섹션(커리어 이력
 등)에 새 소재가 쌓이기 전까지는 MEME_ORIGIN/MEME_OWNER 후보에서 계속 제외하는
 편이 낫다.
+
+## 72. RELATION_LINK/CAREER_PATH/MEME_ORIGIN — "정적 사실"은 (템플릿,엔티티) 단위가 아니라 값 단위로 중복 검사해야 한다 (2026-09-18 실행, 방법론)
+
+이번 실행에서 raw-candidates 84건을 만든 뒤 `.work/quiz-candidates/`(최근 7일)와
+대조하며 처음에는 "(templateId, subject 엔티티)가 최근 7일에 이미 있었는가"만
+확인했다. 이 기준으로는 STREAK_CURRENT·HOME_AWAY_SPLIT처럼 날마다 값이 바뀌는
+통계와, RELATION_LINK·CAREER_PATH·MEME_ORIGIN·ALL_TIME_LEADER·MEME_OWNER처럼
+**한 번 나온 사실이 영원히 그대로인** 정적 소재를 구분하지 못한다. 실제로 다시
+대조해보니 RELATION_LINK 3건(김정율·최지명 / 안재석·김민석 / 디아즈·페덱)과
+CAREER_PATH 3건(홍종표 / 이주형 / 최우인), MEME_ORIGIN 2건(김지찬 '라이온즈 메시' /
+손성빈 '스나이퍼 Son'), MEME_OWNER 1건(권동진 '알감자')이 최근 7일 발행분과
+**완전히 같은 사실**이었다(문구만 살짝 다름). 검증 패스 §2 "같은 사실을 다른
+문구로 묻는 경우도 포함"이 정확히 이 상황을 가리키는데도, (템플릿,엔티티) 매칭만
+믿고 넘어갈 뻔했다.
+
+**교훈**: 정적 사실 계열 템플릿(RELATION_LINK·CAREER_PATH·MEME_ORIGIN·MEME_OWNER·
+ALL_TIME_LEADER·MILESTONE_FIRST)은 최근 7일 발행분의 `subject`뿐 아니라 **답 텍스트
+또는 evidence quote까지 함께 대조**해야 한다 — 이 여섯 템플릿은 재료 풀(위키
+선수 수·all-time-records 항목 수·graph 엣지 수)이 유한해서 실행을 거듭할수록
+"아직 안 쓴 조합"이 빠르게 고갈된다(오늘 LG-KT 묶음은 결국 RELATION_LINK 후보가
+하나도 안 남아 EXPERT 슬롯을 비웠다). 반대로 STREAK_CURRENT·HOME_AWAY_SPLIT·
+RECENT_VS_EARLY·STANDINGS_NOW·STANDINGS_CLIMB·MONTHLY_BEST·SEASON_STAT_LEADER·
+TRENDING_WHO처럼 매일 갱신되는 통계는 같은 (템플릿,엔티티)라도 값이 바뀌었으면
+새 사실이다 — 단, **HOME_AWAY_SPLIT·STANDINGS_NOW·STANDINGS_CLIMB·MONTHLY_BEST·
+SEASON_STAT_LEADER는 시즌 누적치라 하루 이틀로는 결론(어느 팀이 강한지/1위인지)이
+거의 안 바뀐다**는 것도 이번에 실측으로 확인했다 — 오늘도 HOME_AWAY_SPLIT 8팀
+전부, STANDINGS_NOW 1위/10위, STANDINGS_CLIMB 상승/하락 1위, SEASON_STAT_LEADER
+타율/ERA 1위가 최근 발행분과 결론이 동일해 전부 폐기했다. 이 다섯 템플릿은 "값이
+바뀌었는지"를 매번 실제로 대조하지 않으면 (템플릿,엔티티) 기준 통과만 보고
+착각하기 쉽다.
+
+## 73. MILESTONE_FIRST — all-time-records.yaml v0 초안의 '통산 ○○ — △△' 표제가 실제 의미와 어긋나 재미 3점 (2026-09-18 실행, common)
+
+```json
+{
+  "templateId": "MILESTONE_FIRST",
+  "format": "MULTI4",
+  "question": "KBO 역대 첫 시즌 최다 타수 기록의 주인공은?",
+  "options": [
+    { "id": "A", "text": "백인천" }, { "id": "B", "text": "장효조" },
+    { "id": "C", "text": "이만수" }, { "id": "D", "text": "김상훈" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "question-gen/config/all-time-records.yaml#history-player-hitter",
+    "quote": "- rank: 1\n    name: 백인천\n    value: '250'"
+  }
+}
+```
+
+같은 카테고리(`history-player-pitcher`, "통산 투수 — 승")로 만든 두 번째 후보
+("KBO 기록실 '통산 투수 — 승' 부문에 3번째로 등재된 선수는?")도 같은 이유로
+함께 폐기됐다.
+
+**나쁜 이유**: `generation-rules.md` §6 규칙대로 `rankBasis: chronological`을
+"최초 달성" 의미로만 서술했고 evidence 대조·안전 검사는 모두 통과했지만, 카테고리
+표제 "통산 타자 — 타수"가 실제로는 "그 해의 타수왕"을 연도 오름차순으로 나열한
+표라는 사실이 문구만 봐서는 와닿지 않는다 — "역대 첫 시즌 최다 타수"라는 조합
+자체가 어색하게 들려(타수는 보통 "1위"를 다투는 기록으로 안 느껴짐) 재미
+채점에서 3점(4점 미만)으로 폐기됐다. **교훈**: 이 카테고리는 `all-time-records.yaml`
+머리 주석이 "v0 초안(사람 검수 전)"이라고 경고한 대로 표제 자체가 헤드라인
+통계가 아닐 수 있다(§6 참고) — 사람이 `sourcePage: history-player-hitter`·
+`history-player-pitcher` 두 카테고리의 표제를 실제 KBO 기록실 페이지명에 맞게
+검수하기 전까지는, MILESTONE_FIRST는 `history-top-hitter`처럼 표제와 내용이
+명확히 일치하는(타율 같은 익숙한 지표) 카테고리 위주로 쓰는 편이 안전하다.

@@ -5112,3 +5112,65 @@ evidence 대조가 한 번에 통과했다. 오답 3개(대표팀 유격수·동
 언급해 유래가 한 문장으로 완결된다(casebook bad.md #67 "유래 설명이 빈약한 애칭
 통보"와 대비되는 반례). 공통 묶음에서도 특정 팀에 치우치지 않도록 오늘 경기가 없는
 삼성 소재를 고른 점도 팀 분산 원칙(ROUTINE ③단계)에 맞다.
+
+## 148. H2H_SEASON_RECORD (지식 · 시즌 통계) — 2026-09-18 실행, game-LGKT
+
+```json
+{
+  "gameId": "20260918LGKT02026",
+  "teamCodes": ["LG", "KT"],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "H2H_SEASON_RECORD",
+  "format": "BINARY",
+  "question": "올해 KT는 LG 상대전적에서 우위일까?",
+  "options": [
+    { "id": "A", "text": "그렇다" },
+    { "id": "B", "text": "아니다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/season.md#상대전적",
+    "quote": "**KT vs LG**: KT 10승 LG 5승 · 0무 (최근 2026-08-20 16:4, 원정팀 승)"
+  },
+  "settlement": null,
+  "difficulty": "MEDIUM",
+  "subject": { "scope": "MATCHUP", "playerIds": [], "teamCodes": ["KT", "LG"], "gameId": null },
+  "quizId": "QZ-20260918-008"
+}
+```
+
+**좋은 이유**: "그렇다/아니다"만 쓰는 BINARY라 정답 유출 게이트(`validate_candidates.py`
+check 9)를 아예 걱정할 필요가 없고, 오늘 실제로 맞붙는 두 팀의 상대전적이라
+LG·KT 양쪽 팬 모두에게 즉시 체감되는 소재다. `LAST_MATCHUP`과 같은 원문 줄
+("최근 2026-08-20 16:4, 원정팀 승")을 evidence로 공유하면서도 "누적 우위"와
+"직전 스코어"라는 서로 다른 사실을 묻어 §2 중복 검사를 자연스럽게 통과했다 —
+같은 원문 한 줄에서 서로 다른 두 문제를 뽑아내는 좋은 예.
+
+## 149. STREAK_CURRENT (지식 · 시즌 통계) — 2026-09-18 실행, game-LGKT
+
+```json
+{
+  "gameId": "20260918LGKT02026",
+  "teamCodes": ["LG", "KT"],
+  "kind": "KNOWLEDGE",
+  "type": "STATS",
+  "templateId": "STREAK_CURRENT",
+  "format": "OX",
+  "question": "LG는 현재 4연승 중이다 - O/X",
+  "options": [{ "id": "A", "text": "O" }, { "id": "B", "text": "X" }],
+  "answer": "A",
+  "evidence": { "source": "wiki/stats/season.md#연승·연패", "quote": "- LG: 4연승" },
+  "settlement": null,
+  "difficulty": "EASY",
+  "subject": { "scope": "TEAM", "playerIds": [], "teamCodes": ["LG"], "gameId": null },
+  "quizId": "QZ-20260918-053"
+}
+```
+
+**좋은 이유**: bad.md #70의 교훈("1연패"는 임팩트 없음)을 반대로 확인해주는 사례다
+— 연속 기록 길이가 4로 충분히 커서 "오늘 이기면 5연승"이라는 기대감을 자연스럽게
+얹을 수 있었다. 이번 실행에서 KT·한화처럼 "직전 경기 무승부라 연속 기록 없음"인
+팀은 애초에 STREAK_CURRENT 후보에서 제외했는데(무승부는 O/X로 답할 "연속 기록"
+자체가 없어 evidence 대조가 성립하지 않는다), 이 판단 기준을 이번에 처음
+명문화해둔다 — 다음 실행도 같은 필터를 적용할 것.

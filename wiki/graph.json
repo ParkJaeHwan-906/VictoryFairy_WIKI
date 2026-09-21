@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-17T22:27:17.243423+00:00",
+  "compiledAt": "2026-09-21T22:14:43.721203+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -1541,6 +1541,12 @@
       "id": "player:55005",
       "type": "player",
       "name": "오서진",
+      "team": "KT"
+    },
+    {
+      "id": "player:55010",
+      "type": "player",
+      "name": "장민호",
       "team": "KT"
     },
     {
@@ -6155,6 +6161,12 @@
     },
     {
       "source": "player:55005",
+      "target": "team:KT",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:55010",
       "target": "team:KT",
       "type": "소속",
       "ref": null

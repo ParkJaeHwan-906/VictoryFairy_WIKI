@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-21T22:14:43.721203+00:00",
+  "compiledAt": "2026-09-24T22:35:28.711257+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -419,6 +419,12 @@
       "id": "player:51302",
       "type": "player",
       "name": "이주형",
+      "team": "WO"
+    },
+    {
+      "id": "player:51303",
+      "type": "player",
+      "name": "김시앙",
       "team": "WO"
     },
     {
@@ -2552,6 +2558,12 @@
       "team": "SK"
     },
     {
+      "id": "player:56807",
+      "type": "player",
+      "name": "오시후",
+      "team": "SK"
+    },
+    {
       "id": "player:56808",
       "type": "player",
       "name": "신상연",
@@ -4601,6 +4613,12 @@
     },
     {
       "source": "player:50234",
+      "target": "player:52043",
+      "type": "사건연루",
+      "ref": "community_post:FMKOREA:2026-08-25:10252871794"
+    },
+    {
+      "source": "player:50234",
       "target": "team:OB",
       "type": "소속",
       "ref": null
@@ -4973,6 +4991,12 @@
     },
     {
       "source": "player:51302",
+      "target": "team:WO",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:51303",
       "target": "team:WO",
       "type": "소속",
       "ref": null
@@ -5771,6 +5795,12 @@
     },
     {
       "source": "player:53706",
+      "target": "player:68050",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-09-18:17780355"
+    },
+    {
+      "source": "player:53706",
       "target": "team:HH",
       "type": "소속",
       "ref": null
@@ -6382,6 +6412,12 @@
       "ref": null
     },
     {
+      "source": "player:55417",
+      "target": "player:55440",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-08-25:18441561"
+    },
+    {
       "source": "player:55420",
       "target": "team:SS",
       "type": "소속",
@@ -6434,6 +6470,12 @@
       "target": "team:SS",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:55440",
+      "target": "player:55417",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-08-25:18441561"
     },
     {
       "source": "player:55455",
@@ -7222,6 +7264,12 @@
       "ref": null
     },
     {
+      "source": "player:56807",
+      "target": "team:SK",
+      "type": "소속",
+      "ref": null
+    },
+    {
       "source": "player:56808",
       "target": "team:SK",
       "type": "소속",
@@ -7330,6 +7378,12 @@
       "ref": null
     },
     {
+      "source": "player:56932",
+      "target": "player:56967",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-09-13:10069111"
+    },
+    {
       "source": "player:56941",
       "target": "team:NC",
       "type": "소속",
@@ -7376,6 +7430,12 @@
       "target": "team:NC",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:56967",
+      "target": "player:56932",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-09-13:10069111"
     },
     {
       "source": "player:60146",
@@ -7466,6 +7526,18 @@
       "target": "team:KT",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:61895",
+      "target": "player:51895",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-07-30:7012460"
+    },
+    {
+      "source": "player:61895",
+      "target": "player:65343",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-07-30:7012460"
     },
     {
       "source": "player:61895",
@@ -7661,6 +7733,12 @@
     },
     {
       "source": "player:63512",
+      "target": "player:52605",
+      "type": "라이벌",
+      "ref": "community_post:DCINSIDE:2026-08-23:2868652"
+    },
+    {
+      "source": "player:63512",
       "target": "team:WO",
       "type": "소속",
       "ref": null
@@ -7844,6 +7922,12 @@
       "target": "team:SK",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:64861",
+      "target": "player:64153",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-09-06:7132780"
     },
     {
       "source": "player:64984",
@@ -8066,6 +8150,12 @@
       "target": "team:OB",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:66145",
+      "target": "player:63145",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-09-21:18875281"
     },
     {
       "source": "player:66145",

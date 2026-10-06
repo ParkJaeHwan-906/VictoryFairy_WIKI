@@ -47,3 +47,27 @@ gaps:
     flaggedAt: 2026-10-06
     flaggedBy: "QZ-2026-10-06 LT perTeam"
     processedAt: null
+  - team: KT
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 36명 전원 위키 별명·밈 섹션이 빈 placeholder, 또는 밈이 아닌 단순 평판(외모·마킹지 판매 등)"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 KT perTeam (3차 실행)"
+    processedAt: null
+  - team: LT
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 로스터 중 밈 실자료 보유 5명 확인했으나 그룹 공용 별명(§4-1 탈락)·유래 서술 없음 등으로 전원 제외"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 LT perTeam (3차 실행)"
+    processedAt: null
+  - team: NC
+    templateTypes: [RELATION_LINK]
+    reason: "perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 6쌍 전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 NC perTeam (3차 실행)"
+    processedAt: null
+  - team: HH
+    templateTypes: [RELATION_LINK]
+    reason: "perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 9쌍 전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 HH perTeam (3차 실행)"
+    processedAt: null

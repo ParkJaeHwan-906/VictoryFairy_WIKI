@@ -1,0 +1,49 @@
+gaps:
+  - team: LG
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 로스터 37명 중 거의 전원 '별명·밈' 섹션이 빈 placeholder, 나머지는 범용 호칭 패턴(§4-1)으로 탈락"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 LG perTeam"
+    processedAt: null
+  - team: OB
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 26명 전원 위키 별명·밈 섹션 실질 내용 없음"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 OB perTeam"
+    processedAt: null
+  - team: HT
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 38명 중 37명 빈 섹션, 1명은 밈이 아닌 단순 평판"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 HT perTeam"
+    processedAt: null
+  - team: HH
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 31명 전원 빈 섹션/고유성 탈락/evidence 품질 미달"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 HH perTeam"
+    processedAt: null
+  - team: SK
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 41명 중 거의 전원 빈 섹션(실제 밈 보유 선수는 이미 MEME_ORIGIN/MEME_OWNER로 소진)"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 SK perTeam"
+    processedAt: null
+  - team: NC
+    templateTypes: [MEME_ORIGIN]
+    reason: "perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 40명 중 39명 빈 섹션, 1명은 그룹 공용 별명으로 고유성 탈락"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 NC perTeam"
+    processedAt: null
+  - team: KT
+    templateTypes: [RELATION_LINK]
+    reason: "perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 KT 소속 선수 간 안전 엣지(밈공유/커리어교차/라이벌) 자체가 0쌍"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 KT perTeam"
+    processedAt: null
+  - team: LT
+    templateTypes: [RELATION_LINK]
+    reason: "perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 LT 소속 선수 간 안전 엣지 자체가 0쌍"
+    flaggedAt: 2026-10-06
+    flaggedBy: "QZ-2026-10-06 LT perTeam"
+    processedAt: null

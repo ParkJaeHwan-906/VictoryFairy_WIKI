@@ -11,8 +11,8 @@ gaps:
   templateTypes:
   - MEME_ORIGIN
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 26명 전원 위키 별명·밈 섹션 실질 내용 없음
-  flaggedAt: '2026-10-08'
-  flaggedBy: QZ-2026-10-08 OB perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 OB perTeam
   processedAt: null
 - team: HT
   templateTypes:
@@ -41,24 +41,24 @@ gaps:
   - MEME_ORIGIN
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 40명 중 39명 빈 섹션, 1명은 그룹 공용 별명으로 고유성
     탈락
-  flaggedAt: 2026-10-06
-  flaggedBy: QZ-2026-10-06 NC perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 NC perTeam
   processedAt: null
 - team: KT
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 KT 소속 선수 간 안전 엣지(밈공유/커리어교차/라이벌)
     자체가 0쌍
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 KT perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 KT perTeam
   processedAt: null
 - team: LT
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 LT 소속 선수 간 안전 엣지 자체가
     0쌍
-  flaggedAt: '2026-10-08'
-  flaggedBy: QZ-2026-10-08 LT perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
@@ -73,65 +73,72 @@ gaps:
   - MEME_ORIGIN
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 로스터 중 밈 실자료 보유 5명 확인했으나 그룹 공용 별명(§4-1
     탈락)·유래 서술 없음 등으로 전원 제외
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 LT perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 LT perTeam
   processedAt: null
 - team: NC
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 6쌍 전부 최근 7일 이력에서
     이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 NC perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 NC perTeam
   processedAt: null
 - team: HH
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 9쌍 전부 최근 7일 이력에서
     이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 HH perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 HH perTeam
   processedAt: null
 - team: OB
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 11쌍(10개 팀 중 최다)이나
     전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 재사용이 빨라 반복 실행 시 금방 소진됨)
-  flaggedAt: '2026-10-08'
-  flaggedBy: QZ-2026-10-08 OB perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 OB perTeam
   processedAt: null
 - team: SK
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 3쌍 전부 최근 7일 이력에서
     이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 SK perTeam
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 SK perTeam
   processedAt: null
 - team: HT
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(데일-김도영, 김범수-하주석)
-    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게
-    소진됨)
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 HT perTeam
+    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 HT perTeam
   processedAt: null
 - team: SS
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(디아즈-페덱, 이진용-함수호)
-    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게
-    소진됨)
-  flaggedAt: '2026-10-07'
-  flaggedBy: QZ-2026-10-07 SS perTeam
+    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 SS perTeam
   processedAt: null
 - team: WO
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 자체는 3쌍 있으나 2쌍은
-    최근 7일 이력에서 이미 발행, 남은 1쌍은 로스터 트랜잭션(콜업/말소 엇갈림) 서사뿐이라 §3 금지 패턴과 겹쳐
-    사용 불가 — 엣지 수가 적은 게 아니라 '안전하게 쓸 수 있는' 엣지가 부족한 경우
-  flaggedAt: '2026-10-08'
-  flaggedBy: QZ-2026-10-08 WO perTeam
+    최근 7일 이력에서 이미 발행, 남은 1쌍은 로스터 트랜잭션(콜업/말소 엇갈림) 서사뿐이라 §3 금지 패턴과 겹쳐 사용 불가 — 엣지 수가
+    적은 게 아니라 '안전하게 쓸 수 있는' 엣지가 부족한 경우
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 WO perTeam
+  processedAt: null
+- team: LG
+  templateTypes:
+  - RELATION_LINK
+  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 3쌍(김대현-배재준, 김정율-최지명,
+    이정용-임찬규) 전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게
+    소진됨)
+  flaggedAt: '2026-10-09'
+  flaggedBy: QZ-2026-10-09 LG perTeam
   processedAt: null

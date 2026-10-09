@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-07T23:56:49.410639+00:00",
-  "asOf": "2026-10-08",
+  "generatedAt": "2026-10-08T23:55:28.830589+00:00",
+  "asOf": "2026-10-09",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -1565,8 +1565,8 @@
   "recentVsPrior": {
     "HH": {
       "recentWinPct": 0.4,
-      "priorWinPct": 0.167,
-      "delta": 0.233
+      "priorWinPct": 0.2,
+      "delta": 0.2
     },
     "HT": {
       "recentWinPct": 0.8,
@@ -1590,8 +1590,8 @@
     },
     "NC": {
       "recentWinPct": 0.2,
-      "priorWinPct": 0.333,
-      "delta": -0.133
+      "priorWinPct": 0.2,
+      "delta": 0.0
     },
     "OB": {
       "recentWinPct": 0.6,

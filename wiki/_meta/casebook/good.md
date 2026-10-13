@@ -6550,3 +6550,58 @@ subject 규칙을 다시 처음부터 틀리기 쉬운데, 유닛이 §11 예시
 유닛과 겹칠 수 있다"는 경고를 추가하면 이 27건류는 생성 단계에서
 줄겠지만, 완전히 없어지진 않을 것이므로(병렬 위임이 유지되는 한
 구조적 사각지대) 6단계의 교차-유닛 스캔은 계속 필요하다.
+
+## 213 (2026-10-13) — 경기 없는 날, perTeam §3-2/§3-3 전수 의무가 10개 유닛 전부에서 숫자로 증명된 사례
+
+이날은 `game_schedule` 파티션이 없어(포스트시즌 간격 등으로 추정)
+`perGame`이 구조적으로 0건이었다 — perTeam 10유닛 + common 1유닛만
+병렬 위임했다. 모든 유닛이 예외 없이 §3-2(TEAMMATE_STAT_COMPARE
+전부 나열)·§3-3(로스터 전수 스캔표) 의무를 핸드백에 수치로
+증명했고, 메인 세션이 그 수치를 검증 단계에서 직접 재계산해
+일치를 재확인했다(예: OB `자격 타자 9명·투수 7명 → 57쌍×3지표=171건
+중 동률 5·중복 97 제외 → 69건`이 실제 작성 파일 수와 정확히 일치).
+그 결과 재료가 아직 안 마른 팀(OB 93건·LT 58건)과 이미 7일 연속
+채굴로 마른 팀(NC 6건·SS 8건)이 뚜렷하게 갈렸는데, **둘 다 같은
+절차(전부 나열 → 최근7일 대조 → 남는 만큼만)를 똑같이 따른
+결과**라는 점이 핵심이다 — 적게 나온 팀도 "서브에이전트가 멈춘
+것"이 아니라 "재료가 실제로 없는 것"임을 숫자로 구분할 수 있었다.
+
+```json
+{
+  "quizId": "team-OB-001",
+  "gameId": null,
+  "teamCodes": ["OB"],
+  "kind": "KNOWLEDGE",
+  "type": "STAT_COMPARE",
+  "templateId": "TEAMMATE_STAT_COMPARE",
+  "format": "BINARY",
+  "question": "두산 안재석·조수행 중 올 시즌 안타가 더 많은 선수는?",
+  "options": [{ "id": "A", "text": "안재석" }, { "id": "B", "text": "조수행" }],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/player_season_stat/2026-10-12/player_season_stat_51203.json",
+    "quote": "두산 안재석은(는) 2026시즌 16경기 70타수 26안타(타율 0.371) 1홈런 10타점 1도루를 기록했다."
+  },
+  "settlement": null,
+  "difficulty": "EASY",
+  "pointReward": 30,
+  "bqReward": 1,
+  "subject": { "scope": "PLAYER", "playerIds": [51203, 66209], "teamCodes": ["OB"], "gameId": null }
+}
+```
+
+**좋은 이유**: 보기에 두 선수 이름만 있고 수치가 전혀 노출되지
+않았고(비교형 설계 그대로), evidence는 정답(더 우수한) 선수 1명의
+envelope만 가리키며 `content` 문장을 원문 그대로 인용했다. 지표가
+`hits`(안타, raw count)이므로 difficulty를 카탈로그 기본값(MEDIUM)이
+아니라 §3-2 표대로 EASY로 정확히 재분류했다.
+
+**이번 실행에서 새로 발견한 교차-검증 포인트**: `material-gaps.yaml`
+의 RELATION_LINK 미처리 항목(HH·HT·LT·NC·OB 5팀)이 오늘도 똑같이
+0건으로 재확인됐다 — 같은 `(team, templateTypes)` 조합이 이미
+`processedAt: null`로 미처리 상태였으므로 새 항목을 추가하지 않고
+`flaggedAt`만 오늘 날짜로 갱신했다(2026-10-06 신설 규칙 그대로
+작동). KT·LG·SK·SS·WO는 오늘 RELATION_LINK가 1~2건씩 나와(소진되지
+않음) 그 팀들의 기존 unprocessed 항목은 그대로 두고 건드리지
+않았다 — "오늘 0건이 아니면 flaggedAt을 갱신하지 않는다"는 원칙을
+처음으로 실제 분기했다.

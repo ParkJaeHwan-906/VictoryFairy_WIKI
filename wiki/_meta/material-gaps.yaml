@@ -57,10 +57,10 @@ gaps:
 - team: LT
   templateTypes:
   - RELATION_LINK
-  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 LT 소속 선수 간 안전 엣지 자체가
-    0쌍. 2026-10-10 재확인에서도 0쌍(구조적 결핍 재확인)
-  flaggedAt: '2026-10-12'
-  flaggedBy: QZ-20261012 LT perTeam
+  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 LT 소속 선수 간 안전 엣지가 1쌍뿐이고
+    그마저 유일 타입이 사건연루(금지)라 쓸 수 없음. 2026-10-13 재확인에서도 동일(구조적 결핍 재확인)
+  flaggedAt: '2026-10-13'
+  flaggedBy: QZ-20261013 LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
@@ -81,27 +81,29 @@ gaps:
 - team: NC
   templateTypes:
   - RELATION_LINK
-  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 6쌍 전부 최근 7일 이력에서
-    이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨)
-  flaggedAt: '2026-10-12'
-  flaggedBy: QZ-20261012 NC perTeam
+  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍 전부 최근 7일 이력에서
+    이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-13
+    재확인에서도 신규 쌍 없음
+  flaggedAt: '2026-10-13'
+  flaggedBy: QZ-20261013 NC perTeam
   processedAt: null
 - team: HH
   templateTypes:
   - RELATION_LINK
-  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 9쌍 전부 최근 7일 이력에서
-    이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-10 재확인에서도
-    신규 쌍 없음
-  flaggedAt: '2026-10-12'
-  flaggedBy: QZ-20261012 HH perTeam
+  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(조동욱-박상원 밈공유,
+    권민규-김서현 커리어교차) 전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어
+    반복 실행 시 빠르게 소진됨). 2026-10-13 재확인에서도 신규 쌍 없음
+  flaggedAt: '2026-10-13'
+  flaggedBy: QZ-20261013 HH perTeam
   processedAt: null
 - team: OB
   templateTypes:
   - RELATION_LINK
-  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 11쌍(10개 팀 중 최다)이나
-    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 재사용이 빨라 반복 실행 시 금방 소진됨)
-  flaggedAt: '2026-10-09'
-  flaggedBy: QZ-2026-10-09 OB perTeam
+  reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 8쌍(10개 팀 중 최다)이나
+    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 재사용이 빨라 반복 실행 시 금방 소진됨). 2026-10-13
+    재확인에서도 신규 쌍 없음
+  flaggedAt: '2026-10-13'
+  flaggedBy: QZ-20261013 OB perTeam
   processedAt: null
 - team: SK
   templateTypes:
@@ -115,10 +117,10 @@ gaps:
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(데일-김도영, 김범수-하주석)
-    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-10
+    전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-13
     재확인에서도 신규 쌍 없음
-  flaggedAt: '2026-10-12'
-  flaggedBy: QZ-20261012 HT perTeam
+  flaggedAt: '2026-10-13'
+  flaggedBy: QZ-20261013 HT perTeam
   processedAt: null
 - team: SS
   templateTypes:

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T23:55:44.410495+00:00",
-  "asOf": "2026-10-13",
+  "generatedAt": "2026-10-13T23:56:46.126980+00:00",
+  "asOf": "2026-10-14",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -1512,54 +1512,49 @@
   },
   "recentScoring": {
     "HH": {
-      "games": 2,
-      "runsFor": 11,
-      "runsAgainst": 14
+      "games": 1,
+      "runsFor": 8,
+      "runsAgainst": 9
     },
     "HT": {
-      "games": 5,
-      "runsFor": 32,
-      "runsAgainst": 17
+      "games": 4,
+      "runsFor": 20,
+      "runsAgainst": 13
     },
     "KT": {
-      "games": 3,
-      "runsFor": 25,
-      "runsAgainst": 8
+      "games": 2,
+      "runsFor": 16,
+      "runsAgainst": 5
     },
     "LG": {
-      "games": 4,
-      "runsFor": 14,
-      "runsAgainst": 21
+      "games": 3,
+      "runsFor": 7,
+      "runsAgainst": 16
     },
     "LT": {
-      "games": 5,
-      "runsFor": 27,
-      "runsAgainst": 22
+      "games": 4,
+      "runsFor": 23,
+      "runsAgainst": 10
     },
     "NC": {
-      "games": 3,
-      "runsFor": 14,
-      "runsAgainst": 21
+      "games": 2,
+      "runsFor": 11,
+      "runsAgainst": 15
     },
     "OB": {
-      "games": 2,
-      "runsFor": 9,
-      "runsAgainst": 14
+      "games": 1,
+      "runsFor": 4,
+      "runsAgainst": 7
     },
     "SK": {
-      "games": 3,
-      "runsFor": 14,
-      "runsAgainst": 12
+      "games": 2,
+      "runsFor": 8,
+      "runsAgainst": 9
     },
     "SS": {
-      "games": 4,
-      "runsFor": 9,
-      "runsAgainst": 28
-    },
-    "WO": {
-      "games": 1,
-      "runsFor": 5,
-      "runsAgainst": 3
+      "games": 3,
+      "runsFor": 6,
+      "runsAgainst": 19
     }
   },
   "recentVsPrior": {
@@ -1569,9 +1564,9 @@
       "delta": -0.333
     },
     "HT": {
-      "recentWinPct": 0.8,
-      "priorWinPct": 0.5,
-      "delta": 0.3
+      "recentWinPct": 0.75,
+      "priorWinPct": 0.667,
+      "delta": 0.083
     },
     "KT": {
       "recentWinPct": 1.0,
@@ -1579,39 +1574,34 @@
       "delta": 0.0
     },
     "LG": {
+      "recentWinPct": 0.333,
+      "priorWinPct": 0.333,
+      "delta": 0.0
+    },
+    "LT": {
+      "recentWinPct": 0.75,
+      "priorWinPct": 0.0,
+      "delta": 0.75
+    },
+    "NC": {
       "recentWinPct": 0.5,
       "priorWinPct": 0.167,
       "delta": 0.333
     },
-    "LT": {
-      "recentWinPct": 0.6,
-      "priorWinPct": 0.25,
-      "delta": 0.35
-    },
-    "NC": {
-      "recentWinPct": 0.333,
-      "priorWinPct": 0.167,
-      "delta": 0.166
-    },
     "OB": {
-      "recentWinPct": 0.0,
-      "priorWinPct": 0.833,
-      "delta": -0.833
-    },
-    "SK": {
-      "recentWinPct": 0.667,
-      "priorWinPct": 0.667,
-      "delta": 0.0
-    },
-    "SS": {
       "recentWinPct": 0.0,
       "priorWinPct": 0.667,
       "delta": -0.667
     },
-    "WO": {
-      "recentWinPct": 1.0,
-      "priorWinPct": 0.4,
-      "delta": 0.6
+    "SK": {
+      "recentWinPct": 0.5,
+      "priorWinPct": 0.667,
+      "delta": -0.167
+    },
+    "SS": {
+      "recentWinPct": 0.0,
+      "priorWinPct": 0.5,
+      "delta": -0.5
     }
   },
   "yoy": null

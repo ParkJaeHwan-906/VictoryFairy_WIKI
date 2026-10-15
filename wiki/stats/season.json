@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T23:56:46.126980+00:00",
-  "asOf": "2026-10-14",
+  "generatedAt": "2026-10-15T00:26:06.894487+00:00",
+  "asOf": "2026-10-15",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -1560,13 +1560,13 @@
   "recentVsPrior": {
     "HH": {
       "recentWinPct": 0.0,
-      "priorWinPct": 0.333,
-      "delta": -0.333
+      "priorWinPct": 0.4,
+      "delta": -0.4
     },
     "HT": {
       "recentWinPct": 0.75,
-      "priorWinPct": 0.667,
-      "delta": 0.083
+      "priorWinPct": 0.8,
+      "delta": -0.05
     },
     "KT": {
       "recentWinPct": 1.0,
@@ -1575,8 +1575,8 @@
     },
     "LG": {
       "recentWinPct": 0.333,
-      "priorWinPct": 0.333,
-      "delta": 0.0
+      "priorWinPct": 0.4,
+      "delta": -0.067
     },
     "LT": {
       "recentWinPct": 0.75,
@@ -1585,23 +1585,23 @@
     },
     "NC": {
       "recentWinPct": 0.5,
-      "priorWinPct": 0.167,
-      "delta": 0.333
+      "priorWinPct": 0.2,
+      "delta": 0.3
     },
     "OB": {
       "recentWinPct": 0.0,
-      "priorWinPct": 0.667,
-      "delta": -0.667
+      "priorWinPct": 0.6,
+      "delta": -0.6
     },
     "SK": {
       "recentWinPct": 0.5,
-      "priorWinPct": 0.667,
-      "delta": -0.167
+      "priorWinPct": 0.6,
+      "delta": -0.1
     },
     "SS": {
       "recentWinPct": 0.0,
-      "priorWinPct": 0.5,
-      "delta": -0.5
+      "priorWinPct": 0.4,
+      "delta": -0.4
     }
   },
   "yoy": null

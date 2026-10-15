@@ -6664,3 +6664,59 @@ LEAGUE scope 규칙대로 `playerIds`·`teamCodes` 둘 다 비웠다(정답이
 품질 문제가 아니라 순수 물량 초과라 재미 점수 동률 처리 후 슬롯만큼만
 남겼다(2번 사유 참고 — `scoring.yaml` 주석 "남는 건 6단계가 걸러낸다"
 그대로).
+
+## 215 (2026-10-15) — TEAMMATE_STAT_COMPARE 조합 전수계산 + 메인 세션 재검증이 둘 다 맞아떨어진 사례
+
+```json
+{
+  "quizId": "QZ-20261015-XXX",
+  "gameId": null,
+  "teamCodes": ["KT"],
+  "kind": "KNOWLEDGE",
+  "type": "TEAMMATE_STAT_COMPARE",
+  "templateId": "TEAMMATE_STAT_COMPARE",
+  "format": "BINARY",
+  "question": "KT 장준원과 최원준 중 올 시즌 타점이 더 많은 선수는?",
+  "options": [{ "id": "A", "text": "장준원" }, { "id": "B", "text": "최원준" }],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/player_season_stat/2026-10-14/player_season_stat_64115.json",
+    "quote": "KT 장준원은(는) 2026시즌 ... 12타점 ...을 기록했다."
+  },
+  "settlement": null,
+  "difficulty": "HARD",
+  "pointReward": 80,
+  "bqReward": 3,
+  "subject": { "scope": "PLAYER", "playerIds": [64115, 66606], "teamCodes": [], "gameId": null }
+}
+```
+
+**좋은 이유**: 이번 실행부터 메인 세션이 `TEAMMATE_STAT_COMPARE`
+전체(10개 팀, 192건)를 질문 문구에서 비교 지표를 파싱해(타율→avg,
+안타→hits, 타점→rbi, 평균자책점→era, WHIP→whip, 탈삼진→strikeouts)
+`player_season_stat` payload의 실제 수치로 승자를 독립 재계산하는
+결정적 스크립트를 처음으로 돌렸다(§3-2 "상대 선수 값과의 비교
+정확성은 검증 패스가 책임진다" 요구사항을 이번에 실제로 자동화한
+것) — 192건 전부 정답이 일치했다. 처음엔 evidence.quote에 등장하는
+숫자로 지표를 추측하는 방식으로 짰다가 "숫자가 우연히 다른 지표
+값과도 일치"하는 거짓 불일치를 37건 냈는데, 질문 문구의 한글
+지표명으로 다시 짜자 0건으로 떨어졌다 — **검증 스크립트 자체도
+재검증이 필요하다**는 교훈.
+
+## 216 (2026-10-15) — 단계 순서가 깨졌을 때도 메인 세션이 사실 오류를 직접 잡아낸 사례
+
+이번 실행은 유닛 서브에이전트 11개를 ⓪ 통계 재집계(`aggregate_stats.py`)보다
+먼저 병렬 위임했다(진행 중 발견한 순서 오류 — ROUTINE.md는 ⓪→③
+순서를 전제한다). 그 결과 일부 유닛(HH·HT·LG·NC·SK)의
+`RECENT_VS_EARLY`/`STREAK_CURRENT` 후보가 위키에 커밋된 **전날**
+`season.md`(기준일 10-14)를 evidence로 썼는데, 메인 세션이 6단계에서
+`aggregate_stats.py`를 오늘(10-15) 기준으로 실제로 돌리자 수치가
+달라졌다. 단순 수치 갱신이 아니라 **KIA(HT)의 결론 자체가 뒤집힌
+경우**(직전 7일 대비 최근 7일 승률이 "개선"에서 "악화"로)가 1건
+나왔는데, 메인 세션이 evidence.quote 문자열을 최신 season.md와
+재대조하는 과정에서 이 역전을 발견해 answer를 "A"(O)에서 "B"(X)로
+정정하고 evidence.quote도 최신 수치로 교체했다. **제안**: 다음
+실행부터는 ⓪ 통계 재집계를 유닛 위임 전에 반드시 먼저 끝내거나,
+적어도 6단계에서 모든 stats.* 출처 KNOWLEDGE 후보의 evidence.quote를
+최신 season.md/kbo-official.md와 재대조하는 절차를 결정적 스크립트로
+명문화할 것(이번엔 수동으로 5건을 찾아 고쳤다).

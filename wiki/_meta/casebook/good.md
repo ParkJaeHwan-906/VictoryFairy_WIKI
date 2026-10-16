@@ -6720,3 +6720,268 @@ LEAGUE scope 규칙대로 `playerIds`·`teamCodes` 둘 다 비웠다(정답이
 적어도 6단계에서 모든 stats.* 출처 KNOWLEDGE 후보의 evidence.quote를
 최신 season.md/kbo-official.md와 재대조하는 절차를 결정적 스크립트로
 명문화할 것(이번엔 수동으로 5건을 찾아 고쳤다).
+
+## 217 (2026-10-16) — HH '류현인' (MEME_ORIGIN, 특정 경기 장면에서 유래)
+
+```json
+{
+  "quizId": "QZ-20261016-082",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "한화 류현진이 '류현인'으로 불리게 된 계기는?",
+  "options": [
+    { "id": "A", "text": "타석에서 득점권 적시타를 친 뒤 붙은 별명" },
+    { "id": "B", "text": "다승왕을 차지하고 붙은 별명" },
+    { "id": "C", "text": "감독 대리를 맡았던 경기 후 붙은 별명" },
+    { "id": "D", "text": "은퇴 발표 기자회견 후 붙은 별명" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/76715.md#별명·밈",
+    "quote": "타석에서 득점권 적시타를 친 경기 이후 \"현진\"을 \"현인\"으로 바꿔 부르며 붙은 밈성 별명."
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "현진→현인" 말장난이 **특정 경기의 득점권 적시타**라는 구체적
+사건에서 나와 §4-1 고유성 테스트("다른 선수에게 옮겨 붙여도 자연스러운가?")를
+명확히 통과한다. 오답 3개도 전부 "사건+별명" 형식으로 통일해 정답만 길거나
+구체적이지 않다.
+
+## 218 (2026-10-16) — LT '문보경 문자 일화' (MEME_ORIGIN, 완결적 기승전결)
+
+```json
+{
+  "quizId": "QZ-20261016-085",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "김민성이 LG 시절 동료 문보경에게 축하 문자를 보냈다가 생긴 일화는?",
+  "options": [
+    { "id": "A", "text": "문자를 오래 읽지 않아 장난스럽게 나무랐다" },
+    { "id": "B", "text": "문자를 잘못된 사람에게 보내 사과했다" },
+    { "id": "C", "text": "문자 내용이 유출돼 화제가 됐다" },
+    { "id": "D", "text": "답장이 늦어 서로 다퉜다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/77564.md#별명·밈",
+    "quote": "LG 시절 동료 문보경에게 축하 문자를 보냈는데 오래도록 읽지 않았다며 장난스럽게 나무란 일화가 있다"
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: evidence가 "누가·무엇을·왜"까지 완결적으로 설명하는 일화형
+사례다. §19('안중열사')류의 "그렇게 불린다"는 동어반복과 대비되는, 유래
+서술이 충실한 모범 사례.
+
+## 219 (2026-10-16) — NC '구단 통산 만루홈런 공동 2위' (FRANCHISE_RECORD, 순위 원문 보존)
+
+```json
+{
+  "quizId": "QZ-20261016-020",
+  "templateId": "FRANCHISE_RECORD",
+  "format": "MULTI4",
+  "question": "NC 다이노스 구단 통산 만루홈런 5개로 이호준과 공동 2위인 선수는?",
+  "options": [
+    { "id": "A", "text": "김주원" }, { "id": "B", "text": "박민우" },
+    { "id": "C", "text": "이우성" }, { "id": "D", "text": "권희동" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51907.md#커리어 이력",
+    "quote": "구단 통산 만루홈런 부문에서 5개로 이호준과 함께 공동 2위(1위 테임즈 6개)에 올라 있다는 소개가 있다"
+  },
+  "difficulty": "HARD", "pointReward": 80, "bqReward": 3
+}
+```
+
+**좋은 이유**: "공동 2위" 같은 순위 표현을 evidence 원문 그대로 보존해(수치
+임의 단정 금지, generation-rules.md §6) FRANCHISE_RECORD intent("그 구단 자체
+통산 기록", ALL_TIME_LEADER와 다른 축)를 정확히 지켰다. subject.scope=TEAM(팀은
+전제, 선수가 정답)도 §11 예시대로 정확히 분리됨.
+
+## 220 (2026-10-16) — HT '구단 역대 3번째 20세 미만 10홈런' (FRANCHISE_RECORD, 계보 보존)
+
+```json
+{
+  "quizId": "QZ-20261016-017",
+  "templateId": "FRANCHISE_RECORD",
+  "format": "MULTI4",
+  "question": "KIA 타이거즈 구단 역대 3번째로 20세 미만 시즌 10홈런을 기록한 선수는?(홍현우·안치홍에 이어)",
+  "options": [
+    { "id": "A", "text": "박재현" }, { "id": "B", "text": "김도영" },
+    { "id": "C", "text": "황대인" }, { "id": "D", "text": "한준수" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/55636.md#커리어 이력",
+    "quote": "KIA 타이거즈 구단 역대로는 3번째(홍현우·안치홍에 이어) 20세 미만 시즌 10홈런 기록으로 소개됨"
+  },
+  "difficulty": "HARD", "pointReward": 80, "bqReward": 3
+}
+```
+
+**좋은 이유**: 219와 같은 패턴 — 선대 계보(홍현우→안치홍→박재현)를 질문
+문면에 그대로 살려 흥미를 더하면서도 순위·인원을 임의로 단정하지 않았다.
+
+## 221 (2026-10-16) — SS '12년 만의 외국인 듀오' (MEME_ORIGIN, 구체적 역사 비유)
+
+```json
+{
+  "quizId": "QZ-20261016-050",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "삼성 디아즈·페덱 듀오를 가리키는 '12년 만의 외국인 듀오'는 어떤 조합에 빗댄 표현인가?",
+  "options": [
+    { "id": "A", "text": "2014년 밴덴헐크+나바로 조합" },
+    { "id": "B", "text": "2010년 라이언+카림 가르시아 조합" },
+    { "id": "C", "text": "2018년 러프+켈리 조합" },
+    { "id": "D", "text": "2005년 클리버+배리 조합" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/54400.md#별명·밈",
+    "quote": "투수 페덱과 함께 2014년 밴덴헐크+나바로 조합(백인 투수+흑인 야수)에 빗대지는 밈"
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 특정 연도·특정 두 선수 조합을 구체적으로 지목해 고유성이
+명확하고, 올드팬에게는 추억을 자극하는 질문이라 재미 점수가 높다. 오답도
+전부 "연도+외국인 듀오" 형식으로 통일.
+
+## 222 (2026-10-16) — KT '게토레이' (MEME_ORIGIN, 커리어 서사+타 팬덤 반응 결합)
+
+```json
+{
+  "quizId": "QZ-20261016-081",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "김현수가 타 팀 팬덤으로부터 놀림 섞어 얻은 별명 '게토레이'는 어떤 뜻인가?",
+  "options": [
+    { "id": "A", "text": "소속한 팀마다 우승권으로 만든다는 평가에서 비롯됐다" },
+    { "id": "B", "text": "스포츠음료 광고 모델이어서 붙었다" },
+    { "id": "C", "text": "땀을 많이 흘리는 모습에서 비롯됐다" },
+    { "id": "D", "text": "더위를 유독 많이 타는 모습에서 비롯됐다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/76290.md#별명·밈",
+    "quote": "소속했던 팀마다 우승권으로 만든다는 평가를 받으며, 타 팀 팬덤으로부터 \"게토레이\"라고 놀림 섞인 별명으로 불린다"
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 별명 자체가 언어유희(게토레이↔선수 이름과 무관한 비유)인데도
+evidence가 유래("소속팀마다 우승권으로 만든다")를 명확히 설명해 동어반복이
+아니다. 범용 호칭(§4-1)이 아니라 이 선수만의 커리어 서사에 결합된 사례.
+
+## 223 (2026-10-16) — LG '이영빈은 못하는거' (MEME_ORIGIN, 특정 사건+팬덤 서사)
+
+```json
+{
+  "quizId": "QZ-20261016-039",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "이영빈의 별명 '이영빈은 못하는거'는 어떤 장면에서 유래했나?",
+  "options": [
+    { "id": "A", "text": "2025년 NC전 희생플라이를 놓친 장면" },
+    { "id": "B", "text": "올스타전에서 결승 홈런을 친 장면" },
+    { "id": "C", "text": "포스트시즌에서 도루에 실패한 장면" },
+    { "id": "D", "text": "시범경기 끝내기 안타를 놓친 장면" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/51100.md#별명·밈",
+    "quote": "특히 2025년 NC전에서 희생플라이 하나만 쳐냈어도 팀이 전구단 상대 우위와"
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "결정적 한 방이 아쉽다"는 팬덤 특유의 자조적 서사가 구체적
+경기 장면에서 나와 고유성이 명확하고, 쇼츠형 UX에 맞게 몰입도가 높다.
+
+## 224 (2026-10-16) — OB '79세 배터리' (MEME_ORIGIN, 나이 합산 조어·evidence 수치 정확)
+
+```json
+{
+  "quizId": "QZ-20261016-083",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "두산 배터리에 붙은 별명 '79세 배터리'는 두 선수의 무엇을 합친 것인가?",
+  "options": [
+    { "id": "A", "text": "양의지와 이용찬의 나이" },
+    { "id": "B", "text": "두 선수의 등번호" },
+    { "id": "C", "text": "두 선수의 통산 홀드 수" },
+    { "id": "D", "text": "두 선수의 데뷔 연도" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/77211.md#별명·밈",
+    "quote": "배터리 파트너 양의지(40세)와 이용찬(39세)의 나이를 합쳐 부르는 별명."
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: evidence에 "(40세)"·"(39세)"까지 수치가 그대로 있어 40+39=79
+검증이 즉시 가능하고, RELATION_LINK가 아니라 MEME_ORIGIN으로도 재미있게
+풀린 두 선수 합성 별명 사례.
+
+## 225 (2026-10-16) — SK '김재환 보존법칙' (MEME_ORIGIN, 패러디 아이디어+오답 형식 통일)
+
+```json
+{
+  "quizId": "QZ-20261016-088",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "SSG 김재환의 별명 '김재환 보존법칙'이 뜻하는 것은?",
+  "options": [
+    { "id": "A", "text": "소속팀이 바뀌어도 4번타자급 생산력을 꾸준히 유지한다는 뜻" },
+    { "id": "B", "text": "은퇴 전까지 등번호를 한 번도 바꾸지 않았다는 뜻" },
+    { "id": "C", "text": "매 시즌 정확히 같은 수의 홈런을 친다는 뜻" },
+    { "id": "D", "text": "이적 후에도 응원가가 바뀌지 않았다는 뜻" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/78224.md#별명·밈",
+    "quote": "**김재환 보존법칙**: 소속팀이 바뀌어도 비슷한 수준의 생산력(지명타자·4번타자급 스탯)을 꾸준히 유지한다는 취지의 밈으로 커뮤니티에서 언급됨 (커뮤니티 전언)"
+  },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "물리법칙 보존"이라는 패러디 아이디어 자체가 야구 지식 없이도
+바로 재미있고, 오답 3개도 전부 "물리법칙/루틴 유지" 계열 형식으로 맞춰 정답만
+티나지 않는다.
+
+## 226 (2026-10-16) — common '국중찬' (MEME_OWNER, 이름·포지션·국대 지위 결합으로 전이 불가)
+
+```json
+{
+  "quizId": "QZ-20261016-094",
+  "templateId": "MEME_OWNER",
+  "format": "MULTI4",
+  "question": "'국중찬'이라는 애칭으로 불리는 삼성 선수는?",
+  "options": [
+    { "id": "A", "text": "김지찬" }, { "id": "B", "text": "이승현" },
+    { "id": "C", "text": "홍원표" }, { "id": "D", "text": "허윤동" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50458.md#별명·밈",
+    "quote": "**국중찬**: \"국가대표 중견수 김지찬\"을 줄인 애칭으로, 커뮤니티 댓글에서 반복적으로 쓰인다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "국가대표 중견수 김지찬"을 압축한 말장난이라 본인 이름·
+포지션·국대 지위 세 요소가 결합돼 다른 선수에게 전이될 수 없다. MEME_OWNER가
+"별명→주인공"으로 질문을 뒤집는 설계(ROUTINE.md §3-3)가 잘 작동한 사례.

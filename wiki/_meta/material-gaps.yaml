@@ -11,16 +11,16 @@ gaps:
   templateTypes:
   - MEME_ORIGIN
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 26명 전원 위키 별명·밈 섹션 실질 내용 없음
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 OB perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 OB perTeam
   processedAt: null
 - team: HT
   templateTypes:
   - MEME_ORIGIN
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 38명 중 37명 빈 섹션, 1명은 밈이 아닌 단순 평판. 2026-10-10 재확인(§3-3
     전수스캔)에서도 동일하게 0건 — 안정적으로 재현되는 결핍 신호
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 HT perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 HT perTeam
   processedAt: null
 - team: HH
   templateTypes:
@@ -50,24 +50,24 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 KT 소속 선수 간 안전 엣지(밈공유/커리어교차/라이벌) 자체가 0쌍.
     2026-10-10 재확인에서도 0쌍(구조적 결핍 재확인)
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 KT perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 KT perTeam
   processedAt: null
 - team: LT
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json에 LT 소속 선수 간 안전 엣지가 1쌍뿐이고 그마저 유일 타입이 사건연루(금지)라
     쓸 수 없음. 2026-10-13 재확인에서도 동일(구조적 결핍 재확인)
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 LT perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
   - MEME_ORIGIN
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 0건 — 미반복 36명 전원 위키 별명·밈 섹션이 빈 placeholder, 또는 밈이 아닌 단순 평판(외모·마킹지
     판매 등)
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 KT perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 KT perTeam
   processedAt: null
 - team: LT
   templateTypes:
@@ -98,8 +98,8 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 8쌍(10개 팀 중 최다)이나 전부 최근 7일 이력에서 이미 발행돼
     신규 쌍 없음(구조적 0쌍은 아니나 엣지 재사용이 빨라 반복 실행 시 금방 소진됨). 2026-10-13 재확인에서도 신규 쌍 없음
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 OB perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 OB perTeam
   processedAt: null
 - team: SK
   templateTypes:
@@ -114,8 +114,8 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(데일-김도영, 김범수-하주석) 전부 최근 7일 이력에서 이미
     발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-13 재확인에서도 신규 쌍 없음
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 HT perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 HT perTeam
   processedAt: null
 - team: SS
   templateTypes:
@@ -123,24 +123,24 @@ gaps:
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(디아즈-페덱, 이진용-함수호) 전부 최근 7일 이력에서 이미
     발행돼 신규 쌍 없음(구조적 0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-10 재확인에서도 2쌍 모두 사실상 소진(밈공유 쌍은 MEME_ORIGIN과
     중복, 커리어교차 쌍은 로스터 트랜잭션 서사라 §3 금지 패턴)
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 SS perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 SS perTeam
   processedAt: null
 - team: WO
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 자체는 3쌍 있으나 2쌍은 최근 7일 이력에서 이미 발행, 남은
     1쌍은 로스터 트랜잭션(콜업/말소 엇갈림) 서사뿐이라 §3 금지 패턴과 겹쳐 사용 불가 — 엣지 수가 적은 게 아니라 '안전하게 쓸 수 있는' 엣지가 부족한 경우
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 WO perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 WO perTeam
   processedAt: null
 - team: LG
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 3쌍(김대현-배재준, 김정율-최지명, 이정용-임찬규) 전부 최근
     7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-10 재확인에서도 신규 쌍 없음
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 LG perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 LG perTeam
   processedAt: null
 - team: WO
   templateTypes:
@@ -148,6 +148,6 @@ gaps:
   reason: perTeam EASY 슬롯 MEME_ORIGIN 소재 부족 — 로스터 84명 중 밈 콘텐츠 보유 46명(55%)뿐이고 6일 연속 전수 생성으로 61건이 이미 발행돼
     신선 소재가 거의 바닥남. 남은 미사용 후보의 상당수도 '대/신/갓/느님/국민/5툴/제2의◯◯' 류 범용 수식어라 고유성 검사에서 추가로 걸러짐 — 2026-10-16 perTeam
     유닛 전수 스캔에서 처음 구조화 기록.
-  flaggedAt: '2026-10-16'
-  flaggedBy: QZ-20261016 WO perTeam
+  flaggedAt: '2026-10-17'
+  flaggedBy: QZ-20261017 WO perTeam
   processedAt: null

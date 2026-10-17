@@ -6985,3 +6985,359 @@ evidence가 유래("소속팀마다 우승권으로 만든다")를 명확히 설
 **좋은 이유**: "국가대표 중견수 김지찬"을 압축한 말장난이라 본인 이름·
 포지션·국대 지위 세 요소가 결합돼 다른 선수에게 전이될 수 없다. MEME_OWNER가
 "별명→주인공"으로 질문을 뒤집는 설계(ROUTINE.md §3-3)가 잘 작동한 사례.
+
+## 227 (2026-10-17) — MEME_OWNER "이정후계자"의 주인공 역질문
+
+```json
+{
+  "quizId": "QZ-20261017-116",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_OWNER",
+  "format": "MULTI4",
+  "question": "별명 '이정후계자'의 주인공인 키움 선수는?",
+  "options": [
+    { "id": "A", "text": "김건희" }, { "id": "B", "text": "이주형" },
+    { "id": "C", "text": "박병호" }, { "id": "D", "text": "양현종" }
+  ],
+  "answer": "B",
+  "evidence": {
+    "source": "wiki/players/50167.md#별명·밈",
+    "quote": "**이정후계자**: 이정후의 뒤를 이을 외야 유망주라는 뜻에서 커뮤니티가 붙인 별명이다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "레전드 선수+계자(후계자)" 결합이 이주형 한 명에게만 고유하고,
+오답 보기(김건희·박병호·양현종) 전부 키움 소속이라 팀 범위를 벗어난 추측이
+안 된다. 같은 사실을 team-WO 유닛이 MEME_ORIGIN(유래 묻기)으로도 독립
+생성했는데, 메인 세션이 검증 단계에서 "같은 밈을 다른 방향으로 묻는 것도
+중복"(verification-pass.md §2)으로 판단해 team-WO 쪽을 폐기하고 이 문항만
+남긴 사례 — cross-template 중복 탐지가 실제로 작동한 예.
+
+## 228 (2026-10-17) — TEAM_RECORD_HISTORY, 표 형태 evidence를 직접 대조해 살린 사례
+
+```json
+{
+  "quizId": "QZ-20261017-340",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "TEAM_RECORD_HISTORY",
+  "format": "MULTI4",
+  "question": "2024시즌 KBO 팀 타율 1위 팀은?",
+  "options": [
+    { "id": "A", "text": "KIA" }, { "id": "B", "text": "롯데" },
+    { "id": "C", "text": "LG" }, { "id": "D", "text": "KT" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/stats/kbo-official.md#역대 팀 기록",
+    "quote": "| 2024 | 경기 | 승 | 패 | 무 | 타율 | 평균자책점 | 승률 | KIA 타이거즈 | ... |\n|---|---|---|...|\n| 144 | 87 | 55 | 2 | 0.301 | 4.40 | 0.613 |"
+  },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD", "pointReward": 80, "bqReward": 3
+}
+```
+
+**좋은 이유**: evidence.quote가 마크다운 표 헤더·구분선·데이터 행이 뒤섞여
+사람이 한눈에 읽기 어려운 형태였지만, 검증 패스가 "그럴듯하니 통과"시키지
+않고 `kbo-official.md`의 2024년 표 전체(10개 구단 행)를 직접 펼쳐 타율
+0.301이 실제로 그 해 최댓값인지 대조해 확인했다. 원문 대조 1원칙
+(verification-pass.md §1 — "quote만 보고 통과시키지 않는다")이 글자 그대로
+지켜진 사례.
+
+## 229 (2026-10-17) — MEME_ORIGIN, NC 투수 이름 발음 말장난
+
+```json
+{
+  "quizId": "QZ-20261017-076",
+  "gameId": null,
+  "teamCodes": ["NC"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "토다의 별명 '야마모토다'는 어디서 왔나?",
+  "options": [
+    { "id": "A", "text": "유명 투수 \"야마모토\"와 이름 발음이 비슷해서" },
+    { "id": "B", "text": "일본 나고야 출신이라서" },
+    { "id": "C", "text": "체인지업 구종이 야마모토와 똑같아서" },
+    { "id": "D", "text": "올스타전에서 야마모토와 맞대결해서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56911.md#별명·밈",
+    "quote": "유명 투수 \"야마모토\"와 이름 발음이 비슷한 데서 나온 말장난 별명(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [56911], "teamCodes": ["NC"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "토다"+"야마모토"="야마모토다" 언어유희가 그 선수 이름 자체에서만
+나올 수 있어 고유성이 명확하고, 오답 3개(출신지·구종·맞대결)가 전부 "그럴듯한
+가짜 유래" 전략(카탈로그 distractor)에 정확히 맞는다.
+
+## 230 (2026-10-17) — MEME_ORIGIN, NC 투수의 구체적 일화 기반 밈
+
+```json
+{
+  "quizId": "QZ-20261017-100",
+  "gameId": null,
+  "teamCodes": ["NC"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "신민혁 별명 '농부'는 어디서 비롯됐나?",
+  "options": [
+    { "id": "A", "text": "동료와 찍은 \"농장 가꾸기\" 유튜브 영상" },
+    { "id": "B", "text": "시골 출신이라는 점" },
+    { "id": "C", "text": "농구를 즐긴다는 점" },
+    { "id": "D", "text": "느린 투구 템포" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68902.md#별명·밈",
+    "quote": "동료 김녹원과 함께 \"농장 가꾸기\" 콘텐츠를 촬영한 유튜브 영상이 화제가 되며, 이 영상이 별명의 유래로 언급됐다."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [68902], "teamCodes": ["NC"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "농부"라는 표면적 별명 자체는 흔할 수 있지만, 그 유래(구체적
+유튜브 콘텐츠·동료 이름까지 명시)가 명확히 그 선수 고유의 일화라 §4-1 판별
+질문("다른 선수에게 옮겨도 자연스러운가")을 분명히 통과한다.
+
+## 231 (2026-10-17) — RELATION_LINK, 같은 경기 상대 투수를 상대로 한 두 선수의 커리어 교차
+
+```json
+{
+  "quizId": "QZ-20261017-124",
+  "gameId": null,
+  "teamCodes": ["NC"],
+  "kind": "KNOWLEDGE",
+  "type": "RELATION",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "김형준과 서호철의 공통점으로 언급되는 것은?",
+  "options": [
+    { "id": "A", "text": "2023년 국제대회에서 같은 경기 두산 곽빈을 상대로 홈런을 쳤다" },
+    { "id": "B", "text": "둘 다 2020년 한국시리즈 우승 멤버다" },
+    { "id": "C", "text": "둘 다 NC의 2023년 리빌딩 세대 멤버다" },
+    { "id": "D", "text": "둘 다 포수에서 타자로 전향했다" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/68912.md#커리어이력",
+    "quote": "2023년 국제대회 등판에서 두산 곽빈을 상대로 솔로 홈런을 기록했다는 언급이 있다. 같은 경기에서 서호철도 곽빈을 상대로 만루 홈런을 쳤다고 전해진다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [68912, 69995], "teamCodes": ["NC"], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "bqReward": 4
+}
+```
+
+**좋은 이유**: `graph.json`의 "커리어교차" 엣지가 두 선수 모두 NC 로스터
+소속(§3 "다른 팀 선수를 섞지 않는다" 원칙)이면서 사건연루가 아닌 안전한
+일화고, "같은 경기 같은 투수 상대 홈런"이라는 구체적·검증 가능한 공통점이라
+EXPERT 재료가 원천적으로 얇은(팀당 1~12건) RELATION_LINK에서 보기 드물게
+좋은 사례.
+
+## 232 (2026-10-17) — MEME_ORIGIN, SK 투수의 구체적 에피소드형 별명
+
+```json
+{
+  "quizId": "QZ-20261017-075",
+  "gameId": null,
+  "teamCodes": ["SK"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "SSG 투수 해치에게 붙은 별명 '해치민준'이 생긴 계기는?",
+  "options": [
+    { "id": "A", "text": "동료 투수 최민준의 유니폼을 빌려 입고 등판해 노히트 투구를 펼쳐서" },
+    { "id": "B", "text": "최민준과 함께 입단해 같은 해에 데뷔전을 치러서" },
+    { "id": "C", "text": "최민준에게 자신의 등번호를 넘겨줘서" },
+    { "id": "D", "text": "최민준과 같은 고향 출신이라는 사실이 알려져서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56855.md#별명·밈",
+    "quote": "**해치민준**: 2026년 8월 15일 등판을 앞둔 동료 투수 최민준이 유니폼을 깜빡하고 챙겨오지 못해 해치의 여벌 유니폼을 빌려 입고 등판했는데, 그 경기에서 6회까지 노히트 피칭을 이어가는 역투를 펼치자 중계진이 붙인 별명이다(커뮤니티 전언)"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [56855], "teamCodes": ["SK"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 날짜·동료 이름·경기 상황(유니폼을 빌려 입고 노히트)까지 구체적인
+단일 일화라 다른 선수로 대체 불가능하고, 오답 3개 모두 "동료 관계" 테마를
+유지하면서도 사실과 다르게 그럴듯해 변별력이 좋다.
+
+## 233 (2026-10-17) — RELATION_LINK, 이름의 우연한 유사성 기반 밈
+
+```json
+{
+  "quizId": "QZ-20261017-123",
+  "gameId": null,
+  "teamCodes": ["SK"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "RELATION_LINK",
+  "format": "MULTI4",
+  "question": "SSG 아빌라와 마드리스의 공통점을 가리키는 밈은?",
+  "options": [
+    { "id": "A", "text": "이름이 유럽 축구 클럽(레알 마드리드·아스톤 빌라)을 연상시킨다는 점" },
+    { "id": "B", "text": "둘 다 과거 일본 리그에서 뛴 경력이 있다는 점" },
+    { "id": "C", "text": "둘 다 등번호가 1번이라는 점" },
+    { "id": "D", "text": "둘 다 포수 출신이라는 점" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56801.md#별명·밈",
+    "quote": "같은 팀 외국인 타자 마드리스와 함께, 이름이 유럽 축구 클럽(레알 마드리드, 아스톤 빌라)을 연상시킨다는 이유로 팬들이 축구 클럽 이름을 엮어 부르는 밈이 생겼다"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [56801, 56813], "teamCodes": ["SK"], "gameId": null },
+  "difficulty": "EXPERT", "pointReward": 120, "bqReward": 4
+}
+```
+
+**좋은 이유**: `밈공유` 엣지가 "사건연루"와 무관한 순수한 언어유희이고, 두
+선수 다 SK(SSG) 로스터 소속이라 팀 섞임 원칙도 지켰다. "밈공유" 타입
+RELATION_LINK가 MEME_ORIGIN류와 겹치지 않고 독자적으로 성립한 사례.
+
+## 234 (2026-10-17) — MEME_ORIGIN, SS 투수의 비유형 별명
+
+```json
+{
+  "quizId": "QZ-20261017-042",
+  "gameId": null,
+  "teamCodes": ["SS"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "삼성 이승민의 별명 '잇몸승민'이 뜻하는 것은?",
+  "options": [
+    { "id": "A", "text": "마무리 김재윤의 공백을 메우면서도 좋은 성적을 낸다는 의미" },
+    { "id": "B", "text": "치아 교정 치료를 받은 적이 있다는 의미" },
+    { "id": "C", "text": "등판 전 항상 잇몸으로 껌을 씹는 습관을 가리키는 의미" },
+    { "id": "D", "text": "데뷔 초 이름 발음이 헷갈렸다는 의미" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/50464.md#별명·밈",
+    "quote": "마무리 김재윤의 공백(이가 없으면 잇몸으로 버틴다는 비유에서 \"이\"의 자리)을 메우면서도 좋은 성적을 낸다는 의미로 붙은 별명이다(커뮤니티 전언)."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [50464], "teamCodes": ["SS"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "이(치아)가 없으면 잇몸"이라는 속담을 "이승민"의 '이'와
+엮은 이중 말장난이라 본인에게만 고유하고, 팀 상황(마무리 공백)까지
+결합돼 다른 선수로 바꿔 쓸 수 없다.
+
+## 235 (2026-10-17) — MEME_ORIGIN, WO 선수의 투자 비유 밈
+
+```json
+{
+  "quizId": "QZ-20261017-058",
+  "gameId": null,
+  "teamCodes": ["WO"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "키움 권혁빈의 별명 '혁삐코인'은 어떤 뜻인가?",
+  "options": [
+    { "id": "A", "text": "성장 기대에 등번호 유니폼을 미리 사두는 '저점매수' 비유" },
+    { "id": "B", "text": "암호화폐 투자 인터뷰 발언" },
+    { "id": "C", "text": "연봉 협상에서 코인 지급을 요청했다는 농담" },
+    { "id": "D", "text": "팬클럽이 발행한 가상 화폐 이름" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/55371.md#별명·밈",
+    "quote": "앞으로 더 성장할 것이라는 기대를 담아 지금 유니폼(등번호 00번)을 미리 사두는 것을 \"저점매수\"에 빗댄 팬들의 표현"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [55371], "teamCodes": ["WO"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: "이름+코인" 합성 자체는 흔할 법한 패턴이지만, 유래가 "유망주
+유니폼을 지금 사두는 저점매수 비유"라는 구체적 설명이라 그 선수만의 맥락이고
+암호화폐 관련 banned-topic(도박성 투자 등)과도 무관해 안전하다.
+
+## 236 (2026-10-17) — WINNING_PITCHER, 오늘 경기 전용 "최근 경기" 범위 정확 적용
+
+```json
+{
+  "quizId": "QZ-20261017-341",
+  "gameId": "33331017LGHT02026",
+  "teamCodes": ["LG", "HT"],
+  "kind": "KNOWLEDGE",
+  "type": "HISTORY",
+  "templateId": "WINNING_PITCHER",
+  "format": "MULTI4",
+  "question": "최근(10/10) LG-롯데전 승리투수는?",
+  "options": [
+    { "id": "A", "text": "이우찬" }, { "id": "B", "text": "이이무라" },
+    { "id": "C", "text": "임찬규" }, { "id": "D", "text": "카라스코" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/game_result/2026-10-16/game_result_20261010LGLT02026.json",
+    "quote": "2026-10-10 사직에서 열린 LG 대 롯데 경기는 4:3, LG의 승리로 끝났다. 승리투수 이우찬. 패전투수 이이무라."
+  },
+  "subject": { "scope": "GAME", "playerIds": [], "teamCodes": ["LG", "LT"], "gameId": "20261010LGLT02026" },
+  "difficulty": "MEDIUM", "pointReward": 50, "bqReward": 2
+}
+```
+
+**좋은 이유**: 오늘(2026-10-17) `game_schedule`의 공식 `gameId`가
+py-collector 연도 오염 버그(bad.md #138/#145/#151 계열)로 `PRED_*` 전체가
+막힌 상황에서, 게임 유닛이 영향받지 않는 재료(최근 7일 실제 경기, `recent7d`
+family)만 골라 안전하게 채운 사례 — "경기가 막혔으니 0건"이 아니라 "쓸 수
+있는 재료만 정확히 골라 쓴다"는 원칙이 지켜졌다. 질문 문구의 "(10/10)"
+괄호 표기로 "오늘 경기"가 아니라 "최근 경기" 범위임을 명확히 해 혼동을
+막은 것도 좋다.
+
+## 237 (2026-10-17) — TEAMMATE_STAT_COMPARE, 순수 비교형 설계 모범 사례
+
+```json
+{
+  "quizId": "QZ-20261017-336",
+  "gameId": null,
+  "teamCodes": ["SS"],
+  "kind": "KNOWLEDGE",
+  "type": "STATS",
+  "templateId": "TEAMMATE_STAT_COMPARE",
+  "format": "BINARY",
+  "question": "삼성 박승규와 강민호 중 올 시즌 안타가 더 많은 쪽은?",
+  "options": [{ "id": "A", "text": "박승규" }, { "id": "B", "text": "강민호" }],
+  "answer": "B",
+  "evidence": {
+    "source": "question-source/player_season_stat/2026-10-16/player_season_stat_74540.json",
+    "quote": "삼성 강민호은(는) 2026시즌 14경기 38타수 10안타(타율 0.263) 2홈런 5타점 0도루를 기록했다."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [69418, 74540], "teamCodes": ["SS"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 보기에 두 선수 이름만 담아 수치를 노출하지 않았고(비교형
+설계·암기형 유출 방지 원칙), evidence는 정답(강민호) 쪽 envelope 원문 하나만
+가리킨다. 검증 패스가 상대 선수(박승규)의 envelope도 직접 열어 "10안타 >
+박승규의 안타 수"를 재계산으로 재확인한 뒤 통과시켰다 — evidence 계약(승자
+한 명만 인용)과 검증 단계의 수치 재검증(§3-2) 역할 분담이 의도대로 작동한
+사례.

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T23:56:05.198046+00:00",
-  "asOf": "2026-10-16",
+  "generatedAt": "2026-10-16T23:55:57.926225+00:00",
+  "asOf": "2026-10-17",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -1511,15 +1511,10 @@
     }
   },
   "recentScoring": {
-    "HH": {
-      "games": 1,
-      "runsFor": 8,
-      "runsAgainst": 9
-    },
     "HT": {
-      "games": 3,
-      "runsFor": 13,
-      "runsAgainst": 11
+      "games": 2,
+      "runsFor": 5,
+      "runsAgainst": 6
     },
     "KT": {
       "games": 2,
@@ -1527,29 +1522,19 @@
       "runsAgainst": 5
     },
     "LG": {
-      "games": 2,
-      "runsFor": 6,
-      "runsAgainst": 7
+      "games": 1,
+      "runsFor": 2,
+      "runsAgainst": 4
     },
     "LT": {
-      "games": 3,
-      "runsFor": 14,
-      "runsAgainst": 9
-    },
-    "NC": {
-      "games": 1,
-      "runsFor": 9,
-      "runsAgainst": 8
+      "games": 2,
+      "runsFor": 11,
+      "runsAgainst": 5
     },
     "OB": {
       "games": 1,
       "runsFor": 4,
       "runsAgainst": 7
-    },
-    "SK": {
-      "games": 1,
-      "runsFor": 5,
-      "runsAgainst": 8
     },
     "SS": {
       "games": 2,
@@ -1558,15 +1543,10 @@
     }
   },
   "recentVsPrior": {
-    "HH": {
-      "recentWinPct": 0.0,
-      "priorWinPct": 0.4,
-      "delta": -0.4
-    },
     "HT": {
-      "recentWinPct": 0.667,
+      "recentWinPct": 0.5,
       "priorWinPct": 0.833,
-      "delta": -0.166
+      "delta": -0.333
     },
     "KT": {
       "recentWinPct": 1.0,
@@ -1574,34 +1554,24 @@
       "delta": 0.0
     },
     "LG": {
-      "recentWinPct": 0.5,
-      "priorWinPct": 0.333,
-      "delta": 0.167
+      "recentWinPct": 0.0,
+      "priorWinPct": 0.5,
+      "delta": -0.5
     },
     "LT": {
-      "recentWinPct": 0.667,
-      "priorWinPct": 0.2,
-      "delta": 0.467
-    },
-    "NC": {
       "recentWinPct": 1.0,
-      "priorWinPct": 0.167,
-      "delta": 0.833
+      "priorWinPct": 0.2,
+      "delta": 0.8
     },
     "OB": {
       "recentWinPct": 0.0,
-      "priorWinPct": 0.6,
-      "delta": -0.6
-    },
-    "SK": {
-      "recentWinPct": 0.0,
-      "priorWinPct": 0.667,
-      "delta": -0.667
+      "priorWinPct": 0.75,
+      "delta": -0.75
     },
     "SS": {
       "recentWinPct": 0.0,
-      "priorWinPct": 0.333,
-      "delta": -0.333
+      "priorWinPct": 0.2,
+      "delta": -0.2
     }
   },
   "yoy": null

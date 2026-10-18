@@ -7341,3 +7341,103 @@ family)만 골라 안전하게 채운 사례 — "경기가 막혔으니 0건"�
 박승규의 안타 수"를 재계산으로 재확인한 뒤 통과시켰다 — evidence 계약(승자
 한 명만 인용)과 검증 단계의 수치 재검증(§3-2) 역할 분담이 의도대로 작동한
 사례.
+
+## 238 (2026-10-18) — MEME_ORIGIN(한화), 동료 선수 대비형 고유 밈 모범 사례
+
+```json
+{
+  "quizId": "QZ-20261018-082",
+  "gameId": null,
+  "teamCodes": ["HH"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "한화 외국인투수 화이트의 별명 '하얀 와이스'가 붙은 이유는?",
+  "options": [
+    { "id": "A", "text": "같은 팀 외국인 투수 와이스에 버금가는 좋은 투구를 이어가서" },
+    { "id": "B", "text": "와이스와 같은 고향 출신이라는 사실이 알려져서" },
+    { "id": "C", "text": "데뷔 전 와이스에게 직접 피칭을 배운 적이 있어서" },
+    { "id": "D", "text": "두 선수의 유니폼 등번호가 같아서" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/56724.md#별명·밈",
+    "quote": "**하얀 와이스**: 좋은 투구를 이어가자 팬들이 같은 팀 외국인 투수 와이스에 버금가는 활약이라는 뜻으로 붙인 별명(커뮤니티 전언)."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [56724], "teamCodes": ["HH"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 밈이 "화이트"라는 성씨에서 나온 말장난(하얀=white)이 아니라
+실제 팀 동료(와이스)와의 비교 평판에서 나온 것임을 evidence 원문이 명확히
+밝히고 있어 §4-1 고유성 검사를 자연스럽게 통과한다. 오답 보기도 동명·동향·
+사제지간·등번호 등 "그럴듯한 다른 유래"로 균형 있게 구성됐다.
+
+## 239 (2026-10-18) — MEME_ORIGIN(키움), 일화 기반 서사형 밈의 모범 사례
+
+```json
+{
+  "quizId": "QZ-20261018-110",
+  "gameId": null,
+  "teamCodes": ["WO"],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_ORIGIN",
+  "format": "MULTI4",
+  "question": "키움 이형종의 별명 '눈물의 에이스'는 어떤 일화에서 비롯됐나?",
+  "options": [
+    { "id": "A", "text": "2007년 대통령배 결승전에서 어머니를 여읜 상태로 마운드에 올라 눈물을 흘리며 던진 일화" },
+    { "id": "B", "text": "데뷔전에서 완봉승을 거둔 뒤 감격의 눈물을 흘린 일화" },
+    { "id": "C", "text": "은퇴를 고민하다 팬들의 응원에 눈물을 보인 일화" },
+    { "id": "D", "text": "트레이드 발표 직후 인터뷰에서 눈물을 보인 일화" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/78135.md#별명·밈",
+    "quote": "고교 시절이던 2007년 대통령배 결승전에서, 얼마 전 어머니를 여읜 상태로 마운드에 올라 9회 투구 중 눈물을 흘리며 던졌고 끝내기를 허용해 준우승에 그친 일화에서 붙은 별명이다"
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [78135], "teamCodes": ["WO"], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 밈 뒤에 분명한 일화(날짜·대회·구체적 전개)가 있어 "그 선수에게
+고유한가?" 질문에 명확히 "그렇다"로 답할 수 있다. 민감할 수 있는 소재(모친
+상)를 다루지만 banned-topics.txt의 '건강 문제'·'사생활' 범주와는 결이
+다르고(이미 널리 알려진 스포츠 일화로서 서술됨, 험담·사생활 캐내기가 아님),
+비하·조롱 없이 중립적으로 서술돼 안전 규칙에 저촉되지 않는다.
+
+## 240 (2026-10-18) — MEME_OWNER(공통), 리그 전체 745명 전수 스캔으로 찾은 신선 소재
+
+```json
+{
+  "quizId": "QZ-20261018-113",
+  "gameId": null,
+  "teamCodes": [],
+  "kind": "KNOWLEDGE",
+  "type": "MEME",
+  "templateId": "MEME_OWNER",
+  "format": "MULTI4",
+  "question": "호투할 때 '20명기'라 불리는 NC 투수는?",
+  "options": [
+    { "id": "A", "text": "송명기" }, { "id": "B", "text": "구창모" },
+    { "id": "C", "text": "토다" }, { "id": "D", "text": "신민혁" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "wiki/players/69962.md#별명·밈",
+    "quote": "2020년 한국시리즈 우승 시즌의 호투를 연상시키는 좋은 투구를 보일 때 팬들이 붙이는 별명. 2026년 8월 삼진으로 위기를 넘기는 투구 후 다시 언급됐다.(커뮤니티 전언)"
+  },
+  "subject": { "scope": "LEAGUE", "playerIds": [], "teamCodes": [], "gameId": null },
+  "difficulty": "EASY", "pointReward": 30, "bqReward": 1
+}
+```
+
+**좋은 이유**: 공통 유닛이 §3-3 MEME_OWNER 의무대로 10개 구단 745명 전체를
+훑어(이 실행에서 480건 중 717건이 최근 7일에 이미 소진돼 신선분은 7건뿐,
+그중 재검증까지 통과한 2건 중 하나) 찾아낸 사례 — 이름+연도 말장난이 본인
+고유 서사(2020 한국시리즈 우승 시즌)에 묶여 있어 다른 팀 선수에게 옮겨
+붙여도 전혀 자연스럽지 않다. MEME_ORIGIN의 "유래 맞히기"를 MEME_OWNER가
+"주인공 맞히기"로 뒤집어도 같은 고유성 기준이 그대로 적용된 좋은 예.

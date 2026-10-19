@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T23:55:58.534435+00:00",
-  "asOf": "2026-10-18",
+  "generatedAt": "2026-10-18T23:57:07.274545+00:00",
+  "asOf": "2026-10-19",
   "headToHead": {
     "HH|HT": {
       "wins": {
@@ -1510,69 +1510,7 @@
       "LT": 3
     }
   },
-  "recentScoring": {
-    "HT": {
-      "games": 1,
-      "runsFor": 4,
-      "runsAgainst": 2
-    },
-    "KT": {
-      "games": 1,
-      "runsFor": 4,
-      "runsAgainst": 2
-    },
-    "LG": {
-      "games": 1,
-      "runsFor": 2,
-      "runsAgainst": 4
-    },
-    "LT": {
-      "games": 1,
-      "runsFor": 7,
-      "runsAgainst": 4
-    },
-    "OB": {
-      "games": 1,
-      "runsFor": 4,
-      "runsAgainst": 7
-    },
-    "SS": {
-      "games": 1,
-      "runsFor": 2,
-      "runsAgainst": 4
-    }
-  },
-  "recentVsPrior": {
-    "HT": {
-      "recentWinPct": 1.0,
-      "priorWinPct": 0.667,
-      "delta": 0.333
-    },
-    "KT": {
-      "recentWinPct": 1.0,
-      "priorWinPct": 1.0,
-      "delta": 0.0
-    },
-    "LG": {
-      "recentWinPct": 0.0,
-      "priorWinPct": 0.6,
-      "delta": -0.6
-    },
-    "LT": {
-      "recentWinPct": 1.0,
-      "priorWinPct": 0.333,
-      "delta": 0.667
-    },
-    "OB": {
-      "recentWinPct": 0.0,
-      "priorWinPct": 0.667,
-      "delta": -0.667
-    },
-    "SS": {
-      "recentWinPct": 0.0,
-      "priorWinPct": 0.2,
-      "delta": -0.2
-    }
-  },
+  "recentScoring": {},
+  "recentVsPrior": {},
   "yoy": null
 }

@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-10-15T22:45:25.743998+00:00",
+  "compiledAt": "2026-10-19T22:50:03.694393+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -4625,6 +4625,12 @@
     },
     {
       "source": "player:50204",
+      "target": "player:50208",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-09-29:11731680"
+    },
+    {
+      "source": "player:50204",
       "target": "team:OB",
       "type": "소속",
       "ref": null
@@ -4634,6 +4640,12 @@
       "target": "team:OB",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:50208",
+      "target": "player:50204",
+      "type": "밈공유",
+      "ref": "community_post:DCINSIDE:2026-09-29:11731680"
     },
     {
       "source": "player:50208",

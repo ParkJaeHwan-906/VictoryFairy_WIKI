@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-10-19T22:50:03.694393+00:00",
+  "compiledAt": "2026-10-22T22:55:40.213566+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -2537,6 +2537,12 @@
       "id": "player:56793",
       "type": "player",
       "name": "최유빈",
+      "team": "HH"
+    },
+    {
+      "id": "player:56797",
+      "type": "player",
+      "name": "하동준",
       "team": "HH"
     },
     {
@@ -7319,6 +7325,12 @@
     },
     {
       "source": "player:56793",
+      "target": "team:HH",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:56797",
       "target": "team:HH",
       "type": "소속",
       "ref": null

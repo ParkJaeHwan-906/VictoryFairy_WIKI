@@ -7709,3 +7709,55 @@ QZ-20261022-044)도 트레이드 반대급부를 구체적으로 명시해 같�
 LEAGUE라 정답 보기에 다른 선수 이름(한유섬·노경은·조형우)을 섞어도 §3
 "다른 팀 선수를 오답에 섞지 않는다" 원칙(팀 특화·경기 묶음 전용 규칙)에
 저촉되지 않음을 보여주는 예이기도 하다.
+
+## 251 (2026-10-23) — TEAMMATE_STAT_COMPARE(팀 특화 HH), 수치 비노출 원칙을 지키면서 WHIP처럼 계산이 필요한 지표까지 정확히 판정
+
+```json
+{
+  "quizId": "QZ-20261023-269", "templateId": "TEAMMATE_STAT_COMPARE",
+  "question": "다음 두 투수 중 올 시즌 WHIP이 더 낮은 쪽은?",
+  "options": [{ "id": "A", "text": "황준서" }, { "id": "B", "text": "왕옌청" }],
+  "answer": "B",
+  "evidence": { "source": "question-source/player_season_stat/2026-10-22/player_season_stat_56719.json",
+    "quote": "한화 왕옌청은(는) 2026시즌 2경기 11이닝 평균자책점 2.45 11탈삼진 WHIP 1.27를 기록했다." },
+  "subject": { "scope": "PLAYER", "playerIds": [54729, 56719], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD", "pointReward": 80, "bqReward": 3
+}
+```
+
+**좋은 이유**: 보기에 두 선수 이름만 노출하고(황준서 WHIP 2.12 vs 왕옌청
+1.27) 실제 수치는 질문·보기 어디에도 적지 않아 암기형 수치 유출을
+막으면서도, "낮을수록 좋다"는 WHIP의 판정 방향을 정확히 적용했다(메인
+세션이 두 선수의 `player_season_stat` envelope를 직접 열어 1.27 < 2.12를
+재대조). HH perTeam 유닛은 EASY·MEDIUM 지표(hits/avg)가 이미 최근 7일
+이력에서 전부 소진된 상태였는데, HARD(rbi/whip)로 난이도를 정확히
+재분류해 옮겨감으로써 슬롯을 그냥 비우지 않고 채웠다(difficulty를
+카탈로그 기본값 MEDIUM으로 두지 않고 지표에 맞게 HARD로 바꿔 적은
+`generation-rules.md` §5 예외 규칙을 제대로 따른 사례).
+
+## 252 (2026-10-23) — ALL_TIME_LEADER/MILESTONE_FIRST(공통), rankBasis 두 체계를 혼동 없이 동시에 운용
+
+```json
+{
+  "quizId": "QZ-20261023-002", "templateId": "ALL_TIME_LEADER",
+  "question": "KBO 역대 한 시즌 타율 1위 기록 보유자는?",
+  "options": [{ "id": "A", "text": "테임즈" }, { "id": "B", "text": "박용택" },
+    { "id": "C", "text": "장효조" }, { "id": "D", "text": "백인천" }],
+  "answer": "D",
+  "evidence": { "source": "question-gen/config/all-time-records.yaml#history-top-hitter" }
+}
+```
+
+같은 실행에서 같은 공통 유닛이 `MILESTONE_FIRST`로는
+"KBO 기록실 '통산 타자 — 타수' 부문(연대순 집계)에 2번째로 이름을 올린
+타자는?"(정답 장효조, rank=2, rankBasis=chronological) 같은 문항도 함께
+냈다. **좋은 이유**: `all-time-records.yaml`의 `history-top-hitter`
+(rankBasis: true-rank, "1위"=실제 역대 1위)와 `history-player-hitter`
+(rankBasis: chronological, "2번째"="연대순 2번째 달성자"일 뿐 역대 2위가
+아님)를 서로 다른 템플릿(ALL_TIME_LEADER vs MILESTONE_FIRST)에 혼용 없이
+정확히 매칭했다 — 메인 세션이 두 카테고리의 `rankBasis` 필드와 실제
+entries(1~10위/번째)를 직접 대조해 11개 문항 전부(common-009~025)가
+`generation-rules.md` §6 규칙을 어김없이 지켰음을 확인했다. 이 혼용은
+과거 casebook에 "1982년 첫 타율왕을 역대 타율 1위로 오인"하는 식으로
+반복 경고됐던 실수인데, 오늘 실행은 11문항 전부에서 한 건도 틀리지
+않았다.

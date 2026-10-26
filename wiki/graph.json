@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-10-22T22:55:40.213566+00:00",
+  "compiledAt": "2026-10-26T23:07:20.530028+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -1091,7 +1091,7 @@
       "id": "player:53404",
       "type": "player",
       "name": "류승민",
-      "team": "SS"
+      "team": "OB"
     },
     {
       "id": "player:53409",
@@ -5747,7 +5747,7 @@
     },
     {
       "source": "player:53404",
-      "target": "team:SS",
+      "target": "team:OB",
       "type": "소속",
       "ref": null
     },
@@ -7505,6 +7505,12 @@
     },
     {
       "source": "player:56939",
+      "target": "player:56103",
+      "type": "사건연루",
+      "ref": "community_post:FMKOREA:2026-10-15:10447932315"
+    },
+    {
+      "source": "player:56939",
       "target": "team:NC",
       "type": "소속",
       "ref": null
@@ -7526,6 +7532,12 @@
       "target": "team:NC",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:56949",
+      "target": "player:67905",
+      "type": "사건연루",
+      "ref": "community_post:DCINSIDE:2026-09-25:10104608"
     },
     {
       "source": "player:56949",
@@ -8672,6 +8684,12 @@
       "target": "team:LG",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:68119",
+      "target": "player:52605",
+      "type": "사건연루",
+      "ref": "community_post:FMKOREA:2026-10-03:10405894491"
     },
     {
       "source": "player:68119",

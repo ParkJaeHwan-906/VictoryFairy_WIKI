@@ -14,7 +14,7 @@ gaps:
     소재 15/16건이 최근 7일 이력과 중복).
   flaggedAt: '2026-10-21'
   flaggedBy: QZ-20261017 OB perTeam, QZ-20261021
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: HT
   templateTypes:
   - MEME_ORIGIN
@@ -22,7 +22,7 @@ gaps:
     전수스캔)에서도 동일하게 0건 — 안정적으로 재현되는 결핍 신호 2026-10-21 재확인에서도 동일(미반복 소재 12/12건이 최근 7일 이력과 중복).
   flaggedAt: '2026-10-21'
   flaggedBy: QZ-20261017 HT perTeam, QZ-20261021
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: HH
   templateTypes:
   - MEME_ORIGIN
@@ -30,7 +30,7 @@ gaps:
     전수스캔)에서도 동일하게 0건 — 안정적으로 재현되는 결핍 신호 2026-10-21 재확인에서도 동일(미반복 소재 13/13건이 최근 7일 이력과 중복). 2026-10-25 재확인에서도 동일(미반복 67명 전원 빈 섹션/고유성 탈락/evidence 품질 미달 — 신규 소재 0건). 2026-10-26 재확인에서도 동일(미반복 70명 전원 §4-1 탈락/빈 섹션 — 신규 소재 0건).
   flaggedAt: '2026-10-26'
   flaggedBy: QZ-20261016 HH perTeam, QZ-20261021, QZ-20261025 HH perTeam, QZ-20261026 HH perTeam
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: SK
   templateTypes:
   - MEME_ORIGIN
@@ -40,7 +40,7 @@ gaps:
     재사용을 못 걸러낸 사례 — casebook bad.md #170 참고.
   flaggedAt: '2026-10-24'
   flaggedBy: QZ-20261016 SK perTeam, QZ-20261024 SK perTeam
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: NC
   templateTypes:
   - MEME_ORIGIN
@@ -48,7 +48,7 @@ gaps:
     동일(미반복 소재 17/21건이 최근 7일 이력과 중복).
   flaggedAt: '2026-10-23'
   flaggedBy: QZ-20261016 NC perTeam, QZ-20261021, QZ-20261023 NC perTeam
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: KT
   templateTypes:
   - RELATION_LINK
@@ -75,7 +75,7 @@ gaps:
     판매 등) 2026-10-21 재확인에서도 동일(미반복 소재 24/26건이 최근 7일 이력과 중복).
   flaggedAt: '2026-10-21'
   flaggedBy: QZ-20261017 KT perTeam, QZ-20261021
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: LT
   templateTypes:
   - MEME_ORIGIN
@@ -166,7 +166,7 @@ gaps:
     유닛 전수 스캔에서 처음 구조화 기록. 2026-10-21 재확인에서도 동일(미반복 소재 18/18건이 최근 7일 이력과 중복).
   flaggedAt: '2026-10-21'
   flaggedBy: QZ-20261017 WO perTeam, QZ-20261021
-  processedAt: null
+  processedAt: '2026-10-26'
 - team: SS
   templateTypes:
   - MEME_ORIGIN
@@ -174,4 +174,4 @@ gaps:
     반복 발행으로 신선 소재가 거의 소진됨.
   flaggedAt: '2026-10-21'
   flaggedBy: QZ-20261021 SS perTeam
-  processedAt: null
+  processedAt: '2026-10-26'

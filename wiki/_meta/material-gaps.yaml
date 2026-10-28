@@ -65,9 +65,9 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 자체가 0건(relationEdges 공집합). 2026-10-27
     재확인에서도 동일(원천 데이터 0건).
-  flaggedAt: '2026-10-27'
+  flaggedAt: '2026-10-28'
   flaggedBy: QZ-20261020 LT perTeam, QZ-20261022 LT perTeam, QZ-20261023 LT perTeam, QZ-20261024 LT perTeam,
-    QZ-20261025 LT perTeam, QZ-20261026 LT perTeam, QZ-20261027 perTeam
+    QZ-20261025 LT perTeam, QZ-20261026 LT perTeam, QZ-20261027 perTeam, QZ-20261028 LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
@@ -91,8 +91,9 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(이희성-최요한, 김형준-서호철) 전부 최근 7일 내 이미
     발행됨(김형준-서호철은 2회). 2026-10-27 재확인에서도 동일(2쌍 모두 기발행).
-  flaggedAt: '2026-10-27'
-  flaggedBy: QZ-20261020 NC perTeam, QZ-20261022 NC perTeam, QZ-20261025 NC perTeam, QZ-20261027 perTeam
+  flaggedAt: '2026-10-28'
+  flaggedBy: QZ-20261020 NC perTeam, QZ-20261022 NC perTeam, QZ-20261025 NC perTeam, QZ-20261027 perTeam,
+    QZ-20261028 NC perTeam
   processedAt: null
 - team: HH
   templateTypes:
@@ -118,26 +119,27 @@ gaps:
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 3쌍 전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적
     0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨) 2026-10-22 재확인에서도 동일(신규 소재 0건). 2026-10-24 재확인 — 생성 단계가 신규로 채택한
     1쌍(아빌라-마드리스)도 검증 패스에서 과거 7일간 3회(개별 발행 2회 + 공통 MEME_OWNER 1회) 변형 출제된 소재로 확인돼 폐기.
-  flaggedAt: '2026-10-24'
-  flaggedBy: QZ-20261018 SK perTeam, QZ-20261022 SK perTeam, QZ-20261023 SK perTeam, QZ-20261024 SK perTeam
+  flaggedAt: '2026-10-28'
+  flaggedBy: QZ-20261018 SK perTeam, QZ-20261022 SK perTeam, QZ-20261023 SK perTeam, QZ-20261024 SK perTeam,
+    QZ-20261028 SK perTeam
   processedAt: null
 - team: HT
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2건(데일-김도영 밈공유, 김범수-하주석 커리어교차) 전부 최근
     7일 내 이미 발행됨. 2026-10-27 재확인에서도 동일(2건 모두 기발행).
-  flaggedAt: '2026-10-27'
+  flaggedAt: '2026-10-28'
   flaggedBy: QZ-20261020 HT perTeam, QZ-20261021, QZ-20261022 HT perTeam, QZ-20261023 HT perTeam, QZ-20261024
-    HT perTeam, QZ-20261025 HT perTeam, QZ-20261026 HT perTeam, QZ-20261027 perTeam
+    HT perTeam, QZ-20261025 HT perTeam, QZ-20261026 HT perTeam, QZ-20261027 perTeam, QZ-20261028 HT perTeam
   processedAt: null
 - team: SS
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(디아즈-페덱, 이진용-함수호) 전부 최근 7일 내 이미 발행됨.
     2026-10-27 재확인에서도 동일(2쌍 모두 기발행).
-  flaggedAt: '2026-10-27'
+  flaggedAt: '2026-10-28'
   flaggedBy: QZ-20261018 SS perTeam, QZ-20261021, QZ-20261022 SS perTeam, QZ-20261023 SS perTeam, QZ-20261024
-    SS perTeam, QZ-20261025 SS perTeam, QZ-20261026 SS perTeam, QZ-20261027 perTeam
+    SS perTeam, QZ-20261025 SS perTeam, QZ-20261026 SS perTeam, QZ-20261027 perTeam, QZ-20261028 SS perTeam
   processedAt: null
 - team: WO
   templateTypes:
@@ -146,9 +148,9 @@ gaps:
     1쌍은 로스터 트랜잭션(콜업/말소 엇갈림) 서사뿐이라 §3 금지 패턴과 겹쳐 사용 불가 — 엣지 수가 적은 게 아니라 '안전하게 쓸 수 있는' 엣지가 부족한 경우. 2026-10-19
     재확인에서도 동일(2쌍 기발행) 2026-10-24 재확인에서도 동일(생성 단계가 같은 사유로 0건 판정). 2026-10-25 재확인에서도 동일(같은 사유로 0건 판정). 2026-10-26
     재확인에서도 동일(같은 사유로 0건 판정).
-  flaggedAt: '2026-10-26'
+  flaggedAt: '2026-10-28'
   flaggedBy: QZ-20261020 WO perTeam, QZ-20261023 WO perTeam, QZ-20261024 WO perTeam, QZ-20261025 WO perTeam,
-    QZ-20261026 WO perTeam
+    QZ-20261026 WO perTeam, QZ-20261028 WO perTeam
   processedAt: null
 - team: LG
   templateTypes:

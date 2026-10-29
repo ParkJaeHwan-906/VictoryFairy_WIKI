@@ -55,19 +55,20 @@ gaps:
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 1건(소형준-박영현, 커리어교차)뿐이고 최근 7일 내 이미 동일
-    쌍으로 발행됨. 2026-10-27 재확인에서도 동일(엣지 1건, 기발행).
-  flaggedAt: '2026-10-27'
+    쌍으로 발행됨. 2026-10-27 재확인에서도 동일(엣지 1건, 기발행). 2026-10-29 재확인에서도 동일(엣지 1건, 기발행).
+  flaggedAt: '2026-10-29'
   flaggedBy: QZ-20261019 KT perTeam, QZ-20261022 KT perTeam, QZ-20261023 KT perTeam, QZ-20261024 KT perTeam,
-    QZ-20261025 KT perTeam, QZ-20261026 KT perTeam, QZ-20261027 perTeam
+    QZ-20261025 KT perTeam, QZ-20261026 KT perTeam, QZ-20261027 perTeam, QZ-20261029 KT perTeam
   processedAt: null
 - team: LT
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 자체가 0건(relationEdges 공집합). 2026-10-27
-    재확인에서도 동일(원천 데이터 0건).
-  flaggedAt: '2026-10-28'
+    재확인에서도 동일(원천 데이터 0건). 2026-10-29 재확인에서도 동일(원천 데이터 0건).
+  flaggedAt: '2026-10-29'
   flaggedBy: QZ-20261020 LT perTeam, QZ-20261022 LT perTeam, QZ-20261023 LT perTeam, QZ-20261024 LT perTeam,
-    QZ-20261025 LT perTeam, QZ-20261026 LT perTeam, QZ-20261027 perTeam, QZ-20261028 LT perTeam
+    QZ-20261025 LT perTeam, QZ-20261026 LT perTeam, QZ-20261027 perTeam, QZ-20261028 LT perTeam, QZ-20261029
+    LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
@@ -90,19 +91,19 @@ gaps:
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(이희성-최요한, 김형준-서호철) 전부 최근 7일 내 이미
-    발행됨(김형준-서호철은 2회). 2026-10-27 재확인에서도 동일(2쌍 모두 기발행).
-  flaggedAt: '2026-10-28'
+    발행됨(김형준-서호철은 2회). 2026-10-27 재확인에서도 동일(2쌍 모두 기발행). 2026-10-29 재확인에서도 동일(2쌍 모두 기발행).
+  flaggedAt: '2026-10-29'
   flaggedBy: QZ-20261020 NC perTeam, QZ-20261022 NC perTeam, QZ-20261025 NC perTeam, QZ-20261027 perTeam,
-    QZ-20261028 NC perTeam
+    QZ-20261028 NC perTeam, QZ-20261029 NC perTeam
   processedAt: null
 - team: HH
   templateTypes:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 2쌍(조동욱-박상원 밈공유, 권민규-김서현 커리어교차) 전부 최근
-    7일 내 이미 발행됨. 2026-10-27 재확인에서도 동일(2쌍 모두 기발행).
-  flaggedAt: '2026-10-27'
+    7일 내 이미 발행됨. 2026-10-27 재확인에서도 동일(2쌍 모두 기발행). 2026-10-29 재확인에서도 동일(2쌍 모두 기발행).
+  flaggedAt: '2026-10-29'
   flaggedBy: QZ-20261020 HH perTeam, QZ-20261021, QZ-20261022 HH perTeam, QZ-20261023 HH perTeam, QZ-20261025
-    HH perTeam, QZ-20261026 HH perTeam, QZ-20261027 perTeam
+    HH perTeam, QZ-20261026 HH perTeam, QZ-20261027 perTeam, QZ-20261029 HH perTeam
   processedAt: null
 - team: OB
   templateTypes:
@@ -118,10 +119,11 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 3쌍 전부 최근 7일 이력에서 이미 발행돼 신규 쌍 없음(구조적
     0쌍은 아니나 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨) 2026-10-22 재확인에서도 동일(신규 소재 0건). 2026-10-24 재확인 — 생성 단계가 신규로 채택한
-    1쌍(아빌라-마드리스)도 검증 패스에서 과거 7일간 3회(개별 발행 2회 + 공통 MEME_OWNER 1회) 변형 출제된 소재로 확인돼 폐기.
-  flaggedAt: '2026-10-28'
+    1쌍(아빌라-마드리스)도 검증 패스에서 과거 7일간 3회(개별 발행 2회 + 공통 MEME_OWNER 1회) 변형 출제된 소재로 확인돼 폐기. 2026-10-29 재확인에서도
+    동일(3쌍 모두 기발행).
+  flaggedAt: '2026-10-29'
   flaggedBy: QZ-20261018 SK perTeam, QZ-20261022 SK perTeam, QZ-20261023 SK perTeam, QZ-20261024 SK perTeam,
-    QZ-20261028 SK perTeam
+    QZ-20261028 SK perTeam, QZ-20261029 SK perTeam
   processedAt: null
 - team: HT
   templateTypes:
@@ -157,10 +159,11 @@ gaps:
   - RELATION_LINK
   reason: perTeam EXPERT 슬롯 RELATION_LINK 소재 0건 — graph.json 안전 엣지 3쌍(김대현-배재준, 김정율-최지명, 이정용-임찬규) 전부 최근
     7일 이력에서 이미 발행돼 신규 쌍 없음(구조적 0쌍은 아니나 그래프 엣지 수 자체가 적어 반복 실행 시 빠르게 소진됨). 2026-10-10 재확인에서도 신규 쌍 없음 2026-10-22
-    재확인에서도 동일(신규 소재 0건). 2026-10-25 재확인에서도 동일(신규 소재 0건). 2026-10-26 재확인에서도 동일(신규 소재 0건).
-  flaggedAt: '2026-10-26'
+    재확인에서도 동일(신규 소재 0건). 2026-10-25 재확인에서도 동일(신규 소재 0건). 2026-10-26 재확인에서도 동일(신규 소재 0건). 2026-10-29
+    재확인에서도 동일(신규 소재 0건).
+  flaggedAt: '2026-10-29'
   flaggedBy: QZ-20261018 LG perTeam, QZ-20261022 LG perTeam, QZ-20261023 LG perTeam, QZ-20261025 LG perTeam,
-    QZ-20261026 LG perTeam
+    QZ-20261026 LG perTeam, QZ-20261029 LG perTeam
   processedAt: null
 - team: WO
   templateTypes:

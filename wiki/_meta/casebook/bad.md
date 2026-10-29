@@ -4135,3 +4135,49 @@ MEME_ORIGIN↔MEME_OWNER 교차 재사용을 못 걸러낸 사례"를 이미 한
 의 고정 질문 문구(난이도×지표별로 6종뿐— hits/strikeouts/avg/era/rbi/whip)를 `question-gen/scripts/`에
 상수로 박아두고 유닛 서브에이전트가 그 상수를 그대로 복사해 쓰게 하면, 매번 LLM이 새로 타이핑하며 조사를
 틀릴 위험이 사라진다(ROUTINE.md §3-2에 반영 요망).
+
+## 192 (2026-10-29) — MEME_ORIGIN↔MEME_OWNER 교차 중복이 또 재현됨(#190 이후 9건 추가 발견, 전부 공통 쪽 폐기)
+
+```json
+[{"team": "team-HH-001", "common": "common-018", "player": 50705, "meme": "강재민 찬스"},
+ {"team": "team-HH-005", "common": "common-122", "player": 53754, "meme": "배서현"},
+ {"team": "team-HH-006", "common": "common-175", "player": 55767, "meme": "KT전 삼중살"},
+ {"team": "team-HH-008", "common": "common-220", "player": 56754, "meme": "오캡"},
+ {"team": "team-HH-009", "common": "common-282", "player": 64006, "meme": "3점 홈런 애칭"},
+ {"team": "team-HH-012", "common": "common-398", "player": 69737, "meme": "노시환상적"},
+ {"team": "team-HH-017", "common": "common-451", "player": 79192, "meme": "방송 해설위원 엮임"},
+ {"team": "team-SS-026", "common": "common-308", "player": 65586, "meme": "체력관리 백업"},
+ {"team": "team-SS-027", "common": "common-240", "player": 61404, "meme": "눈 멀어서 못치는게 아니라"}]
+```
+
+**나쁜 이유**: #190이 "유닛 서브에이전트가 서로의 산출물을 모른 채 같은 선수·같은 밈을 MEME_ORIGIN(유래
+묻기)과 MEME_OWNER(주인공 맞히기)로 각각 뽑는" 패턴을 self_check에 결정적 검사로 추가하라고 제안했으나
+2026-10-29 실행에도 그 검사가 아직 반영되지 않아 똑같은 패턴이 (evidence.source·evidence.quote 완전
+일치 기준으로) 9건 또 나왔다. 이번엔 메인 세션이 검증 단계에서 `.work/raw-candidates/{date}/_flat/`
+전체를 모아 `(templateId, evidence.source, evidence.quote)` 교차표를 직접 돌려(단순 source 일치가
+아니라 quote까지 완전 일치하는 것만 — 같은 선수의 별명·밈 섹션에 여러 bullet이 있어 source만 같고 quote는
+다른 정상 사례가 다수였다) 9건을 전부 common 쪽에서 폐기했다. **제안**: #190 제안을 재강조 — 이번
+실행에서 쓴 "evidence.source+evidence.quote 완전 일치" 기준(소스 파일만 보면 다른 bullet까지
+오탐 처리되므로 quote까지 같아야 진짜 중복)을 그대로 `self_check.py`/`validate_candidates.py`에
+결정적 검사로 추가할 것 — 유닛 10개(팀)+1개(공통)가 서로의 산출물을 모르는 구조가 바뀌지 않는 한 이 패턴은
+매 실행 재현된다.
+
+## 193 (2026-10-29) — 같은 유닛 내부에서도 "같은 선수, 다른 사건" INTERNATIONAL_CALLUP 2건이 거의 동일한 질문으로 생성됨
+
+```json
+{"templateId": "INTERNATIONAL_CALLUP",
+ "candidates": [
+   {"file": "team-LG-020", "question": "2020 도쿄올림픽 국가대표로 참가했던 LG 선수는?", "answer": "박해민"},
+   {"file": "team-LG-021", "question": "2023 WBC 국가대표로 참가했던 LG 선수는?", "answer": "박해민"}
+ ],
+ "evidence_quote_both": "국가대표로 2018 아시안게임(금메달), 2020 도쿄올림픽, 2023 WBC, 2026 WBC에 참가했다."}
+```
+
+**나쁜 이유**: 같은 선수(박해민)의 같은 위키 문장에서 "국가대표였다"는 같은 사실을 연도만 바꿔 두 번
+물었다 — 유닛 서브에이전트 자신은 "다른 대회니까 다른 사실"이라 판단했지만, 사용자 체감으로는 "박해민은
+국가대표다"를 두 번 묻는 것과 다르지 않다(verification-pass.md §2 "같은 사실을 다른 문구로 묻는 경우도
+중복으로 본다"). self_check는 두 후보의 evidence.quote가 완전히 같아도 question 문구가 다르면 통과시킨다
+(형식 검사만 하므로). 검증 단계에서 메인 세션이 둘 중 하나(team-LG-020, 더 이른 연도)를 폐기했다. **제안**:
+"같은 PLAYER scope 템플릿 + 같은 subject.playerIds + evidence.quote 완전 일치"면 같은 유닛 내에서도
+자동 폐기하는 검사를 self_check.py에 추가할 것 — 지금은 cross-unit(#192)만 문제가 아니라 단일 유닛
+내부에서도 같은 함정이 재현된다.

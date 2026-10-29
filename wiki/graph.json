@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-10-26T23:07:20.530028+00:00",
+  "compiledAt": "2026-10-29T22:49:41.077105+00:00",
   "nodes": [
     {
       "id": "player:50030",
@@ -5390,6 +5390,12 @@
       "target": "team:WO",
       "type": "소속",
       "ref": null
+    },
+    {
+      "source": "player:52348",
+      "target": "player:53312",
+      "type": "커리어교차",
+      "ref": "community_post:DCINSIDE:2026-10-25:9035862"
     },
     {
       "source": "player:52395",

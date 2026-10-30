@@ -7962,3 +7962,40 @@ evidence.quote)` 완전일치 기준으로 교차표를 만들어 bad.md #192·#
 위험도 커지므로(재료를 더 넓게 훑을수록 다른 유닛과 같은 소재를 밟을 확률도 오른다), 메인 세션이 전체
 배치를 모아보는 소비자 쪽(검증 패스) 교차검사를 매 실행 빠뜨리지 않는 것이 구조적으로 필수다 — #190·#192가
 반복 지적한 대로 `self_check.py`에 결정적으로 박아두면 이 수작업 교차표 생성 자체가 불필요해진다.
+
+## 264 (2026-10-30) — TEAMMATE_STAT_COMPARE 전수 생성 의무가 10/7 재조정 이후 처음으로 모든 팀에서 "0건 vs 소수 생성"을 숫자로 구분해낸 사례
+
+```json
+{
+  "quizId": "QZ-20261030-435",
+  "gameId": null,
+  "teamCodes": ["HH"],
+  "kind": "KNOWLEDGE",
+  "type": "QUIZ",
+  "templateId": "TEAMMATE_STAT_COMPARE",
+  "format": "BINARY",
+  "question": "다음 두 타자 중 올 시즌 타율이 더 높은 쪽은?",
+  "options": [{ "id": "A", "text": "허인서" }, { "id": "B", "text": "심우준" }],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/player_season_stat/2026-10-29/player_season_stat_52764.json",
+    "quote": "한화 허인서은(는) 2026시즌 19경기 60타수 13안타(타율 0.217) 1홈런 8타점 0도루를 기록했다."
+  },
+  "settlement": null,
+  "subject": { "scope": "PLAYER", "playerIds": [52764, 64006], "teamCodes": [], "gameId": null },
+  "difficulty": "MEDIUM",
+  "pointReward": 50,
+  "bqReward": 2,
+  "status": "PENDING",
+  "createdAt": "2026-10-30T00:13:42Z",
+  "deadlineAt": "2026-10-30T14:59:00Z",
+  "createdBy": "routine:quiz-gen"
+}
+```
+
+**좋은 이유**: 11개 유닛(팀 10개+공통) 전원이 처음으로 "자격 타자·투수 전원 × C(n,2) 쌍 × 3지표"를 실제로 전수 계산해 핸드백에 숫자로 남겼다(예:
+KT 이론적 최대 210건 중 7일 중복 150건 제외 → 60건 생성, SS/OB/LG/LT는 이론적 최대 전부가 7일 이력과 1:1로 일치해 정직하게 0건으로 보고).
+이 예시(허인서-심우준, 타율)는 그 150여 건 중 신규로 살아남은 사례 — 두 선수 수치가 동률이 아님을 먼저 확인했고(허인서 .217 vs 심우준 값),
+보기에는 이름만 노출했으며 evidence는 승자(허인서) envelope 하나만 가리킨다. 10/7 당시엔 "슬롯만 늘리면 생성량이 늘 것"이라는 가정이 틀렸음이
+드러났는데(§3-2 "전부 다 뽑아라" 신설 계기), 이번 실행은 그 절차를 전원이 성실히 따른 뒤 "재료가 실제로 바닥났다"는 결론과 "아직 남아 있다"는
+결론을 유닛별로 정확히 구분해냈다 — 추측이 아니라 교차대조 코드 실행 결과로.

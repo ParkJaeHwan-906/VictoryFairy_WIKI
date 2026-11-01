@@ -8041,3 +8041,34 @@ KT 이론적 최대 210건 중 7일 중복 150건 제외 → 60건 생성, SS/OB
 동료 포수들의 일반적 세대교체 배경으로만 짧게 언급하고(생성 단계의 "비하·사생활 없이 중립적으로" 원칙), 검증 패스가 이 표현이 특정 개인의
 병역/건강 사실을 캐묻는 것이 아니라 순수 맥락 설명임을 확인한 뒤 통과시켰다 — banned-topics.txt의 정확 문자열("병역")은 안 걸리지만 뜻이 겹치는
 표현이 섞여 있을 때 "누구의 사실인지"를 따져 허용 여부를 가른 사례로 남긴다.
+
+
+## 266 (2026-11-01) — 검증 패스가 self_check.py로 못 잡는 "비교 방향 오답"을 결정적 스크립트로 전수 대조해 11건을 실제로 걸러낸 사례
+
+```json
+{
+  "quizId": "team-NC-015",
+  "gameId": null,
+  "teamCodes": ["NC"],
+  "kind": "KNOWLEDGE",
+  "templateId": "TEAMMATE_STAT_COMPARE",
+  "format": "BINARY",
+  "question": "다음 두 투수 중 올 시즌 탈삼진이(가) 더 많은 투수는?",
+  "options": [{ "id": "A", "text": "송명기" }, { "id": "B", "text": "토다" }],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/player_season_stat/2026-10-31/player_season_stat_69962.json",
+    "quote": "NC 송명기은(는) 2026시즌 4경기 10 ⅓이닝 평균자책점 11.32 6탈삼진 WHIP 2.03를 기록했다."
+  }
+}
+```
+
+**좋은 이유(절차 개선 사례)**: `self_check.py`/`validate_candidates.py`는 `evidence.quote`가 소스 파일에 **문자열로 존재하는지**만 보고,
+그 수치가 실제로 candidate의 `answer`를 뒷받침하는지는 검사하지 않는다 — 이 candidate는 evidence 원문 대조·스키마·안전 검사를 전부 통과했지만,
+evidence 자체가 "송명기 6탈삼진"이라고 명시하는데도 `answer`는 "송명기가 토다(11탈삼진)보다 많다"고 주장하는 **자기 모순**이었다. 6단계
+검증 패스가 이번 실행에서 `.work/player_season_stat/`의 두 선수 payload를 직접 열어 모든 TEAMMATE_STAT_COMPARE 후보(275건)의 승자
+판정을 기계적으로 재계산하는 스크립트를 처음 돌렸고, NC 유닛의 EASY 탈삼진 비교 11건 전부가 "낮은 값이 이긴다"(ERA/WHIP 방향)를 "탈삼진"
+(높은 값이 이겨야 함)에 그대로 적용한 동일한 로직 버그였음을 숫자로 증명해 전량 폐기했다. 유닛 서브에이전트의 자기점검은 "evidence가 그 파일에
+있는가"까지만 보장하고 "그 evidence가 이 답을 실제로 뒷받침하는가"는 보장하지 않는다는 것을 실제 사고로 확인한 사례 — 다음부터 검증 패스는
+TEAMMATE_STAT_COMPARE 전량에 대해 이 기계적 재계산을 표준 절차로 삼는다(판단이 아니라 산술이므로 결정적 스크립트화 가능, `verify_tsc.py`
+패턴 참고).

@@ -8205,3 +8205,32 @@ TEAMMATE_STAT_COMPARE 전량에 대해 이 기계적 재계산을 표준 절차�
 **좋은 이유**: "508"이라는 숫자 유래(5월 8일)를 오답(B/D)도 같은 날짜·같은 숫자 계열로 구성해 "날짜를 안다고 바로 풀리지 않게"
 설계했고, 정답만 "10점차 역전 끝내기"라는 실제 드라마틱한 사건을 담아 다른 보기와 질적으로 구분된다. 역대 기록성 소재라
 evidence.quote 하나로 "그 경기가 실제로 있었는지"까지 완전히 뒷받침되는, 짧지만 과도하게 압축되지 않은 좋은 evidence 길이의 예.
+
+## 272 (2026-11-04) — WHIP 1.30 대 1.33, 0.03 차이까지 정확히 변별한 TEAMMATE_STAT_COMPARE
+
+```json
+{
+  "quizId": "team-LG-038",
+  "teamCodes": ["LG"],
+  "templateId": "TEAMMATE_STAT_COMPARE",
+  "format": "BINARY",
+  "question": "올 시즌 톨허스트와 카라스코 중 WHIP이 더 낮은 쪽은?",
+  "options": [
+    { "id": "A", "text": "카라스코" },
+    { "id": "B", "text": "톨허스트" }
+  ],
+  "answer": "A",
+  "evidence": {
+    "source": "question-source/player_season_stat/2026-11-03/player_season_stat_56103.json",
+    "quote": "LG 카라스코은(는) 2026시즌 6경기 27 ⅔이닝 평균자책점 5.53 24탈삼진 WHIP 1.30를 기록했다."
+  },
+  "subject": { "scope": "PLAYER", "playerIds": [55130, 56103], "teamCodes": [], "gameId": null },
+  "difficulty": "HARD"
+}
+```
+
+**좋은 이유**: 톨허스트 WHIP 1.33과 카라스코 WHIP 1.30이라는, 자칫 LLM이 "비슷하니 그냥 당겨서 같다고 보거나 반대로 단정"하기
+쉬운 근소한 차이(0.03)를 수치 그대로 정확히 비교해 정답 방향(낮을수록 좋음)을 맞혔다 — 검증 패스가 두 evidence 원문의 숫자를
+직접 재확인해도 뒤집히지 않았다. 보기에는 이름만 노출하고(수치 비노출, 암기형 유출 방지) 질문 문면에 비교 지표(WHIP)만
+명시하는 §3-2 계약도 정확히 지켰다. **교훈**: TEAMMATE_STAT_COMPARE처럼 수치 비교가 핵심인 템플릿은 차이가 작을수록 오류
+위험이 커지므로, 검증 패스가 "근소한 차이" 사례를 우선 재검산하는 습관이 유효함을 보여주는 예.

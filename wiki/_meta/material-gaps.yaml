@@ -59,12 +59,13 @@ gaps:
     1건(소형준-박영현)뿐이고 이미 발행됨). 2026-11-01 재확인에서도 동일(신규 쌍 없음). 2026-11-03 재확인에서도 동일(엣지 2개뿐, 1개는 기발행 커리어교차,
     1개는 사건연루라 금지 — 신규 쌍 없음). 2026-11-04 재확인: 드물게 신규 쌍 발행 성공(소형준-박영현, 엣지 1개뿐이라 7일 창 회전에 따라 간헐적으로만 공급됨 —
     구조적 결핍은 해소되지 않음). 2026-11-05 재확인에서도 동일(0건(안전 엣지 1쌍(소형준-박영현)뿐이고 최근 7일 내 이미 발행됨 — 신규 쌍 없음, 1쌍뿐인 구조적
-    결핍 지속).) 2026-11-06 재확인에서도 동일(엣지 1개뿐(소형준-박영현)이고 최근 7일 내 이미 발행됨 — 신규 쌍 없음, 1쌍뿐인 구조적 결핍 지속).'
-  flaggedAt: '2026-11-06'
+    결핍 지속).) 2026-11-06 재확인에서도 동일(엣지 1개뿐(소형준-박영현)이고 최근 7일 내 이미 발행됨 — 신규 쌍 없음, 1쌍뿐인 구조적 결핍 지속). 2026-11-07
+    재확인에서도 동일(엣지 1건(소형준-박영현)뿐이고 이미 발행됨 — 신규 쌍 없음).'
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261019 KT perTeam, QZ-20261022 KT perTeam, QZ-20261023 KT perTeam, QZ-20261024 KT perTeam,
     QZ-20261025 KT perTeam, QZ-20261026 KT perTeam, QZ-20261027 perTeam, QZ-20261029 KT perTeam, QZ-20261030
     KT perTeam, QZ-20261101 KT perTeam, QZ-20261102 KT perTeam, QZ-20261103 KT perTeam, QZ-20261104 KT
-    perTeam, QZ-20261105 KT perTeam, QZ-20261106 KT perTeam
+    perTeam, QZ-20261105 KT perTeam, QZ-20261106 KT perTeam, QZ-20261107 KT perTeam
   processedAt: null
 - team: LT
   templateTypes:
@@ -74,12 +75,13 @@ gaps:
     2026-11-01 재확인에서도 동일(신규 쌍 없음). 2026-11-02 재확인에서도 동일(graph.json LT 내부 안전 엣지 0건). 2026-11-03 재확인에서도
     동일(안전 엣지 2건 나왔으나 둘 다 동일 엣지의 양방향 표기이고 type이 전부 사건연루라 금지 — 안전 엣지 실질 0건). 2026-11-04 재확인에서도 동일(안전 엣지
     0건 — 밈공유/커리어교차 조건 통과 못함). 2026-11-05 재확인에서도 동일(0건(안전 엣지 2건 나왔으나 둘 다 사건연루로 금지 소재라 실질 0건 — 구조적 결핍 지속).)
-    2026-11-06 재확인에서도 동일(안전 엣지 2건 나왔으나 둘 다 사건연루로 금지 소재라 실질 0건 — 구조적 결핍 지속).
-  flaggedAt: '2026-11-06'
+    2026-11-06 재확인에서도 동일(안전 엣지 2건 나왔으나 둘 다 사건연루로 금지 소재라 실질 0건 — 구조적 결핍 지속). 2026-11-07 재확인에서도 동일(안전 엣지
+    자체가 0건(graph.json에 이 팀 로스터 내부 엣지가 없음) — 구조적 재료 부재).
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261020 LT perTeam, QZ-20261022 LT perTeam, QZ-20261023 LT perTeam, QZ-20261024 LT perTeam,
     QZ-20261025 LT perTeam, QZ-20261026 LT perTeam, QZ-20261027 perTeam, QZ-20261028 LT perTeam, QZ-20261029
     LT perTeam, QZ-20261030 LT perTeam, QZ-20261101 LT perTeam, QZ-20261102 LT perTeam, QZ-20261103 LT
-    perTeam, QZ-20261104 LT perTeam, QZ-20261105 LT perTeam, QZ-20261106 LT perTeam
+    perTeam, QZ-20261104 LT perTeam, QZ-20261105 LT perTeam, QZ-20261106 LT perTeam, QZ-20261107 LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
@@ -107,11 +109,12 @@ gaps:
     발행됨(김형준-서호철은 2회). 2026-10-27 재확인에서도 동일(2쌍 모두 기발행). 2026-10-29 재확인에서도 동일(2쌍 모두 기발행). 2026-10-30 재확인에서도
     동일(엣지 2쌍 전부 최근 7일 내 이미 발행됨). 2026-11-03 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨, §3-3 전수 스캔 기준). 2026-11-04
     재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨). 2026-11-05 재확인에서도 동일(0건(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).)
-    2026-11-06 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).
-  flaggedAt: '2026-11-06'
+    2026-11-06 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-07 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일
+    내 완전히 동일한 질문으로 이미 발행됨 — 신규 쌍 없음).
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261020 NC perTeam, QZ-20261022 NC perTeam, QZ-20261025 NC perTeam, QZ-20261027 perTeam,
     QZ-20261028 NC perTeam, QZ-20261029 NC perTeam, QZ-20261030 NC perTeam, QZ-20261103 NC perTeam, QZ-20261104
-    NC perTeam, QZ-20261105 NC perTeam, QZ-20261106 NC perTeam
+    NC perTeam, QZ-20261105 NC perTeam, QZ-20261106 NC perTeam, QZ-20261107 NC perTeam
   processedAt: null
 - team: HH
   templateTypes:
@@ -122,12 +125,12 @@ gaps:
     쌍 없음, perTeam 유닛 전수 스캔 기준). 2026-11-03 재확인에서도 동일(안전 엣지 2쌍 모두 기발행, 신규 쌍 없음). 2026-11-04 재확인: 신규 쌍 2건
     발행 성공(7일 창 회전으로 일시 회복 — 안전 엣지가 원래 2쌍뿐이라 구조적 결핍은 해소되지 않음). 2026-11-05 재확인에서도 동일(0건(안전 엣지 2쌍 전부 최근 7일
     내 이미 발행됨 — 신규 쌍 없음).) 2026-11-06 재확인에서도 동일(2쌍(조동욱-박상원 밈공유, 권민규-김서현 커리어교차) 전부 최근 7일 내 이미 발행됨 — 신규 쌍
-    없음).'
-  flaggedAt: '2026-11-06'
+    없음). 2026-11-07 재확인에서도 동일(고유 엣지 2개(조동욱-박상원, 권민규-김서현) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).'
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261020 HH perTeam, QZ-20261021, QZ-20261022 HH perTeam, QZ-20261023 HH perTeam, QZ-20261025
     HH perTeam, QZ-20261026 HH perTeam, QZ-20261027 perTeam, QZ-20261029 HH perTeam, QZ-20261030 HH perTeam,
     QZ-20261101 HH perTeam, QZ-20261102 HH perTeam, QZ-20261103 HH perTeam, QZ-20261104 HH perTeam, QZ-20261105
-    HH perTeam, QZ-20261106 HH perTeam
+    HH perTeam, QZ-20261106 HH perTeam, QZ-20261107 HH perTeam
   processedAt: null
 - team: OB
   templateTypes:
@@ -152,11 +155,11 @@ gaps:
     에는 7일 창이 돌면서 신규 쌍 1건(최용준-이준기, "최용준 육성 프로젝트")이 생겨 실제로 발행됨 — 구조적 고갈이 아니라 엣지 수가 적어(3쌍) 창이 돌 때마다 공급이 매우
     불안정하다는 패턴을 재확인. 2026-11-04 재확인에서도 동일(안전 엣지 3쌍 전부 최근 7일 내 이미 발행됨 — 공급 불안정 패턴 재확인). 2026-11-05 재확인에서도
     동일(0건(안전 엣지 3쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음, 공급 불안정 패턴 재확인).) 2026-11-06 재확인에서도 동일(안전 엣지 3쌍 전부 최근 7일
-    내 이미 발행됨 — 신규 쌍 없음).
-  flaggedAt: '2026-11-06'
+    내 이미 발행됨 — 신규 쌍 없음). 2026-11-07 재확인에서도 동일(고유 엣지 3쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261018 SK perTeam, QZ-20261022 SK perTeam, QZ-20261023 SK perTeam, QZ-20261024 SK perTeam,
     QZ-20261028 SK perTeam, QZ-20261029 SK perTeam, QZ-20261030 SK perTeam, QZ-20261101 SK perTeam, QZ-20261104
-    SK perTeam, QZ-20261105 SK perTeam, QZ-20261106 SK perTeam
+    SK perTeam, QZ-20261105 SK perTeam, QZ-20261106 SK perTeam, QZ-20261107 SK perTeam
   processedAt: null
 - team: HT
   templateTypes:
@@ -166,12 +169,13 @@ gaps:
     내 이미 발행됨). 2026-11-01 재확인에서도 동일(신규 쌍 없음). 2026-11-02 재확인에서도 동일(신규 쌍 없음, perTeam 유닛 전수 스캔 기준). 2026-11-03
     재확인에서도 동일(안전 엣지 2건 모두 기발행, 신규 쌍 없음). 2026-11-04 재확인에서도 동일(안전 엣지 2건 전부 최근 7일 내 이미 발행됨). 2026-11-05
     재확인: 신규 쌍 2건 발행 성공(데일-김도영, 김범수-하주석 — 7일 창 회전으로 일시 회복, 안전 엣지 자체가 2쌍뿐이라 구조적 결핍은 해소되지 않음). 2026-11-06
-    재확인에서도 동일(2건(데일-김도영, 김범수-하주석) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).'
-  flaggedAt: '2026-11-06'
+    재확인에서도 동일(2건(데일-김도영, 김범수-하주석) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-07 재확인에서도 동일(안전 엣지 2건 전부 최근 7일
+    내 이미 발행됨 — 신규 쌍 없음).'
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261020 HT perTeam, QZ-20261021, QZ-20261022 HT perTeam, QZ-20261023 HT perTeam, QZ-20261024
     HT perTeam, QZ-20261025 HT perTeam, QZ-20261026 HT perTeam, QZ-20261027 perTeam, QZ-20261028 HT perTeam,
     QZ-20261030 HT perTeam, QZ-20261101 HT perTeam, QZ-20261102 HT perTeam, QZ-20261103 HT perTeam, QZ-20261104
-    HT perTeam, QZ-20261105 HT perTeam, QZ-20261106 HT perTeam
+    HT perTeam, QZ-20261105 HT perTeam, QZ-20261106 HT perTeam, QZ-20261107 HT perTeam
   processedAt: null
 - team: SS
   templateTypes:
@@ -196,11 +200,11 @@ gaps:
     재확인에서도 동일(같은 사유로 0건 판정). 2026-11-01 재확인에서도 동일(신규 쌍 없음). 2026-11-03 재확인에서도 동일(같은 사유로 0건 판정 — 임지열-이형종
     쌍은 여전히 로스터 트랜잭션 서사뿐이라 casebook bad.md 2026-11-04 재확인에서도 동일(안전 엣지 3쌍 중 2쌍 기발행, 1쌍은 로스터 트랜잭션 서사뿐이라 금지
     패턴과 겹쳐 미사용). 2026-11-05 재확인: 신규 쌍 2건 발행 성공(임지열-이형종, 임병욱-박병호 — 양쪽 다 WO 소속인 안전 엣지가 재스캔에서 4쌍으로 확인돼 기존
-    기록(3쌍)보다 소폭 늘어난 것으로 보임).'
-  flaggedAt: '2026-11-05'
+    기록(3쌍)보다 소폭 늘어난 것으로 보임). 2026-11-07 재확인에서도 동일(안전 엣지 6건(4개 unique 쌍) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).'
+  flaggedAt: '2026-11-07'
   flaggedBy: QZ-20261020 WO perTeam, QZ-20261023 WO perTeam, QZ-20261024 WO perTeam, QZ-20261025 WO perTeam,
     QZ-20261026 WO perTeam, QZ-20261028 WO perTeam, QZ-20261101 WO perTeam, QZ-20261103 WO perTeam, QZ-20261104
-    WO perTeam, QZ-20261105 WO perTeam
+    WO perTeam, QZ-20261105 WO perTeam, QZ-20261107 WO perTeam
   processedAt: null
 - team: LG
   templateTypes:

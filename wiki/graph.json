@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-11-05T22:33:02.172595+00:00",
+  "compiledAt": "2026-11-09T21:57:18.678759+00:00",
   "nodes": [
     {
       "id": "player:50007",
@@ -1253,6 +1253,12 @@
       "id": "player:53973",
       "type": "player",
       "name": "목지훈",
+      "team": "NC"
+    },
+    {
+      "id": "player:53989",
+      "type": "player",
+      "name": "신성호",
       "team": "NC"
     },
     {
@@ -5945,6 +5951,12 @@
     },
     {
       "source": "player:53973",
+      "target": "team:NC",
+      "type": "소속",
+      "ref": null
+    },
+    {
+      "source": "player:53989",
       "target": "team:NC",
       "type": "소속",
       "ref": null

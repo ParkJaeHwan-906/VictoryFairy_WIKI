@@ -86,13 +86,13 @@ gaps:
     2026-11-06 재확인에서도 동일(안전 엣지 2건 나왔으나 둘 다 사건연루로 금지 소재라 실질 0건 — 구조적 결핍 지속). 2026-11-07 재확인에서도 동일(안전 엣지
     자체가 0건(graph.json에 이 팀 로스터 내부 엣지가 없음) — 구조적 재료 부재). 2026-11-08 재확인에서도 동일(graph.json 안전 엣지 자체가 0건(이
     팀 로스터 내부 엣지 없음) — 구조적 재료 부재). 2026-11-09 재확인에서도 동일(graph.json 안전 엣지 자체가 0건(공집합) — 구조적 재료 부재 지속). 2026-11-10
-    재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).
-  flaggedAt: '2026-11-10'
+    재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건). 2026-11-11 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).
+  flaggedAt: '2026-11-11'
   flaggedBy: QZ-20261020 LT perTeam, QZ-20261022 LT perTeam, QZ-20261023 LT perTeam, QZ-20261024 LT perTeam,
     QZ-20261025 LT perTeam, QZ-20261026 LT perTeam, QZ-20261027 perTeam, QZ-20261028 LT perTeam, QZ-20261029
     LT perTeam, QZ-20261030 LT perTeam, QZ-20261101 LT perTeam, QZ-20261102 LT perTeam, QZ-20261103 LT
     perTeam, QZ-20261104 LT perTeam, QZ-20261105 LT perTeam, QZ-20261106 LT perTeam, QZ-20261107 LT perTeam,
-    QZ-20261108 LT perTeam, QZ-20261109 LT perTeam, QZ-20261110 LT perTeam
+    QZ-20261108 LT perTeam, QZ-20261109 LT perTeam, QZ-20261110 LT perTeam, QZ-20261111 LT perTeam
   processedAt: null
 - team: KT
   templateTypes:
@@ -123,12 +123,12 @@ gaps:
     재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨). 2026-11-05 재확인에서도 동일(0건(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).)
     2026-11-06 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-07 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일
     내 완전히 동일한 질문으로 이미 발행됨 — 신규 쌍 없음). 2026-11-08 재확인에서도 동일(안전 엣지 2쌍(이희성-최요한, 김형준-서호철) 전부 최근 7일 내 이미 발행됨
-    — 신규 쌍 없음). 2026-11-09 재확인에서도 동일(안전 엣지 2쌍(이희성-최요한, 김형준-서호철) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).
-  flaggedAt: '2026-11-09'
+    — 신규 쌍 없음). 2026-11-09 재확인에서도 동일(안전 엣지 2쌍(이희성-최요한, 김형준-서호철) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-11 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).
+  flaggedAt: '2026-11-11'
   flaggedBy: QZ-20261020 NC perTeam, QZ-20261022 NC perTeam, QZ-20261025 NC perTeam, QZ-20261027 perTeam,
     QZ-20261028 NC perTeam, QZ-20261029 NC perTeam, QZ-20261030 NC perTeam, QZ-20261103 NC perTeam, QZ-20261104
     NC perTeam, QZ-20261105 NC perTeam, QZ-20261106 NC perTeam, QZ-20261107 NC perTeam, QZ-20261108 NC
-    perTeam, QZ-20261109 NC perTeam
+    perTeam, QZ-20261109 NC perTeam, QZ-20261111 NC perTeam
   processedAt: null
 - team: HH
   templateTypes:
@@ -177,12 +177,12 @@ gaps:
     동일(0건(안전 엣지 3쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음, 공급 불안정 패턴 재확인).) 2026-11-06 재확인에서도 동일(안전 엣지 3쌍 전부 최근 7일
     내 이미 발행됨 — 신규 쌍 없음). 2026-11-07 재확인에서도 동일(고유 엣지 3쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-08 재확인에서도
     동일(안전 엣지 3쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-09 재확인에서도 동일(안전 엣지 3쌍 전부 최근 7일 내 이미 발행됨(1쌍은 과거 교차출제
-    전례 확인돼 자체 폐기) — 신규 쌍 없음).
-  flaggedAt: '2026-11-09'
+    전례 확인돼 자체 폐기) — 신규 쌍 없음). 2026-11-11 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).
+  flaggedAt: '2026-11-11'
   flaggedBy: QZ-20261018 SK perTeam, QZ-20261022 SK perTeam, QZ-20261023 SK perTeam, QZ-20261024 SK perTeam,
     QZ-20261028 SK perTeam, QZ-20261029 SK perTeam, QZ-20261030 SK perTeam, QZ-20261101 SK perTeam, QZ-20261104
     SK perTeam, QZ-20261105 SK perTeam, QZ-20261106 SK perTeam, QZ-20261107 SK perTeam, QZ-20261108 SK
-    perTeam, QZ-20261109 SK perTeam
+    perTeam, QZ-20261109 SK perTeam, QZ-20261111 SK perTeam
   processedAt: null
 - team: HT
   templateTypes:
@@ -195,13 +195,13 @@ gaps:
     재확인에서도 동일(2건(데일-김도영, 김범수-하주석) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-07 재확인에서도 동일(안전 엣지 2건 전부 최근 7일
     내 이미 발행됨 — 신규 쌍 없음). 2026-11-08 재확인에서도 동일(안전 엣지 2건(데일-김도영, 김범수-하주석) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).
     2026-11-09 재확인에서도 동일(안전 엣지 2건뿐이고 모두 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-10 재확인에서도 동일(가용 엣지 전부 최근 7일
-    이력에 이미 소진 — 신규 0건).'
-  flaggedAt: '2026-11-10'
+    이력에 이미 소진 — 신규 0건). 2026-11-11 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).'
+  flaggedAt: '2026-11-11'
   flaggedBy: QZ-20261020 HT perTeam, QZ-20261021, QZ-20261022 HT perTeam, QZ-20261023 HT perTeam, QZ-20261024
     HT perTeam, QZ-20261025 HT perTeam, QZ-20261026 HT perTeam, QZ-20261027 perTeam, QZ-20261028 HT perTeam,
     QZ-20261030 HT perTeam, QZ-20261101 HT perTeam, QZ-20261102 HT perTeam, QZ-20261103 HT perTeam, QZ-20261104
     HT perTeam, QZ-20261105 HT perTeam, QZ-20261106 HT perTeam, QZ-20261107 HT perTeam, QZ-20261108 HT
-    perTeam, QZ-20261109 HT perTeam, QZ-20261110 HT perTeam
+    perTeam, QZ-20261109 HT perTeam, QZ-20261110 HT perTeam, QZ-20261111 HT perTeam
   processedAt: null
 - team: SS
   templateTypes:
@@ -212,13 +212,13 @@ gaps:
     전부 최근 7일 내 이미 발행됨). 2026-11-05 재확인: 신규 쌍 1건 발행 성공(이진용-함수호 — 7일 창 회전으로 일시 회복, 안전 엣지 2쌍 중 나머지는 기발행 상태).
     2026-11-06 재확인에서도 동일(안전 엣지 2쌍 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음). 2026-11-08 재확인에서도 동일(안전 엣지 2쌍(디아즈-페덱,
     이진용-함수호) 중 1쌍은 기발행, 1쌍(디아즈-페덱)은 인종 비교 밈이라 원천적으로 사용 불가 — 실질 0건). 2026-11-09 재확인에서도 동일(안전 엣지 2쌍 중 1쌍(디아즈-페덱)만
-    신선해 1건 생성, 나머지 1쌍은 기발행 — 구조적 희박 지속). 2026-11-10 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).'
-  flaggedAt: '2026-11-10'
+    신선해 1건 생성, 나머지 1쌍은 기발행 — 구조적 희박 지속). 2026-11-10 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건). 2026-11-11 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).'
+  flaggedAt: '2026-11-11'
   flaggedBy: QZ-20261018 SS perTeam, QZ-20261021, QZ-20261022 SS perTeam, QZ-20261023 SS perTeam, QZ-20261024
     SS perTeam, QZ-20261025 SS perTeam, QZ-20261026 SS perTeam, QZ-20261027 perTeam, QZ-20261028 SS perTeam,
     QZ-20261101 SS perTeam, QZ-20261102 SS perTeam, QZ-20261103 SS perTeam, QZ-20261104 SS perTeam, QZ-20261105
     SS perTeam, QZ-20261106 SS perTeam, QZ-20261108 SS perTeam, QZ-20261109 SS perTeam, QZ-20261110 SS
-    perTeam
+    perTeam, QZ-20261111 SS perTeam
   processedAt: null
 - team: WO
   templateTypes:
@@ -232,12 +232,12 @@ gaps:
     기록(3쌍)보다 소폭 늘어난 것으로 보임). 2026-11-07 재확인에서도 동일(안전 엣지 6건(4개 unique 쌍) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음).
     2026-11-08 재확인에서도 동일(안전 엣지 3쌍 중 2쌍 기발행, 남은 1쌍(임지열-이형종)은 로스터 트랜잭션 서사뿐이라 금지 패턴과 겹쳐 미사용 — 실질 0건). 2026-11-09
     재확인에서도 동일(안전 엣지 3개(임지열-이형종, 임병욱-박병호, 박찬혁-김건희) 전부 최근 7일 내 이미 발행됨 — 신규 쌍 없음, 반복 발행으로 완전 소진된 첫 관측). 2026-11-10
-    재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).'
-  flaggedAt: '2026-11-10'
+    재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건). 2026-11-11 재확인에서도 동일(가용 엣지 전부 최근 7일 이력에 이미 소진 — 신규 0건).'
+  flaggedAt: '2026-11-11'
   flaggedBy: QZ-20261020 WO perTeam, QZ-20261023 WO perTeam, QZ-20261024 WO perTeam, QZ-20261025 WO perTeam,
     QZ-20261026 WO perTeam, QZ-20261028 WO perTeam, QZ-20261101 WO perTeam, QZ-20261103 WO perTeam, QZ-20261104
     WO perTeam, QZ-20261105 WO perTeam, QZ-20261107 WO perTeam, QZ-20261108 WO perTeam, QZ-20261109 WO
-    perTeam, QZ-20261110 WO perTeam
+    perTeam, QZ-20261110 WO perTeam, QZ-20261111 WO perTeam
   processedAt: null
 - team: LG
   templateTypes:
